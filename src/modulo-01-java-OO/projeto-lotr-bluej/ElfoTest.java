@@ -63,4 +63,14 @@ public class ElfoTest
         elfo.atirarFlecha(dwarf);
         assertEquals(100, dwarf.getVida());
     }
+    
+    @Test
+    public void elfoTesteToString(){
+        Elfo elfo = new Elfo("nome");
+        assertEquals(elfo.getNome() + " possui " + elfo.getFlechas()
+                + " flechas e " + elfo.getExperiencia()
+                + " niveis de experiência", elfo.toString());
+    }
 }
+
+
