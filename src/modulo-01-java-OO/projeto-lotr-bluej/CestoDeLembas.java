@@ -1,4 +1,3 @@
-
 public class CestoDeLembas{
     private int lembas;
     int[] valores = new int[3];
@@ -7,24 +6,14 @@ public class CestoDeLembas{
         this.lembas = lembas;
     }
     
-    public void setLembas(int lembas){
-        this.lembas = lembas;
-    }
-    
     /**                                                                                                              Exercício 1 OO - L2 
      * 
      * Baseado na documentação não é necessário verificar os valores, independente de valor de n, logo, se é par, é verdadeiro. É possivel fazer qualquer combinação de pares para todo valor >= 3, desde que limite inicial para operações seja 1*/
      
     public boolean podeDividirEmPares(){
-        if(lembas <4)
-            return false;
-        else if(lembas % 2 != 0)
-            return false;
-        else
-            return true;
-                                              
+        boolean podeDividir = lembas > 3 && lembas <=100 && lembas % 2 == 0;
+        return podeDividir ? true : false;
     }
-    /**                                                                                                             FIM Exercício 1 OO - L2 */
     
     public boolean podeDividirEmParesUm(){ //Dividindo entre n personagens utilizando o maior numero par comum possivel por n(garantindo que MAXIMO de n <= 100) n = personagens
         int n = lembas; //personagens por par estabelecido
