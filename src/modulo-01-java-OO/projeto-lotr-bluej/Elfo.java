@@ -6,6 +6,12 @@ public class Elfo {
         this.nome = nome;
     }
     
+    public String toString(){
+        return  nome + " possui " + this.flechas
+                + " flechas e " + this.experiencia
+                + " niveis de experiência";
+    }
+    
     public void atirarFlecha() {
         experiencia++;
         flechas--;
