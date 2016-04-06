@@ -71,6 +71,14 @@ public class ElfoTest
                 + " flechas e " + elfo.getExperiencia()
                 + " niveis de experiência", elfo.toString());
     }
+    
+    @Test
+    public void elfoSegundoConstrutor(){
+        Elfo elfo = new Elfo("nome", 45);
+        assertEquals("nome", elfo.getNome());
+        assertEquals(45, elfo.getFlechas());
+        assertEquals(0, elfo.getExperiencia());
+    }
 }
 
 
