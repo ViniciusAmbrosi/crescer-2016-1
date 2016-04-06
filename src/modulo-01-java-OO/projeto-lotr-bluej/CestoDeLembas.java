@@ -1,12 +1,25 @@
-public class CestoDeLembas{
-    private int lembas;
+public class CestoDeLembas {
     
-    public CestoDeLembas(int lembas){
-        this.lembas = lembas;
+    private int numeroDePaes;
+    
+    public CestoDeLembas(int numeroDePaes) {
+        this.numeroDePaes = numeroDePaes;
     }
-     
-    public boolean podeDividirEmPares(){
-        boolean podeDividir = lembas > 3 && lembas <=100 && lembas % 2 == 0;
-        return podeDividir ? true : false;
-    }   
+    
+    public boolean podeDividirEmPares() {
+        return numeroDePaes > 2 && numeroDePaes <= 100 && numeroDePaes % 2 == 0;
+        // terneiro
+        // return podeDividir ? true : false;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
