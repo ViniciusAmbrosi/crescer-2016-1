@@ -11,7 +11,19 @@ public class Elfo {
         flechas--;
     }
     
-    public void atirarFlecha(Anao anao){
+    public String getNome(){
+        return nome;
+    }
+    
+    public int getFlechas(){
+        return flechas;
+    }
+    
+    public int getExperiencia(){
+        return experiencia;
+    }
+    
+    public void atirarFlecha(Dwarf anao){
         this.atirarFlecha();
         anao.perdeVida();
     }
