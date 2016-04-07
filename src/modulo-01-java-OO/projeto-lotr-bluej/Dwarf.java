@@ -35,4 +35,14 @@ public class Dwarf
        if(vida > 0)
            vida -= 10;        
    }
+   
+   public void adicionarItem(Item item){
+       this.inventario.addItem(item);
+   }
+   
+   public void perderItem(Item item){
+       this.inventario.removerItem(item);
+   }
+   
+   
 }
