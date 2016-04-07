@@ -32,6 +32,14 @@ public class DwarfTest
     }
     
     @Test
+    public void anaoNaoTemVidaNegativa(){
+        Dwarf dwarf = new Dwarf("nome");
+        for(int i = 0; i < 13; i++)
+            dwarf.perdeVida();
+        assertEquals(0, dwarf.getVida());
+    }
+    
+    @Test
     public void testePerdeVida(){
         Dwarf dwarf = new Dwarf("nome");
         dwarf.perdeVida();
