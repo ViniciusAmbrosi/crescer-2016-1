@@ -18,20 +18,24 @@ public class Dwarf
        this.dataNasc = dte;
    }
    
-   public void setNome(String nome){
-       this.name = name;
+   public Inventario getInventario(){
+       return this.inventario;
    }
    
    public Status getStatus(){
        return this.status;
    }
    
-   public String getNome(){
+   public String getName(){
        return this.name;
    }
    
    public int getVida(){
-       return vida;
+       return this.vida;
+   }
+   
+   public DataTerceiraEra getDataNasc(){
+       return  this.dataNasc;
    }
    
    public void perdeVida(){
