@@ -3,6 +3,8 @@ public class Dwarf
    private int vida;
    private String name;
    private Status status;
+   private Inventario inventario;
+   private DataTerceiraEra dataNasc;
    
    public Dwarf(String name){
        this.name = name;
