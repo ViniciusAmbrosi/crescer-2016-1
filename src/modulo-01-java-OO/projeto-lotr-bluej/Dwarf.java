@@ -27,9 +27,10 @@ public class Dwarf
    }
    
    public void perdeVida(){
-       if(vida != 0)
-           this.vida -= 10;
-       else
+       int vidaAposFlechada = vida - 10;
+       if(vidaAposFlechada == 0)
            status = status.MORTO;
+       if(vida > 0)
+           vida -= 10;        
    }
 }
