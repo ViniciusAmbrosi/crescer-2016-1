@@ -6,21 +6,15 @@ import org.junit.Test;
 public class DwarfTest
 {
     @Test
-    public void testeConstrutorNome(){
+    public void criaAnaoPrimeiroConstrutor(){
         Dwarf dwarf = new Dwarf("nome");
         assertEquals("nome", dwarf.getName());
-    }
-    
-    @Test
-    public void testeConstrutorVida(){
-        Dwarf dwarf = new Dwarf("nome");
         assertEquals(110, dwarf.getVida());
-    }
-    
-    @Test
-    public void testeConstrutorStatus(){
-        Dwarf dwarf = new Dwarf("nome");
         assertEquals(Status.VIVO, dwarf.getStatus());
+        assertTrue(dwarf.getInventario() != null);
+        assertEquals(1, dwarf.getDataNasc().getDia());
+        assertEquals(1, dwarf.getDataNasc().getMes());
+        assertEquals(1, dwarf.getDataNasc().getAno());
     }
     
     @Test
