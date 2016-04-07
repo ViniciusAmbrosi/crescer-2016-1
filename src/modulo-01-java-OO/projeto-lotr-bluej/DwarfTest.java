@@ -18,6 +18,12 @@ public class DwarfTest
     }
     
     @Test
+    public void testeConstrutorStatus(){
+        Dwarf dwarf = new Dwarf("nome");
+        assertEquals(Status.VIVO, dwarf.getStatus());
+    }
+    
+    @Test
     public void testePerdeVida(){
         Dwarf dwarf = new Dwarf("nome");
         dwarf.perdeVida();
