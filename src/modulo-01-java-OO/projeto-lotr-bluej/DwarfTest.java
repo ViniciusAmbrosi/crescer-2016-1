@@ -24,6 +24,14 @@ public class DwarfTest
     }
     
     @Test
+    public void anaoPerdeVidaMorre(){
+        Dwarf dwarf = new Dwarf("nome");
+        for(int i = 0; i < 12; i++)
+            dwarf.perdeVida();
+        assertEquals(Status.MORTO, dwarf.getStatus());
+    }
+    
+    @Test
     public void testePerdeVida(){
         Dwarf dwarf = new Dwarf("nome");
         dwarf.perdeVida();

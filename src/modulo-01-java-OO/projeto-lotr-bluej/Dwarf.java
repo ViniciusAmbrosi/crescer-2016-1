@@ -28,5 +28,7 @@ public class Dwarf
    
    public void perdeVida(){
        this.vida -= 10;
+       if(this.vida < 0)
+            status = status.MORTO;
    }
 }
