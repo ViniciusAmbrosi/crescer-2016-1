@@ -8,21 +8,21 @@ import org.junit.Test;
 public class DataTerceiraEraTest
 {   
     public void criaDataTerceiraEraAno(){
-        DataTerceiraEra dte = new DataTerceiraEra(15,12,200);
+        DataTerceiraEra dte = new DataTerceiraEra(15,12,1000);
         assertEquals(15, dte.getDia());
         assertEquals(12, dte.getMes());
-        assertEquals(200, dte.getAno());
+        assertEquals(1000, dte.getAno());
     }
     
     @Test
-    public void ano200NaoEhBissexto(){
-        DataTerceiraEra dte = new DataTerceiraEra(15,12,200);
+    public void ano2100NaoEhBissexto(){
+        DataTerceiraEra dte = new DataTerceiraEra(15,12,2100);
         assertEquals(false, dte.ehBissexto());
     }
     
     @Test
-    public void ano400EhBissexto(){
-        DataTerceiraEra dte = new DataTerceiraEra(15,12,400);
+    public void ano4000EhBissexto(){
+        DataTerceiraEra dte = new DataTerceiraEra(15,12,4000);
         assertEquals(true, dte.ehBissexto());
     }
     
