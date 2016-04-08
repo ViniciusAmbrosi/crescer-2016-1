@@ -19,7 +19,9 @@ public class Inventario{
         String itens =  "";
         for(int i = 0; i < this.itens.size(); i++)
              itens = this.itens.get(i).getDescricao()+",";
-        return /**itens.equals("") ? "Não tem itens" :*/ itens;
+        return this.itens.isEmpty() ? 
+               itens :
+               itens.substring(0, itens.length()-1);
     }
     
     public ArrayList<Item> getItens(){return this.itens;}   
