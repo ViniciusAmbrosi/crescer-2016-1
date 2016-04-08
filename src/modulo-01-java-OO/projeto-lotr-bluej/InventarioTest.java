@@ -24,4 +24,13 @@ public class InventarioTest{
         inv.removerItem(espada);
         assertEquals(arco, inv.getItens().get(0));
     }
+    
+    @Test
+    public void descreveEspadaAdagaArco(){
+        Inventario inv = new Inventario();
+        inv.addItem(new Item(1, "Espada"));
+        inv.addItem(new Item(1, "Adaga"));
+        inv.addItem(new Item(1, "Arco"));
+        boolean descreveEspadaAdagaArco = "Espada,Adaga,Arco".equals(inv.getDescricaoItens());
+    }
 }
