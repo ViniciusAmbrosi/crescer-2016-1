@@ -10,32 +10,28 @@ public class Elfo {
         this.nome = nome;
         this.flechas = flechas;
     } 
+    
     public String toString(){
-        return  nome + " possui " + this.flechas
-                + " flechas e " + this.experiencia
-                + " niveis de experiência";
-    }
-    
-    public void atirarFlecha() {
-        experiencia++;
-        flechas--;
-    }
-    
-    public String getNome(){
-        return nome;
-    }
-    
-    public int getFlechas(){
-        return flechas;
-    }
-    
-    public int getExperiencia(){
-        return experiencia;
+        boolean flechaAbs = Math.abs(this.flechas) == 1;
+        boolean experienciaAbs = Math.abs(this.experiencia) == 1;
+        return  String.format("%s possui %d %s e %d %s de experiência",
+                              this.nome,
+                              this.flechas,
+                              flechaAbs ? "flecha" : "flechas",
+                              this.experiencia,
+                              experienciaAbs ? "nível" : "níveis");
+                              
     }
     
     public void atirarFlecha(Dwarf anao){
-        this.atirarFlecha();
+        experiencia++;
+        flechas--;
         anao.perdeVida();
     }
     
+    public String getNome(){return nome;}
+    
+    public int getFlechas(){return flechas;}
+    
+    public int getExperiencia(){return experiencia;}     
 }

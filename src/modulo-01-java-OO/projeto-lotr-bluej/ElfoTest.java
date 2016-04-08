@@ -22,22 +22,7 @@ public class ElfoTest
         Elfo elfo = new Elfo("nome");
         assertEquals(0, elfo.getExperiencia());
     }
-    
-    @Test
-    public void atiraFlechaTesteXp(){
-        Elfo elfo = new Elfo("nome");
-        elfo.atirarFlecha();
-        assertEquals(1, elfo.getExperiencia());
-    }
-        
-    @Test
-    public void atiraFlechaTesteFlecha(){
-        Elfo elfo = new Elfo("nome");
-        elfo.atirarFlecha();
-        assertEquals(41, elfo.getFlechas());
-    }
-    
-        
+
     @Test
     public void atiraFlechaAnaoTesteXp(){
         Elfo elfo = new Elfo("nome");
@@ -45,7 +30,6 @@ public class ElfoTest
         elfo.atirarFlecha(dwarf);
         assertEquals(1, elfo.getExperiencia());
     }
-    
         
     @Test
     public void atiraFlechaAnaoTesteFlecha(){
@@ -54,8 +38,7 @@ public class ElfoTest
         elfo.atirarFlecha(dwarf);
         assertEquals(41, elfo.getFlechas());
     }
-    
-        
+       
     @Test
     public void atiraFlechaAnaoTesteVidaAnao(){
         Elfo elfo = new Elfo("nome");
@@ -69,7 +52,7 @@ public class ElfoTest
         Elfo elfo = new Elfo("nome");
         assertEquals(elfo.getNome() + " possui " + elfo.getFlechas()
                 + " flechas e " + elfo.getExperiencia()
-                + " niveis de experiência", elfo.toString());
+                + " níveis de experiência", elfo.toString());
     }
     
     @Test

@@ -18,27 +18,7 @@ public class Dwarf
        this(name);
        this.dataNasc = dte;
    }
-   
-   public Inventario getInventario(){
-       return this.inventario;
-   }
-   
-   public Status getStatus(){
-       return this.status;
-   }
-   
-   public String getName(){
-       return this.name;
-   }
-   
-   public int getVida(){
-       return this.vida;
-   }
-   
-   public DataTerceiraEra getDataNasc(){
-       return  this.dataNasc;
-   }
-   
+
    public void perdeVida(){
        double numeroSorte = getNumeroSorte();
        if(numeroSorte < 0){
@@ -77,4 +57,13 @@ public class Dwarf
    
    public int getXp(){return this.xp;}
    
+   public Inventario getInventario(){ return this.inventario;}
+   
+   public Status getStatus(){ return this.status;}
+   
+   public String getName(){return this.name;}
+   
+   public int getVida(){ return this.vida;}
+   
+   public DataTerceiraEra getDataNasc(){return  this.dataNasc;}
 }

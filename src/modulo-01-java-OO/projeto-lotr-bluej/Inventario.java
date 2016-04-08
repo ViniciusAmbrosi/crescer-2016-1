@@ -6,10 +6,6 @@ public class Inventario{
         itens = new ArrayList<Item>();
     }
     
-    public ArrayList<Item> getItens(){
-        return itens;
-    }
-    
     public void addItem(Item item){
         itens.add(item);
     }
@@ -17,4 +13,7 @@ public class Inventario{
     public void removerItem(Item item){
         itens.remove(item);
     }
+    
+    public ArrayList<Item> getItens(){return itens;}
+    
 }
