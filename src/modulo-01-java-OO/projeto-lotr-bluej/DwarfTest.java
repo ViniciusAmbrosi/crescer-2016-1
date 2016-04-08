@@ -81,4 +81,42 @@ public class DwarfTest
         assertTrue(dwarf.getInventario().getItens().get(0) == arco);
     }
     
+    @Test
+    public void numeroSorteMenosTresMilETrintaETres(){
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("nome", dte);
+        for(int i = 0; i < 3; i++)
+            dwarf.perdeVida(); 
+        assertTrue(dwarf.getNumeroSorte() == -3333);
+    }
+    
+    @Test
+    public void numeroSorteTrintaETres(){
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
+        Dwarf dwarf = new Dwarf("Seixas", dte);
+        assertTrue(dwarf.getNumeroSorte() == 33); //3333 / 100 = 33.33 - 33 * 100 = 3300 - resto 33
+    }
+    
+    @Test
+    public void numeroSorteCentoEUmBiMaior(){//NascBissextoVidaMaiorQueNoventa
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("Seixas", dte);
+        assertTrue(dwarf.getNumeroSorte() == 101);
+    }
+    
+    @Test
+    public void numeroSorteCentoEUmBiMenor(){ //NascBissextoVidaMenorQueOitenta
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("Seixas", dte);
+        for(int i = 0; i < 5; i++)
+            dwarf.perdeVida(); 
+        assertTrue(dwarf.getNumeroSorte() == 101);
+    }
+    
+    @Test
+    public void numeroSorteCentoEUmNaoBi(){//NascNaoBissextoNomeDiferenteSeixasOuMeireles
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
+        Dwarf dwarf = new Dwarf("Anao", dte);
+        assertTrue(dwarf.getNumeroSorte() == 101);
+    }
 }
