@@ -18,7 +18,7 @@ public class Inventario{
     public String getDescricaoItens(){
         String itens =  "";
         for(int i = 0; i < this.itens.size(); i++)
-             itens = this.itens.get(i)+",";
+             itens = this.itens.get(i).getDescricao()+",";
         return /**itens.equals("") ? "Não tem itens" :*/ itens;
     }
     
