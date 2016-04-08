@@ -2,6 +2,7 @@ public class Dwarf
 {
    private int vida;
    private String name;
+   private int xp = 0;
    private Status status;
    private Inventario inventario;
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
@@ -39,11 +40,20 @@ public class Dwarf
    }
    
    public void perdeVida(){
-       int vidaAposFlechada = vida - 10;
-       if(vidaAposFlechada == 0)
-           status = status.MORTO;
-       if(vida > 0)
-           vida -= 10;        
+       double numeroSorte = getNumeroSorte();
+       if(numeroSorte < 0){
+           xp += 2;
+           return;
+       }
+       else if(numeroSorte <= 100)   
+           return;
+       else{
+           int vidaAposFlechada = vida - 10;
+           if(vidaAposFlechada == 0)
+                status = status.MORTO;
+           if(vida > 0)
+                vida -= 10;       
+        }
    }
    
    public double getNumeroSorte(){
@@ -65,5 +75,6 @@ public class Dwarf
        this.inventario.removerItem(item);
    }
    
+   public int getXp(){return this.xp;}
    
 }
