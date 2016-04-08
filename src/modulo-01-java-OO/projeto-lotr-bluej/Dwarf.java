@@ -40,7 +40,7 @@ public class Dwarf{
        double numeroSorte = 101;
        boolean ehBissexto = dataNasc.ehBissexto();
        boolean vidaEntreOitentaENoventa = this.vida >= 80 && this.vida <=90;
-       boolean nameEhSeixasOuMeireles = this.name.equals("Seixas") || this.name.equals("Meireles");
+       boolean nameEhSeixasOuMeireles = this.name != null && (this.name.equals("Seixas") || this.name.equals("Meireles"));
        return ehBissexto ?
               vidaEntreOitentaENoventa ? -33 * 101 : numeroSorte :
               nameEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
