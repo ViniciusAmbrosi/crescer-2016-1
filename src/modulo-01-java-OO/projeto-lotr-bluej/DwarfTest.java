@@ -105,18 +105,48 @@ public class DwarfTest
     }
     
     @Test
-    public void numeroSorteCentoEUmBiMenor(){ //NascBissextoVidaMenorQueOitenta
-        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
-        Dwarf dwarf = new Dwarf("Seixas", dte);
-        for(int i = 0; i < 5; i++)
-            dwarf.perdeVida(); 
-        assertTrue(dwarf.getNumeroSorte() == 101);
-    }
-    
-    @Test
     public void numeroSorteCentoEUmNaoBi(){//NascNaoBissextoNomeDiferenteSeixasOuMeireles
         DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
         Dwarf dwarf = new Dwarf("Anao", dte);
         assertTrue(dwarf.getNumeroSorte() == 101);
+    }
+    
+    @Test
+    public void dwarfGanha2Xp(){ //Ano bissexto, vida entre 80 e 90
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("nome", dte);
+        for(int i = 0; i < 3; i++)
+            dwarf.perdeVida(); 
+        assertTrue(dwarf.getXp() == 2);
+    }
+    
+    @Test
+    public void dwarfNaoTomaDanoSeixas(){// Ano !bissexto, Seixas ou Meireles
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
+        Dwarf dwarf = new Dwarf("Seixas", dte);
+        assertTrue(dwarf.getVida() == 110);
+    }
+    
+    @Test
+    public void dwarfNaoTomaDanoMeireles(){// Ano !bissexto, Seixas ou Meireles
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
+        Dwarf dwarf = new Dwarf("Meireles", dte);
+        assertTrue(dwarf.getVida() == 110);
+    }
+    
+    @Test
+    public void dwarfTomaDanoBi(){// Ano bissexto, nao entre 80 e 90
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("Seixas", dte);
+        dwarf.perdeVida();
+        assertTrue(dwarf.getVida() == 100);
+    }
+    
+        @Test
+    public void dwarfTomaDanoNaoBi(){// Ano !bissexto, nao Seixas ou Meireles
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
+        Dwarf dwarf = new Dwarf("Roberto", dte);
+        dwarf.perdeVida();
+        assertTrue(dwarf.getVida() == 100);
     }
 }
