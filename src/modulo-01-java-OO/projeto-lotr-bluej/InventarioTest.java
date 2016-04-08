@@ -32,5 +32,16 @@ public class InventarioTest{
         inv.addItem(new Item(1, "Adaga"));
         inv.addItem(new Item(1, "Arco"));
         boolean descreveEspadaAdagaArco = "Espada,Adaga,Arco".equals(inv.getDescricaoItens());
+        assertTrue(descreveEspadaAdagaArco);
+    }
+    
+    @Test
+    public void espadaItemMaisComum(){
+        Inventario inv = new Inventario();
+        Item espada = new Item(5,"Espada");
+        inv.addItem(espada);
+        inv.addItem(new Item(1, "Adaga"));
+        inv.addItem(new Item(1, "Arco"));
+        assertTrue(inv.getItemMaisComum() == espada);
     }
 }
