@@ -1,8 +1,9 @@
-public class Elfo {
+
+public class Elfo{
     private String nome;
     private int experiencia, flechas = 42;
     
-    public Elfo(String nome) {
+    public Elfo(String nome){
         this.nome = nome;
     }
     
@@ -19,8 +20,7 @@ public class Elfo {
                               this.flechas,
                               flechaAbs ? "flecha" : "flechas",
                               this.experiencia,
-                              experienciaAbs ? "nível" : "níveis");
-                              
+                              experienciaAbs ? "nível" : "níveis");                    
     }
     
     public void atirarFlecha(Dwarf anao){
@@ -29,9 +29,9 @@ public class Elfo {
         anao.perdeVida();
     }
     
-    public String getNome(){return nome;}
+    public String getNome(){return this.nome;}
     
-    public int getFlechas(){return flechas;}
+    public int getFlechas(){return this.flechas;}
     
-    public int getExperiencia(){return experiencia;}     
+    public int getExperiencia(){return this.experiencia;}     
 }

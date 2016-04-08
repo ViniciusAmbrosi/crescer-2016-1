@@ -1,6 +1,5 @@
 
-public enum Condicao
-{
+public enum Condicao{
     SANGRANDOO,
     SEM_MANA,
     PELEANDO,

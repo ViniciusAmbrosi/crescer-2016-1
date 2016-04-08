@@ -3,8 +3,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DataTerceiraEraTest
-{   
+public class DataTerceiraEraTest{   
     public void criaDataTerceiraEraAno(){
         DataTerceiraEra dte = new DataTerceiraEra(15,12,1000);
         assertEquals(15, dte.getDia());
@@ -40,6 +39,5 @@ public class DataTerceiraEraTest
     public void ano1500NaoEhBissexto(){
         DataTerceiraEra dte = new DataTerceiraEra(15,12,1500);
         assertEquals(false, dte.ehBissexto());
-    }
-        
+    }    
 }

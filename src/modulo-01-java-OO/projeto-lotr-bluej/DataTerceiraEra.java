@@ -1,5 +1,5 @@
+
 public class DataTerceiraEra{
-    
     private int dia, mes, ano;
     
     public DataTerceiraEra(int dia, int mes, int ano){ //Validação não definida no exercício, logo(?)
@@ -18,6 +18,5 @@ public class DataTerceiraEra{
     
     public int getMes(){return this.mes;}
     
-    public int getAno(){return this.ano;}
-    
+    public int getAno(){return this.ano;}   
 }

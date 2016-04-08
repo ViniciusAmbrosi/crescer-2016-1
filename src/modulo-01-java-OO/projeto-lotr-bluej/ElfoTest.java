@@ -3,8 +3,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ElfoTest
-{
+public class ElfoTest{
     @Test
     public void criaElfoTesteNome(){
         Elfo elfo = new Elfo("nome");
@@ -50,9 +49,7 @@ public class ElfoTest
     @Test
     public void elfoTesteToString(){
         Elfo elfo = new Elfo("nome");
-        assertEquals(elfo.getNome() + " possui " + elfo.getFlechas()
-                + " flechas e " + elfo.getExperiencia()
-                + " níveis de experiência", elfo.toString());
+        assertEquals("nome possui 42 flechas e 0 níveis de experiência", elfo.toString());
     }
     
     @Test

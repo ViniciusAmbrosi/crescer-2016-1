@@ -1,5 +1,5 @@
-public class Dwarf
-{
+
+public class Dwarf{
    private int vida;
    private String name;
    private int xp = 0;
@@ -33,7 +33,7 @@ public class Dwarf
                 status = status.MORTO;
            if(vida > 0)
                 vida -= 10;       
-        }
+       }
    }
    
    public double getNumeroSorte(){
@@ -41,7 +41,6 @@ public class Dwarf
        boolean ehBissexto = dataNasc.ehBissexto();
        boolean vidaEntreOitentaENoventa = this.vida >= 80 && this.vida <=90;
        boolean nameEhSeixasOuMeireles = this.name.equals("Seixas") || this.name.equals("Meireles");
-       
        return ehBissexto ?
               vidaEntreOitentaENoventa ? -33 * 101 : numeroSorte :
               nameEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
@@ -57,13 +56,13 @@ public class Dwarf
    
    public int getXp(){return this.xp;}
    
-   public Inventario getInventario(){ return this.inventario;}
+   public Inventario getInventario(){return this.inventario;}
    
-   public Status getStatus(){ return this.status;}
+   public Status getStatus(){return this.status;}
    
    public String getName(){return this.name;}
    
-   public int getVida(){ return this.vida;}
+   public int getVida(){return this.vida;}
    
-   public DataTerceiraEra getDataNasc(){return  this.dataNasc;}
+   public DataTerceiraEra getDataNasc(){return this.dataNasc;}
 }

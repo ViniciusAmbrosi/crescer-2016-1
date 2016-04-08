@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Inventario{
     private ArrayList<Item> itens;
     
@@ -14,6 +15,5 @@ public class Inventario{
         itens.remove(item);
     }
     
-    public ArrayList<Item> getItens(){return itens;}
-    
+    public ArrayList<Item> getItens(){return this.itens;}   
 }

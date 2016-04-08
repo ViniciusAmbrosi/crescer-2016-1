@@ -3,8 +3,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DwarfTest
-{
+public class DwarfTest{
     @Test
     public void criaAnaoPrimeiroConstrutor(){
         Dwarf dwarf = new Dwarf("nome");
@@ -142,7 +141,7 @@ public class DwarfTest
         assertTrue(dwarf.getVida() == 100);
     }
     
-        @Test
+    @Test
     public void dwarfTomaDanoNaoBi(){// Ano !bissexto, nao Seixas ou Meireles
         DataTerceiraEra dte = new DataTerceiraEra(1,1,2100);
         Dwarf dwarf = new Dwarf("Roberto", dte);

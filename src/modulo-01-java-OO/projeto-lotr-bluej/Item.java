@@ -11,6 +11,4 @@ public class Item{
     public int getQtd(){return this.qtd;}
     
     public String getDescricao(){return this.descricao;}
-    
-    
 }
