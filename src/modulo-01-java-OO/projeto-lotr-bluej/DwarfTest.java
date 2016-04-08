@@ -148,4 +148,17 @@ public class DwarfTest{
         dwarf.perdeVida();
         assertTrue(dwarf.getVida() == 100);
     }
+    
+    @Test
+    public void anaoRecebeMais1000Pocoes(){
+        DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
+        Dwarf dwarf = new Dwarf("nome", dte);
+        Item pocao = new Item(1, "pocao");
+        dwarf.perdeVida();
+        dwarf.perdeVida();
+        dwarf.perdeVida();
+        dwarf.adicionarItem(pocao);
+        dwarf.tentarSorte();
+        assertTrue(dwarf.getInventario().getItens().get(0).getQtd() == 1001);
+    }
 }

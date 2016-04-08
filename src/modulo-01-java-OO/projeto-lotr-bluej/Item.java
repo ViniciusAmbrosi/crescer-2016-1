@@ -8,6 +8,10 @@ public class Item{
         this.descricao = descricao;
     }
     
+    public void addQtd(int qtd){
+        this.qtd += qtd;
+    }
+    
     public int getQtd(){return this.qtd;}
     
     public String getDescricao(){return this.descricao;}

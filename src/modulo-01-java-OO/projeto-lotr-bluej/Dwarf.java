@@ -46,6 +46,13 @@ public class Dwarf{
               nameEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
    }
    
+   public void tentarSorte(){
+       double sorte = getNumeroSorte();
+       if(sorte == -3333)
+           for(int i = 0; i < this.inventario.getItens().size(); i++)
+               inventario.getItens().get(i).addQtd(1000);
+   }
+   
    public void adicionarItem(Item item){
        this.inventario.addItem(item);
    }
