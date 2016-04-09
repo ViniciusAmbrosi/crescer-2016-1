@@ -66,10 +66,4 @@ public class HobbitContadorTest{
        divida.add(parTres);
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
    }
-   
-   @Test
-   public void retorna90mmc(){
-       HobbitContador hc = new HobbitContador();
-       assertTrue(hc.mmc(15,18) == 90);
-   }
 }
