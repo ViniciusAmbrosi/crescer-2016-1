@@ -28,4 +28,17 @@ public class HobbitContador{
             a += aux;
         return a;
     }
+    
+    //método de diferença simplificado para pares utilizando forEach
+    public int calcularDiferencaComForEach(ArrayList<ArrayList<Integer>> arrayDePares){
+        int produtoPares= 1; 
+        int mmcPares= 0;
+        int produtosMenosMmc = 0;
+        for(ArrayList<Integer> pares : arrayDePares){
+            mmcPares = mmc(pares.get(0), pares.get(1));
+            produtoPares = pares.get(0) * pares.get(1);
+            produtosMenosMmc += produtoPares - mmcPares;
+        } 
+        return produtosMenosMmc;
+    }
 }

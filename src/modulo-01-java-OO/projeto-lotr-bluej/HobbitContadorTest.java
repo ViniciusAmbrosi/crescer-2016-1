@@ -50,4 +50,26 @@ public class HobbitContadorTest{
        divida.add(parTres);
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
    }
+   
+   @Test
+   public void retorna840DiferencaProtudosMinimoMultiploComForEach(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       ArrayList<Integer> parUm = new ArrayList<>();
+       ArrayList<Integer> parDois = new ArrayList<>();
+       ArrayList<Integer> parTres = new ArrayList<>();
+       parUm.add(15);parUm.add(18); 
+       parDois.add(4);parDois.add(5);
+       parTres.add(12);parTres.add(60);
+       divida.add(parUm);
+       divida.add(parDois);
+       divida.add(parTres);
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
+   }
+   
+   @Test
+   public void retorna90mmc(){
+       HobbitContador hc = new HobbitContador();
+       assertTrue(hc.mmc(15,18) == 90);
+   }
 }
