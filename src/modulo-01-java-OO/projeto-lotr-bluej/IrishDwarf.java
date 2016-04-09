@@ -1,21 +1,33 @@
 
-public class Dwarf{
+public class IrishDwarf{
    private int vida, xp = 0;
    private String name;
    private Status status;
    private Inventario inventario;
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
    
-   public Dwarf(String name){
+   public IrishDwarf(String name){
        this.name = name;
        this.vida = 110;
        this.status = status.VIVO;
        this.inventario = new Inventario();
    }
    
-   public Dwarf(String name, DataTerceiraEra dte){
+   public IrishDwarf(String name, DataTerceiraEra dte){
        this(name);
        this.dataNasc = dte;
+   }
+   
+      public void tentarSorte(){
+       double sorte = getNumeroSorte();
+       int fatorDeMult = 0;
+       int qtdItens = 0;
+       if(sorte == -3333)
+           for(int i = 0; i < this.inventario.getItens().size(); i++){
+               qtdItens = inventario.getItens().get(i).getQtd(); //Quantidade de current Item
+               fatorDeMult = (qtdItens) * ((qtdItens + 1) /2); //soma dos termos de progressão aritmética
+               inventario.getItens().get(i).addQtd(fatorDeMult * 1000);
+            }
    }
 
    public void perdeVida(){
@@ -43,13 +55,6 @@ public class Dwarf{
        return ehBissexto ?
               vidaEntreOitentaENoventa ? -33 * 101 : numeroSorte :
               nameEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
-   }
-   
-   public void tentarSorte(){
-       double sorte = getNumeroSorte();
-       if(sorte == -3333)
-           for(int i = 0; i < this.inventario.getItens().size(); i++)
-               inventario.getItens().get(i).addQtd(1000);
    }
    
    public void adicionarItem(Item item){
