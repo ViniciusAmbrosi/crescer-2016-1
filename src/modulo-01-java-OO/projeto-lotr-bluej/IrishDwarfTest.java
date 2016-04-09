@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class IrishDwarfTest{
-    
     @Test
     public void anaoGanha6000Chapeus(){
         DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
