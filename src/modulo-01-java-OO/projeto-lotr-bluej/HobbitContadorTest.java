@@ -9,9 +9,7 @@ public class HobbitContadorTest{
    public void retorna180DiferencaProtudosMinimoMultiplo(){
        HobbitContador frumbleFoot = new HobbitContador();
        ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
-       ArrayList<Integer> par = new ArrayList<>();
-       par.add(15);par.add(18);
-       divida.add(par);
+       divida.add(new ArrayList<>(Arrays.asList(15, 18)));
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 180); 
    }
    
@@ -19,9 +17,7 @@ public class HobbitContadorTest{
    public void retorna0DiferencaProtudosMinimoMultiplo(){
        HobbitContador frumbleFoot = new HobbitContador();
        ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
-       ArrayList<Integer> par = new ArrayList<>();
-       par.add(4);par.add(5);
-       divida.add(par);
+       divida.add(new ArrayList<>(Arrays.asList(4, 5)));
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 0); 
    }
    
@@ -29,9 +25,7 @@ public class HobbitContadorTest{
    public void retorna660DiferencaProtudosMinimoMultiplo(){
        HobbitContador frumbleFoot = new HobbitContador();
        ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
-       ArrayList<Integer> par = new ArrayList<>();
-       par.add(12);par.add(60);
-       divida.add(par);
+       divida.add(new ArrayList<>(Arrays.asList(12, 60)));
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 660); 
    }
    
@@ -39,31 +33,74 @@ public class HobbitContadorTest{
    public void retorna840DiferencaProtudosMinimoMultiplo(){
        HobbitContador frumbleFoot = new HobbitContador();
        ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
-       ArrayList<Integer> parUm = new ArrayList<>();
-       ArrayList<Integer> parDois = new ArrayList<>();
-       ArrayList<Integer> parTres = new ArrayList<>();
-       parUm.add(15);parUm.add(18);
-       parDois.add(4);parDois.add(5);
-       parTres.add(12);parTres.add(60);
-       divida.add(parUm);
-       divida.add(parDois);
-       divida.add(parTres);
+       divida.add(new ArrayList<>(Arrays.asList(15, 18)));
+       divida.add(new ArrayList<>(Arrays.asList(4, 5)));
+       divida.add(new ArrayList<>(Arrays.asList(12, 60)));
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
    }
    
    @Test
-   public void retorna840DiferencaProtudosMinimoMultiploComForEach(){
+   public void retorna0ArrayListVazio(){
        HobbitContador frumbleFoot = new HobbitContador();
        ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
-       ArrayList<Integer> parUm = new ArrayList<>();
-       ArrayList<Integer> parDois = new ArrayList<>();
-       ArrayList<Integer> parTres = new ArrayList<>();
-       parUm.add(15);parUm.add(18); 
-       parDois.add(4);parDois.add(5);
-       parTres.add(12);parTres.add(60);
-       divida.add(parUm);
-       divida.add(parDois);
-       divida.add(parTres);
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 0);
+   }
+   
+   @Test
+   public void retorna0PrimeiroValorDoParZero(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       divida.add(new ArrayList<>(Arrays.asList(0, 18)));
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 0);
+   }
+   
+   @Test
+   public void retorna0SegundoValorDoParZero(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       divida.add(new ArrayList<>(Arrays.asList(4, 0)));
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 0);
+   }
+   
+   @Test
+   public void retorna0AmbosValorerDoParZero(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       divida.add(new ArrayList<>(Arrays.asList(0, 0)));
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 0);
+   }
+   
+   @Test
+   public void retorna840ComParesComZero(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       divida.add(new ArrayList<>(Arrays.asList(15, 18)));
+       divida.add(new ArrayList<>(Arrays.asList(0, 18)));
+       divida.add(new ArrayList<>(Arrays.asList(4, 5)));
+       divida.add(new ArrayList<>(Arrays.asList(4, 0)));
+       divida.add(new ArrayList<>(Arrays.asList(12, 60)));
+       divida.add(new ArrayList<>(Arrays.asList(0, 0)));
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
+   }
+   
+   @Test
+   public void retorna0ArrayListNulo(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = null;
+       assertTrue(frumbleFoot.calcularDiferenca(divida) == 0);
+   }
+   
+   @Test
+   public void retorna840ComParesComZeroEParNulo(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<ArrayList<Integer>> divida = new ArrayList<>();
+       divida.add(new ArrayList<>(Arrays.asList(15, 18)));
+       divida.add(new ArrayList<>(Arrays.asList(0, 18)));
+       divida.add(new ArrayList<>(Arrays.asList(4, 5)));
+       divida.add(new ArrayList<>(Arrays.asList(4, 0)));
+       divida.add(new ArrayList<>(Arrays.asList(12, 60)));
+       divida.add(new ArrayList<>(Arrays.asList(0, 0)));
+       divida.add(null);
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
    }
 }
