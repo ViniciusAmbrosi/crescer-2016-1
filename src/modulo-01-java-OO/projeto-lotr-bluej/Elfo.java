@@ -1,15 +1,14 @@
 
-public class Elfo{
-    private String nome;
-    private int experiencia, flechas = 42;
+public class Elfo extends Personagem{
+    private int flechas = 42;
     private Inventario inventario = new Inventario();
     
     public Elfo(String nome){
-        this.nome = nome;
+        super(nome);
     }
     
     public Elfo(String nome, int flechas){
-        this.nome = nome;
+        super(nome);
         this.flechas = flechas;
     } 
     
@@ -30,19 +29,5 @@ public class Elfo{
         anao.perdeVida();
     }
     
-    public void adicionarItem(Item item){
-       this.inventario.addItem(item);
-    }
-   
-    public void perderItem(Item item){
-       this.inventario.removerItem(item);
-    }
-   
-    public Inventario getInventario(){return this.inventario;}
-    
-    public String getNome(){return this.nome;}
-    
-    public int getFlechas(){return this.flechas;}
-    
-    public int getExperiencia(){return this.experiencia;}     
+    public int getFlechas(){return this.flechas;}    
 }

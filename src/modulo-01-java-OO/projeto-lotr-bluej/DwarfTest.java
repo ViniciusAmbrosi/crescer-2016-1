@@ -7,7 +7,7 @@ public class DwarfTest{
     @Test
     public void criaAnaoPrimeiroConstrutor(){
         Dwarf dwarf = new Dwarf("nome");
-        assertEquals("nome", dwarf.getName());
+        assertEquals("nome", dwarf.getNome());
         assertEquals(110, dwarf.getVida());
         assertEquals(Status.VIVO, dwarf.getStatus());
         assertTrue(dwarf.getInventario() != null);
@@ -52,7 +52,7 @@ public class DwarfTest{
     public void anaoNovoConstrutorDataNasc222(){
         DataTerceiraEra dte = new DataTerceiraEra(2,2,2);
         Dwarf dwarf = new Dwarf("nome",dte);
-        assertEquals("nome", dwarf.getName());
+        assertEquals("nome", dwarf.getNome());
         assertEquals(110, dwarf.getVida());
         assertEquals(Status.VIVO, dwarf.getStatus());
         assertTrue(dwarf.getInventario() != null);
@@ -116,7 +116,7 @@ public class DwarfTest{
         Dwarf dwarf = new Dwarf("nome", dte);
         for(int i = 0; i < 3; i++)
             dwarf.perdeVida(); 
-        assertTrue(dwarf.getXp() == 2);
+        assertTrue(dwarf.getExperiencia() == 2);
     }
     
     @Test

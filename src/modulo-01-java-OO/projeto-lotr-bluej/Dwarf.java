@@ -1,27 +1,22 @@
 
-public class Dwarf{
-   private int vida, xp = 0;
-   private String name;
-   private Status status;
-   protected Inventario inventario;
+public class Dwarf extends Personagem{
+   private int vida = 110;
+   private Status status = Status.VIVO;
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
    
-   public Dwarf(String name){
-       this.name = name;
-       this.vida = 110;
-       this.status = status.VIVO;
-       this.inventario = new Inventario();
+   public Dwarf(String nome){
+       super(nome);
    }
    
-   public Dwarf(String name, DataTerceiraEra dte){
-       this(name);
-       this.dataNasc = dte;
+   public Dwarf(String nome, DataTerceiraEra dte){
+       super(nome);
+       dataNasc = dte;
    }
 
    public void perdeVida(){
        double numeroSorte = getNumeroSorte();
        if(numeroSorte < 0){
-           xp += 2;
+           experiencia += 2;
            return;
        }
        else if(numeroSorte <= 100)   
@@ -39,10 +34,10 @@ public class Dwarf{
        double numeroSorte = 101;
        boolean ehBissexto = dataNasc.ehBissexto();
        boolean vidaEntreOitentaENoventa = this.vida >= 80 && this.vida <=90;
-       boolean nameEhSeixasOuMeireles = this.name != null && (this.name.equals("Seixas") || this.name.equals("Meireles"));
+       boolean nomeEhSeixasOuMeireles = this.nome != null && (this.nome.equals("Seixas") || this.nome.equals("Meireles"));
        return ehBissexto ?
               vidaEntreOitentaENoventa ? -33 * 101 : numeroSorte :
-              nameEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
+              nomeEhSeixasOuMeireles ? (33 * 101) % 100 : numeroSorte;
    }
    
    public void tentarSorte(){
@@ -52,21 +47,7 @@ public class Dwarf{
                inventario.getItens().get(i).addQtd(1000);
    }
    
-   public void adicionarItem(Item item){
-       this.inventario.addItem(item);
-   }
-   
-   public void perderItem(Item item){
-       this.inventario.removerItem(item);
-   }
-   
-   public int getXp(){return this.xp;}
-   
-   public Inventario getInventario(){return this.inventario;}
-   
    public Status getStatus(){return this.status;}
-   
-   public String getName(){return this.name;}
    
    public int getVida(){return this.vida;}
    
