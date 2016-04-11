@@ -30,10 +30,10 @@ public class HobbitContador{
     
     public int obterMaiorMultiploDeTresAte(int numero){ 
         int maior = 0; //retorna maior, logo nao é necessario ArrayList
-        for (int i = 3; i <= numero; i += 3){ //começar com i em 3, já que se i < 3 nao vai ser multiplo do mesmo. Variavel utilizada como parametro invalida.
+        for (int i = numero; i >= 0; i--){ //começar com i em 3, já que se i < 3 nao vai ser multiplo do mesmo. Variavel utilizada como parametro invalida.
             if (i % 3 == 0 && i > maior){ //nao verificava se o valor era maior, e alocava todos multiplos de 3 em um arrayList
                 maior = i;
-                //nao é necessario utilizar continue;
+                break;
             }
         }
         return maior;
