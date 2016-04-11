@@ -2,6 +2,7 @@
 public class Elfo{
     private String nome;
     private int experiencia, flechas = 42;
+    private Inventario inventario = new Inventario();
     
     public Elfo(String nome){
         this.nome = nome;
@@ -28,6 +29,16 @@ public class Elfo{
         flechas--;
         anao.perdeVida();
     }
+    
+    public void adicionarItem(Item item){
+       this.inventario.addItem(item);
+    }
+   
+    public void perderItem(Item item){
+       this.inventario.removerItem(item);
+    }
+   
+    public Inventario getInventario(){return this.inventario;}
     
     public String getNome(){return this.nome;}
     
