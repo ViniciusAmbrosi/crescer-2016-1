@@ -43,7 +43,7 @@ public class ElfoTest{
         Elfo elfo = new Elfo("nome");
         Dwarf dwarf = new Dwarf("nome");
         elfo.atirarFlecha(dwarf);
-        assertEquals(100, dwarf.getVida());
+        assertTrue(dwarf.getVida() == 100);
     }
     
     @Test

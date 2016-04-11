@@ -3,12 +3,12 @@ public class Elfo extends Personagem{
     protected int flechas;
     
     public Elfo(String nome){
-        super(nome, 100);
+        super(nome, 100.0);
         this.flechas = 42;
     }
     
     public Elfo(String nome, int flechas){
-        super(nome, 100);
+        super(nome, 100.0);
         this.flechas = flechas;
     } 
     
@@ -24,8 +24,8 @@ public class Elfo extends Personagem{
     }
     
     public void atirarFlecha(Dwarf anao){
-        experiencia++;
-        flechas--;
+        this.experiencia++;
+        this.flechas--;
         anao.perdeVida();
     }
     

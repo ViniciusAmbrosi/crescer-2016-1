@@ -3,11 +3,11 @@ public class Dwarf extends Personagem{
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
    
    public Dwarf(String nome){
-       super(nome, 110);
+       super(nome, 110.0);
    }
    
    public Dwarf(String nome, DataTerceiraEra dte){
-       super(nome, 110);
+       super(nome, 110.0);
        dataNasc = dte;
    }
 
@@ -20,7 +20,7 @@ public class Dwarf extends Personagem{
        else if(numeroSorte <= 100)   
            return;
        else{
-           int vidaAposFlechada = vida - 10;
+           double vidaAposFlechada = vida - 10;
            if(vidaAposFlechada == 0)
                 status = status.MORTO;
            if(vida > 0)

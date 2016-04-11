@@ -8,7 +8,7 @@ public class DwarfTest{
     public void criaAnaoPrimeiroConstrutor(){
         Dwarf dwarf = new Dwarf("nome");
         assertEquals("nome", dwarf.getNome());
-        assertEquals(110, dwarf.getVida());
+        assertTrue(110 == dwarf.getVida());
         assertEquals(Status.VIVO, dwarf.getStatus());
         assertTrue(dwarf.getInventario() != null);
         assertEquals(1, dwarf.getDataNasc().getDia());
@@ -29,14 +29,14 @@ public class DwarfTest{
         Dwarf dwarf = new Dwarf("nome");
         for(int i = 0; i < 13; i++)
             dwarf.perdeVida();
-        assertEquals(0, dwarf.getVida());
+        assertTrue(0 == dwarf.getVida());
     }
     
     @Test
     public void testePerdeVida(){
         Dwarf dwarf = new Dwarf("nome");
         dwarf.perdeVida();
-        assertEquals(100, dwarf.getVida());
+        assertTrue(100 == dwarf.getVida());
     }
     
     @Test
@@ -53,7 +53,7 @@ public class DwarfTest{
         DataTerceiraEra dte = new DataTerceiraEra(2,2,2);
         Dwarf dwarf = new Dwarf("nome",dte);
         assertEquals("nome", dwarf.getNome());
-        assertEquals(110, dwarf.getVida());
+        assertTrue(110 == dwarf.getVida());
         assertEquals(Status.VIVO, dwarf.getStatus());
         assertTrue(dwarf.getInventario() != null);
         assertEquals(2, dwarf.getDataNasc().getDia());
