@@ -11,9 +11,18 @@ public class ElfoNoturno extends Elfo{
     /**Nao, elfos nao podem morrer atirando flechas. Pq sempre perdera 5% da vida atual,
     logo, nunca morrendo*/
     public void atirarFlecha(Dwarf anao){
+        if(status == Status.MORTO)
+            return;
         this.experiencia += 3;
         this.flechas--;
         anao.perdeVida();
-        this.vida = this.vida * 0.05;
+        double vidaAposFlechada = vida - 5;//vida menos 5% vida maxima
+        if(vidaAposFlechada == 0){
+            status = status.MORTO;
+            vida = 0;
+        }
+        if(vida > 0)
+            vida = vidaAposFlechada;
     }
+    /**Agora elfos morre, pois perdem 5% da vida total*/
 }
