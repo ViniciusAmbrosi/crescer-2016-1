@@ -1,10 +1,10 @@
 
 public class Elfo extends Personagem{
-    private int flechas = 42;
-    private Inventario inventario = new Inventario();
+    protected int flechas;
     
     public Elfo(String nome){
         super(nome);
+        this.flechas = 42;
     }
     
     public Elfo(String nome, int flechas){

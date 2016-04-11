@@ -3,36 +3,36 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ElfoTest{
+public class ElfoVerdeVerdeTest{
     @Test
-    public void criaElfoTesteNome(){
-        Elfo elfo = new Elfo("nome");
+    public void criaElfoVerdeTesteNome(){
+        ElfoVerde elfo = new ElfoVerde("nome");
         assertEquals("nome", elfo.getNome());
     }
     
     @Test
-    public void criaElfoTesteFlecha(){
-        Elfo elfo = new Elfo("nome");
+    public void criaElfoVerdeTesteFlecha(){
+        ElfoVerde elfo = new ElfoVerde("nome");
         assertEquals(42, elfo.getFlechas());
     }
     
     @Test
-    public void criaElfoTesteExp(){
-        Elfo elfo = new Elfo("nome");
+    public void criaElfoVerdeTesteExp(){
+        ElfoVerde elfo = new ElfoVerde("nome");
         assertEquals(0, elfo.getExperiencia());
     }
 
     @Test
     public void atiraFlechaAnaoTesteXp(){
-        Elfo elfo = new Elfo("nome");
+        ElfoVerde elfo = new ElfoVerde("nome");
         Dwarf dwarf = new Dwarf("nome");
         elfo.atirarFlecha(dwarf);
-        assertEquals(1, elfo.getExperiencia());
+        assertEquals(2, elfo.getExperiencia());
     }
         
     @Test
     public void atiraFlechaAnaoTesteFlecha(){
-        Elfo elfo = new Elfo("nome");
+        ElfoVerde elfo = new ElfoVerde("nome");
         Dwarf dwarf = new Dwarf("nome");
         elfo.atirarFlecha(dwarf);
         assertEquals(41, elfo.getFlechas());
@@ -40,7 +40,7 @@ public class ElfoTest{
        
     @Test
     public void atiraFlechaAnaoTesteVidaAnao(){
-        Elfo elfo = new Elfo("nome");
+        ElfoVerde elfo = new ElfoVerde("nome");
         Dwarf dwarf = new Dwarf("nome");
         elfo.atirarFlecha(dwarf);
         assertEquals(100, dwarf.getVida());
@@ -48,13 +48,13 @@ public class ElfoTest{
     
     @Test
     public void elfoTesteToString(){
-        Elfo elfo = new Elfo("nome");
+        ElfoVerde elfo = new ElfoVerde("nome");
         assertEquals("nome possui 42 flechas e 0 níveis de experiência", elfo.toString());
     }
     
     @Test
     public void elfoSegundoConstrutor(){
-        Elfo elfo = new Elfo("nome", 45);
+        ElfoVerde elfo = new ElfoVerde("nome", 45);
         assertEquals("nome", elfo.getNome());
         assertEquals(45, elfo.getFlechas());
         assertEquals(0, elfo.getExperiencia());
@@ -62,7 +62,7 @@ public class ElfoTest{
     
     @Test
     public void retorna100VidaIrishDwarf(){
-        Elfo elfo = new Elfo("legolas");
+        ElfoVerde elfo = new ElfoVerde("legolas");
         Dwarf dwarf = new IrishDwarf("nome");
         elfo.atirarFlecha(dwarf);
         assertTrue(dwarf.getVida() == 100);
