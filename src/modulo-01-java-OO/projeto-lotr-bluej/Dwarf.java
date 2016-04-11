@@ -1,15 +1,13 @@
 
 public class Dwarf extends Personagem{
-   private int vida = 110;
-   private Status status = Status.VIVO;
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
    
    public Dwarf(String nome){
-       super(nome);
+       super(nome, 110);
    }
    
    public Dwarf(String nome, DataTerceiraEra dte){
-       super(nome);
+       super(nome, 110);
        dataNasc = dte;
    }
 
@@ -46,10 +44,6 @@ public class Dwarf extends Personagem{
            for(int i = 0; i < this.inventario.getItens().size(); i++)
                inventario.getItens().get(i).addQtd(1000);
    }
-   
-   public Status getStatus(){return this.status;}
-   
-   public int getVida(){return this.vida;}
    
    public DataTerceiraEra getDataNasc(){return this.dataNasc;}
 }

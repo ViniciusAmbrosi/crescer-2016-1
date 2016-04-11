@@ -67,6 +67,14 @@ public class ElfoVerdeVerdeTest{
         elfo.atirarFlecha(dwarf);
         assertTrue(dwarf.getVida() == 100);
     }
+    
+    @Test
+    public void adicionaEspadaDeAçoValiriano(){
+        ElfoVerde elfo = new ElfoVerde("legolas");
+        Item item = new Item(1, "Espada de aço valiriano");
+        elfo.adicionarItem(item);
+        assertTrue(elfo.getInventario().getItens().get(0).getDescricao().equals("Espada de aço valiriano"));
+    }
 }
 
 
