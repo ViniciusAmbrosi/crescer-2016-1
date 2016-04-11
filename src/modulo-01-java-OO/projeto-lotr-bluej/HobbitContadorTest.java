@@ -121,4 +121,21 @@ public class HobbitContadorTest{
        HobbitContador frumbleFoot = new HobbitContador();
        assertTrue(frumbleFoot.obterMaiorMultiploDeTresAte(0) == 0);
    }
+   
+   @Test
+   public void retorna0369MultiplosDeTres10(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<Integer> mult = frumbleFoot.obterMultiplosDeTresAte(10);
+       assertTrue(mult.get(0) == 0);
+       assertTrue(mult.get(1) == 3);
+       assertTrue(mult.get(2) == 6);
+       assertTrue(mult.get(3) == 9);
+   }
+   
+   @Test
+   public void retorna0MultiplosDeTres0(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       ArrayList<Integer> mult = frumbleFoot.obterMultiplosDeTresAte(0);
+       assertTrue(mult.get(0) == 0);
+   }
 }

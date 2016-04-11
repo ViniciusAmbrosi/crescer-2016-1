@@ -38,4 +38,13 @@ public class HobbitContador{
         }
         return maior;
     }
+    
+    public ArrayList<Integer> obterMultiplosDeTresAte(int numero){
+        ArrayList<Integer> multiplos = new ArrayList<>(Arrays.asList(0));
+        for (int i = 3; i <= numero; i += 3){ //otimiza laço com i = 3 e somando mais 3 a i
+            if (i % 3 == 0) //break sairia do laço se i % 3 fosse zero
+            multiplos.add(i);
+        }
+        return multiplos;
+    }
 }
