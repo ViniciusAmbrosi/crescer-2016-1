@@ -103,4 +103,22 @@ public class HobbitContadorTest{
        divida.add(null);
        assertTrue(frumbleFoot.calcularDiferenca(divida) == 840); 
    }
+   
+   @Test
+   public void retorna9MaiorMultiplo10(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       assertTrue(frumbleFoot.obterMaiorMultiploDeTresAte(10) == 9);
+   }
+   
+   @Test
+   public void retorna18MaiorMultiplo20(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       assertTrue(frumbleFoot.obterMaiorMultiploDeTresAte(20) == 18);
+   }
+   
+   @Test
+   public void retorna0MaiorMultiplo0(){
+       HobbitContador frumbleFoot = new HobbitContador();
+       assertTrue(frumbleFoot.obterMaiorMultiploDeTresAte(0) == 0);
+   }
 }
