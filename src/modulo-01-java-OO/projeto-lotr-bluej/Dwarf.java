@@ -3,7 +3,7 @@ public class Dwarf{
    private int vida, xp = 0;
    private String name;
    private Status status;
-   private Inventario inventario;
+   protected Inventario inventario;
    private DataTerceiraEra dataNasc = new DataTerceiraEra(1,1,1);
    
    public Dwarf(String name){
