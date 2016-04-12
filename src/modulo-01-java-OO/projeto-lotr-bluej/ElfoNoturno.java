@@ -26,5 +26,4 @@ public class ElfoNoturno extends Elfo{
             vida = vidaAposAtirarFlecha;
         return vida;
     }
-    /**Perdendo 5% da vida total, os elfos podem morrer ao lançar flechas.*/
 }
