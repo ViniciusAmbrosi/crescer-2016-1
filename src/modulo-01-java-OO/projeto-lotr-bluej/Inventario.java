@@ -32,23 +32,21 @@ public class Inventario{
     } 
     
     public void ordenarItens(){
-        int size = itens.size();
-        boolean trocou;
-        for(int i = size; i >= 1; i--){
-            trocou = false;
-            for(int j = 0; j < i - 1; j++){
-                Item current = itens.get(j);
-                Item next = itens.get(j+1);
-                if(current.getQtd() > next.getQtd()){
-                    itens.set(j, next); //passa j+1 para j
-                    itens.set(j+1, current); //pass j para j + 1
-                    trocou = true; //valida troca
-                }
+        Collections.sort(this.itens, new Comparator<Item>() {
+            public int compare(Item item1, Item item2) {
+                return Integer.compare(item1.getQtd(), item2.getQtd());
             }
-            if(!trocou)
-                break;
-        }
+        });
     }
     
+    public void adiciona1000UnidadesPorItem(){
+        for(Item item : this.itens)
+            item.adiciona1000Unidades();
+    }
+    
+    public void adicionaItemProporcionalQuantidade(){
+        for(Item item : this.itens)
+            item.adicionaItemProporcionalQuantidade();
+    }
     public ArrayList<Item> getItens(){return this.itens;}   
 }

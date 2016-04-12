@@ -8,8 +8,12 @@ public class Item{
         this.descricao = descricao;
     }
     
-    public void addQtd(int qtd){
-        this.qtd += qtd;
+    public void adiciona1000Unidades(){
+        this.qtd += 1000;
+    }
+    
+    public void adicionaItemProporcionalQuantidade(){
+        this.qtd += (this.qtd * (this.qtd + 1) /2) * 1000;
     }
     
     public int getQtd(){return this.qtd;}
