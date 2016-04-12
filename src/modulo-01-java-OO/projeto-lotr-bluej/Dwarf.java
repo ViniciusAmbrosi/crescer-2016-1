@@ -12,6 +12,8 @@ public class Dwarf extends Personagem{
    }
 
    public void perdeVida(){
+       if(status == Status.MORTO)
+           return;
        double numeroSorte = getNumeroSorte();
        if(numeroSorte < 0){
            experiencia += 2;
@@ -41,8 +43,7 @@ public class Dwarf extends Personagem{
    public void tentarSorte(){
        double sorte = getNumeroSorte();
        if(sorte == -3333)
-           for(int i = 0; i < this.inventario.getItens().size(); i++)
-               inventario.getItens().get(i).addQtd(1000);
+           inventario.adiciona1000UnidadesPorItem();
    }
    
    public DataTerceiraEra getDataNasc(){return this.dataNasc;}
