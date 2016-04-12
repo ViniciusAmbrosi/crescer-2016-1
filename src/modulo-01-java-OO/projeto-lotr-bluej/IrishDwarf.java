@@ -9,7 +9,7 @@ public class IrishDwarf extends Dwarf{
        super(name, dte);
    }
    
-      public void tentarSorte(){
+   public void tentarSorte(){
        double sorte = getNumeroSorte();
        if(sorte == -3333)
            this.inventario.adicionaItemProporcionalQuantidade();

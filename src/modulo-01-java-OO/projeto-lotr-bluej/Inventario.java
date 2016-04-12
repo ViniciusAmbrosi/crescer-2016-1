@@ -48,5 +48,6 @@ public class Inventario{
         for(Item item : this.itens)
             item.adicionaItemProporcionalQuantidade();
     }
+    
     public ArrayList<Item> getItens(){return this.itens;}   
 }
