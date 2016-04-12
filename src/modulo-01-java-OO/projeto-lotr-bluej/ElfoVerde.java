@@ -9,11 +9,12 @@ public class ElfoVerde extends Elfo{
     }
     
     public void atirarFlecha(Dwarf anao){
-        super.atirarFlecha(anao, 2);
+       this.experiencia++; 
+       super.atirarFlecha(anao);
     }
     
     public void adicionarItem(Item item){
-        if(item == null)
+        if(item == null || item.getDescricao() == null)
             return;
         if(item.getDescricao().equals("Espada de aço valiriano") || 
            item.getDescricao().equals("Arco e flecha de Vidro"))

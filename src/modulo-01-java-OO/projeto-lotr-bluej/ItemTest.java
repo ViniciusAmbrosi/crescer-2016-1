@@ -10,4 +10,11 @@ public class ItemTest{
         assertEquals(1, item.getQtd());
         assertTrue(item.getDescricao().equals("espada"));
     }
+    
+    @Test
+    public void umItemNaoEhIgualAoOutro(){
+        Item item1 = new Item(1, "Espada");
+        Item item2 = new Item(2, "Espada");
+        assertFalse(item1.equals(item2));
+    }
 }

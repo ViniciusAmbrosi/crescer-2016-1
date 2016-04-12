@@ -3,7 +3,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ElfoNoturnoNoturnoTest{
+public class ElfoNoturnoTest{
     @Test
     public void atiraFlechaAnaoTesteRetorna3XpEPerde5Vida(){
         ElfoNoturno elfo = new ElfoNoturno("nome");
@@ -19,7 +19,7 @@ public class ElfoNoturnoNoturnoTest{
         Dwarf dwarf = new Dwarf("nome");
         for(int i = 0; i < 10; i++)
             elfo.atirarFlecha(dwarf);
-        assertEquals(59.87369392383789, elfo.getVida(), 0.00000000000000);
+        assertEquals(59.87369392383786, elfo.getVida(), 0.00000000000000);
     }
     
     @Test public void elfoNoturnoMorreSemVidaNegativa(){

@@ -16,6 +16,13 @@ public class Item{
         this.qtd += (this.qtd * (this.qtd + 1) /2) * 1000;
     }
     
+    public boolean equals(Object obj){
+        Item item = ((Item)obj);
+        return this.qtd == item.qtd && 
+               this.descricao != null && obj != null 
+               && this.descricao.equals(item.descricao);
+    }
+    
     public int getQtd(){return this.qtd;}
     
     public String getDescricao(){return this.descricao;}

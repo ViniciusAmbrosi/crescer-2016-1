@@ -23,14 +23,10 @@ public class Elfo extends Personagem{
                               experienciaAbs ? "nível" : "níveis");                    
     }
     
-    protected void atirarFlecha(Dwarf anao, int xp){
-        this.experiencia += xp;
+    public void atirarFlecha(Dwarf anao){
+        this.experiencia++;
         this.flechas--;
         anao.perdeVida();
-    }
-    
-    public void atirarFlecha(Dwarf anao){
-        atirarFlecha(anao, 1);
     }
     
     public int getFlechas(){return this.flechas;}    
