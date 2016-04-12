@@ -13,10 +13,19 @@ public class ElfoNoturnoNoturnoTest{
         assertTrue(elfo.getVida() == 95);
     }
     
+    @Test
+    public void atiraFlechaAnaoTesteRetorna5987369392383789Vida(){
+        ElfoNoturno elfo = new ElfoNoturno("nome");
+        Dwarf dwarf = new Dwarf("nome");
+        for(int i = 0; i < 10; i++)
+            elfo.atirarFlecha(dwarf);
+        assertEquals(59.87369392383789, elfo.getVida(), 0.00000000000000);
+    }
+    
     @Test public void elfoNoturnoMorreSemVidaNegativa(){
         ElfoNoturno elfo = new ElfoNoturno("nome");
         Dwarf dwarf = new Dwarf("nome");
-        for(int i = 0; i <= 22; i++)
+        for(int i = 0; i <= 100; i++)
             elfo.atirarFlecha(dwarf);
         assertTrue(elfo.getStatus() == Status.MORTO);
         assertTrue(elfo.getVida() == 0);

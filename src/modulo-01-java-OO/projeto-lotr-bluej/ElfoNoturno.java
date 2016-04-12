@@ -16,13 +16,15 @@ public class ElfoNoturno extends Elfo{
     }
     
     /**Perdendo 5% da vida atual, os elfos não morrem ao lançar flechas, pois nunca perderão 100% da vida.*/
-    private void perdeVida(){
-        double vidaAposAtirarFlecha = vida - 5;//vida menos 5% vida maxima
-        if(vidaAposAtirarFlecha == 0){
+    public double perdeVida(){
+        double vidaAposAtirarFlecha = this.vida - this.vida * 0.05;
+        if(vidaAposAtirarFlecha < 1){
             status = status.MORTO;
+            this.vida = 0;
         }
         if(vida > 0)
             vida = vidaAposAtirarFlecha;
+        return vida;
     }
     /**Perdendo 5% da vida total, os elfos podem morrer ao lançar flechas.*/
 }
