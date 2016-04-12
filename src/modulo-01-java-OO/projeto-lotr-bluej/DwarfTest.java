@@ -161,4 +161,27 @@ public class DwarfTest{
         dwarf.tentarSorte();
         assertTrue(dwarf.getInventario().getItens().get(0).getQtd() == 1001);
     }
+    
+    @Test
+    public void descobrirMenosVidaComDoisIguais(){
+        Dwarf primeiro = new Dwarf("primeiro");
+        Dwarf segundo = new Dwarf("segundo");
+        assertTrue(Dwarf.descobrirMenosVida(primeiro,segundo) == segundo);
+    }
+    
+    @Test
+    public void descobrirMenosVidaComPrimeiroMenor(){
+        Dwarf primeiro = new Dwarf("primeiro");
+        primeiro.perdeVida();
+        Dwarf segundo = new Dwarf("segundo");
+        assertTrue(Dwarf.descobrirMenosVida(primeiro,segundo) == primeiro);
+    }
+    
+    @Test
+    public void descobrirMenosVidaComSegundoMenor(){
+        Dwarf primeiro = new Dwarf("primeiro");
+        Dwarf segundo = new Dwarf("segundo");
+        segundo.perdeVida();
+        assertTrue(Dwarf.descobrirMenosVida(primeiro,segundo) == segundo);
+    }
 }

@@ -46,5 +46,9 @@ public class Dwarf extends Personagem{
            inventario.adiciona1000UnidadesPorItem();
    }
    
+   public static Dwarf descobrirMenosVida(Dwarf d1, Dwarf d2){
+       return d1.vida < d2.vida ? d1 : d2;
+   }
+   
    public DataTerceiraEra getDataNasc(){return this.dataNasc;}
 }
