@@ -12,21 +12,12 @@ public class HobbitContador{
         for(ArrayList<Integer> pares : arrayDePares){
             int primeiroNumero = pares.get(0);
             int segundoNumero = pares.get(1);
-            mmcPares = mmc(primeiroNumero, segundoNumero);
+            mmcPares = new Calculador(primeiroNumero, segundoNumero).mmc();
             produtoPares = primeiroNumero * segundoNumero;
             produtosMenosMmc += produtoPares - mmcPares;
         } 
         return produtosMenosMmc;
     }
-    
-    private int mmc (int a, int b){
-        if(b == 0)
-            return 0;
-        int aux = a;
-        while(a % b != 0) 
-            a += aux;
-        return a;
-    }    
     
     public int obterMaiorMultiploDeTresAte(int numero){ 
         int maior = 0; //retorna maior, logo nao é necessario ArrayList
@@ -47,4 +38,21 @@ public class HobbitContador{
         }
         return multiplos;
     }
+    
+    private class Calculador{
+        private int primeiroNumero, segundoNumero;
+        public Calculador(int primeiroNumero, int segundoNumero){
+            this.primeiroNumero = primeiroNumero;
+            this.segundoNumero = segundoNumero;
+        }
+        
+        private int mmc(){
+            if(segundoNumero == 0)
+                return 0;
+            int aux = primeiroNumero;
+            while(primeiroNumero % segundoNumero != 0) 
+                primeiroNumero += aux;
+                return primeiroNumero;
+        }
+    }       
 }
