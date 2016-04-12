@@ -67,6 +67,19 @@ public class ElfoTest{
         elfo.atirarFlecha(dwarf);
         assertTrue(dwarf.getVida() == 100);
     }
+    
+    @Test
+    public void conta10Elfos(){
+        for(int i = 0; i < 10; i++){
+            Elfo elfo = new Elfo("elfo" + i);
+        }
+        assertTrue(Elfo.countElfo == 10);
+    }
+    
+    @Test
+    public void conta0Elfos(){
+        assertTrue(Elfo.countElfo == 0);
+    }
 }
 
 

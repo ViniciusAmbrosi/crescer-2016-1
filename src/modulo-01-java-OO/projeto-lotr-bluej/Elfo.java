@@ -1,15 +1,18 @@
 
 public class Elfo extends Personagem{
     protected int flechas;
+    protected static int countElfo;
     
     public Elfo(String nome){
         super(nome, 100.0);
         this.flechas = 42;
+        countElfo++;
     }
     
     public Elfo(String nome, int flechas){
-        super(nome, 100.0);
+        this(nome);
         this.flechas = flechas;
+        countElfo++;
     } 
     
     public String toString(){
