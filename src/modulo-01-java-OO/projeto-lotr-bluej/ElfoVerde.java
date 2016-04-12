@@ -9,9 +9,7 @@ public class ElfoVerde extends Elfo{
     }
     
     public void atirarFlecha(Dwarf anao){
-        this.experiencia += 2;
-        this.flechas--;
-        anao.perdeVida();
+        super.atirarFlecha(anao, 2);
     }
     
     public void adicionarItem(Item item){
