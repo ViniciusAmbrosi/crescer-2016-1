@@ -70,15 +70,17 @@ public class ElfoTest{
     
     @Test
     public void conta10Elfos(){
+        int contador = Elfo.countElfo + 10;
         for(int i = 0; i < 10; i++){
             Elfo elfo = new Elfo("elfo" + i);
         }
-        assertTrue(Elfo.countElfo == 10);
+        assertEquals(Elfo.countElfo, contador);
     }
     
     @Test
     public void conta0Elfos(){
-        assertTrue(Elfo.countElfo == 0);
+        int contador = Elfo.countElfo;
+        assertEquals(Elfo.countElfo, contador);
     }
 }
 
