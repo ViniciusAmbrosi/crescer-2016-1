@@ -4,6 +4,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ElfoTest{
+    
+    /**
+     *     @Before
+    public void tearDown() {
+        System.gc();
+        System.runFinalization();
+    }
+     */
     @Test
     public void criaElfoTesteNome(){
         Elfo elfo = new Elfo("nome");
