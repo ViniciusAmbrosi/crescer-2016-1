@@ -89,4 +89,83 @@ public class InventarioTest{
         assertTrue(inv.getItens().get(0) == adaga);
         assertTrue(inv.getItens().get(1) == espada);
     }
+    
+    public void primeiroInventarioNulo(){
+        Inventario inv1 = null;
+        Inventario inv2 = new Inventario();
+        Item item1 = new Item(2, "Poção");
+        inv2.addItem(item1);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    public void segundoInventarioNulo(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = null;
+        Item item1 = new Item(1, "Espada");
+        inv1.addItem(item1);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    public void ambosInventariosNulos(){
+        Inventario inv1 = null;
+        Inventario inv2 = null;
+        assertTrue(inv1.equals(inv2));
+    
+    }
+    
+    public void primeiroInventarioItemNulo(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = null;
+        Item item2 = new Item(2, "Poção");
+        inv1.addItem(item1);
+        inv2.addItem(item2);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    public void segundoInventarioItemNulo(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = new Item(1, "Poção");
+        Item item2 = null;
+        inv1.addItem(item1);
+        inv2.addItem(item2);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    public void ambosInventariosItensNulos(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = null;
+        Item item2 = null;
+        inv1.addItem(item1);
+        inv2.addItem(item2);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    public void inventariosDiferentes(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = new Item(3, "Poção");
+        Item item2 = new Item(2, "Poção");
+        inv1.addItem(item1);
+        inv2.addItem(item2);
+        assertTrue(inv1.equals(inv2));
+    }
+    
+    @Test
+    public void inventariosIguais(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = new Item(1, "Espada");
+        Item item2 = new Item(2, "Poção");
+        Item item3 = new Item(1, "Espada");
+        Item item4 = new Item(2, "Poção");
+        inv1.addItem(item1);
+        inv2.addItem(item3);
+        inv1.addItem(item2);
+        inv2.addItem(item4);
+        assertTrue(inv1.equals(inv2));
+    }
+    
 }

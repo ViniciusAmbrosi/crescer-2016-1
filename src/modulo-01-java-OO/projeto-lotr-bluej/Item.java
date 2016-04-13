@@ -18,6 +18,10 @@ public class Item{
     
     public boolean equals(Object obj){
         Item item = ((Item)obj);
+        if(this == item) //mesmo principio do equals em inventario
+            return true;
+        if(this == null)
+            return false;
         return this.qtd == item.qtd && 
                this.descricao != null && obj != null 
                && this.descricao.equals(item.descricao);

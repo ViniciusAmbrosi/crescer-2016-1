@@ -49,5 +49,23 @@ public class Inventario{
             item.adicionaItemProporcionalQuantidade();
     }
     
+    public boolean equals(Object obj){
+        Inventario invCast = ((Inventario)obj);
+        ArrayList<Item> inv1 = this.itens;
+        ArrayList<Item> inv2 = invCast.itens;
+        if(inv1 == inv2) //se for o mesmo obj ou se nulos
+            return true;
+        if(inv1 == null) //se inv1 é nulo, logo inv2 não é, logo inv1 != inv2
+            return false;
+        if(inv1.size() != inv2.size()) //se nao tiverem mesmo tamanho nao podem ser iguais
+            return false;
+        for(Item item : inv1){
+            if(inv2.contains(item))
+                continue;
+            return false;
+        }
+        return true;
+    }
+    
     public ArrayList<Item> getItens(){return this.itens;}   
 }
