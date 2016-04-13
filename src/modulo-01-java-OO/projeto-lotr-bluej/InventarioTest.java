@@ -168,4 +168,17 @@ public class InventarioTest{
         assertTrue(inv1.equals(inv2));
     }
     
+    @Test
+    public void inventarioComObjetoDuplicado(){
+        Inventario inv1 = new Inventario();
+        Inventario inv2 = new Inventario();
+        Item item1 = new Item(1, "Espada");
+        Item item2 = new Item(2, "Poção");
+        inv1.addItem(item1);
+        inv1.addItem(item1);
+        inv2.addItem(item1);
+        inv2.addItem(item2);
+        assertTrue(inv1.equals(inv2));
+    }
+    
 }
