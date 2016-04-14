@@ -20,6 +20,10 @@ public class Elfo extends Personagem{
         super.finalize();
     }
     
+    public void tentarSorte(){
+        
+    }
+    
     public String toString(){
         boolean flechaAbs = Math.abs(this.flechas) == 1;
         boolean experienciaAbs = Math.abs(this.experiencia) == 1;

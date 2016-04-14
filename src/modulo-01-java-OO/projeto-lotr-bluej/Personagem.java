@@ -21,6 +21,8 @@ public abstract class Personagem{
        this.inventario.removerItem(item);
     }
     
+    public abstract void tentarSorte();
+    
     public boolean equals(Object obj){
         if(this == obj)
             return true;
