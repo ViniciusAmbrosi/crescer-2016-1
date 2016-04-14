@@ -50,5 +50,10 @@ public class Dwarf extends Personagem{
        return d1.vida < d2.vida ? d1 : d2;
    }
    
+   public boolean equals(Object obj){
+       Dwarf aux = (Dwarf) obj;
+       return super.equals(obj) && this.dataNasc.equals(aux.dataNasc);
+   }
+   
    public DataTerceiraEra getDataNasc(){return this.dataNasc;}
 }

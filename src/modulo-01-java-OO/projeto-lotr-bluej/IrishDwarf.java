@@ -1,6 +1,5 @@
 
 public class IrishDwarf extends Dwarf{
-   
    public IrishDwarf(String name){
        super(name);
    }

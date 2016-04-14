@@ -4,14 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ElfoTest{
-    
-    /**
-     *     @Before
+    @After
     public void tearDown() {
         System.gc();
         System.runFinalization();
+    }
     
-     */
     @Test
     public void criaElfoTesteNome(){
         Elfo elfo = new Elfo("nome");
@@ -78,17 +76,15 @@ public class ElfoTest{
     
     @Test
     public void conta10Elfos(){
-        int contador = Elfo.countElfo + 10;
         for(int i = 0; i < 10; i++){
             Elfo elfo = new Elfo("elfo" + i);
         }
-        assertEquals(Elfo.countElfo, contador);
+        assertEquals(11, Elfo.countElfo);
     }
     
     @Test
     public void conta0Elfos(){
-        int contador = Elfo.countElfo;
-        assertEquals(Elfo.countElfo, contador);
+        assertEquals(1, Elfo.countElfo);
     }
 }
 

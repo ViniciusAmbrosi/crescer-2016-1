@@ -14,6 +14,13 @@ public class DataTerceiraEra{
         return multQuatrocentos ? true : multQuatroNaoMultCem; //Se é multiplo de quatrocentos, true, se não, é multiplo de 4 sem ser de 100?
     }
 
+    public boolean equals(Object obj){
+        DataTerceiraEra dte = (DataTerceiraEra) obj;
+        return this.dia == dte.dia ?
+               this.mes == dte.mes ? 
+               this.ano == dte.ano ? true : false : false : false;
+    }
+    
     public int getDia(){return this.dia;}
     
     public int getMes(){return this.mes;}

@@ -70,7 +70,7 @@ public class Inventario{
         Inventario invCast2 = ((Inventario)obj);
         ArrayList<Item> inv1 = invCast.itens;
         ArrayList<Item> inv2 = invCast2.itens;
-        if(inv2 == null) //se inv1 é nulo, logo inv2 não é, logo inv1 != inv2 !!!inv2 pq inv1 NUNCA vai ser nulo para chamar equals
+        if(inv2 == null) //!!!inv2 pq inv1 NUNCA vai ser nulo para chamar equals
             return false;
         if(inv1.size() != inv2.size()) //se nao tiverem mesmo tamanho nao podem ser iguais
             return false;

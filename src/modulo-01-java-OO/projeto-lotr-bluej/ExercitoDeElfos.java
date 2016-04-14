@@ -14,10 +14,6 @@ public class ExercitoDeElfos{
         return exercito.get(nome);
     } 
     
-    public HashMap<String, Elfo> getExercito(){
-        return exercito;
-    }
-    
     public void agrupaPorStatus(){
         for(Elfo value : exercito.values()){
             Status status = value.getStatus();
@@ -27,7 +23,7 @@ public class ExercitoDeElfos{
         }
     }
     
-    public HashMap<Status, ArrayList<Elfo>> getExercitoAgrupado(){
-        return exercitoAgrupado;
-    }
+    public HashMap<Status, ArrayList<Elfo>> getExercitoAgrupado(){return exercitoAgrupado;}
+    
+    public HashMap<String, Elfo> getExercito(){ return exercito;}
 }

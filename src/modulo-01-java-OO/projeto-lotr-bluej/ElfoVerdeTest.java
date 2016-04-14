@@ -4,6 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ElfoVerdeTest{
+    @After
+    public void tearDown() {
+        System.gc();
+        System.runFinalization();
+    }
+    
     @Test
     public void adicionaEspadaDeAçoValiriano(){
         ElfoVerde elfo = new ElfoVerde("legolas");

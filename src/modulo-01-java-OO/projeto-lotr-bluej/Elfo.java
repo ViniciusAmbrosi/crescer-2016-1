@@ -15,6 +15,11 @@ public class Elfo extends Personagem{
         countElfo++;
     } 
     
+    public void finalize() throws Throwable{
+        Elfo.countElfo--;
+        super.finalize();
+    }
+    
     public String toString(){
         boolean flechaAbs = Math.abs(this.flechas) == 1;
         boolean experienciaAbs = Math.abs(this.experiencia) == 1;
@@ -32,5 +37,14 @@ public class Elfo extends Personagem{
         anao.perdeVida();
     }
     
+    public boolean equals(Object obj){
+        Elfo aux = (Elfo) obj;
+        return super.equals(obj) && 
+               this.flechas == aux.flechas ?
+               this.countElfo == aux.countElfo ? true : false : false;
+    }
+    
     public int getFlechas(){return this.flechas;}    
+    
+    public static int getCountElfos(){return Elfo.countElfo;}
 }
