@@ -15,12 +15,14 @@ public class ExercitoDeElfos{
     } 
     
     public void agrupaPorStatus(){
+        exercitoAgrupado.clear();
         for(Elfo value : exercito.values()){
             Status status = value.getStatus();
             if(!exercitoAgrupado.containsKey(status))
                 exercitoAgrupado.put(status, new ArrayList<Elfo>());
             exercitoAgrupado.get(status).add(value);
         }
+        System.runFinalization();
     }
     
     public HashMap<Status, ArrayList<Elfo>> getExercitoAgrupado(){return exercitoAgrupado;}

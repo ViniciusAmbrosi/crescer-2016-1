@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ElfoNoturnoTest{
-    @After
+    @Before
     public void tearDown() {
         System.gc();
         System.runFinalization();
