@@ -66,7 +66,7 @@ public class ExercitoDeElfosTest{
         ede.alistaElfo(elfoVivo);
         ede.alistaElfo(elfoMorto);
         ede.agrupaPorStatus();
-        assertTrue(ede.getExercitoAgrupado().containsKey(Status.VIVO));
-        assertTrue(ede.getExercitoAgrupado().containsKey(Status.MORTO));
+        assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo));
+        assertTrue(ede.getExercitoAgrupado().get(elfoMorto.getStatus()).contains(elfoMorto));
     }
 }

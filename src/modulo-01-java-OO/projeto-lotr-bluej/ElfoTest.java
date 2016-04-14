@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ElfoTest{
-    @After
+    @Before
     public void tearDown() {
         System.gc();
         System.runFinalization();
@@ -79,12 +79,12 @@ public class ElfoTest{
         for(int i = 0; i < 10; i++){
             Elfo elfo = new Elfo("elfo" + i);
         }
-        assertEquals(11, Elfo.countElfo);
+        assertEquals(12, Elfo.countElfo);
     }
     
     @Test
     public void conta0Elfos(){
-        assertEquals(1, Elfo.countElfo);
+        assertEquals(2, Elfo.countElfo);
     }
 }
 
