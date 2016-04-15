@@ -50,7 +50,7 @@ public class ArteDaGuerraTest {
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(6);
 		ede.agrupaPorStatus();
 		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
-		assertEquals(10, ordemAtq.size());
+		assertEquals(3, ordemAtq.size());
 	}
 
 	@Test
@@ -131,7 +131,7 @@ public class ArteDaGuerraTest {
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
 		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
-		assertEquals(5, ordemAtq.size());
+		assertEquals(2, ordemAtq.size());
 	}
 
 	@Test
@@ -152,6 +152,6 @@ public class ArteDaGuerraTest {
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
 		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
-		assertEquals(10, ordemAtq.size());
+		assertEquals(3, ordemAtq.size());
 	}
 }

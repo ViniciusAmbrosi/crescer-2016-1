@@ -8,10 +8,14 @@ public class ArteDaGuerra implements Estrategia {
 			return ordemAtaque;
 		int qtdNoturnos = quantosElfosNoturnosAtacam(exercitoElfos.get(Status.VIVO).size(), dwarfs.size());
 		for (Elfo elfo : exercitoElfos.get(Status.VIVO)) {
-			if (elfo instanceof ElfoNoturno && qtdNoturnos-- <= 0)
+		    boolean ehElfoNoturno = elfo instanceof ElfoNoturno;
+			if (ehElfoNoturno && qtdNoturnos <= 0)
 				continue;
-			for (Dwarf dwarf : dwarfs)
+			for (Dwarf dwarf : dwarfs) {
+				if (ehElfoNoturno && qtdNoturnos-- <= 0)
+					break;
 				elfo.atirarFlecha(dwarf);
+			}
 			ordemAtaque.add(elfo);
 		}
 		return ordemAtaque;
