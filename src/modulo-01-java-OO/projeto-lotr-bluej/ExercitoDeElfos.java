@@ -24,9 +24,9 @@ public class ExercitoDeElfos{
 		System.runFinalization();
 	}
 
-	public ArrayList<Elfo> atacar(Estrategia strat, ArrayList<Dwarf> dwarfs) {
+	public void atacar(Estrategia strat, ArrayList<Dwarf> dwarfs) {
 		agrupaPorStatus();
-		return strat.atacar(exercitoAgrupado, dwarfs);
+		strat.atacar(exercitoAgrupado, dwarfs);
 	}
 
 	public HashMap<Status, ArrayList<Elfo>> getExercitoAgrupado() {
@@ -89,7 +89,8 @@ public class ExercitoDeElfos{
 						throw new EstrategiaInvalidaException();
 				}
 				//ATACA
-				ArrayList<Elfo> atacaram = ede.atacar(strat, hordaDwarfs);
+				ede.atacar(strat, hordaDwarfs);
+				ArrayList<Elfo> atacaram = strat.getOrdemDoUltimoAtaque();
 				System.out.println("A ordem de ataque foi: ");
 				for(Elfo elfo : atacaram)
 					System.out.println(elfo.getClass() + " " + elfo.getNome());		

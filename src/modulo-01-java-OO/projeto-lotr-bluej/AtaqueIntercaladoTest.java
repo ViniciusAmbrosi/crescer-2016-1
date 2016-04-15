@@ -47,7 +47,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(7, 3);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(6);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -57,7 +58,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(0, 10);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(6);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -67,7 +69,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(5, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ataqueFoiIntercalado(ordemAtq));
 	}
 
@@ -77,7 +80,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(5, 5);
 		ArrayList<Dwarf> dwarfs = null;
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ataqueFoiIntercalado(ordemAtq));
 	}
 
@@ -87,7 +91,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(0, 0);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -97,7 +102,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(10, 10);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(0);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -108,7 +114,8 @@ public class AtaqueIntercaladoTest {
 		ede.alistaElfo(null);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -118,7 +125,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(1, 200);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -128,7 +136,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(1, 1);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ataqueFoiIntercalado(ordemAtq));
 	}
 
@@ -138,7 +147,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(0, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -148,7 +158,8 @@ public class AtaqueIntercaladoTest {
 		ExercitoDeElfos ede = factoryElfos(5, 0);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 
@@ -159,7 +170,8 @@ public class AtaqueIntercaladoTest {
 		mataElfos(ede, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ataqueFoiIntercalado(ordemAtq));
 	}
 
@@ -170,7 +182,8 @@ public class AtaqueIntercaladoTest {
 		mataElfos(ede, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
-		ArrayList<Elfo> ordemAtq = strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
+		ArrayList<Elfo> ordemAtq = strat.getOrdemDoUltimoAtaque();
 		assertTrue(ordemAtq.isEmpty());
 	}
 }

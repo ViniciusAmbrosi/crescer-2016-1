@@ -4,13 +4,12 @@ public class AtaqueIntercalado implements Estrategia {
 	ArrayList<Elfo> ordemAtaque = new ArrayList<Elfo>();
 	ArrayList<Elfo> delayed = new ArrayList<>();
 
-	public ArrayList<Elfo> atacar(HashMap<Status, ArrayList<Elfo>> exercitoElfos, ArrayList<Dwarf> dwarfs) {
+	public void atacar(HashMap<Status, ArrayList<Elfo>> exercitoElfos, ArrayList<Dwarf> dwarfs) {
 		if (dwarfs == null || exercitoElfos.get(Status.VIVO) == null || dwarfs.isEmpty()
 				|| mesmaQuantidadeVerdesNoturnos(exercitoElfos))
-			return ordemAtaque;
+			return;
 		Elfo previous = new Elfo("previous");
 		ordenaAtaque(previous, dwarfs, exercitoElfos.get(Status.VIVO));
-		return ordemAtaque;
 	}
 
 	private boolean mesmaQuantidadeVerdesNoturnos(HashMap<Status, ArrayList<Elfo>> exercitoElfos) {
@@ -51,4 +50,8 @@ public class AtaqueIntercalado implements Estrategia {
 			elfo.atirarFlecha(dwarf);
 		ordemAtaque.add(elfo);
 	}
+	
+	public ArrayList<Elfo> getOrdemDoUltimoAtaque(){
+       return ordemAtaque;
+    }
 }
