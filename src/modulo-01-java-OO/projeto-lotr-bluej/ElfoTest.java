@@ -79,12 +79,12 @@ public class ElfoTest{
         for(int i = 0; i < 10; i++){
             Elfo elfo = new Elfo("elfo" + i);
         }
-        assertEquals(12, Elfo.countElfo);
+        assertEquals(11, Elfo.countElfo);
     }
     
     @Test
     public void conta0Elfos(){
-        assertEquals(2, Elfo.countElfo);
+        assertEquals(1, Elfo.countElfo);
     }
 }
 

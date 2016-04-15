@@ -60,13 +60,25 @@ public class ExercitoDeElfosTest{
     @Test
     public void agrupaElfosPorStatus(){
         ElfoVerde elfoVivo = new ElfoVerde("Legolas");
+        ElfoVerde elfoVivo1 = new ElfoVerde("Pdra");
+        ElfoVerde elfoVivo2 = new ElfoVerde("Legasdlas");
+        ElfoVerde elfoVivo3 = new ElfoVerde("Legolfs");
+        ElfoVerde elfoVivo4 = new ElfoVerde("Legolaas");
         ElfoNoturno elfoMorto = new ElfoNoturno("Salogel");
         mataElfo(elfoMorto);
         ExercitoDeElfos ede = new ExercitoDeElfos();
         ede.alistaElfo(elfoVivo);
+        ede.alistaElfo(elfoVivo1);
+        ede.alistaElfo(elfoVivo2);
+        ede.alistaElfo(elfoVivo3);
+        ede.alistaElfo(elfoVivo4);
         ede.alistaElfo(elfoMorto);
         ede.agrupaPorStatus();
         assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo));
+        assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo1));
+        assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo2));
+        assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo3));
+        assertTrue(ede.getExercitoAgrupado().get(elfoVivo.getStatus()).contains(elfoVivo4));
         assertTrue(ede.getExercitoAgrupado().get(elfoMorto.getStatus()).contains(elfoMorto));
     }
 }
