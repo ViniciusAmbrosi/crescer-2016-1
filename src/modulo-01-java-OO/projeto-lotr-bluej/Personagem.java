@@ -10,7 +10,6 @@ public abstract class Personagem {
 		this.nome = nome;
 		this.vida = vida;
 		this.status = Status.VIVO;
-		this.experiencia = 0;
 	}
 
 	public void adicionarItem(Item item) {
@@ -29,22 +28,16 @@ public abstract class Personagem {
 		if (obj == null) // this nunca vai ser nulo, já que equals nao permite
 			return false;
 		Personagem personagem = (Personagem) obj;
-		if (this.getClass() != personagem.getClass())
-			return false;
-		if (this.experiencia != personagem.experiencia)
-			return false;
-		if (!this.inventario.equals(personagem.inventario))
-			return false;
 		if (this.nome == null) {
 			if (personagem.nome != null)
 				return false;
 		} else if (!this.nome.equals(personagem.nome))
 			return false;
-		if (this.status != personagem.status)
-			return false;
-		if (this.vida != personagem.vida)
-			return false;
-		return true;
+		return this.getClass() == personagem.getClass() &&
+			   this.experiencia == personagem.experiencia &&
+			   this.inventario.equals(personagem.inventario) &&
+			   this.status == personagem.status &&
+			   this.vida == personagem.vida;
 	}
 
 	public Inventario getInventario() {
