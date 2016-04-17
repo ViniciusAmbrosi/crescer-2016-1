@@ -12,7 +12,7 @@ public class NoturnosPorUltimo implements Estrategia {
         while(it.hasNext()){
             Elfo elfo = it.next();
             if(elfo.getClass().equals(current)){
-                ordemAtaqueElfos(elfo.getClass(), exercitoElfos, dwarfs);
+                ordemAtaqueElfos(elfo.getClass(), exercitoElfosVivos, dwarfs);
                 if(current.equals(ElfoNoturno.class))
                     break;
                 current = ElfoNoturno.class;
@@ -25,8 +25,8 @@ public class NoturnosPorUltimo implements Estrategia {
         }
     }
 
-    private void ordemAtaqueElfos(Class tipo, HashMap<Status, ArrayList<Elfo>> exercitoElfos, ArrayList<Dwarf> dwarfs) {
-        for (Elfo elfo : exercitoElfos.get(Status.VIVO)) {
+    private void ordemAtaqueElfos(Class tipo, ArrayList<Elfo> exercitoElfos, ArrayList<Dwarf> dwarfs) {
+        for (Elfo elfo : exercitoElfos) {
             if (elfo.getClass().equals(tipo)) {
                 ordemAtaque.add(elfo);
                 for (Dwarf dwarf : dwarfs)
