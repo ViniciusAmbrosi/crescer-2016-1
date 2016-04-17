@@ -11,7 +11,7 @@ public class ElfoVerdeTest{
     }
     
     @Test
-    public void adicionaEspadaDeAçoValiriano(){
+    public void adicionaEspadaDeAcoValiriano(){
         ElfoVerde elfo = new ElfoVerde("legolas");
         Item item = new Item(1, "Espada de aço valiriano");
         elfo.adicionarItem(item);
@@ -27,7 +27,7 @@ public class ElfoVerdeTest{
     }
     
     @Test
-    public void retornaFalseTentativaAdicionarEspadaDeAçoValirian(){
+    public void retornaFalseTentativaAdicionarEspadaDeAcoValirian(){
         ElfoVerde elfo = new ElfoVerde("legolas");
         Item item = new Item(1, "Espada de aço valirian");
         elfo.adicionarItem(item);

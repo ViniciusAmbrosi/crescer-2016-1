@@ -48,17 +48,17 @@ public class ExercitoDeElfos{
 		try{
 		do{
 			//cria elfos noturnos
-			System.out.println("Quantos elfos Noturnos quer que o exercíto tenha?");
+			System.out.println("Quantos elfos Noturnos quer que o exercito tenha?");
 			aux = sc.nextInt();
 			for(int i = 0; i < aux; i++)
 				ede.alistaElfo(new ElfoNoturno("elfoNoturno"+i));
 			//cria elfos verdes
-			System.out.println("Quantos elfos Verdes quer que o exercíto tenha?");
+			System.out.println("Quantos elfos Verdes quer que o exercito tenha?");
 			aux = sc.nextInt();
 			for(int i = 0; i < aux; i++)
 				ede.alistaElfo(new ElfoVerde("elfoVerde"+i));
 			//cria anoes
-			System.out.println("Qual o tamanho da horda de elfos?");
+			System.out.println("Qual o tamanho da horda de anoes?");
 			aux = sc.nextInt();
 			for(int i = 0; i < aux; i++)
 				hordaDwarfs.add(new Dwarf("dwarf"+i));
@@ -69,7 +69,7 @@ public class ExercitoDeElfos{
 			boolean stratVal;
 			do{ 	
 				stratVal = true;
-				System.out.println(" Qual estratégia devera o general usar? \n"
+				System.out.println(" Qual estrategia devera o general usar? \n"
 						+  "[adg]ArteDaGuerra [npu]NoturnosPorUltimo [ai]AtaqueIntercalado \n");
 				stratType = sc.nextLine(); 
 				switch(stratType.toLowerCase()){
