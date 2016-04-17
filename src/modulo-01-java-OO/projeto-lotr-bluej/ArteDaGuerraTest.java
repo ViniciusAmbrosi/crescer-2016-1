@@ -5,6 +5,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ArteDaGuerraTest {
+	
+    @Before
+    public void tearDown() {
+        System.gc();
+        System.runFinalization();
+    }
+    
 
 	private ArrayList<Dwarf> factoryDwarfs(int anoes) {
 		ArrayList<Dwarf> dwarfs = new ArrayList<>();

@@ -6,6 +6,12 @@ import org.junit.Test;
 
 public class NoturnosPorUltimoTest {
 
+    @Before
+    public void tearDown() {
+        System.gc();
+        System.runFinalization();
+    }
+    
 	private ArrayList<Dwarf> factoryDwarfs(int anoes) {
 		ArrayList<Dwarf> dwarfs = new ArrayList<>();
 		for (int i = 0; i < anoes; i++)

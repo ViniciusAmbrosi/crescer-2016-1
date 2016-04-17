@@ -4,11 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ExercitoDeElfosTest{
-    @After
+    @Before
     public void tearDown() {
         System.gc();
         System.runFinalization();
     }
+    
     
     private void mataElfo(ElfoNoturno elfo){
         DataTerceiraEra dte = new DataTerceiraEra(1,1,2000);
