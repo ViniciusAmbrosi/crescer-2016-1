@@ -4,22 +4,23 @@ public class NoturnosPorUltimo implements Estrategia {
     ArrayList<Elfo> ordemAtaque = new ArrayList<Elfo>();
 
     public void atacar(HashMap<Status, ArrayList<Elfo>> exercitoElfos, ArrayList<Dwarf> dwarfs) {
-        if (dwarfs == null || exercitoElfos.get(Status.VIVO) == null  || dwarfs.isEmpty())
+    	ArrayList<Elfo> exercitoElfosVivos = exercitoElfos.get(Status.VIVO);
+        if (dwarfs == null || exercitoElfosVivos == null  || dwarfs.isEmpty())
             return;
-        Class previous = ElfoVerde.class;
-        Iterator<Elfo> it = exercitoElfos.get(Status.VIVO).iterator();
+        Class current = ElfoVerde.class;
+        Iterator<Elfo> it = exercitoElfosVivos.iterator();
         while(it.hasNext()){
-            Elfo aux = it.next();
-            if(aux.getClass().equals(previous)){
-                ordemAtaqueElfos(aux.getClass(), exercitoElfos, dwarfs);
-                if(previous.equals(ElfoNoturno.class))
+            Elfo elfo = it.next();
+            if(elfo.getClass().equals(current)){
+                ordemAtaqueElfos(elfo.getClass(), exercitoElfos, dwarfs);
+                if(current.equals(ElfoNoturno.class))
                     break;
-                previous = ElfoNoturno.class;
-                it = exercitoElfos.get(Status.VIVO).iterator();
+                current = ElfoNoturno.class;
+                it = exercitoElfosVivos.iterator();
             }
-            if((!(it.hasNext())) && previous.equals(ElfoVerde.class)){
-                it = exercitoElfos.get(Status.VIVO).iterator();
-                previous = ElfoNoturno.class;
+            if(!it.hasNext() && current.equals(ElfoVerde.class)){
+                it = exercitoElfosVivos.iterator();
+                current = ElfoNoturno.class;
             }
         }
     }
