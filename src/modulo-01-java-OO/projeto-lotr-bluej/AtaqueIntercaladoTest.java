@@ -1,26 +1,35 @@
 import static org.junit.Assert.*;
-import java.util.ArrayList;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.*;
 
 public class AtaqueIntercaladoTest {
-	
-    @Before
-    public void tearDown() {
-        System.gc();
-        System.runFinalization();
-    }
-    
+
+	@Before
+	public void tearDown() {
+		System.gc();
+		System.runFinalization();
+	}
 
 	private ArrayList<Dwarf> factoryDwarfs(int anoes) {
 		ArrayList<Dwarf> dwarfs = new ArrayList<>();
-		for (int i = 0; i < anoes; i++)
+		for (int i = 0; i < anoes; i++) {
 			dwarfs.add(new Dwarf("Anao" + i));
+		}
 		return dwarfs;
 	}
 
-	private ExercitoDeElfos factoryElfos(int elfosVerdes, int elfosNoturnos) {
+	private ExercitoDeElfos factoryElfosVerdesPrimeiro(int elfosVerdes, int elfosNoturnos) {
+		ExercitoDeElfos ede = new ExercitoDeElfos();
+		for (int i = 0; i < elfosVerdes; i++)
+			ede.alistaElfo(new ElfoVerde("ElfoVerde" + i));
+		for (int i = 0; i < elfosNoturnos; i++)
+			ede.alistaElfo(new ElfoNoturno("ElfoNortuno" + i));
+		return ede;
+	}
+	
+	private ExercitoDeElfos factoryElfosNoturnosPrimeiro(int elfosVerdes, int elfosNoturnos) {
 		ExercitoDeElfos ede = new ExercitoDeElfos();
 		for (int i = 0; i < elfosVerdes; i++)
 			ede.alistaElfo(new ElfoVerde("ElfoVerde" + i));
@@ -51,7 +60,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void dezElfosAtacam6Anoes() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(7, 3);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(7, 3);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(6);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -62,7 +71,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void dezElfosNoturnosAtacam6Anoes() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(0, 10);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(0, 10);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(6);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -73,7 +82,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void cincoElfosVerdesCincoElfoNoturnoAtacaUmAnao() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(5, 5);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(5, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -84,7 +93,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void passaListaDwarfNulo() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(5, 5);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(5, 5);
 		ArrayList<Dwarf> dwarfs = null;
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -95,7 +104,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void passaExercitoVazio() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(0, 0);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(0, 0);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -106,7 +115,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void passa0Anoes() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(10, 10);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(10, 10);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(0);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -117,7 +126,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void passaUmElfoNulo() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(7, 3);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(7, 3);
 		ede.alistaElfo(null);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
@@ -129,7 +138,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void duzentosElfosNoturnosTentamAtacar() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(1, 200);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(1, 200);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -140,7 +149,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void intercalaElfoNoturnoAtaca() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(1, 1);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(1, 1);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(1);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -151,7 +160,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void zeroElfosVerdes() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(0, 5);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(0, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -162,7 +171,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void zeroElfosNoturnos() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(5, 0);
+		ExercitoDeElfos ede = factoryElfosNoturnosPrimeiro(5, 0);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
 		strat.atacar(ede.getExercitoAgrupado(), dwarfs);
@@ -173,7 +182,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void cincoElfosMortos() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(10, 15);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(10, 15);
 		mataElfos(ede, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
@@ -185,7 +194,7 @@ public class AtaqueIntercaladoTest {
 	@Test
 	public void todosElfosMortos() {
 		Estrategia strat = new AtaqueIntercalado();
-		ExercitoDeElfos ede = factoryElfos(0, 5);
+		ExercitoDeElfos ede = factoryElfosVerdesPrimeiro(0, 5);
 		mataElfos(ede, 5);
 		ArrayList<Dwarf> dwarfs = factoryDwarfs(5);
 		ede.agrupaPorStatus();
