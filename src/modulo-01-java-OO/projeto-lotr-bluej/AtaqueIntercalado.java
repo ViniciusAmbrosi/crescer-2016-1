@@ -9,7 +9,7 @@ public class AtaqueIntercalado implements Estrategia {
 		if (dwarfs == null || exercitoElfosVivos == null || dwarfs.isEmpty()
 				|| !mesmaQuantidadeVerdesNoturnos(exercitoElfosVivos))
 			return;
-		Elfo previous = null;
+		Elfo previous = exercitoElfosVivos.get(0);
 		ordenaAtaque(previous, dwarfs, exercitoElfosVivos);
 	}
 
@@ -27,6 +27,7 @@ public class AtaqueIntercalado implements Estrategia {
 
 	private void ordenaAtaque(Elfo previous, ArrayList<Dwarf> dwarfs, ArrayList<Elfo> elfos) {
 		Elfo elfoD = null;
+		elfoAtacaAnoes(previous, dwarfs);
 		for (Elfo elfo : elfos) {
 			if (!(elfo.getClass().equals(previous.getClass()))) {
 				elfoAtacaAnoes(elfo, dwarfs);
