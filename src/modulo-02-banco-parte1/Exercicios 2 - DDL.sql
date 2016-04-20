@@ -1,7 +1,7 @@
 SELECT NomeEmpregado FROM Empregado
 ORDER BY DataAdmissao ASC
 
-SELECT NomeEmpregado, (Salario * 12) as SalarioAnual, Cargo FROM Empregado
+SELECT NomeEmpregado, (Salario * 12) as SalarioAnual FROM Empregado
 WHERE Cargo = 'Atendente' OR
 	  (Salario * 12) < 18500;
 
