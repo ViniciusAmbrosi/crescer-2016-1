@@ -1,7 +1,7 @@
 
 public class Elfo extends Personagem {
 	private int flechas;
-	protected static int countElfo;
+	private static int countElfo;
 
 	public Elfo(String nome) {
 		super(nome, 100.0);
@@ -16,12 +16,14 @@ public class Elfo extends Personagem {
 	}
 
 	public void finalize() throws Throwable {
-		Elfo.countElfo--;
-		super.finalize();
+		if (countElfo >= 0) {
+			Elfo.countElfo--;
+			super.finalize();
+		}
 	}
 
 	public void tentarSorte() {
-
+		System.out.println("Elfo tentou a sorte!");
 	}
 
 	public String toString() {
@@ -38,8 +40,8 @@ public class Elfo extends Personagem {
 	}
 
 	public boolean equals(Object obj) {
-		Elfo aux = (Elfo) obj;
-		return super.equals(obj) && this.flechas == aux.flechas ? this.countElfo == aux.countElfo ? true : false
+		Elfo elfo = (Elfo) obj;
+		return super.equals(obj) && this.flechas == elfo.flechas ? this.countElfo == elfo.countElfo ? true : false
 				: false;
 	}
 
