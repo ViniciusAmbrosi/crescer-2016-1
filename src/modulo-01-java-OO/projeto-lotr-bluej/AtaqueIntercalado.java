@@ -2,7 +2,7 @@ import java.util.*;
 
 public class AtaqueIntercalado implements Estrategia {
 	ArrayList<Elfo> ordemAtaque = new ArrayList<Elfo>();
-	ArrayList<Elfo> delayed = new ArrayList<>();
+	ArrayList<Elfo> delayedElfos = new ArrayList<>();
 
 	public void atacar(HashMap<Status, ArrayList<Elfo>> exercitoElfos, ArrayList<Dwarf> dwarfs) {
 		ArrayList<Elfo> exercitoElfosVivos = exercitoElfos.get(Status.VIVO);
@@ -10,6 +10,7 @@ public class AtaqueIntercalado implements Estrategia {
 				|| !mesmaQuantidadeVerdesNoturnos(exercitoElfosVivos))
 			return;
 		Elfo previous = exercitoElfosVivos.get(0);
+		exercitoElfosVivos.remove(0);
 		ordenaAtaque(previous, dwarfs, exercitoElfosVivos);
 	}
 
@@ -26,24 +27,24 @@ public class AtaqueIntercalado implements Estrategia {
 	}
 
 	private void ordenaAtaque(Elfo previous, ArrayList<Dwarf> dwarfs, ArrayList<Elfo> elfos) {
-		Elfo elfoD = null;
+		Elfo delayedElfo = null;
 		elfoAtacaAnoes(previous, dwarfs);
 		for (Elfo elfo : elfos) {
 			if (!(elfo.getClass().equals(previous.getClass()))) {
 				elfoAtacaAnoes(elfo, dwarfs);
 				previous = elfo;
-				if (!delayed.isEmpty()) {
-					Iterator<Elfo> it = delayed.iterator();
-					while(it.hasNext())
-						elfoD =  it.next();
-						if (!(elfoD.getClass().equals(previous.getClass()))) {
-							elfoAtacaAnoes(elfoD, dwarfs);
-							previous = elfoD;
-							it.remove();
+				if (!delayedElfos.isEmpty()) {
+					Iterator<Elfo> iterator = delayedElfos.iterator();
+					while (iterator.hasNext())
+						delayedElfo = iterator.next();
+					if (!(delayedElfo.getClass().equals(previous.getClass()))) {
+						elfoAtacaAnoes(delayedElfo, dwarfs);
+						previous = delayedElfo;
+						iterator.remove();
 					}
 				}
 			} else
-				delayed.add(elfo);
+				delayedElfos.add(elfo);
 		}
 	}
 
@@ -52,8 +53,8 @@ public class AtaqueIntercalado implements Estrategia {
 			elfo.atirarFlecha(dwarf);
 		ordemAtaque.add(elfo);
 	}
-	
-	public ArrayList<Elfo> getOrdemDoUltimoAtaque(){
-       return ordemAtaque;
-    }
+
+	public ArrayList<Elfo> getOrdemDoUltimoAtaque() {
+		return ordemAtaque;
+	}
 }
