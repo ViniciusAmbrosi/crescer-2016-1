@@ -33,11 +33,9 @@ public abstract class Personagem {
 				return false;
 		} else if (!this.nome.equals(personagem.nome))
 			return false;
-		return this.getClass() == personagem.getClass() &&
-			   this.experiencia == personagem.experiencia &&
-			   this.inventario.equals(personagem.inventario) &&
-			   this.status == personagem.status &&
-			   this.vida == personagem.vida;
+		return this.getClass() == personagem.getClass() && this.experiencia == personagem.experiencia
+				&& this.inventario.equals(personagem.inventario) && this.status == personagem.status
+				&& this.vida == personagem.vida;
 	}
 
 	public Inventario getInventario() {
