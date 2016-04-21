@@ -4,8 +4,8 @@ public class IrishDwarf extends Dwarf {
 		super(name);
 	}
 
-	public IrishDwarf(String name, DataTerceiraEra dte) {
-		super(name, dte);
+	public IrishDwarf(String name, DataTerceiraEra dataTerceiraEra) {
+		super(name, dataTerceiraEra);
 	}
 
 	public void tentarSorte() {
