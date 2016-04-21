@@ -45,13 +45,13 @@ public class Dwarf extends Personagem {
 			inventario.adiciona1000UnidadesPorItem();
 	}
 
-	public static Dwarf descobrirMenosVida(Dwarf d1, Dwarf d2) {
-		return d1.vida < d2.vida ? d1 : d2;
+	public static Dwarf descobrirMenosVida(Dwarf dwarfUm, Dwarf dwarfDois) {
+		return dwarfUm.vida < dwarfDois.vida ? dwarfUm : dwarfDois;
 	}
 
 	public boolean equals(Object obj) {
-		Dwarf aux = (Dwarf) obj;
-		return super.equals(obj) && this.dataNasc.equals(aux.dataNasc);
+		Dwarf dwarf = (Dwarf) obj;
+		return super.equals(obj) && this.dataNasc.equals(dwarf.dataNasc);
 	}
 
 	public DataTerceiraEra getDataNasc() {
