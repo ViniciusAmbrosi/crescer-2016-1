@@ -1,19 +1,19 @@
 
 public class Item {
-	private int qtd;
+	private int quantidade;
 	private String descricao;
 
-	public Item(int qtd, String descricao) {
-		this.qtd = qtd;
+	public Item(int quantidade, String descricao) {
+		this.quantidade = quantidade;
 		this.descricao = descricao;
 	}
 
 	public void adiciona1000Unidades() {
-		this.qtd += 1000;
+		this.quantidade += 1000;
 	}
 
 	public void adicionaItemProporcionalQuantidade() {
-		this.qtd += (this.qtd * (this.qtd + 1) / 2) * 1000;
+		this.quantidade += (this.quantidade * (this.quantidade + 1) / 2) * 1000;
 	}
 
 	public boolean equals(Object obj) {
@@ -22,11 +22,12 @@ public class Item {
 			return true;
 		if (obj == null)
 			return false;
-		return this.qtd == item.qtd && this.descricao != null && obj != null && this.descricao.equals(item.descricao);
+		return this.quantidade == item.quantidade && this.descricao != null && obj != null
+				&& this.descricao.equals(item.descricao);
 	}
 
 	public int getQtd() {
-		return this.qtd;
+		return this.quantidade;
 	}
 
 	public String getDescricao() {
