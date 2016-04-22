@@ -66,6 +66,16 @@ SET Nome = '*' + cidade2.Nome
 		  ) AS cidade2
 	WHERE Cidade.Nome = cidade2.Nome
 
+--Exercício 11.2 Atualiza maior ID de nome com '*' somente duplicados
+UPDATE Cidade
+SET Nome = '*' + Cidade3.Nome
+  FROM(
+		SELECT MAX(IDCidade) AS IDCidade2, Nome FROM CIDADE
+		GROUP BY Nome
+		HAVING COUNT(Nome) > 1
+		) AS Cidade3
+	WHERE Cidade.IDCidade = Cidade3.IDCidade2
+
 --Exercício 12
 SELECT Nome,
 	   CASE UPPER(Sexo) WHEN 'F' THEN 'Feminino'
@@ -91,6 +101,11 @@ DELETE Cidade
 		 GROUP BY Nome
 		) as Cidade2
 	WHERE Cidade.IDCidade = Cidade2.ID
+
+--Exercício 14.2 Busca baseado em 11.2m onde tem * somente nos duplicados de maior ID
+DELETE Cidade
+	WHERE Nome LIKE '*%';
+
 
 --Exercício 15
 ALTER TABLE Cidade 
