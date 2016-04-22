@@ -110,7 +110,7 @@ DELETE Cidade
 
 --Exercício 15
 ALTER TABLE Cidade 
-ADD CONSTRAINT UK_Cidade_Nome UNIQUE (Nome)
+ADD CONSTRAINT UK_Cidade_Nome_UF UNIQUE (Nome, UF)
 
 --Adicionais ( tirar '*' dos nomes das cidades ) e testar nova constraint
 --Remove '*'
