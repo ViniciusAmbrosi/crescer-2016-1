@@ -16,11 +16,12 @@ SELECT NomeEmpregado,
 	WHERE DataAdmissao BETWEEN convert(datetime, '01/05/1980', 103) AND convert(datetime, '20/01/1982', 103);
 
 --Exercício 4
-SELECT TOP 1 Cargo as CargoMaisPopuloso, COUNT(Cargo)
+SELECT TOP 1 Cargo as CargoMaisPopuloso, COUNT(Cargo) AS Top_Vendedor
     FROM Empregado
 	GROUP BY Cargo
-	ORDER BY Cargo DESC
+	ORDER BY Top_Vendedor DESC
 
+SELECT * FROM Empregado
 --Exercício 6
 SELECT Nome,
 	   DATEADD(YEAR, 50, convert(date, DataNascimento)) as Completa50AnosEm,
