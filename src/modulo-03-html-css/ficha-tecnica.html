@@ -4,77 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <title>SFWiki - Ficha Técnica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--inicio style-->
-    <style>
-        body {
-            background-image: url(background.jpg);
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #container{
-            width: 880px;
-            margin: 345px auto;
-            margin-bottom: 0;
-        }
-
-        #menu {
-            border: 1px white solid;
-            width: 620px;
-            margin: 0 auto;
-            margin-bottom: 80px;
-            background-color: rgba(170, 168, 168, 0.7);
-            border-radius: 8px;
-            padding: 15px 30px;
-        }
-
-        #sub-container {
-            background-color: #ECECEC;
-            height: 700px;
-        }
-
-        #container-header {
-            color: white;
-            background-color: #515151;
-            height: 80px;
-        }
-
-        #titulo {
-            color: #bfbfbf;
-            padding: 25px 20px;
-        }
-
-        #escopo-container {
-            padding: 20px;
-        }
-
-    </style>
-    <!--fim style-->
-    <!--barra menu-->
-    <div ID="container">
-        <div ID="menu">
-            <strong>
-        <span style = "padding: 0px 7.1%"><a href="index.html" style="text-decoration: initial; color: white">Início</a></span>
-        <span style = "padding: 0px 7.1%"><a href="https://www.google.com.br/#q=street+fighter&tbm=nws" style="text-decoration: initial; color: white">Notícias</a></span>
-        <span style = "padding: 0px 7.1%"><a href="ficha-tecnica.html" style="text-decoration: initial; color: white">Ficha Ténica</a></span>
-        <span style = "padding: 0px 7.1%"><a href="sobre.html" style="text-decoration: initial; color: white">Sobre</a></span>
+    <div class ="container">
+        
+        <div class ="menu">
+        <strong>
+        <span class = "botao">
+            <a class = "link" href="index.html" >Início</a></span>
+        <span class = "botao">
+            <a class = "link" href="https://www.google.com.br/#q=street+fighter&tbm=nws">Notícias</a></span>
+        <span class = "botao">
+            <a class = "link" href="ficha-tecnica.html">Ficha Ténica</a></span>
+        <span class = "botao">
+            <a class = "link" href="sobre.html">Sobre</a></span>
         </strong>
         </div>
-        <!--div escopo-->
-        <div ID="sub-container">
-            <div ID="container-header">
-                <h2 ID="titulo">Ficha Técnica</h2>
+        
+        <div class ="sub-container">
+            
+            <div class ="container-header">
+                <h2 class ="titulo">Ficha Técnica</h2>
             </div>
-            <span ID="escopo-container">
-            <h1 style = "padding-left: 20px">Blanka</h1>
-            <img src="https://files.slack.com/files-pri/T0Y3PJ2F2-F141RBZHC/20120823194105_127.png" alt="Blanka" style="float:left; padding: 20px">
-        </span>
-            <span>
+            
+            <div class ="escopo-container">
+                <h1>Blanka</h1>
+                <img class = "imagem" src="https://files.slack.com/files-pri/T0Y3PJ2F2-F141RBZHC/20120823194105_127.png" alt="Blanka">
+            </div>
+            
+            <div>
                 <p><strong>Primeira aparição:</strong> Street Fighter II The World Warrior (1991)  <br>
                 <strong>Nascimento:</strong> 12 de fevereiro de 1966.  <br>
                 <strong>Altura:</strong> 192cm. <br>
@@ -93,11 +53,8 @@
                 <strong>SFA3 stage:</strong> Ramificação do Rio Madeira - pantano, Brasil (ramificação do rio Madeira: talvez possa ser Mato Grosso, ou Tocantins?). <br>
                 <strong>SF2 stage:</strong> Bacia do rio Amazonas (Brasil).<br>
                 <strong>Golpes especiais famosos:</strong> Electric Thunder, Rolling Attack.<br>
-
-
-
             </p>
-        </span>
+            </div>
         </div>
     </div>
 </body>
