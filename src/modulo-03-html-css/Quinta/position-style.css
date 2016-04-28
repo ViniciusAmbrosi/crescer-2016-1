@@ -1,0 +1,59 @@
+body{
+  margin: 0px;
+}
+
+.header{
+  height: 30px;
+  background-color: gray;
+  width: 100%;
+  top:0px;
+  left:0px;
+  position: fixed;
+  z-index: 1;
+}
+
+.container-relativo{
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 200px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.bloco{
+  height: 100px;
+  width: 100px;
+  margin: 50px 118px;
+  background-color: black;
+  float: left;
+  color: white;
+  position: relative;
+}
+
+.inverte-direita{
+  left: 680px;
+}
+
+.inverte-esquerda{
+  right: 680px;
+}
+
+.container-clear{
+  overflow: auto;
+  margin-left: 30px;
+  margin-top:300px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.container-clear .bloco-flutuante:nth-of-type(4n + 1){
+  clear:left;
+}
+
+.bloco-flutuante{
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin:20px;
+  background-color: black;
+}
