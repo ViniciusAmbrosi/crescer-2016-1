@@ -1,0 +1,16 @@
+
+.box > p:first-child{
+    color: deeppink;
+}
+
+.box > p:last-of-type{
+    color: blue;
+}
+
+.box p:nth-of-type(4){
+    background-color: yellow;
+}
+
+p + h2 + p {
+    background-color:red;
+}
