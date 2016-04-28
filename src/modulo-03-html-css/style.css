@@ -1,0 +1,61 @@
+   body {
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #imagem-vinicius{
+        width: 260px; 
+        height: 260px;
+    }
+    
+    .menu {
+        border: 1px white solid;
+        width: 620px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        background-color: rgba(170, 168, 168, 0.7);
+        border-radius: 8px;
+        padding: 15px 30px;
+    }
+    
+    .container{
+        width: 880px;
+        margin: 345px auto;
+        margin-bottom: 0;
+    }
+    
+    .sub-container {
+        background-color: #ECECEC;
+        min-height: 700px;
+    }
+    
+    .container-header {
+        color: white;
+        background-color: #515151;
+        height: 80px;
+    }
+    
+    .titulo {
+        color: #bfbfbf;
+        padding: 25px 20px;
+    }
+    
+    .escopo-container {
+        padding: 20px;
+    }
+    .botao{
+        padding: 0px 7.1%;
+    }
+    
+    .link{
+        text-decoration: initial;
+        color: white
+    }
+    
+    .imagem{
+         float:left; 
+         padding-right: 20px
+    }
