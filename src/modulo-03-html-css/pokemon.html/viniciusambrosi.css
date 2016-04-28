@@ -1,0 +1,35 @@
+body{
+}
+
+h1 > span:first-child{
+  display:none;
+}
+
+.personagens > h2:last-of-type{
+  display:none;
+}
+
+.digiescolhidos{
+  display: none;
+}
+
+.personagens > ul:last-child{
+  display:none;
+}
+
+.personagens{
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  left: 400px;
+}
+
+.treinadores{
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  right: 300px;
+}
+
+.footer{
+}
