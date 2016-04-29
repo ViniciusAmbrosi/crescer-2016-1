@@ -7,6 +7,9 @@ header{
   height: 100px;
   background-color: #ffe463;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 header > h1{
@@ -43,15 +46,11 @@ header{
 
 .content{
   color: white;
-  height: 87%;
+  height: 97.5%;
   background-image: url('http://www.wallpaperfo.com/thumbnails/detail/20120628/pokemon%20gengar%20haunter%20gastly%20black%20background%201920x1200%20wallpaper_www.wallpaperfo.com_21.jpg');
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 200px;
-}
-
-.content::after{
-  content: iframe('https://www.youtube.com/embed/lrHJhKEtQEI');
 }
 
 .perfil {
@@ -92,7 +91,7 @@ article {
   border: black 2px solid;
   border-radius: 20px;
   padding: 0px 25px 0px 25px;
-  margin: 100px;
+  margin: 200px 100px;
   position: absolute;
   height: 480px;    
   margin-bottom: 10px;
