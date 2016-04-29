@@ -26,7 +26,7 @@ header > h1 > span{
 }
 
 .imagem-fundo{
-  background-image: url('http://img15.deviantart.net/3694/i/2007/253/2/c/vg_symbol__pokeball_by_bender2284.jpg');
+  background-image: url('http://imageshack.com/a/img921/9409/XyLJ4k.jpg');
   width: 100px;
   height: 100px;
   background-size: contain;
@@ -34,11 +34,11 @@ header > h1 > span{
 }
 
 .imagem-fundo:hover{
-    background-image: url('http://i.imgur.com/oUTZynV.png');
+    background-image: url('http://imageshack.com/a/img921/3666/5mn9g5.png');
 }
 
 header{
-  background-image: url('http://i.imgur.com/h15rGCZ.png');
+  background-image: url('http://imageshack.com/a/img921/9424/hDgEtR.png');
   background-size: 80px;
   background-repeat: no-repeat;
   background-color: #ffe463;
@@ -100,7 +100,7 @@ article {
 }
 
 .personagens{
-  background-image: url('http://i.imgur.com/YGOILVW.png');
+  background-image: url('http://imageshack.com/a/img921/9352/aGVJ87.png');
   background-repeat: no-repeat;
   background-color: #C1272D;
   background-size: contain;
