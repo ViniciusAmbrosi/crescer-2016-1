@@ -10,6 +10,7 @@ header{
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 1;
 }
 
 header > h1{
@@ -46,7 +47,7 @@ header{
 
 .content{
   color: white;
-  height: 97.5%;
+  height: 645px;
   background-image: url('http://www.wallpaperfo.com/thumbnails/detail/20120628/pokemon%20gengar%20haunter%20gastly%20black%20background%201920x1200%20wallpaper_www.wallpaperfo.com_21.jpg');
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -87,14 +88,15 @@ h1 > span:first-child{
 }
 
 article {
-  display: inline-block;                 
+  display: inline-block;
   border: black 2px solid;
   border-radius: 20px;
   padding: 0px 25px 0px 25px;
-  margin: 200px 100px;
+  margin: 50px 100px;
   position: absolute;
-  height: 480px;    
+  height: 350px;
   margin-bottom: 10px;
+  top: 120px;
 }
 
 .personagens{
@@ -102,8 +104,8 @@ article {
   background-repeat: no-repeat;
   background-color: #C1272D;
   background-size: contain;
-  width: 700px;                      
-  left: 150px;
+  width: 500px;
+  left: 80px;
 }
 
 h2{
@@ -117,10 +119,9 @@ ul{
   background-color: white;
   list-style-type: none;
   padding: 10px;
-  height: 320px;
+  height: 250px;
   position: relative;
   bottom: 10px;
-  
 }
 
 .personagens ul > li:nth-last-of-type(even){
@@ -137,8 +138,8 @@ ul{
 
 .treinadores{
   background-color: #5ba8ce;;
-  width: 570px;
-  left: 940px;
+  width: 270px;
+  left: 750px;
 }
 
 footer{
