@@ -6,12 +6,13 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     
-    #imagem-vinicius{
-        width: 260px; 
-        height: 260px;
+     .container{
+        width: 880px;
+        margin: 345px auto;
+        margin-bottom: 0;
     }
-    
-    .menu {
+
+     .container > nav:first-of-type {
         border: 1px white solid;
         width: 620px;
         margin: 0 auto;
@@ -21,31 +22,26 @@
         padding: 15px 30px;
     }
     
-    .container{
-        width: 880px;
-        margin: 345px auto;
-        margin-bottom: 0;
-    }
-    
-    .sub-container {
+    article {
         background-color: #ECECEC;
         min-height: 700px;
     }
     
-    .container-header {
+    article > header {
         color: white;
         background-color: #515151;
         height: 80px;
     }
     
-    .titulo {
+    header > h2{
         color: #bfbfbf;
         padding: 25px 20px;
     }
-    
-    .escopo-container {
+
+    article > section:first-of-type {
         padding: 20px;
     }
+    
     .botao{
         padding: 0px 7.1%;
     }
@@ -59,3 +55,15 @@
          float:left; 
          padding-right: 20px
     }
+        
+    #imagem-vinicius{
+        width: 260px; 
+        height: 260px;
+    }
+    
+    span{
+        font-weight: bold;
+    }
+    
+    
+     
