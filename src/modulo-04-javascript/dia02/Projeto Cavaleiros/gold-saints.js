@@ -49,11 +49,11 @@ function obterAlturaMediana() {
     var alturas = Object.keys(goldSaints).map(function (x) { return goldSaints[x].alturaCm });
     alturas.sort();
     var half = Math.floor(alturas.length / 2);
-    var mediana = (alturas[half - 1] + alturas[half]) / 2;
+    var mediana = ((alturas[half - 1] + alturas[half]) / 2) /100;
     return parseFloat(mediana.toFixed(2));
 }
 
-//Ex 6 
+//Ex 6
 //A
 function obterPesoMedio() {
     var pesos = Object.keys(goldSaints).map(function (x) {
@@ -62,7 +62,7 @@ function obterPesoMedio() {
     var sum = pesos.reduce(function (a, b) {
         return a + b;
     });
-    sum = (sum / 2.2046) / 12;
+    sum = (sum * 2.2046) / 12;
     return parseFloat(sum.toFixed(2));
 }
 
@@ -75,14 +75,14 @@ function obterPesoMedioDoadores() {
     var sum = pesos.reduce(function (a, b) {
         return a + b;
     });
-    sum = (sum / 2.2046) / 12;
+    sum = (sum * 2.2046) / 12;
     return parseFloat(sum.toFixed(2));
 }
 
 //Ex 7
 function obterIMC() {
     var alturas = Object.keys(goldSaints).map(function (x) { return (goldSaints[x].alturaCm / 100) });
-    var pesos = Object.keys(goldSaints).map(function (x) { return typeof goldSaints[x].pesoLb === 'undefined' ? 0 : (goldSaints[x].pesoLb / 2.2046); });
+    var pesos = Object.keys(goldSaints).map(function (x) { return typeof goldSaints[x].pesoLb === 'undefined' ? 0 : (goldSaints[x].pesoLb * 2.2046); });
     return Object.keys(pesos).map(function (e) { return (pesos[e] / Math.pow(alturas[e], 2)).toFixed(2) });
 }
 
