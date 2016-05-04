@@ -2,7 +2,7 @@
 function daisyGame(number) { if (number % 2 === 0) { return 'Love me not' } else return 'Love me'; };
 
 //Maior Texto
-function maiorText(palavras) {
+function maiorTexto(palavras) {
   var maior = "";
   for (var palavra in palavras) {
     if (maior.length < palavras[palavra].length) {
@@ -24,8 +24,8 @@ function imprime(e, fn) {
   }
 };
 
-//Soma Diferentona
-function soma(numeroUm) {
+//adicionar Diferentona
+function adicionar(numeroUm) {
   return function (numeroDois) {
     return numeroUm + numeroDois;
   };
@@ -55,7 +55,7 @@ function queroCafe(mascada, precos) {
 }
 
 //variosTipos ---------------- Deve ter uma forma mais facil!!!!
-/*function contarPorTipo(obj, tipo){
+function contarPorTipo(obj, tipo){
     var soma = 0;
     var tipoValidacao = 0;
     if(tipo === 'null'){
@@ -89,36 +89,7 @@ function queroCafe(mascada, precos) {
           }
     }
     return soma;
-}*/
-
-
-
-function contarPorTipo(objeto, tipo) {
-
-  var count = 0;
-
-  for (var campo in objeto) {
-
-    if (
-
-      (tipo === 'array' && objeto[campo] && objeto[campo].constructor === Array) ||
-
-      (tipo === 'null' && objeto[campo] === null) ||
-
-      (typeof objeto[campo] === tipo) && (tipo == 'object' && objeto[campo].constructor === Object)
-
-    )
-
-      count++;
-
-  }
-
-  return count;
-
-};
-
-
-
+}
 //Exercício 8
 /* O motivo de retornar Son undefined é que, na atribuição - var gohan = 'Son ' + gohan; - se declara uma variavel do tipo local gohan, essa sem valor. A mesma é utilizada na concatenação.
    Se o valor de gohan fosse passado por parametro e utilizado então na função, tal erro nao aconteceria.*/
