@@ -32,63 +32,38 @@ function adicionar(numeroUm) {
 }
 
 //fibona
-function fiboSum(number) {
-  if (number == 0) {
-    return 0;
-  }
-  if (number <= 2) {
-    return 1;
-  }
-  return fiboSum(number - 1) + fiboSum(number - 2);
+var fibonacci = function (n) {
+  if (n === 1 || n === 2) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+var fiboSum = function (n) {
+  if (n === 1) return 1;
+  return fibonacci(n, true) + fiboSum(n - 1, true);
 }
+
 
 //queroCafe
 function queroCafe(mascada, precos) {
-  var precosAteMascada = " ";
-  precos.sort();
-  for (var i in precos) {
-    if (precos[i] <= mascada) {
-      precosAteMascada += precos[i].toString() + ",";
-    }
+  precos.sort(function (a, b) { return a > b; });
+  for (var i = precos.length - 1; precos[i] > mascada; i--) {
+    precos.pop(precos[i]);
   }
-  return precosAteMascada;
+  return precos.toString();
 }
 
-//variosTipos ---------------- Deve ter uma forma mais facil!!!!
-function contarPorTipo(obj, tipo){
-    var soma = 0;
-    var tipoValidacao = 0;
-    if(tipo === 'null'){
-       tipoValidacao = 3;
-    }
-    if(tipo === 'array'){
-       tipoValidacao = 2;
-    }
-    if(tipo === 'object'){
-       tipoValidacao = 1;
-    }
-    for(var atributo in obj){
-       if(tipoValidacao === 1){
-          if(obj[atributo].constructor === Object){
-              soma++;
-          }
-       }
-       else if(tipoValidacao === 2){
-          if(obj[atributo].constructor === Array){
-              soma++;
-          }
-       }
-       else if(tipoValidacao ===3){
-          if(obj[atributo] === null && typeof obj[atributo] === "object"){
-              soma++;
-          }
-       }
-       else
-          if(typeof obj[atributo] === tipo){
-              soma++;
-          }
-    }
-    return soma;
+//variosTipos 
+function contarPorTipo(obj, tipo) {
+  function getType(v) {
+    return v === null ? 'null' : typeof v !== 'undefined' && v.constructor === Array ? 'array' : typeof v;
+  }
+
+  var count = 0;
+  for (var campo in obj) {
+    if (getType(obj[campo]) === tipo) count++;
+  }
+
+  return count;
 }
 //Exercício 8
 /* O motivo de retornar Son undefined é que, na atribuição - var gohan = 'Son ' + gohan; - se declara uma variavel do tipo local gohan, essa sem valor. A mesma é utilizada na concatenação.
