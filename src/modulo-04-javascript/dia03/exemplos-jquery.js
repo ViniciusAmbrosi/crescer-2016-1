@@ -27,12 +27,13 @@ $(function () {
                         $(this).find("span").text("mouse leave");
                     });
         */
-        $(".cavaleiros img").mouseenter(function () {
+        $(".cavaleiros img")
+        .mouseenter(function () {
             var self = $(this);
-            var id = self.attr('id');
+            var id = self.attr('id') - 1;
             var nome = goldSaints[id].nome;
             /* var altura = goldSaints[id].alturaCm;
-             var peso = goldSaints[id].pesoLb;
+               var peso = goldSaints[id].pesoLb;
              var dataNascimento = goldSaints[id].dataNascimento;
              var localNascimento = goldSaints[id].localNascimento;
              var localTreinamento = goldSaints[id].localTreinamento;
@@ -42,23 +43,13 @@ $(function () {
              goldSaints[id].golpes.forEach(function (e) {
                  golpes.push(e);
              });*/
-            $('div', id-2).append($('<div class = receiver>').append(nome));
+            $('div#' + id).append($('<div>').addClass("receiver").append(nome));
+            $(".receiver").eq(id).toggle();
+            //$(".receiver:eq(" + id + ")").toggle();
             console.log(nome);
-        });
+        })
+        .mouseleave(function() {
+          $('.receiver').detach();
     });
-
 });
-
-
-$('#cavaleiros img').click(function (i) {
-    var self = $(this);
-    var nome = self.attr('alt');
-    var altura = goldSaints.filter(function (elem) {
-        return elem.id === parseInt(self.attr('id'));
-    })[0].alturaCm;
-    var $headers = $('#headers');
-    $headers.append($('<h1>').text(nome));
-    $headers.append($('<h1>').text(altura / 100));
 });
-
-
