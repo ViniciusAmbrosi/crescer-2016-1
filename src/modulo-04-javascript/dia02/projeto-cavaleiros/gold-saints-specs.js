@@ -12,3 +12,47 @@ describe('Ex 2. Cavaleiro Com Mais Golpes', function () {
     expect(goldSaints[5]).toEqual(obterCavaleiroComMaisGolpes());
   });
 });
+
+describe('Ex 3. Aniversarios', function(){
+  it('obterMesescomMaisAniversarios, retorna Março, Maio e Novembro', function () {
+    expect([ "Março", "Maio", "Novembro" ]).toEqual(obterMesesComMaisAniversarios());
+  });
+});
+
+describe('Ex 4. Altura Média', function(){
+  it('obterAlturaMédia retorna 1.86', function () {
+    expect(1.86).toEqual(obterAlturaMedia());
+  });
+});
+
+describe('Ex 5. Altura mediana', function(){
+  it('obterAlturaMediana retorna 1.85', function () {
+    expect(1.85).toEqual(obterAlturaMediana());
+  });
+});
+
+describe('Ex 6a. Peso médio', function() {
+  it('obterPesoMedio retorna 84.27', function() {
+    expect(84.27).toEqual(obterPesoMedio());
+  });
+});
+
+describe('Ex 6b. Peso médio doadores', function() {
+  it('obterPesoMedioDoadores retorna 80.67', function() {
+    expect(80.67).toEqual(obterPesoMedioDoadores());
+  });
+});
+
+describe('Ex 7. IMC', function() {
+  it('obterIMC retorna todos IMC dos cavaleiros com pesos definidos', function() {
+    var imcs = [ 22.64, 29.48, 24.62, 24.22, 24.84, 20.53, 24.54, 24.31, 23.99, 22.45, 21.5 ];
+    expect(imcs).toEqual(obterIMC());
+  });
+});
+
+describe('Ex 8. Sobrepeso', function() {
+  it('obterSobrepeso retorna array com Aldebaran apenas', function() {
+    var aldebaran = JSON.parse('{"id":2,"nome":"Aldebaran","dataNascimento":"1967-05-08T03:00:00.000Z","alturaCm":210,"pesoLb":286.600941,"signo":"Touro","tipoSanguineo":"B","localNascimento":"Brasil","localTreinamento":"Brasil","golpes":["Grande Chifre"],"imagens":[{"url":"https://cloud.githubusercontent.com/assets/526075/14900419/dca83616-0d66-11e6-9757-8d07311e6999.png","isThumb":true}]}');
+    expect([ aldebaran ]).toEqual(obterSobrepeso());
+  });
+});
