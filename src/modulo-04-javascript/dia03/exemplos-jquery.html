@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style>
+    .cavaleiros div {
+      display: inline;
+      list-style: none;
+      margin: 10px;
+      position: relative;
+    }
+    
+    #imgCav {
+      display: inline-block;
+    }
+    
+    #nomeCav {
+      width: 150px;
+    }
+    
+/*    #div-flutuante {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border: 1px solid black;
+      padding: 5px;
+      z-index: 100;
+      background-color: red;
+      display: block;
+    }
+    */
+    .receiver{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border: 1px solid black;
+      padding: 5px;
+      z-index: 100;
+      background-color: red;
+      display: block;
+      height: 58px;
+      width: 58px;
+    }
+    
+  </style>
 </head>
+
 <body>
-  <div id ="headers">
-  <<h1>Olá JQuery</h1>
-  <<h1>Hello JQuery!</h1>
-</div>
-<<section>
-  <<ul>
+  <div id="headers">
+    <h1>Olá JQuery</h1>
+    <h1>Hello JQuery!</h1>
+  </div>
+  <section>
+    <button type='button' name='cavaleiros-btn'>Carregar</button>
+    <div class="cavaleiros"></div>
+  </section>
 
-  </ul>
-
-</section>
-  <script type ="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
-  <script type ="text/javascript" src="exemplos-jquery.js"></script>
+  <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="exemplos-jquery.js"></script>
 </body>
-</html>
 
-quarto andar mesas copa
+</html>
