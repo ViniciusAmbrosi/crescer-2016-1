@@ -36,6 +36,9 @@
       margin: 0px;
       padding: 0px;
     }
+   
+    
+    #dataT{display:inline;}
   </style>
 </head>
 
@@ -52,9 +55,10 @@
         <option value="O">O</option>
       </select>
     <label for="txtUrlImagem">URL Imagem</label>
-    <input id="txtUrlImagem" type="text" name="urlImagem" placeholder="Ex: bit.ly/shiryu.png">
-    <label for="dataNascimento">Data</label>
-    <input id="dataNascimento" type="date" name="data" placeholder="dd/MM/yyyy">
+    <input id="imagem0" class="urlImagem" type="text" name="urlImagem[]" placeholder="Ex: bit.ly/shiryu.png">
+    <input type="checkbox" id="isThumb" value="isThumb"> <label for="isThumb">É thumbnail?</label>
+    <button type="button" id="adicionarImagem">Adicionar Imagem!</button>
+    <p id="dataT">Date: <input id="datepicker" type="text" name="data" placeholder="dd/MM/yyyy"></p>
     <label for="alturaMetros">Altura(metros)</label>
     <input id="alturaMetros" input type="number" min="0" name="altura" placeholder="altura(metros)">
     <label for="pesoKg">pesoKg</label>
@@ -76,13 +80,12 @@
         <option value="peixes">Peixes</option>
       </select>
     <label for="localNascimento">Local Nascimento</label>
-    <input id="localNasicmento" type="text" name="localNasicmento" placeholder="Local Nascimento">
+    <input id="localNasicmento" type="text" name="localNascimento" placeholder="Local Nascimento">
     <label for="localTreino">Local Treinamento</label>
     <input id="localTreino" type="text" name="localTreinamento" placeholder="Local Treino">
     <label for="golpes">Golpes</label>
-    <input id="0" class="golpe" type="text" name="golpe[]" placeholder="golpes">
-    <button id="adicionarGolpes">Adicionar Golpe!</button>
-    <!--<input type="submit" value="Cadastrar!">-->
+    <input id="golpe0" class="golpe" type="text" name="golpe[]" placeholder="golpes">
+    <button type="button" id="adicionarGolpes">Adicionar Golpe!</button>
     <button type="submit">Cadastrar!</button>
   </form>
   <hr>
@@ -91,6 +94,7 @@
     <ul class="cavaleiros"></ul>
   </section>
   <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="exercicio-form.js"></script>
 </body>
 
