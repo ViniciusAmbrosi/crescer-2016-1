@@ -5,36 +5,36 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
-    .cavaleiros div {
-      display: inline;
-      list-style: none;
-      margin: 10px;
-      position: relative;
-    }
-
-    #imgCav {
+    .cavaleiros li {
       position:relative;
       display: inline-block;
+      list-style: none;
+      margin: 10px;
     }
-
+    
+    .cavaleiros ul {
+      margin: 10px;
+    }
+    
     #nomeCav {
-      position:relative;
       width: 150px;
     }
-
-    .receiver{
+    
+    .receiver {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 50%;
+      left: 50%;
       border: 1px solid black;
       padding: 5px;
-      z-index: 100;
-      background-color: red;
+      z-index: 1;
+      background-color: rgba(197, 197, 197, 0.90);
       display: none;
-      height: 58px;
-      width: 58px;
+      width: 200px;
     }
-
+    p{
+      margin: 0px;
+      padding: 0px;
+    }
   </style>
 </head>
 
@@ -45,7 +45,7 @@
   </div>
   <section>
     <button type='button' name='cavaleiros-btn'>Carregar</button>
-    <div class="cavaleiros"></div>
+    <ul class="cavaleiros"></ul>
   </section>
 
   <script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
