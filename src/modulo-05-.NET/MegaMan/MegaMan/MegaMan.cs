@@ -8,5 +8,6 @@ namespace MegaMan
 {
     class MegaMan : Robo
     {
+
     }
 }
