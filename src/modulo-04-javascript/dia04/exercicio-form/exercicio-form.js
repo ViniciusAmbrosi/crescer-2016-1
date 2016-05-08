@@ -10,17 +10,17 @@ $(function () {
         var cavaleiro = converterFormParaCavaleiro($frmNovoCavaleiro);
         goldSaints.push(cavaleiro);
         localStorage['cavaleiros'] = JSON.stringify(goldSaints);
-        exibeCavaleiro(cavaleiro);
         return e.preventDefault();
     });
 
     $('#carregarCavaleiros').click(function () {
+        $('.cavaleiros').children().detach();
         goldSaints.forEach(function (e) {
             var url = e.imagens[0].url;
             var $img = $('<img>').attr('src', url).attr('id', e.id).attr('alt', e.nome).attr('altura', e.alturaCm).attr('peso', e.pesoLb).attr('dataNascimento', e.dataNascimento)
                 .attr('localNascimento', e.localNascimento).attr('localTreinamento', e.localTreinamento).attr('signo', e.signo).attr('tipoSanguineo', e.tipoSanguineo);
             $img.attr('golpes', e.golpes);
-            $('.cavaleiros').append($('<li>').attr('id', e.id).append($('<div>').attr('id', 'imgCav' + e.id).append($img)));
+            $img.appendTo($('<div>').appendTo($('<li>').attr('id', e.id).appendTo($('.cavaleiros'))));
             $('li#' + e.id).append($('<input type="button" class="excluiCavaleiro" value="Excluir">').attr('id', e.id));
         });
 
@@ -64,8 +64,8 @@ $(function () {
         $('.excluiCavaleiro').click(function () {
             var self = $(this);
             var index = parseInt(self.attr('id'));
-            var cavaleiro = goldSaints.filter(function(e){
-              return e.id === index;
+            var cavaleiro = goldSaints.filter(function (e) {
+                return e.id === index;
             })
             index = goldSaints.indexOf(cavaleiro[0]);
             goldSaints.splice(index, 1);
@@ -77,12 +77,6 @@ $(function () {
         var $golpes = ($('.golpe').length - 1);
         $('#golpe' + $golpes).after($('#golpe0').clone().attr('id', 'golpe' +
             ($golpes + 1)).val(''));
-    });
-
-    $('#adicionarImagem').click(function () {
-        var imagens = ($('.urlImagem').length - 1);
-        $('#imagem' + imagens).after($('#imagem0').clone().attr('id', 'imagem' +
-            (imagens + 1)).val(''));
     });
 
     $("#datepicker").datepicker();
