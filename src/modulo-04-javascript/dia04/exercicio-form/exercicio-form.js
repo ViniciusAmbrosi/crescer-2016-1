@@ -17,69 +17,82 @@ $(function () {
         $('.cavaleiros').children().detach();
         goldSaints.forEach(function (e) {
             var url = e.imagens[0].url;
-            var $img = $('<img>').attr('src', url).attr('id', e.id).attr('alt', e.nome).attr('altura', e.alturaCm).attr('peso', e.pesoLb).attr('dataNascimento', e.dataNascimento)
-                .attr('localNascimento', e.localNascimento).attr('localTreinamento', e.localTreinamento).attr('signo', e.signo).attr('tipoSanguineo', e.tipoSanguineo);
-            $img.attr('golpes', e.golpes);
-            $img.appendTo($('<div>').appendTo($('<li>').attr('id', e.id).appendTo($('.cavaleiros'))));
-            $('li#' + e.id).append($('<input type="button" class="excluiCavaleiro" value="Excluir">').attr('id', e.id));
+            var $img = $('<img>')
+            var imgCavaleiro = new Image();
+            imgCavaleiro.src = url;
+            imgCavaleiro.alt = e.nome;
+            imgCavaleiro.id = e.id;
+            imgCavaleiro.altura = e.alturaCm;
+            imgCavaleiro.peso = e.pesoLb;
+            imgCavaleiro.dataNascimento = e.dataNascimento;
+            imgCavaleiro.localNascimento = e.localNascimento;
+            imgCavaleiro.localTreinamento = e.localTreinamento;
+            imgCavaleiro.signo = e.signo;
+            imgCavaleiro.tipoSanguineo = e.tipoSanguineo;
+            imgCavaleiro.golpes = e.golpes;
+            imgCavaleiro.onload = function () {
+                var $img = $(imgCavaleiro);
+                $img.appendTo($('<div>').appendTo($('<li>').attr('id', e.id).appendTo($('.cavaleiros'))));
+                $('li#' + e.id).append($('<input type="button" class="excluiCavaleiro" value="Excluir">').attr('id', e.id));
+            }
         });
 
-        $('.cavaleiros img').click(function () {
+    $('.cavaleiros img').click(function () {
+        var self = $(this);
+        var nome = self.attr('alt');
+        $("#imgCav" + self.attr('id')).prepend($('<h4>').attr('id', 'nomeCav').append(nome));
+    })
+
+    $(".cavaleiros img")
+        .mouseenter(function () {
             var self = $(this);
+            var id = self.attr('id');
             var nome = self.attr('alt');
-            $("#imgCav" + self.attr('id')).prepend($('<h4>').attr('id', 'nomeCav').append(nome));
+            var altura = self.attr('altura');
+            var peso = self.attr('peso');
+            var dataNascimento = self.attr('dataNascimento').substring(0, 10);
+            var localNascimento = self.attr('localNascimento');
+            var localTreinamento = self.attr('localTreinamento');
+            var signo = self.attr('signo');
+            var tipoSanguineo = self.attr('tipoSanguineo');
+            var golpes = self.attr('golpes');
+            $('li#' + id).append($('<div>').addClass("receiver"));
+            $('.receiver').append($('<p>').append('ID: ' + id));
+            $('.receiver').append($('<p>').append('NOME: ' + nome));
+            $('.receiver').append($('<p>').append('DATA NASC: ' + dataNascimento));
+            $('.receiver').append($('<p>').append('LOCAL NASC: ' + localNascimento));
+            $('.receiver').append($('<p>').append('LOCAL TREINO: ' + localTreinamento));
+            $('.receiver').append($('<p>').append('TIPO SANGUINEO: ' + tipoSanguineo));
+            $('.receiver').append($('<p>').append('ALTURA: ' + altura));
+            $('.receiver').append($('<p>').append('PESO: ' + peso));
+            $('.receiver').append($('<p>').append('SIGNO: ' + signo));
+            $('.receiver').append($('<p>').append('GOLPES: '));
+            $('.receiver').append($('<p>').append(golpes));
+            $('.receiver').show();
         })
-
-        $(".cavaleiros img")
-            .mouseenter(function () {
-                var self = $(this);
-                var id = self.attr('id');
-                var nome = self.attr('alt');
-                var altura = self.attr('altura');
-                var peso = self.attr('peso');
-                var dataNascimento = self.attr('dataNascimento').substring(0, 10);
-                var localNascimento = self.attr('localNascimento');
-                var localTreinamento = self.attr('localTreinamento');
-                var signo = self.attr('signo');
-                var tipoSanguineo = self.attr('tipoSanguineo');
-                var golpes = self.attr('golpes');
-                $('li#' + id).append($('<div>').addClass("receiver"));
-                $('.receiver').append($('<p>').append('ID: ' + id));
-                $('.receiver').append($('<p>').append('NOME: ' + nome));
-                $('.receiver').append($('<p>').append('DATA NASC: ' + dataNascimento));
-                $('.receiver').append($('<p>').append('LOCAL NASC: ' + localNascimento));
-                $('.receiver').append($('<p>').append('LOCAL TREINO: ' + localTreinamento));
-                $('.receiver').append($('<p>').append('TIPO SANGUINEO: ' + tipoSanguineo));
-                $('.receiver').append($('<p>').append('ALTURA: ' + altura));
-                $('.receiver').append($('<p>').append('PESO: ' + peso));
-                $('.receiver').append($('<p>').append('SIGNO: ' + signo));
-                $('.receiver').append($('<p>').append('GOLPES: '));
-                $('.receiver').append($('<p>').append(golpes));
-                $('.receiver').show();
-            })
-            .mouseleave(function () {
-                $('.receiver').detach();
-            });
-
-        $('.excluiCavaleiro').click(function () {
-            var self = $(this);
-            var index = parseInt(self.attr('id'));
-            var cavaleiro = goldSaints.filter(function (e) {
-                return e.id === index;
-            })
-            index = goldSaints.indexOf(cavaleiro[0]);
-            goldSaints.splice(index, 1);
-            localStorage['cavaleiros'] = JSON.stringify(goldSaints);
+        .mouseleave(function () {
+            $('.receiver').detach();
         });
-    });
 
-    $('#adicionarGolpes').click(function () {
-        var $golpes = ($('.golpe').length - 1);
-        $('#golpe' + $golpes).after($('#golpe0').clone().attr('id', 'golpe' +
-            ($golpes + 1)).val(''));
+    $('.excluiCavaleiro').click(function () {
+        var self = $(this);
+        var index = parseInt(self.attr('id'));
+        var cavaleiro = goldSaints.filter(function (e) {
+            return e.id === index;
+        })
+        index = goldSaints.indexOf(cavaleiro[0]);
+        goldSaints.splice(index, 1);
+        localStorage['cavaleiros'] = JSON.stringify(goldSaints);
     });
+});
 
-    $("#datepicker").datepicker();
+$('#adicionarGolpes').click(function () {
+    var $golpes = ($('.golpe').length - 1);
+    $('#golpe' + $golpes).after($('#golpe0').clone().attr('id', 'golpe' +
+        ($golpes + 1)).val(''));
+});
+
+$("#datepicker").datepicker();
 
 });
 
