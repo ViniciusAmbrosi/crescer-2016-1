@@ -1,0 +1,4 @@
+D:\Projetos\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.dll
+D:\Projetos\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.pdb
+D:\Projetos\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.dll
+D:\Projetos\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.pdb

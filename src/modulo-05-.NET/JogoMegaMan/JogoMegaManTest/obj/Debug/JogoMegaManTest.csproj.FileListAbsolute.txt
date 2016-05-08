@@ -1,0 +1,8 @@
+D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaManTest.dll
+D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaManTest.pdb
+D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaMan.dll
+D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaMan.pdb
+D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.csprojResolveAssemblyReference.cache
+D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.dll
+D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.pdb
