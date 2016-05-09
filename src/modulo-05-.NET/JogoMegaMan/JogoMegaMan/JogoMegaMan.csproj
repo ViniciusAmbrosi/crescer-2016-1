@@ -43,6 +43,7 @@
     <Compile Include="Bot.cs" />
     <Compile Include="BotasDeSuperVelocidade.cs" />
     <Compile Include="CanhaoDePlasma.cs" />
+    <Compile Include="Chip.cs" />
     <Compile Include="EscudoDeEnergia.cs" />
     <Compile Include="IUpgrade.cs" />
     <Compile Include="MegaMan.cs" />

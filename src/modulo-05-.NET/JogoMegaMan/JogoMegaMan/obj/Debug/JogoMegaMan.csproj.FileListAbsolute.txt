@@ -2,3 +2,8 @@ D:\Projetos\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.dll
 D:\Projetos\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.pdb
 D:\Projetos\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.dll
 D:\Projetos\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.pdb
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.csprojResolveAssemblyReference.cache
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaMan\obj\Debug\JogoMegaMan.pdb
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaMan\bin\Debug\JogoMegaMan.pdb

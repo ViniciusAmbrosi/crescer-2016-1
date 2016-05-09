@@ -6,3 +6,11 @@ D:\Projetos\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaMan.pdb
 D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.csprojResolveAssemblyReference.cache
 D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.dll
 D:\Projetos\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.pdb
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaManTest.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaManTest.pdb
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaMan.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\bin\Debug\JogoMegaMan.pdb
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.csprojResolveAssemblyReference.cache
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.dll
+C:\Trabalho\Crescer-meu\src\modulo-05-.NET\JogoMegaMan\JogoMegaManTest\obj\Debug\JogoMegaManTest.pdb
