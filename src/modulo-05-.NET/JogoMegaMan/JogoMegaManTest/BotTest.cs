@@ -161,13 +161,15 @@ namespace JogoMegaManTest
                 bot.EquiparUpgrade(rush);
                 bot.EquiparUpgrade(canhao);
                 bot.EquiparUpgrade(escudo);
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {15}, Defesa: {5}");
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 85);
             }
 
             [TestMethod]
             public void BotEquipa3RushCom2RushEquipados() //equipa 3 rush com 2 rush equipados
             {
                 var bot = new Bot();
+                var botDois = new Bot();
                 var rush = new Rush();
                 var rushEquipDeRush = new Rush();
                 rush.EquiparUpgrade(rushEquipDeRush);
@@ -175,11 +177,102 @@ namespace JogoMegaManTest
                 bot.EquiparUpgrade(rush);
                 bot.EquiparUpgrade(rush);
                 bot.EquiparUpgrade(rush);
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {41}, Defesa: {9}");
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 59);
             }
+
+            [TestMethod]
+            public void BotChipPadrao()
+            {
+                var bot = new Bot();
+                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+            }
+
+            [TestMethod]
+            public void BotComChip1()
+            {
+                var bot = new Bot(Chip.Nivel1);
+                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {4}, Defesa: {0}");
+            }
+
+            [TestMethod]
+            public void BotComChip1AtacaChip1()
+            {
+                var bot = new Bot(Chip.Nivel1);
+                var botDois = new Bot(Chip.Nivel1);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 96);
+
+            }
+
+            [TestMethod]
+            public void BotComChip1AtacaChip3()
+            {
+                var bot = new Bot(Chip.Nivel1);
+                var botDois = new Bot(Chip.Nivel3);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 97);
+
+            }
+
+            [TestMethod]
+            public void BotComChip2()
+            {
+                var bot = new Bot(Chip.Nivel2);
+                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+            }
+
+            [TestMethod]
+            public void BotComChip2AtacaChip1()
+            {
+                var bot = new Bot(Chip.Nivel2);
+                var botDois = new Bot(Chip.Nivel1);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 95);
+
+            }
+
+            [TestMethod]
+            public void BotComChip2AtacaChip3()
+            {
+                var bot = new Bot(Chip.Nivel2);
+                var botDois = new Bot(Chip.Nivel3);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 96);
+
+            }
+
+            [TestMethod]
+            public void BotComChip3()
+            {
+                var bot = new Bot(Chip.Nivel3);
+                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {7}, Defesa: {1}");
+
+            }
+
+            [TestMethod]
+            public void BotComChip3AtacaChip1()
+            {
+                var bot = new Bot(Chip.Nivel3);
+                var botDois = new Bot(Chip.Nivel1);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 93);
+
+            }
+
+            [TestMethod]
+            public void BotComChip3AtacaChip3()
+            {
+                var bot = new Bot(Chip.Nivel3);
+                var botDois = new Bot(Chip.Nivel3);
+                bot.Atacar(botDois);
+                Assert.AreEqual(botDois.Vida, 94);
+            }
+
         }
     }
 }
+
 
 
 
