@@ -8,11 +8,13 @@ namespace JogoMegaMan
 {
     public class Rush : Robo, IUpgrade
     {
+        public Rush(Chip chip) : base(chip) { }
+        public Rush() : base() { }
         public int BonusAtaque
         {
             get
             {
-                return Ataque;
+                return Ataque + BonusEquipAtaque;
             }
         }
 
@@ -49,7 +51,7 @@ namespace JogoMegaMan
         {
             get
             {
-                return 4 + BonusEquipAtaque;
+                return 4 + ModificadorChipDano;
             }
         }
 
@@ -57,8 +59,15 @@ namespace JogoMegaMan
         {
             get
             {
-                return 3 + BonusEquipDefesa;
+                return 3 + ModificadorChipDefesa;
             }
+        }
+
+        public override void Atacar(Robo robo)
+        {
+            if (robo is MegaMan)
+                return;
+            robo.RecebeDano(Ataque + BonusEquipAtaque);
         }
     }
 }
