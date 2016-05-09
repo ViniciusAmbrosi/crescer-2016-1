@@ -8,6 +8,8 @@ namespace JogoMegaMan
 {
     public class ProtoMan : Robo
     {
+        public ProtoMan(Chip chip) : base(chip) { }
+        public ProtoMan() : base() { }
         public override string Nome
         {
             get
@@ -33,20 +35,23 @@ namespace JogoMegaMan
         {
             get
             {
-                if (HasDied) { return 7 + BonusEquipAtaque; }
-                return 5 + BonusEquipAtaque;
+                if (HasDied) { return 7 + ModificadorChipDano; }
+                return 5 + ModificadorChipDano;
             }
         }
         protected override int Defesa
         {
             get
             {
-                return 2 + BonusEquipDefesa;
+                return 2 + ModificadorChipDefesa;
             }
         }
         public override void RecebeDano(int dano)
         {
-            Vida -= (dano - Defesa);
+            var danoRecebido = dano - (Defesa + BonusEquipDefesa);
+            if (danoRecebido <= 0)
+                return;
+            Vida -= danoRecebido;
             if (!hasDied && Vida <= 0)
             {
                 Vida = 20;
