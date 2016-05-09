@@ -184,12 +184,14 @@ namespace JogoMegaManTest
             var rush = new Rush();
             var canhao = new CanhaoDePlasma();
             var escudo = new EscudoDeEnergia();
+            var bot = new Bot();
             rush.EquiparUpgrade(canhao);
             rush.EquiparUpgrade(canhao);
             megaman.EquiparUpgrade(rush);
             megaman.EquiparUpgrade(canhao);
             megaman.EquiparUpgrade(escudo);
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {16}, Defesa: {5}");
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 84);
         }
 
         [TestMethod]
@@ -198,12 +200,115 @@ namespace JogoMegaManTest
             var megaman = new MegaMan();
             var rush = new Rush();
             var rushEquipDeRush = new Rush();
+            var bot = new Bot(); 
             rush.EquiparUpgrade(rushEquipDeRush);
             rush.EquiparUpgrade(rushEquipDeRush);
             megaman.EquiparUpgrade(rush);
             megaman.EquiparUpgrade(rush);
             megaman.EquiparUpgrade(rush);
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {42}, Defesa: {9}");
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 58);
+        }
+
+        [TestMethod]
+        public void MegaManChipPadrao()
+        {
+            var megaman = new MegaMan();
+            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
+        }
+
+        [TestMethod]
+        public void MegaManComChip1()
+        {
+            var megaman = new MegaMan(Chip.Nivel1);
+            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+        }
+
+        [TestMethod]
+        public void MegaManComChip1AtacaChip1()
+        {
+            var megaman = new MegaMan(Chip.Nivel1);
+            var bot = new Bot(Chip.Nivel1);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 95);
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip1AtacaChip3()
+        {
+            var megaman = new MegaMan(Chip.Nivel1);
+            var bot = new Bot(Chip.Nivel3);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 96);
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip2()
+        {
+            var megaman = new MegaMan(Chip.Nivel2);
+            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
+        }
+
+        [TestMethod]
+        public void MegaManComChip2AtacaChip1()
+        {
+            var megaman = new MegaMan(Chip.Nivel2);
+            var bot = new Bot(Chip.Nivel1);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 94);
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip2AtacaChip3()
+        {
+            var megaman = new MegaMan(Chip.Nivel2);
+            var bot = new Bot(Chip.Nivel3);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 95);
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip3()
+        {
+            var megaman = new MegaMan(Chip.Nivel3);
+            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {8}, Defesa: {1}");
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip3AtacaChip1()
+        {
+            var megaman = new MegaMan(Chip.Nivel3);
+            var bot = new Bot(Chip.Nivel1);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 92);
+
+        }
+
+        [TestMethod]
+        public void MegaManComChip3AtacaChip3()
+        {
+            var megaman = new MegaMan(Chip.Nivel3);
+            var bot = new Bot(Chip.Nivel3);
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 93);
+        }
+
+        [TestMethod]
+        public void MegaManComChip3EMenos30VidaCausa10Dano()
+        {
+            var megaman = new MegaMan(Chip.Nivel3);
+            var bot = new Bot(Chip.Nivel3);
+            for (int i = 0; i < 15; i++)
+            {
+                bot.Atacar(megaman);
+            }
+            megaman.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 90);
         }
     }
 }
