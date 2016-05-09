@@ -87,24 +87,28 @@ namespace JogoMegaManTest
         }
 
         [TestMethod]
-        public void RushEquipaRushTem8Dano6Defesa()
+        public void RushEquipaRushCausa8Dano()
         {
             var rush = new Rush();
             var rushEquip = new Rush();
+            var bot = new Bot();
             rush.EquiparUpgrade(rushEquip);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {8}, Defesa: {6}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 92);
         }
 
         [TestMethod]
-        public void RushEquipaRushEquipadoComDoisCanhoesCausa13Dano()
+        public void RushEquipaRushEquipadoComDoisCanhoesCausa12Dano()
         {
             var rush = new Rush();
             var rushEquip = new Rush();
             var canhao = new CanhaoDePlasma();
+            var bot = new Bot();
             rushEquip.EquiparUpgrade(canhao);
             rushEquip.EquiparUpgrade(canhao);
             rush.EquiparUpgrade(rushEquip);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {12}, Defesa: {6}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 88);
         }
 
         [TestMethod]
@@ -113,10 +117,15 @@ namespace JogoMegaManTest
             var rush = new Rush();
             var rushEquip = new Rush();
             var escudo = new EscudoDeEnergia();
+            var bot = new Bot();
             rushEquip.EquiparUpgrade(escudo);
             rushEquip.EquiparUpgrade(escudo);
             rush.EquiparUpgrade(rushEquip);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {8}, Defesa: {6}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 92);
+            bot.Atacar(rush);
+            Assert.AreEqual(rush.Vida, 100);
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
@@ -126,10 +135,14 @@ namespace JogoMegaManTest
             var rushEquip = new Rush();
             var canhao = new CanhaoDePlasma();
             var botas = new BotasDeSuperVelocidade();
+            var bot = new Bot();
             rushEquip.EquiparUpgrade(canhao);
             rushEquip.EquiparUpgrade(botas);
             rush.EquiparUpgrade(rushEquip);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {11}, Defesa: {6}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 89);
+            bot.Atacar(rush);
+            Assert.AreEqual(rush.Vida, 100);
         }
 
         [TestMethod]
@@ -139,11 +152,13 @@ namespace JogoMegaManTest
             var rushEquip = new Rush();
             var canhao = new CanhaoDePlasma();
             var escudo = new EscudoDeEnergia();
+            var bot = new Bot();
             rushEquip.EquiparUpgrade(canhao);
             rushEquip.EquiparUpgrade(canhao);
             rush.EquiparUpgrade(rushEquip);
             rush.EquiparUpgrade(canhao);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {14}, Defesa: {6}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 86);
         }
 
         [TestMethod]
@@ -152,11 +167,111 @@ namespace JogoMegaManTest
             var rush = new Rush();
             var rushEquip = new Rush();
             var rushEquipDeRush = new Rush();
+            var bot = new Bot();
             rushEquip.EquiparUpgrade(rushEquipDeRush);
             rushEquip.EquiparUpgrade(rushEquipDeRush);
             rush.EquiparUpgrade(rushEquip);
             rush.EquiparUpgrade(rushEquip);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {28}, Defesa: {9}");
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 72);
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+        }
+
+        [TestMethod]
+        public void RushChipPadrao()
+        {
+            var rush = new Rush();
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+        }
+
+        [TestMethod]
+        public void RushComChip1()
+        {
+            var rush = new Rush(Chip.Nivel1);
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {3}, Defesa: {3}");
+        }
+
+        [TestMethod]
+        public void RushComChip1AtacaChip1()
+        {
+            var rush = new Rush(Chip.Nivel1);
+            var bot = new Bot(Chip.Nivel1);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 97);
+
+        }
+
+        [TestMethod]
+        public void RushComChip1AtacaChip3()
+        {
+            var rush = new Rush(Chip.Nivel1);
+            var bot = new Bot(Chip.Nivel3);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 98);
+
+        }
+
+        [TestMethod]
+        public void RushComChip2()
+        {
+            var rush = new Rush(Chip.Nivel2);
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+        }
+
+        [TestMethod]
+        public void RushComChip2AtacaChip1()
+        {
+            var rush = new Rush(Chip.Nivel2);
+            var bot = new Bot(Chip.Nivel1);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 96);
+
+        }
+
+        [TestMethod]
+        public void RushComChip2AtacaChip3()
+        {
+            var rush = new Rush(Chip.Nivel2);
+            var bot = new Bot(Chip.Nivel3);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 97);
+
+        }
+
+        [TestMethod]
+        public void RushComChip3()
+        {
+            var rush = new Rush(Chip.Nivel3);
+            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {6}, Defesa: {4}");
+
+        }
+
+        [TestMethod]
+        public void RushComChip3AtacaChip1()
+        {
+            var rush = new Rush(Chip.Nivel3);
+            var bot = new Bot(Chip.Nivel1);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 94);
+
+        }
+
+        [TestMethod]
+        public void RushComChip3AtacaChip3()
+        {
+            var rush = new Rush(Chip.Nivel3);
+            var bot = new Bot(Chip.Nivel3);
+            rush.Atacar(bot);
+            Assert.AreEqual(bot.Vida, 95);
+        }
+
+        [TestMethod]
+        public void RushNaoAtacaMegaMan()
+        {
+            var rush = new Rush(Chip.Nivel3);
+            var megaman = new MegaMan(Chip.Nivel3);
+            rush.Atacar(megaman);
+            Assert.AreEqual(megaman.Vida, 100);
         }
     }
 }
