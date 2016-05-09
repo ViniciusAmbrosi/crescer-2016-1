@@ -8,6 +8,8 @@ namespace JogoMegaMan
 {
     public class MegaMan : Robo
     {
+        public MegaMan(Chip chip) : base(chip) { }
+        public MegaMan() : base() { }
         public override string Nome
         {
             get
@@ -19,16 +21,16 @@ namespace JogoMegaMan
         {
             get
             {
-                return 6 + BonusEquipAtaque;
+                return 6 + ModificadorChipDano;
             }
         }
 
-        public virtual void Atacar(Robo robo)
+        public override void Atacar(Robo robo)
         {
             if (Vida <= 30)
-                robo.RecebeDano(3 + Ataque);
+                robo.RecebeDano(3 + Ataque + BonusEquipAtaque);
             else
-                robo.RecebeDano(Ataque);
+                robo.RecebeDano(Ataque + BonusEquipAtaque);
         }
     }
 }
