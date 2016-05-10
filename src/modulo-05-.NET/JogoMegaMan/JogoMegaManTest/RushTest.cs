@@ -34,7 +34,7 @@ namespace JogoMegaManTest
         public void RushToString()
         {
             var rush = new Rush();
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
@@ -125,7 +125,7 @@ namespace JogoMegaManTest
             Assert.AreEqual(bot.Vida, 92);
             bot.Atacar(rush);
             Assert.AreEqual(rush.Vida, 100);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
@@ -174,21 +174,21 @@ namespace JogoMegaManTest
             rush.EquiparUpgrade(rushEquip);
             rush.Atacar(bot);
             Assert.AreEqual(bot.Vida, 72);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
         public void RushChipPadrao()
         {
             var rush = new Rush();
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
         public void RushComChip1()
         {
             var rush = new Rush(Chip.Nivel1);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {3}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {3}, Defesa: {3}");
         }
 
         [TestMethod]
@@ -215,7 +215,7 @@ namespace JogoMegaManTest
         public void RushComChip2()
         {
             var rush = new Rush(Chip.Nivel2);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {4}, Defesa: {3}");
         }
 
         [TestMethod]
@@ -242,7 +242,7 @@ namespace JogoMegaManTest
         public void RushComChip3()
         {
             var rush = new Rush(Chip.Nivel3);
-            Assert.AreEqual(rush.toString(), "Nome: {Rush}, Vida: {100}, Ataque: {6}, Defesa: {4}");
+            Assert.AreEqual(rush.ToString(), "Nome: {Rush}, Vida: {100}, Ataque: {6}, Defesa: {4}");
 
         }
 

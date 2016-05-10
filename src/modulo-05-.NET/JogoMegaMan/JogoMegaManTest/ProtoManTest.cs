@@ -73,7 +73,7 @@ namespace JogoMegaManTest
             public void ProtoManToString()
             {
                 var protoman = new ProtoMan();
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
             }
 
             [TestMethod]
@@ -185,7 +185,7 @@ namespace JogoMegaManTest
                 protoman.EquiparUpgrade(rush);
                 protoman.Atacar(bot);
                 Assert.AreEqual(bot.Vida, 91);
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
             }
 
             [TestMethod]
@@ -244,14 +244,14 @@ namespace JogoMegaManTest
             public void ProtoManChipPadrao()
             {
                 var protoman = new ProtoMan();
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
             }
 
             [TestMethod]
             public void ProtoManComChip1()
             {
                 var protoman = new ProtoMan(Chip.Nivel1);
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {4}, Defesa: {2}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {4}, Defesa: {2}");
             }
 
             [TestMethod]
@@ -278,7 +278,7 @@ namespace JogoMegaManTest
             public void ProtoManComChip2()
             {
                 var protoman = new ProtoMan(Chip.Nivel2);
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {5}, Defesa: {2}");
             }
 
             [TestMethod]
@@ -305,7 +305,7 @@ namespace JogoMegaManTest
             public void ProtoManComChip3()
             {
                 var protoman = new ProtoMan(Chip.Nivel3);
-                Assert.AreEqual(protoman.toString(), "Nome: {Protoman}, Vida: {100}, Ataque: {7}, Defesa: {3}");
+                Assert.AreEqual(protoman.ToString(), "Nome: {Protoman}, Vida: {100}, Ataque: {7}, Defesa: {3}");
 
             }
 

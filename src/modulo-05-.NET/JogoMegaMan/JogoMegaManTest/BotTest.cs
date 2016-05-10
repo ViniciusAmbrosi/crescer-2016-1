@@ -36,7 +36,7 @@ namespace JogoMegaManTest
             public void BotToString()
             {
                 var bot = new Bot();
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+                Assert.AreEqual(bot.ToString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
             }
 
             [TestMethod]
@@ -185,14 +185,14 @@ namespace JogoMegaManTest
             public void BotChipPadrao()
             {
                 var bot = new Bot();
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+                Assert.AreEqual(bot.ToString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
             }
 
             [TestMethod]
             public void BotComChip1()
             {
                 var bot = new Bot(Chip.Nivel1);
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {4}, Defesa: {0}");
+                Assert.AreEqual(bot.ToString(), "Nome: {Bot}, Vida: {100}, Ataque: {4}, Defesa: {0}");
             }
 
             [TestMethod]
@@ -219,7 +219,7 @@ namespace JogoMegaManTest
             public void BotComChip2()
             {
                 var bot = new Bot(Chip.Nivel2);
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+                Assert.AreEqual(bot.ToString(), "Nome: {Bot}, Vida: {100}, Ataque: {5}, Defesa: {0}");
             }
 
             [TestMethod]
@@ -246,7 +246,7 @@ namespace JogoMegaManTest
             public void BotComChip3()
             {
                 var bot = new Bot(Chip.Nivel3);
-                Assert.AreEqual(bot.toString(), "Nome: {Bot}, Vida: {100}, Ataque: {7}, Defesa: {1}");
+                Assert.AreEqual(bot.ToString(), "Nome: {Bot}, Vida: {100}, Ataque: {7}, Defesa: {1}");
 
             }
 

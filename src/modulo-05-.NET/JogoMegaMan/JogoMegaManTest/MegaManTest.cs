@@ -47,7 +47,7 @@ namespace JogoMegaManTest
         public void MegaManToString()
         {
             var megaman = new MegaMan();
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
+            Assert.AreEqual(megaman.ToString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
         }
 
         [TestMethod]
@@ -214,14 +214,14 @@ namespace JogoMegaManTest
         public void MegaManChipPadrao()
         {
             var megaman = new MegaMan();
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
+            Assert.AreEqual(megaman.ToString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
         }
 
         [TestMethod]
         public void MegaManComChip1()
         {
             var megaman = new MegaMan(Chip.Nivel1);
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {5}, Defesa: {0}");
+            Assert.AreEqual(megaman.ToString(), "Nome: {Megaman}, Vida: {100}, Ataque: {5}, Defesa: {0}");
         }
 
         [TestMethod]
@@ -248,7 +248,7 @@ namespace JogoMegaManTest
         public void MegaManComChip2()
         {
             var megaman = new MegaMan(Chip.Nivel2);
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
+            Assert.AreEqual(megaman.ToString(), "Nome: {Megaman}, Vida: {100}, Ataque: {6}, Defesa: {0}");
         }
 
         [TestMethod]
@@ -275,7 +275,7 @@ namespace JogoMegaManTest
         public void MegaManComChip3()
         {
             var megaman = new MegaMan(Chip.Nivel3);
-            Assert.AreEqual(megaman.toString(), "Nome: {Megaman}, Vida: {100}, Ataque: {8}, Defesa: {1}");
+            Assert.AreEqual(megaman.ToString(), "Nome: {Megaman}, Vida: {100}, Ataque: {8}, Defesa: {1}");
 
         }
 

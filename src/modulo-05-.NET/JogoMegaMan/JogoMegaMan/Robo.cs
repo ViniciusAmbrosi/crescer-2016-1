@@ -78,7 +78,7 @@ namespace JogoMegaMan
             Vida -= danoRecebido;
         }
 
-        public virtual string toString()
+        public override string ToString()
         {
             return "Nome: {" + this.Nome + "}, Vida: {" + this.Vida + "}, Ataque: {" + this.Ataque + "}, Defesa: {" + this.Defesa + "}";
         }
