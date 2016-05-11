@@ -21,6 +21,10 @@ hs_err_pid*
 *.user
 *.sln.docstates
 
+# NuGet Packages
+packages
+!packages/repositories.config
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
