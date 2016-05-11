@@ -117,13 +117,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Estilo\alana.css" />
+    <Content Include="Content\Estilo\alice.css" />
+    <Content Include="Content\Estilo\alycio.css" />
+    <Content Include="Content\Estilo\andrews.css" />
+    <Content Include="Content\Estilo\arthur.css" />
+    <Content Include="Content\Estilo\calvingerling.css" />
+    <Content Include="Content\Estilo\davi.css" />
+    <Content Include="Content\Estilo\diuly.css" />
+    <Content Include="Content\Estilo\douglas.css" />
+    <Content Include="Content\Estilo\erico.css" />
+    <Content Include="Content\Estilo\fabriciorissetto.css" />
+    <Content Include="Content\Estilo\fernando.css" />
+    <Content Include="Content\Estilo\gustavo.css" />
+    <Content Include="Content\Estilo\hedo.css" />
+    <Content Include="Content\Estilo\leon.css" />
+    <Content Include="Content\Estilo\lucas.css" />
+    <Content Include="Content\Estilo\marcelo.css" />
+    <Content Include="Content\Estilo\mauricio.css" />
+    <Content Include="Content\Estilo\michel.css" />
+    <Content Include="Content\Estilo\murillo.css" />
+    <Content Include="Content\Estilo\victor.css" />
+    <Content Include="Content\Estilo\victorribeiro.css" />
+    <Content Include="Content\Estilo\viniciusambrosi.css" />
+    <Content Include="Content\Estilo\viniciusAudibert.css" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Views\Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PokemonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -144,8 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Pokemon\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
