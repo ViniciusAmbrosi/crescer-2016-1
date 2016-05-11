@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SFWiki - @ViewBag.Title</title>
+    <link href="~/Content/Estilo/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <span class="botao">
+                @Html.ActionLink("Inicio", "Index", "StreetFighter", new { @class = "link" })
+            </span>
+            <span class="botao">
+                @*@Html.ActionLink("Notícias", "Notícias", "StreetFighter", new { @class = "link" })*@
+                <a class="link" href="https://www.google.com.br/#q=street+fighter&tbm=nws">Notícias</a>
+            </span>
+            <span class="botao">
+                @Html.ActionLink("Ficha Técnica", "FichaTecnica", "StreetFighter", new {@class = "link"})
+            </span>
+            <span class="botao">
+                @Html.ActionLink("Sobre", "SobreMim", "StreetFighter", new {@class = "link"})
+            </span>
+        </nav>
+        <article>
+            <header>
+                <h2>@ViewBag.Title</h2>
+            </header>
+            <section>
+                <section>
+                   @RenderBody()
+                </section>
+            </section>
+        </article>
+    </div>
+</body>
+
+</html>
