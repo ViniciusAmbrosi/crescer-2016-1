@@ -4,7 +4,7 @@ var goldSaints = JSON.parse(localStorage['cavaleiros'] || '[{"id":1,"nome":"Mu",
 console.log(goldSaints);
 
 //!!!!!!!!!!!!!!!!!!!!!!IMPORTANT TODO
-/*Descobrir porque interface do datepicker esta bugando, 
+/*Descobrir porque interface do datepicker esta bugando,
 Tentar implementar dinamismo nos cavaleiros (aka sem botao),
 Adicionar imagem que for thumb.
 A principio todos comportamente errados foram concertados*/
@@ -61,7 +61,7 @@ $(function () {
                 $img.on('mouseleave', function () {
                     $('.receiver').detach();
                 });
-                
+
                 $deleteButton.click(deletaCavaleiro);
             }
         })
