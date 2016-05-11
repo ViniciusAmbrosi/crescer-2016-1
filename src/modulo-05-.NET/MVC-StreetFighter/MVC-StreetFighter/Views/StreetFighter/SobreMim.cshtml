@@ -1,0 +1,26 @@
+﻿@model SobreMimModel
+
+@{
+    ViewBag.Title = "Sobre Mim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section>
+    <header>
+        <h3> @Model.Nome </h3>
+    </header>
+    <img ID="imagem-vinicius" class="imagem" src= "@Url.Content(String.Format("~/Content/Imagens/{0}", @Model.SrcFoto))" alt="Vinicius Ambrosi">
+</section>
+<section>
+    <p>
+        <span>Data de Nascimento:</span> @Model.DataNascimento.ToString("d") <br>
+        <span>Email:</span> @Model.Email<br>
+        <span>Hobbies:</span> 
+        @foreach (var hobbie in Model.Hobbies)
+        {
+            <text> @hobbie </text>
+        }
+    </p>
+</section>
