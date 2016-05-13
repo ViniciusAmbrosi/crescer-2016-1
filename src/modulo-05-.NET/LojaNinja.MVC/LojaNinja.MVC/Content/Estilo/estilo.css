@@ -1,0 +1,30 @@
+﻿.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navheader {
+    z-index: 2;
+}
+
+#nav-container {
+    width: auto;
+}
+
+#icon-nav {
+    font-size: 16px;
+}
+
+.logout-drop {
+    text-align: center;
+}
+
+#form-procura-pedido {
+    color: #9D9D9D;
+    margin: 12px;
+}
+
+#botao-buscar {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color:black;
+}
