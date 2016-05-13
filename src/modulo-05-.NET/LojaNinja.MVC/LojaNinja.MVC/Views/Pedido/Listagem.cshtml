@@ -1,19 +1,10 @@
 ﻿@model List<LojaNinja.Dominio.Pedido>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.titulo = "Listagem";
 }
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <title>Listagem</title>
-</head>
-<body>
     <div>
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
@@ -62,5 +53,3 @@
             </table>
         </div>
     </div>
-</body>
-</html>
