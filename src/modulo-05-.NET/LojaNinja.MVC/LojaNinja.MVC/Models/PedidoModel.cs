@@ -10,6 +10,8 @@ namespace LojaNinja.MVC.Models
 {
     public class PedidoModel
     {
+        public int? NumeroPedido { get; set; }
+
         [Required(ErrorMessage = "Deve informar data de entrega")]
         [DisplayName("Data de Entrega")]
         public DateTime DataEntrega { get; set; }
