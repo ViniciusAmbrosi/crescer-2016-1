@@ -1,0 +1,66 @@
+﻿@model List<LojaNinja.Dominio.Pedido>
+
+@{
+    Layout = null;
+    ViewBag.titulo = "Listagem";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Listagem</title>
+</head>
+<body>
+    <div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="text-center">
+                    <tr>
+                        <th>Data Pedido</th>
+                        <th>Data Entrega</th>
+                        <th>NomeProduto</th>
+                        <th>Valor</th>
+                        <th>Tipo de Pagamento</th>
+                        <th>Nome Cliente</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Urgente?</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pedido in Model)
+                    {
+                        <tr class="text-left">
+                            <td>@pedido.DataPedido</td>
+                            <td>@pedido.DataEntrega</td>
+                            <td>@pedido.NomeProduto</td>
+                            <td>@pedido.Valor</td>
+                            <td>@pedido.TipoDePagamento</td>
+                            <td>@pedido.NomeCliente</td>
+                            <td>@pedido.Cidade</td>
+                            <td>@pedido.Estado</td>
+                            @if (pedido.PedidoUrgente)
+                            {
+                                <td><span class="glyphicon glyphicon-flash fa-1x" aria-hidden="true">Sim</span></td>
+                            }
+                            else
+                            {
+                                <td>Não</td>
+                            }
+                            <td>
+                                @Html.ActionLink("Editar", "Editar", new { id = pedido.NumeroPedido }) |
+                                @Html.ActionLink("Ver Detalhes", "Detalhes", new { id = pedido.NumeroPedido }) |
+                                @Html.ActionLink("Remover", "Excluir", new { id = pedido.NumeroPedido })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
