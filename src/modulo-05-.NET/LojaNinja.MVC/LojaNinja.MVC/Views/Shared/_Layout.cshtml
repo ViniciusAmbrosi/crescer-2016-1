@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.titulo</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="~/Content/Estilo/estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top navheader">
+        <div id="nav-container" class="container">
+            <!--button collapse-->
+            <header class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-left" href="#">CAMELO NINJA!</a>
+            </header>
+            <!--end button collapse-->
+            <!-- menu-->
+            <div id="navbar" class="collapse navbar-collapse">
+                <!--icon/buttons-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--SEACH - DETAILS-->
+                    <li id="form-procura-pedido">
+                        <form method="get" action="@Url.Action("Detalhes", "Pedido")">
+                            <label for="search">Buscar Pedido</label>
+                            <input type="text" name="id" placeholder="Ex: 25" />
+                            <button id="botao-buscar" type="submit">Buscar</button>
+                        </form>
+                    </li>
+                    <!--ADD - CADASTRO-->
+                    <li>
+                        <a id="icon-nav" href="@Url.Action("Cadastro", "Pedido")" class="btn">
+                            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <!--GRID - LISTAGEM-->
+                    <li>
+                        <a id="icon-nav" href="@Url.Action("Listagem", "Pedido")" class="btn">
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <!--dropdown para logout-->
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Logout <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="logout-drop">Deseja Deslogar?</li>
+                            <li class="divider" role="separator"></li>
+                            <li class="logout-drop"><a href="#logout">Logout</a></li>
+                    </li>
+                </ul>
+                <!--end icon/buttons-->
+            </div>
+            <!--end menu -->
+        </div>
+        <!--end header container-->
+    </nav>
+    <!--end navbar-->
+    <div class="container">
+        @RenderBody()
+    </div>
+    @RenderSection("scripts", false)
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+</body>
+</html>
