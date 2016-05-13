@@ -1,18 +1,53 @@
-﻿
+﻿@model LojaNinja.Dominio.Pedido
 @{
     Layout = null;
+    ViewBag.titulo = "Detalhes";
 }
 
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <title>Detalhes</title>
 </head>
 <body>
-    <div> 
-        asdkjlasdkajsdkajsdajsdas
+    <div>
+        <div>
+            <h3>Pedido</h3>
+            <div>
+                @if (@Model.PedidoUrgente)
+                {
+                    <span class="glyphicon glyphicon-flash fa-2x" aria-hidden="true">Urgente!</span>
+                }
+            </div>
+            <div>
+                @Model.DataPedido.ToString("dd/MM/yyyy hh:mm")
+            </div>
+            <div>
+                @Model.NomeProduto
+            </div>
+            <div>
+                @string.Format("{0:c}", Model.Valor)
+            </div>
+            <div>
+                @Model.TipoDePagamento
+            </div>
+            <div>
+                @Model.NomeCliente
+            </div>
+            <div>
+                @Model.DataEntrega.ToString("dd/MM/yyyy hh:mm")
+            </div>
+            <div>
+                @Model.Cidade
+            </div>
+            <div>
+                @Model.Estado
+            </div>
+        </div>
     </div>
 </body>
 </html>
