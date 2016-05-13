@@ -18,12 +18,73 @@ namespace LojaNinja.MVC.Controllers
             return View();
         }
 
+        public ActionResult Editar(int id)
+        {
+            var pedido = repositorio.ObterPedidoPorId(id);
+            PedidoModel pedidoModel = new PedidoModel
+            {
+                NomeCliente = pedido.NomeCliente,
+                NomeProduto = pedido.NomeProduto,
+                NumeroPedido = pedido.NumeroPedido,
+                Cidade = pedido.Cidade,
+                DataEntrega = pedido.DataEntrega,
+                Estado = pedido.Estado,
+                TipoDePagamento = pedido.TipoDePagamento,
+                Valor = pedido.Valor
+            };
+            return View("Cadastro", pedidoModel);
+        }
+
         public ActionResult Salvar(PedidoModel model)
         {
-            var pedido = new Pedido(model.DataEntrega, model.NomeProduto, model.Valor, model.TipoDePagamento,
-                                    model.NomeCliente, model.Cidade, model.Estado);
-            repositorio.IncluirPedido(pedido);
-            return View("Detalhes", model);
+            if (ModelState.IsValid)
+            {
+                Pedido pedido;
+                try
+                {
+                    pedido = new Pedido(model.DataEntrega, model.NomeProduto, model.Valor, model.TipoDePagamento,
+                        model.NomeCliente, model.Cidade, model.Estado);
+                    if (model.NumeroPedido.HasValue)
+                    {
+                        int id = (int)model.NumeroPedido;
+                        repositorio.AlterarPedido(id, model.DataEntrega, model.NomeProduto, model.Valor, model.TipoDePagamento,
+                            model.NomeCliente, model.Cidade, model.Estado);
+                        return View("Detalhes", pedido);
+                    }
+                    else {
+                        repositorio.IncluirPedido(pedido);
+                        return View("Detalhes", pedido);
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    ModelState.AddModelError("", ex.Message);
+                    return View("Cadastro", model);
+                }
+            }
+            else
+            {
+                return View("Cadastro", model);
+            }
+        }
+
+        public ActionResult Detalhes(int id)
+        {
+            return View(repositorio.ObterPedidoPorId(id));
+        }
+
+        public ActionResult Listagem()
+        {
+            var pedidos = repositorio.ObterPedidos();
+            return View(pedidos);
+        }
+
+        public ActionResult Excluir(int id)
+        {
+            repositorio.RemoverPedido(id);
+            var pedidos = repositorio.ObterPedidos();
+
+            return View("Listagem", pedidos);
         }
     }
 }
