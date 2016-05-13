@@ -68,23 +68,36 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
-        public ActionResult Detalhes(int id)
+        public ActionResult Detalhes(int? id)
         {
-            return View(repositorio.ObterPedidoPorId(id));
+            int idPedido;
+            try
+            {
+                idPedido = (int)id;
+                if (repositorio.ObterPedidoPorId(idPedido) == null)
+                {
+                    return Content("<script language='javascript' type='text/javascript'>alert('Pedido não existe!');</script>");
+                }
+            
+            }
+            catch (Exception ex){
+                return Content("<script language='javascript' type='text/javascript'>alert('Pedido não existe!');</script>");
+    }
+            return View(repositorio.ObterPedidoPorId(idPedido));
         }
 
-        public ActionResult Listagem()
-        {
-            var pedidos = repositorio.ObterPedidos();
-            return View(pedidos);
-        }
+public ActionResult Listagem()
+{
+    var pedidos = repositorio.ObterPedidos();
+    return View(pedidos);
+}
 
-        public ActionResult Excluir(int id)
-        {
-            repositorio.RemoverPedido(id);
-            var pedidos = repositorio.ObterPedidos();
+public ActionResult Excluir(int id)
+{
+    repositorio.RemoverPedido(id);
+    var pedidos = repositorio.ObterPedidos();
 
-            return View("Listagem", pedidos);
-        }
+    return View("Listagem", pedidos);
+}
     }
 }
