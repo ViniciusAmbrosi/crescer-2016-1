@@ -67,3 +67,13 @@
 .urgencia {
     color: red;
 }
+
+#camelao-div-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: -301px;
+}
+
+#camelao-img {
+    width: 300px;
+}
