@@ -76,28 +76,44 @@ namespace LojaNinja.MVC.Controllers
                 idPedido = (int)id;
                 if (repositorio.ObterPedidoPorId(idPedido) == null)
                 {
-                    return Content("<script language='javascript' type='text/javascript'>alert('Pedido não existe!');</script>");
+                    ViewBag.ErroIDPedido = "Nao existe nenhum pedido com este ID, tente novamente!";
+                    return View("Erro");
                 }
-            
+
             }
-            catch (Exception ex){
-                return Content("<script language='javascript' type='text/javascript'>alert('Pedido não existe!');</script>");
-    }
+            catch (Exception ex)
+            {
+                ViewBag.ErroIDPedido = "Nenhum ID possui letras, tente novamente!"; 
+                return View("Erro"); ;
+            }
             return View(repositorio.ObterPedidoPorId(idPedido));
         }
 
-public ActionResult Listagem()
-{
-    var pedidos = repositorio.ObterPedidos();
-    return View(pedidos);
-}
+        public ActionResult Listagem(string produto, string cliente)
+        {
+            if (String.IsNullOrWhiteSpace(produto) && String.IsNullOrWhiteSpace(cliente))
+            {
+                var pedidos = repositorio.ObterPedidos();
+                return View(pedidos);
+            }
+            else if (String.IsNullOrWhiteSpace(produto))
+            {
+                var pedidosComClienteTal = repositorio.ObterPedidosComDeterminadoCliente(cliente);
+                return View(pedidosComClienteTal);
+            }
+            else
+            {
+                var pedidosComProdutoTal = repositorio.ObterPedidosComDeterminadoProduto(produto);
+                return View(pedidosComProdutoTal);
+            }
+        }
 
-public ActionResult Excluir(int id)
-{
-    repositorio.RemoverPedido(id);
-    var pedidos = repositorio.ObterPedidos();
+        public ActionResult Excluir(int id)
+        {
+            repositorio.RemoverPedido(id);
+            var pedidos = repositorio.ObterPedidos();
 
-    return View("Listagem", pedidos);
-}
+            return View("Listagem", pedidos);
+        }
     }
 }
