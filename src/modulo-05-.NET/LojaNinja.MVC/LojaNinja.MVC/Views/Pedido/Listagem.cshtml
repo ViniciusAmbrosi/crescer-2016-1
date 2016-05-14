@@ -5,66 +5,68 @@
     ViewBag.titulo = "Listagem";
 }
 
-<div>
-    <h3>Filtro de Listagem</h3>
-    @using (Html.BeginForm("Listagem", "Pedido"))
-    {
-        <ul class="list-inline">
-            <li>
-                @Html.Label("Produto", htmlAttributes: new { @for = "search" })
-                @Html.TextBox("produto", "", new { type = "text", name = "produto", @placeholder = "Ex: Kunai" })
-            </li>
-            <li>
-                @Html.Label("Cliente", htmlAttributes: new { @for ="search" } )
-                @Html.TextBox("cliente", "", new { type = "text", name = "cliente", @placeholder = "Ex: Nunes" })
-            </li>
-            <li><input type="submit" value="Enviar" class="btn btn-default" /></li>
-        </ul>
-    }
-    <div class="table-responsive tabela-listagem">
-        <table class="table table-bordered table-striped">
-            <thead class="text-center">
-                <tr>
-                    <th>Data Pedido</th>
-                    <th>Data Entrega</th>
-                    <th>NomeProduto</th>
-                    <th>Valor</th>
-                    <th>Tipo de Pagamento</th>
-                    <th>Nome Cliente</th>
-                    <th>Cidade</th>
-                    <th>Estado</th>
-                    <th>Urgente?</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var pedido in Model)
-                {
-                    <tr class="text-left">
-                        <td>@pedido.DataPedido.ToString("dd/MM/yyyy hh:mm")</td>
-                        <td>@pedido.DataEntrega.ToString("dd/MM/yyyy hh:mm")</td>
-                        <td>@pedido.NomeProduto</td>
-                        <td>@String.Format("{0:C}", @pedido.Valor)</td>
-                        <td> @pedido.TipoDePagamento</td>
-                        <td>@pedido.NomeCliente</td>
-                        <td>@pedido.Cidade</td>
-                        <td>@pedido.Estado</td>
-                        @if (pedido.PedidoUrgente)
-                        {
-                            <td>Sim</td>
-                        }
-                        else
-                        {
-                            <td>Não</td>
-                        }
-                        <td>
-                            @Html.ActionLink("Editar", "Editar", new { id = pedido.NumeroPedido }) |
-                            @Html.ActionLink("Ver Detalhes", "Detalhes", new { id = pedido.NumeroPedido }) |
-                            @Html.ActionLink("Remover", "Excluir", new { id = pedido.NumeroPedido })
-                        </td>
+<div class="container container-corpo container-listagem">
+    <div>
+        <h3>Filtro de Listagem</h3>
+        @using (Html.BeginForm("Listagem", "Pedido"))
+        {
+            <ul class="list-inline">
+                <li>
+                    @Html.Label("Produto", htmlAttributes: new { @for = "search" })
+                    @Html.TextBox("produto", "", new { type = "text", name = "produto", @placeholder = "Ex: Kunai" })
+                </li>
+                <li>
+                    @Html.Label("Cliente", htmlAttributes: new { @for = "search" })
+                    @Html.TextBox("cliente", "", new { type = "text", name = "cliente", @placeholder = "Ex: Nunes" })
+                </li>
+                <li><input type="submit" value="Enviar" class="btn btn-default" /></li>
+            </ul>
+        }
+        <div class="table-responsive tabela-listagem">
+            <table class="table table-bordered table-striped">
+                <thead class="text-center">
+                    <tr>
+                        <th>Data Pedido</th>
+                        <th>Data Entrega</th>
+                        <th>NomeProduto</th>
+                        <th>Valor</th>
+                        <th>Tipo de Pagamento</th>
+                        <th>Nome Cliente</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Urgente?</th>
+                        <th></th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var pedido in Model)
+                    {
+                        <tr class="text-left">
+                            <td>@pedido.DataPedido.ToString("dd/MM/yyyy hh:mm")</td>
+                            <td>@pedido.DataEntrega.ToString("dd/MM/yyyy hh:mm")</td>
+                            <td>@pedido.NomeProduto</td>
+                            <td>@String.Format("{0:C}", @pedido.Valor)</td>
+                            <td> @pedido.TipoDePagamento</td>
+                            <td>@pedido.NomeCliente</td>
+                            <td>@pedido.Cidade</td>
+                            <td>@pedido.Estado</td>
+                            @if (pedido.PedidoUrgente)
+                            {
+                                <td>Sim</td>
+                            }
+                            else
+                            {
+                                <td>Não</td>
+                            }
+                            <td>
+                                @Html.ActionLink("Editar", "Editar", new { id = pedido.NumeroPedido }) |
+                                @Html.ActionLink("Ver Detalhes", "Detalhes", new { id = pedido.NumeroPedido }) |
+                                @Html.ActionLink("Remover", "Excluir", new { id = pedido.NumeroPedido })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
