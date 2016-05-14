@@ -14,11 +14,11 @@
 }
 
 <div class="container container-corpo container-cadastro">
+    <h4>Cadastro de novos pedidos</h4>
+    <hr />
     @using (Html.BeginForm("Salvar", "Pedido", FormMethod.Post, new { id = "form-pedido" }))
     {
         <div class="form-horizontal">
-            <h4>Produto</h4>
-            <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
             <div class="form-group">
@@ -75,7 +75,7 @@
                 </div>
             </div>
 
-            @Html.HiddenFor(model => model.NumeroPedido);
+            @Html.HiddenFor(model => model.NumeroPedido)
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
                     <input type="submit" value="Enviar" class="btn btn-default" />
