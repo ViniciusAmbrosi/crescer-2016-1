@@ -35,7 +35,7 @@ namespace LojaNinja.Dominio
             NomeCliente = nomeCliente;
             Cidade = cidade;
             Estado = estado;
-            DataPedido = DateTime.Now;
+            DataPedido = dataPedido;
             PedidoUrgente = urgente;
         }
 
