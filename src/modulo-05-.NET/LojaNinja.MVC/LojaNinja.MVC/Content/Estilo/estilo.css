@@ -26,9 +26,17 @@
 #botao-buscar {
     border: 1px solid transparent;
     border-radius: 2px;
-    color:black;
+    color: black;
 }
 
-.cotnainer-corpo {
-    margin-top: 100px;
+.container-corpo {
+    margin-top: 80px;
+}
+
+.container-listagem {
+    width: auto;
+}
+
+.tabela-listagem {
+    height: 700px;
 }
