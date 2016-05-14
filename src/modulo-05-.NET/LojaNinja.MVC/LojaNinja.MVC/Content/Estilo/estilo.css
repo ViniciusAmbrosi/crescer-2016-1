@@ -1,4 +1,8 @@
-﻿.navbar {
+﻿body {
+    background-color: #E7E8DA;
+}
+
+.navbar {
     margin-bottom: 0 !important;
 }
 
@@ -31,12 +35,35 @@
 
 .container-corpo {
     margin-top: 80px;
+    box-shadow: 2px 2px 10px #888888;
+    background-color: rgba(255, 255, 255, 0.79);
+    border: 1px transparent solid;
 }
 
 .container-listagem {
     width: auto;
+    padding-bottom: 20px;
 }
 
 .tabela-listagem {
     height: 700px;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+}
+
+.container-cadastro {
+    border-radius: 10px;
+    padding-right: 50px;
+}
+
+.container-detalhes {
+    border-radius: 5px;
+}
+
+.subtitulo {
+    font-weight: bold;
+}
+
+.urgencia {
+    color: red;
 }
