@@ -6,37 +6,36 @@
 <div class="container container-corpo container-detalhes">
     <div>
         <div>
-            <h3>Pedido</h3>
-            <div>
+            <h3>Pedido
                 @if (@Model.PedidoUrgente)
                 {
-                    <span class="glyphicon fa fa-exclamation fa-2x" aria-hidden="true">Urgente!</span>
+                    <span class="glyphicon fa fa-exclamation fa-1x urgencia" aria-hidden="true"></span>
                 }
-            </div>
+            </h3>
             <div>
-                @Model.DataPedido.ToString("dd/MM/yyyy hh:mm")
-            </div>
-            <div>
-                @Model.NomeProduto
-            </div>
-            <div>
-                @string.Format("{0:c}", Model.Valor)
-            </div>
-            <div>
-                @Model.TipoDePagamento
-            </div>
-            <div>
-                @Model.NomeCliente
-            </div>
-            <div>
-                @Model.DataEntrega.ToString("dd/MM/yyyy hh:mm")
-            </div>
-            <div>
-                @Model.Cidade
-            </div>
-            <div>
-                @Model.Estado
-            </div>
+                <p><span class="subtitulo">Nome Produto: </span>@Model.NomeProduto</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Valor: </spanclass="subtitulo">@string.Format("{0:c}", Model.Valor)</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Tipo De Pagamento: </span>@Model.TipoDePagamento.ToString()</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Nome do Cliente: </span>@Model.NomeCliente</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Cidade: </span>@Model.Cidade</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Estado: </span>@Model.Estado</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Data do Pedido: </span>@Model.DataPedido.ToString("dd/MM/yyyy hh:mm")</p>
+            </div>      
+            <div>       
+                <p><span class="subtitulo">Data de Entrega: </span>@Model.DataEntrega.ToString("dd/MM/yyyy hh:mm")</p>
+            </div>      
         </div>
     </div>
 </div>
