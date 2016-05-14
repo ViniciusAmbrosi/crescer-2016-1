@@ -170,6 +170,7 @@
     <Content Include="Views\Pedido\Detalhes.cshtml" />
     <Content Include="Views\Pedido\Listagem.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Erro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
