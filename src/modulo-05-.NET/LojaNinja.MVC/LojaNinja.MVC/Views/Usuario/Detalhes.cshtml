@@ -1,0 +1,34 @@
+﻿@model LojaNinja.Dominio.Usuario
+
+@{
+    ViewBag.Title = "Erro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}s
+
+<div class="container container-corpo container-detalhes">
+    <div>
+        <div>
+            <h3>
+                Usuário
+            </h3>
+            <div>
+                <p><span class="subtitulo">Primeiro Nome: </span>@Model.PrimeiroNome</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Utlimo Nome: </span>@Model.UltimoNome</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Cidade: </span>@Model.Email</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Estado: </span>@Model.CPF</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Data do Pedido: </span>@Model.DataNascimento.ToString("dd/MM/yyyy")</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Data de Registro: </span>@Model.DataRegistro.ToString("dd/MM/yyyy")</p>
+            </div>
+        </div>
+    </div>
+</div>
