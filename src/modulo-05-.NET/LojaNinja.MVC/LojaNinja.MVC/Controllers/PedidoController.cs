@@ -1,4 +1,5 @@
 ﻿using LojaNinja.Dominio;
+using LojaNinja.MVC.Filter;
 using LojaNinja.MVC.Models;
 using LojaNinja.Repositorio;
 using System;
@@ -13,11 +14,13 @@ namespace LojaNinja.MVC.Controllers
     {
         private RepositorioVendas repositorio = new RepositorioVendas();
 
+        [UserToken(Roles = "Manager")]
         public ActionResult Cadastro()
         {
             return View();
         }
 
+        [UserToken(Roles = "Manager")]
         public ActionResult Editar(int id)
         {
             var pedido = repositorio.ObterPedidoPorId(id);
@@ -35,6 +38,9 @@ namespace LojaNinja.MVC.Controllers
             return View("Cadastro", pedidoModel);
         }
 
+        [UserToken(Roles = "Manager")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Salvar(PedidoModel model)
         {
             if (ModelState.IsValid)
@@ -68,6 +74,7 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
+        [UserToken(Roles = "Manager")]
         public ActionResult Detalhes(int? id)
         {
             int idPedido;
@@ -81,14 +88,15 @@ namespace LojaNinja.MVC.Controllers
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                ViewBag.ErroIDPedido = "Nenhum ID possui letras, tente novamente!"; 
+                ViewBag.ErroIDPedido = "Nenhum ID possui letras, tente novamente!";
                 return View("Erro"); ;
             }
             return View(repositorio.ObterPedidoPorId(idPedido));
         }
 
+        [UserToken(Roles = "Manager")]
         public ActionResult Listagem(string produto, string cliente)
         {
             if (String.IsNullOrWhiteSpace(produto) && String.IsNullOrWhiteSpace(cliente))
@@ -108,11 +116,11 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
+        [UserToken(Roles = "Manager")]
         public ActionResult Excluir(int id)
         {
             repositorio.RemoverPedido(id);
             var pedidos = repositorio.ObterPedidos();
-
             return View("Listagem", pedidos);
         }
     }
