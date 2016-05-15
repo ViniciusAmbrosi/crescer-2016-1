@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Dominio", "2 - Dominio", "{1F46387A-0E4A-4E6C-8FFC-114E96B61592}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infraestrutura", "3 - Infraestrutura", "{D3F81A69-4A8C-4766-8FF8-5CAC2C2D25C6}"
+	ProjectSection(SolutionItems) = preProject
+		LojaNinja.Dominio\Pedido.cs = LojaNinja.Dominio\Pedido.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinja.Dominio", "LojaNinja.Dominio\LojaNinja.Dominio.csproj", "{731B1977-F79F-4F62-B3A2-DAD39D74E37B}"
 EndProject
