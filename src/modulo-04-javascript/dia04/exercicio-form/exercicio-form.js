@@ -45,17 +45,9 @@ $(function () {
                     var tipoSanguineo = self.attr('tipoSanguineo');
                     var golpes = self.attr('golpes');
                     $('li#' + id).append($('<div>').addClass("receiver"));
-                    $('.receiver').append($('<p>').append('ID: ' + id));
-                    $('.receiver').append($('<p>').append('NOME: ' + nome));
-                    $('.receiver').append($('<p>').append('DATA NASC: ' + dataNascimento));
-                    $('.receiver').append($('<p>').append('LOCAL NASC: ' + localNascimento));
-                    $('.receiver').append($('<p>').append('LOCAL TREINO: ' + localTreinamento));
-                    $('.receiver').append($('<p>').append('TIPO SANGUINEO: ' + tipoSanguineo));
-                    $('.receiver').append($('<p>').append('ALTURA: ' + altura));
-                    $('.receiver').append($('<p>').append('PESO: ' + peso));
-                    $('.receiver').append($('<p>').append('SIGNO: ' + signo));
-                    $('.receiver').append($('<p>').append('GOLPES: '));
-                    $('.receiver').append($('<p>').append(golpes));
+                    $('.receiver').append($('<p>').append('ID: ' + id)).append($('<p>').append('NOME: ' + nome))
+                    .append($('<p>').append('DATA NASC: ' + dataNascimento)).append($('<p>').append('LOCAL NASC: ' + localNascimento)).append($('<p>').append('LOCAL TREINO: ' + localTreinamento))
+                    .append($('<p>').append('TIPO SANGUINEO: ' + tipoSanguineo)).append($('<p>').append('ALTURA: ' + altura)).append($('<p>').append('PESO: ' + peso)).append($('<p>').append('SIGNO: ' + signo)).append($('<p>').append('GOLPES: ')).append($('<p>').append(golpes));
                     $('.receiver').show();
                 })
                 $img.on('mouseleave', function () {
