@@ -20,7 +20,7 @@ namespace LojaNinja.Repositorio
             {
                 pedido.AtualizarId(id);
             }
-            catch (InvalidOperationException ex)
+            catch (InvalidOperationException)
             { }
             finally
             {
