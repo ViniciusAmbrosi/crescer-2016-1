@@ -26,7 +26,13 @@
             <input type="submit" value="Entrar" />
         </div>
         <div>
-            <p>Não possui Cadastro? <a href="@Url.Action("Cadastro", "Usuario", "")">Registre-se</a></P>
+            <p>Não possui Cadastro? <a href="@Url.Action("Cadastro", "Usuario", "")">Registre-se</a></p>
         </div>
 
     }
+    @if (!String.IsNullOrWhiteSpace(ViewBag.EfetuarLogin))
+    {
+        <script>alert(ViewBag.EfetuarLogin)</script>
+    }
+
+</div>
