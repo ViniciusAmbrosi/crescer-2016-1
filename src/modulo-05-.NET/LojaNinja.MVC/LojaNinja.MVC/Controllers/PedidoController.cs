@@ -14,13 +14,13 @@ namespace LojaNinja.MVC.Controllers
     {
         private RepositorioVendas repositorio = new RepositorioVendas();
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         public ActionResult Cadastro()
         {
             return View();
         }
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         public ActionResult Editar(int id)
         {
             var pedido = repositorio.ObterPedidoPorId(id);
@@ -38,7 +38,7 @@ namespace LojaNinja.MVC.Controllers
             return View("Cadastro", pedidoModel);
         }
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Salvar(PedidoModel model)
@@ -74,7 +74,7 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         public ActionResult Detalhes(int? id)
         {
             int idPedido;
@@ -96,7 +96,7 @@ namespace LojaNinja.MVC.Controllers
             return View(repositorio.ObterPedidoPorId(idPedido));
         }
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         public ActionResult Listagem(string produto, string cliente)
         {
             if (String.IsNullOrWhiteSpace(produto) && String.IsNullOrWhiteSpace(cliente))
@@ -116,7 +116,7 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
-        [UserToken(Roles = "Manager")]
+        [UserToken]
         public ActionResult Excluir(int id)
         {
             repositorio.RemoverPedido(id);
