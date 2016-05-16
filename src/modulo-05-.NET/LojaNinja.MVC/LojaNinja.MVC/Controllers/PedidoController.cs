@@ -39,7 +39,6 @@ namespace LojaNinja.MVC.Controllers
         }
 
         [UserToken]
-        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Salvar(PedidoModel model)
         {
