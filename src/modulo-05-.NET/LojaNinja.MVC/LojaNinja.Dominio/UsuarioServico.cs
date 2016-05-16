@@ -14,8 +14,6 @@ namespace LojaNinja.Dominio
         public UsuarioServico(IUsuarioRepositorio usuarioRepositorio)
         {
             repoUsuarios = usuarioRepositorio;
-            Usuario admin = new Usuario("Administrador", "admin@admin.com", Criptografar("papaleguas12"), "ADMIN");
-            repoUsuarios.InserirUsuario(admin);
         }
 
         public string Criptografar(string texto)
