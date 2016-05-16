@@ -27,7 +27,7 @@ namespace LojaNinja.Dominio
         public string Nome { get; private set; }
         public string Email { get; private set; }
         public string Senha { get; private set; }
-        public string[] Permissoes { get; private set; }
+        public string[] Permissoes { get; set; }
 
         public void AdicionarId(int id)
         {
