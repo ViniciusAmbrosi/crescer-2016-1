@@ -13,7 +13,7 @@ namespace LojaNinja.MVC.Controllers
 {
     public class UsuarioController : Controller
     {
-        private RepositorioUsuario repositorio = new RepositorioUsuario();
+        private RepositorioUsuarioADO repositorio = new RepositorioUsuarioADO();
         private UsuarioServico usuarioServico;
 
         public UsuarioController()
@@ -85,7 +85,9 @@ namespace LojaNinja.MVC.Controllers
         public ActionResult Detalhes()
         {
             UsuarioLogadoModel usuarioLogado = ServicoDeSessao.UsuarioLogado;
-            return View("Detalhes", repositorio.ObterPorId(usuarioLogado.ID));
+            return null;
+            //TODO: corrigir
+            //return View("Detalhes", repositorio.ObterPorId(usuarioLogado.ID));
         }
 
         public PartialViewResult Menu()
@@ -98,8 +100,10 @@ namespace LojaNinja.MVC.Controllers
         [UserToken(Roles = "ADMIN")]
         public ActionResult Listagem()
         {
-            var usuarios = repositorio.ObterListaDeUsuarios();
-            return View(usuarios);
+            return null;
+            //TODO: corrigir
+            //var usuarios = repositorio.ObterListaDeUsuarios();
+            //return View(usuarios);
         }
 
     }
