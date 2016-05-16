@@ -9,5 +9,6 @@ namespace LojaNinja.Dominio
     public interface IUsuarioRepositorio
     {
         Usuario BuscarUsuarioPorAutenticacao(string email, string senha);
+        void InserirUsuario(Usuario user);
     }
 }
