@@ -10,7 +10,7 @@ namespace LojaNinja.MVC.Models
     {
         public UsuarioLogadoModel(Usuario usuario)
         {
-            Nome = usuario.PrimeiroNome;
+            Nome = usuario.Nome;
             Email = usuario.Email;
             Permissoes = usuario.Permissoes;
             ID = usuario.ID;
