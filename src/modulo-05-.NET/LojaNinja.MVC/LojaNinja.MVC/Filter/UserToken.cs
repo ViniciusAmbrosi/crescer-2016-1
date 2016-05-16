@@ -15,12 +15,6 @@ namespace LojaNinja.MVC.Filter
     {
         private string[] _permissoesRequeridas = null;
 
-        public UserToken()
-        {
-            var roles = this.Roles;
-            _permissoesRequeridas = String.IsNullOrWhiteSpace(roles) ? null : roles.Split(',');
-        }
-
         private bool TemAutorizacao
         {
             get
@@ -51,6 +45,9 @@ namespace LojaNinja.MVC.Filter
 
         public override void OnAuthorization(AuthorizationContext filterContext)
         {
+            _permissoesRequeridas = String.IsNullOrWhiteSpace(this.Roles) ?
+                null :
+                this.Roles.Split(',');
             bool estaAutenticadoEAutorizado = this.AuthorizeCore(filterContext.HttpContext);
             if (!estaAutenticadoEAutorizado)
             {
