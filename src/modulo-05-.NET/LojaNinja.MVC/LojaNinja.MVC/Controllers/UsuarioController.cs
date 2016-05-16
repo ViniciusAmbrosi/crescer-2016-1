@@ -28,7 +28,6 @@ namespace LojaNinja.MVC.Controllers
             {
                 return View();
             }
-
             return RedirectToAction("Detalhes");
         }
 
@@ -62,23 +61,33 @@ namespace LojaNinja.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Salvar(UsuarioModel model)
         {
-            if (model.DataNascimento >= DateTime.Now)
-                ModelState.AddModelError("", "Data de nascimento inválida");
+            if (model.Senha != model.ConfirmaSenha)
+                ModelState.AddModelError("SENHAS_DIFERENTES", "Senha e confirmação são diferentes.");
+
             if (ModelState.IsValid)
             {
-                Usuario user = new Usuario(model.PrimeiroNome, model.UltimoNome, model.CPF, model.DataNascimento, model.Email, usuarioServico.Criptografar(model.Senha));
+                Usuario user = new Usuario(model.Nome, model.Email, usuarioServico.Criptografar(model.Senha));
                 repositorio.InserirUsuario(user);
-                return View("Detalhes", user);
+                ViewBag.EfetuarLogin = "Cadastro completo, efetue login para continuar!";
+                return View("Index");
             }
             return View("Cadastro", model);
         }
 
         [HttpGet]
-        [UserToken(Roles ="Manager")]
+        [UserToken]
         public ActionResult Detalhes()
         {
             UsuarioLogadoModel usuarioLogado = ServicoDeSessao.UsuarioLogado;
             return View("Detalhes", repositorio.ObterPorId(usuarioLogado.ID));
         }
+
+        public PartialViewResult Menu()
+        {
+            if (ServicoDeSessao.UsuarioLogado != null)
+                ViewBag.NomeSessao = ServicoDeSessao.UsuarioLogado.Nome;
+            return PartialView("_Menu");
+        }
+
     }
 }
