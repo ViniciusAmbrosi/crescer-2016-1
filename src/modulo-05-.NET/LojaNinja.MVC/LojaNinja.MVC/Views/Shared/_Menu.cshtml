@@ -1,0 +1,69 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top navheader">
+    <div id="nav-container" class="container">
+        <!--button collapse-->
+        <header class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="camelao" class="navbar-brand navbar-left" href="#Camelao">CAMELO NINJA!</a>
+        </header>
+        <!--end button collapse-->
+        <!-- menu-->
+        <div id="navbar" class="collapse navbar-collapse">
+            <!--icon/buttons-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--SEACH - DETAILS-->
+                <li id="form-procura-pedido">
+                    <form method="get" action="@Url.Action("Detalhes", "Pedido")">
+                        <label for="search">Buscar Pedido</label>
+                        <input type="text" name="id" placeholder="Ex: 25" />
+                        <button id="botao-buscar" type="submit">Buscar</button>
+                    </form>
+                </li>
+                <!--ADD - CADASTRO-->
+                <li>
+                    <a id="icon-nav" href="@Url.Action("Cadastro", "Pedido")" class="btn">
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <!--GRID - LISTAGEM-->
+                <li>
+                    <a id="icon-nav" href="@Url.Action("Listagem", "Pedido")" class="btn">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!--dropdown para logout-->
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        @if (!String.IsNullOrWhiteSpace(ViewBag.NomeSessao))
+                        {
+                            @ViewBag.NomeSessao
+                        }
+                        else
+                        {
+                            <text>Logout</text>
+                        }
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="logout-drop"><a href="@Url.Action("Detalhes", "Usuario")">Detalhes da Conta</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li class="logout-drop">Deseja Deslogar?</li>
+                        <li class="divider" role="separator"></li>
+                        <li class="logout-drop">
+                            <a href="#logout">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--end icon/buttons-->
+        </div>
+        <!--end menu -->
+    </div>
+    <!--end header container-->
+</nav>
+<!--end navbar-->
