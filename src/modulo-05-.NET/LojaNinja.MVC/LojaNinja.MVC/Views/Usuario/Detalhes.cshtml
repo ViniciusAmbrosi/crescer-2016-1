@@ -12,22 +12,24 @@
                 Usuário
             </h3>
             <div>
-                <p><span class="subtitulo">Primeiro Nome: </span>@Model.PrimeiroNome</p>
+                <p><span class="subtitulo">Primeiro Nome: </span>@Model.Nome</p>
             </div>
             <div>
-                <p><span class="subtitulo">Utlimo Nome: </span>@Model.UltimoNome</p>
+                <p><span class="subtitulo">Email: </span>@Model.Email</p>
             </div>
             <div>
-                <p><span class="subtitulo">Cidade: </span>@Model.Email</p>
-            </div>
-            <div>
-                <p><span class="subtitulo">Estado: </span>@Model.CPF</p>
-            </div>
-            <div>
-                <p><span class="subtitulo">Data do Pedido: </span>@Model.DataNascimento.ToString("dd/MM/yyyy")</p>
-            </div>
-            <div>
-                <p><span class="subtitulo">Data de Registro: </span>@Model.DataRegistro.ToString("dd/MM/yyyy")</p>
+                <p><span class="subtitulo">Permissões: </span></p>
+                @if (Model.Permissoes != null)
+                {
+                    foreach (var permissao in Model.Permissoes)
+                    {
+                        <p>@permissao</p>
+                    }
+                }
+                else
+                {
+                    <p>Nenhuma permissão especial.</p>
+                }
             </div>
         </div>
     </div>
