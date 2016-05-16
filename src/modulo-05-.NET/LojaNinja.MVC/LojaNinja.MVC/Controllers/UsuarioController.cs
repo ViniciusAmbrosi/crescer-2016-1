@@ -31,7 +31,6 @@ namespace LojaNinja.MVC.Controllers
             return RedirectToAction("Detalhes");
         }
 
-        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult LogIn(LoginModel model)
         {
@@ -57,24 +56,31 @@ namespace LojaNinja.MVC.Controllers
             return View();
         }
 
-        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Salvar(UsuarioModel model)
         {
             if (model.Senha != model.ConfirmaSenha)
                 ModelState.AddModelError("SENHAS_DIFERENTES", "Senha e confirmação são diferentes.");
 
-            if (ModelState.IsValid)
+            try
             {
-                Usuario user = new Usuario(model.Nome, model.Email, usuarioServico.Criptografar(model.Senha));
-                repositorio.InserirUsuario(user);
-                ViewBag.EfetuarLogin = "Cadastro completo, efetue login para continuar!";
-                return View("Index");
+                if (ModelState.IsValid)
+                {
+                    Usuario user = new Usuario(model.Nome, model.Email, usuarioServico.Criptografar(model.Senha));
+                    repositorio.InserirUsuario(user);
+                    ViewBag.EfetuarLogin = "Cadastro completo, efetue login para continuar!";
+                    return View("Index");
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View("Cadastro", model);
             }
             return View("Cadastro", model);
         }
 
-        [HttpGet]
+        //COTNENT---------------------------------------------------------------CONTENT-----------------------------------------------------------------------------CONTENT
         [UserToken]
         public ActionResult Detalhes()
         {
@@ -89,5 +95,12 @@ namespace LojaNinja.MVC.Controllers
             return PartialView("_Menu");
         }
 
+        [UserToken(Roles = "ADMIN")]
+        public ActionResult Listagem()
+        {
+            var usuarios = repositorio.ObterListaDeUsuarios();
+            return View(usuarios);
+        }
+
     }
-}
+} 
