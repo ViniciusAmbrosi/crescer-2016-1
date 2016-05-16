@@ -37,5 +37,19 @@ namespace LojaNinja.Dominio
             }
             this.ID = id;
         }
+
+        public override string ToString()
+        {
+            string permissoesToString = "Não tem permissões especiais";
+            if (Permissoes != null)
+            {
+                permissoesToString = "";
+                foreach (var perm in Permissoes)
+                {
+                    permissoesToString += perm + " ";
+                }
+            }
+            return Nome + "," + Email + "," + permissoesToString;
+        }
     }
 }
