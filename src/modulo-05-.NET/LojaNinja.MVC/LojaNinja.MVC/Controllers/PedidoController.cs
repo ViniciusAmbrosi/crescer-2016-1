@@ -14,13 +14,13 @@ namespace LojaNinja.MVC.Controllers
     {
         private RepositorioVendas repositorio = new RepositorioVendas();
 
-        [UserToken]
+        [UserToken(Roles = "COMUM")]
         public ActionResult Cadastro()
         {
             return View();
         }
 
-        [UserToken]
+        [UserToken(Roles = "COMUM")]
         public ActionResult Editar(int id)
         {
             var pedido = repositorio.ObterPedidoPorId(id);
@@ -38,7 +38,7 @@ namespace LojaNinja.MVC.Controllers
             return View("Cadastro", pedidoModel);
         }
 
-        [UserToken]
+        [[UserToken(Roles = "COMUM")]
         [ValidateAntiForgeryToken]
         public ActionResult Salvar(PedidoModel model)
         {
@@ -73,7 +73,7 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
-        [UserToken]
+        [[UserToken(Roles = "COMUM")]
         public ActionResult Detalhes(int? id)
         {
             int idPedido;
@@ -82,20 +82,20 @@ namespace LojaNinja.MVC.Controllers
                 idPedido = (int)id;
                 if (repositorio.ObterPedidoPorId(idPedido) == null)
                 {
-                    ViewBag.ErroIDPedido = "Nao existe nenhum pedido com este ID, tente novamente!";
+                    ViewBag.Erro = "Nao existe nenhum pedido com este ID, tente novamente!";
                     return View("Erro");
                 }
 
             }
             catch (Exception)
             {
-                ViewBag.ErroIDPedido = "Nenhum ID possui letras, tente novamente!";
+                ViewBag.Erro = "Nenhum ID possui letras, tente novamente!";
                 return View("Erro"); ;
             }
             return View(repositorio.ObterPedidoPorId(idPedido));
         }
 
-        [UserToken]
+        [[UserToken(Roles = "COMUM")]
         public ActionResult Listagem(string produto, string cliente)
         {
             if (String.IsNullOrWhiteSpace(produto) && String.IsNullOrWhiteSpace(cliente))
@@ -115,7 +115,7 @@ namespace LojaNinja.MVC.Controllers
             }
         }
 
-        [UserToken]
+        [[UserToken(Roles = "COMUM")]
         public ActionResult Excluir(int id)
         {
             repositorio.RemoverPedido(id);
