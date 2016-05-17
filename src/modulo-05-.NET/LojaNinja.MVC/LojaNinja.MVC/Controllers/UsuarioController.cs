@@ -13,7 +13,7 @@ namespace LojaNinja.MVC.Controllers
 {
     public class UsuarioController : Controller
     {
-        private RepositorioUsuarioADO repositorio = new RepositorioUsuarioADO();
+        private IUsuarioRepositorio repositorio = new RepositorioUsuarioADO();
         private UsuarioServico usuarioServico;
 
         public UsuarioController()
@@ -66,9 +66,12 @@ namespace LojaNinja.MVC.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    Usuario user = new Usuario(model.Nome, model.Email, usuarioServico.Criptografar(model.Senha));
-                    repositorio.InserirUsuario(user);
-                    ViewBag.EfetuarLogin = "Cadastro completo, efetue login para continuar!";
+                    Usuario user = new Usuario();
+                    user.Nome = model.Nome;
+                    user.Email = model.Email;
+                    user.Senha = model.Senha;
+                    usuarioServico.InserirUsuario(user);
+                    ViewBag.EfetuarLogin = "Cadastro completo, efetue login para continuar!";//TODO: ARRUMAR VIEWBAG
                     return View("Index");
                 }
             }
@@ -81,13 +84,19 @@ namespace LojaNinja.MVC.Controllers
         }
 
         //COTNENT---------------------------------------------------------------CONTENT-----------------------------------------------------------------------------CONTENT
-        [UserToken]
+        [UserToken(Roles = "COMUM")]
         public ActionResult Detalhes()
         {
-            UsuarioLogadoModel usuarioLogado = ServicoDeSessao.UsuarioLogado;
-            return null;
-            //TODO: corrigir
-            //return View("Detalhes", repositorio.ObterPorId(usuarioLogado.ID));
+            try
+            {
+                UsuarioLogadoModel usuarioLogado = ServicoDeSessao.UsuarioLogado;
+                return View(usuarioLogado);
+            }
+            catch (ArgumentException ex)
+            {
+                ViewBag.Erro = ex.Message;
+                return View("Erro");
+            }
         }
 
         public PartialViewResult Menu()
@@ -100,11 +109,15 @@ namespace LojaNinja.MVC.Controllers
         [UserToken(Roles = "ADMIN")]
         public ActionResult Listagem()
         {
-            return null;
-            //TODO: corrigir
-            //var usuarios = repositorio.ObterListaDeUsuarios();
-            //return View(usuarios);
+            var usuarios = repositorio.ObterListaDeUsuarios();
+            return View(usuarios);
+        }
+
+        public ActionResult Logout()
+        {
+            ServicoDeSessao.Logout();
+            return View("Index");
         }
 
     }
-} 
+}
