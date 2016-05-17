@@ -16,7 +16,7 @@ namespace LojaNinja.Dominio
             repoUsuarios = usuarioRepositorio;
         }
 
-        public string Criptografar(string texto)
+        private string Criptografar(string texto)
         {
             using (MD5 md5Hash = MD5.Create())
             {
@@ -36,6 +36,12 @@ namespace LojaNinja.Dominio
         {
             var senhaCripto = Criptografar(senha);
             return repoUsuarios.BuscarUsuarioPorAutenticacao(email, senhaCripto);
+        }
+
+        public void InserirUsuario(Usuario user)
+        {
+            user.Senha = Criptografar(user.Senha);
+            repoUsuarios.InserirUsuario(user);
         }
     }
 }
