@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 
 namespace LojaNinja.MVC.Services
 {
@@ -45,6 +46,35 @@ namespace LojaNinja.MVC.Services
                 }
                 return false;
             }
+        }
+
+        public static void Logout()
+        {
+            FormsAuthentication.SignOut();
+            HttpContext.Current.Session.Abandon();
+            LimparCookieAutenticacaoServidor();
+            LimparCookieSessionServidor();
+            InvalidarCacheDoCliente();
+        }
+
+        private static void LimparCookieAutenticacaoServidor()
+        {
+            HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "");
+            authCookie.Expires = DateTime.Now.AddYears(-1);
+            HttpContext.Current.Response.Cookies.Add(authCookie);
+        }
+
+        private static void LimparCookieSessionServidor()
+        {
+            HttpCookie sessionCookie = new HttpCookie("ASP.NET_SessionId", "");
+            sessionCookie.Expires = DateTime.Now.AddYears(-1);
+            HttpContext.Current.Response.Cookies.Add(sessionCookie);
+        }
+
+        private static void InvalidarCacheDoCliente()
+        {
+            HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            HttpContext.Current.Response.Cache.SetNoStore();
         }
     }
 }
