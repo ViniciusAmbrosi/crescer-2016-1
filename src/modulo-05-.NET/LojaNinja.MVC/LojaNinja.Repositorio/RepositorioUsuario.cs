@@ -11,11 +11,16 @@ namespace LojaNinja.Repositorio
     {
         static List<Usuario> Usuarios = new List<Usuario>();
 
+        //PODE COLOCAR NO GLOBAL.ASAX PARA INICIAR COM UM ADMINISTRADOR
         public RepositorioUsuario()
         {
             if (Usuarios.Count == 0)
             {
-                Usuario admin = new Usuario("Administrador", "admin@admin.com", "63874adc5789a6e2e1fc51e40871dd53", "ADMIN");
+                Usuario admin = new Usuario();
+                admin.Nome = "Administrador";
+                admin.Email = "admin@admin.com";
+                admin.Senha = "63874adc5789a6e2e1fc51e40871dd53";
+                admin.Permissoes = new string[] { "COMUM", "ADMIN" };
                 InserirUsuario(admin);
             }
         }
@@ -34,11 +39,6 @@ namespace LojaNinja.Repositorio
         public Usuario BuscarUsuarioPorAutenticacao(string email, string senha)
         {
             return Usuarios.FirstOrDefault(user => user.Email.Equals(email) && senha.Equals(senha));
-        }
-
-        public Usuario ObterPorId(int id)
-        {
-            return Usuarios[id - 1];
         }
 
         public List<string> ObterListaDeUsuarios()
