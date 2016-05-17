@@ -10,5 +10,6 @@ namespace LojaNinja.Dominio
     {
         Usuario BuscarUsuarioPorAutenticacao(string email, string senha);
         void InserirUsuario(Usuario user);
+        List<string> ObterListaDeUsuarios();
     }
 }
