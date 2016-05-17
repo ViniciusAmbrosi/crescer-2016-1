@@ -8,25 +8,10 @@ namespace LojaNinja.Dominio
 {
     public class Usuario
     {
-        public Usuario(string nome, string email, string senha, string permissao)
-        {
-            Nome = nome;
-            Email = email;
-            Senha = senha;
-            Permissoes = new string[] { permissao };
-        }
-
-        public Usuario(string nome, string email, string senha)
-        {
-            Nome = nome;
-            Email = email;
-            Senha = senha;
-        }
-
-        public int ID { get; private set; }
-        public string Nome { get; private set; }
-        public string Email { get; private set; }
-        public string Senha { get; private set; }
+        public int ID { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
         public string[] Permissoes { get; set; }
 
         public void AdicionarId(int id)
