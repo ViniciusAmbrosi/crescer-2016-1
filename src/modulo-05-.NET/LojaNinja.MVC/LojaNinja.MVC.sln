@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinja.Dominio.Test", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinja.Repositorio", "LojaNinja.Repositorio\LojaNinja.Repositorio.csproj", "{B0EB0863-93A5-42AE-8D7B-4BC549FDB5F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinja.Repositorio.EF", "LojaNinja.Repositorio.EF\LojaNinja.Repositorio.EF.csproj", "{343B6360-DF07-47D0-A3FB-6DCE1EA59109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{B0EB0863-93A5-42AE-8D7B-4BC549FDB5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0EB0863-93A5-42AE-8D7B-4BC549FDB5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0EB0863-93A5-42AE-8D7B-4BC549FDB5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343B6360-DF07-47D0-A3FB-6DCE1EA59109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343B6360-DF07-47D0-A3FB-6DCE1EA59109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343B6360-DF07-47D0-A3FB-6DCE1EA59109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343B6360-DF07-47D0-A3FB-6DCE1EA59109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +57,6 @@ Global
 		{731B1977-F79F-4F62-B3A2-DAD39D74E37B} = {1F46387A-0E4A-4E6C-8FFC-114E96B61592}
 		{749F21ED-1AF4-434C-99B9-75769EFF4CCB} = {1F46387A-0E4A-4E6C-8FFC-114E96B61592}
 		{B0EB0863-93A5-42AE-8D7B-4BC549FDB5F0} = {D3F81A69-4A8C-4766-8FF8-5CAC2C2D25C6}
+		{343B6360-DF07-47D0-A3FB-6DCE1EA59109} = {D3F81A69-4A8C-4766-8FF8-5CAC2C2D25C6}
 	EndGlobalSection
 EndGlobal
