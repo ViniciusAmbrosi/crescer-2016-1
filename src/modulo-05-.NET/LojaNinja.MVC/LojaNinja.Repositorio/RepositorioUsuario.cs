@@ -20,7 +20,7 @@ namespace LojaNinja.Repositorio
                 admin.Nome = "Administrador";
                 admin.Email = "admin@admin.com";
                 admin.Senha = "63874adc5789a6e2e1fc51e40871dd53";
-                admin.Permissoes = new string[] { "COMUM", "ADMIN" };
+                admin.permRepDB = new string[] { "COMUM", "ADMIN" };
                 InserirUsuario(admin);
             }
         }

@@ -44,7 +44,7 @@ namespace LojaNinja.Repositorio
                     userAutorizado.Senha = leitor["senha"].ToString();
                     var permissoes = LePermissoesUsuario(userAutorizado.ID);
                     if (permissoes != null)
-                        userAutorizado.Permissoes = permissoes;
+                        userAutorizado.permRepDB = permissoes;
                 }
                 return userAutorizado;
             }
@@ -119,7 +119,7 @@ namespace LojaNinja.Repositorio
                     userEncontrado.Email = leitorUsuario["email"].ToString();
                     var permissoes = LePermissoesUsuario(userEncontrado.ID);
                     if (permissoes != null)
-                        userEncontrado.Permissoes = permissoes;
+                        userEncontrado.permRepDB = permissoes;
                     usuariosEncontrados.Add(userEncontrado.ToString());
                 }
             }

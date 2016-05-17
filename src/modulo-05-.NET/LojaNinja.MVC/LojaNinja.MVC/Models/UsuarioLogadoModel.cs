@@ -12,7 +12,7 @@ namespace LojaNinja.MVC.Models
         {
             Nome = usuario.Nome;
             Email = usuario.Email;
-            Permissoes = usuario.Permissoes;
+            Permissoes = usuario.permRepDB;
             ID = usuario.ID;
         }
 

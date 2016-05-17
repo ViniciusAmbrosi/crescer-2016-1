@@ -1,11 +1,8 @@
 ﻿@model LojaNinja.MVC.Models.LoginModel
-
-
 @{
     ViewBag.Title = "CadastroUsuario";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <div class="container container-corpo container-cadastro">
     <h4>Login</h4>
     @using (Html.BeginForm("Login", "Usuario", FormMethod.Post, new { @class = "form" }))
@@ -28,11 +25,9 @@
         <div>
             <p>Não possui Cadastro? <a href="@Url.Action("Cadastro", "Usuario", "")">Registre-se</a></p>
         </div>
-
     }
     @if (!String.IsNullOrWhiteSpace(ViewBag.EfetuarLogin))
     {
         <script>alert(ViewBag.EfetuarLogin)</script>
     }
-
 </div>
