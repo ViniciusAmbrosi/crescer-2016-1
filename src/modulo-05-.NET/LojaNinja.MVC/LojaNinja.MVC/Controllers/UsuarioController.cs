@@ -2,6 +2,7 @@
 using LojaNinja.MVC.Filter;
 using LojaNinja.MVC.Models;
 using LojaNinja.MVC.Services;
+using LojaNinja.Repositorio.EF;
 using LojaNinja.Repositorio;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace LojaNinja.MVC.Controllers
     public class UsuarioController : Controller
     {
         private IUsuarioRepositorio repositorio = new RepositorioUsuarioADO();
+        //private IUsuarioRepositorio repositorio = new RepositorioUsuarioEF();
         private UsuarioServico usuarioServico;
 
         public UsuarioController()
