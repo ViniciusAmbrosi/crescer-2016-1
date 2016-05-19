@@ -10,6 +10,5 @@ $(function () {
             $("#camelao-div-bottom").css("display", "block")
             $("#camelao-div-bottom").animate({ "left": "-=2500px" }, "slow")
         };
-        //$(".block").animate({ "left": "+=50px" }, "slow");
     });
 });
