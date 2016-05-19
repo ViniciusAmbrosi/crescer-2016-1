@@ -1,0 +1,35 @@
+﻿@model LojaNinjaRefactor.MVC.Models.UsuarioLogadoModel
+@{
+    ViewBag.Title = "Erro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}s
+
+<div class="container container-corpo container-detalhes">
+    <div>
+        <div>
+            <h3>
+                Usuário
+            </h3>
+            <div>
+                <p><span class="subtitulo">Nome: </span>@Model.Nome</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Email: </span>@Model.Email</p>
+            </div>
+            <div>
+                <p><span class="subtitulo">Permissões: </span></p>
+                @if (Model.Permissoes != null)
+                {
+                    foreach (var permissao in Model.Permissoes)
+                    {
+                        <p>@permissao</p>
+                    }
+                }
+                else
+                {
+                    <p>Nenhuma permissão especial.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
