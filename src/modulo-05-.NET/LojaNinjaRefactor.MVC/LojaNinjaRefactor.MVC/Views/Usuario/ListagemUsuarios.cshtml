@@ -1,0 +1,35 @@
+﻿@model List<string>
+
+@{
+    ViewBag.Title = "Usuários Cadastrados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container container-corpo container-listagem">
+    <div>
+        <h3>Usuários</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="text-center">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Permissões</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usuario in Model)
+                    {
+                        string[] atributo = usuario.Split(',');
+                        <tr class="text-left">
+                            <td>@atributo[0]</td>
+                            <td>@atributo[1]</td>
+                            <td>@atributo[2]</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
