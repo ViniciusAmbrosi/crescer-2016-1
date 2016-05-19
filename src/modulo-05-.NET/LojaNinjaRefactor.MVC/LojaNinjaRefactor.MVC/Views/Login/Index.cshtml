@@ -1,0 +1,33 @@
+﻿@model LojaNinjaRefactor.MVC.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container container-corpo container-cadastro">
+    <h4>Login</h4>
+    @using (Html.BeginForm("Login", "Usuario", FormMethod.Post, new { @class = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <div>
+            @Html.ValidationSummary(excludePropertyErrors: false)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email) <br />
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Senha) <br />
+            @Html.PasswordFor(m => m.Senha)
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Entrar" />
+        </div>
+        <div>
+            <p>Não possui Cadastro? <a href="@Url.Action("CadastroDeUsuario", "Usuario", "")">Registre-se</a></p>
+        </div>
+    }
+    @if (!String.IsNullOrWhiteSpace(ViewBag.EfetuarLogin))
+    {
+        <script>alert(ViewBag.EfetuarLogin)</script>
+    }
+</div>
