@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinjaRefactor.MVC", "LojaNinjaRefactor.MVC\LojaNinjaRefactor.MVC.csproj", "{8799E08C-0414-4CF9-86C6-F1763C956FA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{5D8B033E-0C47-4BC3-A039-E0F279C40EE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domínio", "2 - Domínio", "{B6C20F39-9ED9-491A-9D40-FDC384110564}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infraestrututa", "3 - Infraestrututa", "{AAA2F231-D1C6-4432-8AF8-6AFFF7A82C2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaNinjaRefactor.Dominio", "LojaNinjaRefactor.Dominio\LojaNinjaRefactor.Dominio.csproj", "{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8799E08C-0414-4CF9-86C6-F1763C956FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8799E08C-0414-4CF9-86C6-F1763C956FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8799E08C-0414-4CF9-86C6-F1763C956FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8799E08C-0414-4CF9-86C6-F1763C956FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8799E08C-0414-4CF9-86C6-F1763C956FA0} = {5D8B033E-0C47-4BC3-A039-E0F279C40EE4}
+		{57E262C6-D9D1-48EF-AE8D-A6BD8BA29478} = {B6C20F39-9ED9-491A-9D40-FDC384110564}
+	EndGlobalSection
+EndGlobal
