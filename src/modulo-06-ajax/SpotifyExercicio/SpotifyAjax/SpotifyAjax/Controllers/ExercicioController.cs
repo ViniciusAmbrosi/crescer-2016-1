@@ -15,7 +15,7 @@ namespace SpotifyAjax.Controllers
 
         public ActionResult ConsultaEcletica()
         {
-            return View();
+            return View("ConsultaEcletica");
         }
     }
 }
