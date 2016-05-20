@@ -3,28 +3,29 @@
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
+var jogaDado = function () { return Math.floor((Math.random() * 10) + 1); }
 var $frmArtista = $('#frmArtista');
+var id = "";
 
 $frmArtista.submit(function (e) {
-    var search = $("#artista").val() + "&type=artist";
+    $('#album-cover').children().detach();
+    var artista = $("#artista").val();
+    var search = artista + "&type=artist";
     search = search.replaceAll(" ", "%20");
-    var id;
     $.ajax({ url: "https://api.spotify.com/v1/search?q=" + search, type: "GET" })
     .done(function (res) {
-        id = res.artists.items[0].id
-        $.ajax({ url: "https://api.spotify.com/v1/artists/" + id + "/albums?limit=50", type: "GET" })
-            //TODO: refatorar
-        .done(function (res) {
-            res.items.forEach(function (item) {
-                var url = item.images[1].url;
-                var imgAlbum = new Image();
-                imgAlbum.src = url;
-                imgAlbum.onload = function () {
-                    var $img = $(imgAlbum);
-                    $("#album-cover").append($('<div>').addClass("col-lg-3").addClass("col-md-4").addClass("col-xs-6").append($img));
-                };
-            });
-        });
+        if (artista === "Justin Bieber") {
+            id = jogaDado > 8 ? "douchebag" : res.artists.items[0].id
+        }
+        else
+            id = res.artists.items[0].id
+        exibirAlbums("https://api.spotify.com/v1/artists/" + id + "/albums?limit=50");
+    })
+    .fail(function (res) {
+        console.error(res);
+        var criarSpanComErro = function (msg) { return $('<span>').text(msg).addClass('erro'); };
+        $('#album-cover')
+        .append(criarSpanComErro("Caro usuário, favor informar um artista."))
     });
     return e.preventDefault();
 })
