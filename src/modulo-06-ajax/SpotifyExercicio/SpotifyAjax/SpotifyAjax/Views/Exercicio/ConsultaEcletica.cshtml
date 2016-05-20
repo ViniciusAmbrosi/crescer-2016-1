@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ConsultaEcletica";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*TODO: alterar nome para ficar de acordo com exercicio*@
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <form id="frmArtista" method="POST">
+            <label for="artista">Artista</label>
+            <input id="artista" class="urlImagem" type="text" name="Artista" placeholder="Ex: Justin Bieber">
+            <button  id="btnBuscarArtista" class="btn btn-primary">Buscar</button>
+        </form>
+    </div>
+</div>
+
+<div id="album-cover">
+    <h3>Exercício 2</h3>
+</div>
+
+@section scripts{
+    <script src="~/scripts/Custom/consulta.js"></script>
+}
