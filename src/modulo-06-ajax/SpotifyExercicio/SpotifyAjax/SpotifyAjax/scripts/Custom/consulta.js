@@ -22,7 +22,6 @@ $frmArtista.submit(function (e) {
         exibirAlbums("https://api.spotify.com/v1/artists/" + id + "/albums?limit=50");
     })
     .fail(function (res) {
-        console.error(id.serialize());
         var criarSpanComErro = function (msg) { return $('<span>').text(msg).addClass('erro'); };
         $('#album-cover')
         .append(criarSpanComErro("Caro usuário, favor informar um artista."))
