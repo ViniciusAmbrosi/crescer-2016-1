@@ -2,6 +2,8 @@
     $.ajax({ url: caminho, type: "GET" })
         .done(function (res) {
             res.items.forEach(function (item) {
+                if (item.images.length === 0)
+                    return;
                 var url = item.images[1].url;
                 var imgAlbum = new Image();
                 imgAlbum.src = url;
