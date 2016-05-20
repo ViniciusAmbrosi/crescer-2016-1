@@ -15,7 +15,7 @@ $frmArtista.submit(function (e) {
     $.ajax({ url: "https://api.spotify.com/v1/search?" + search, type: "GET" })
     .done(function (res) {
         if (artista === "Justin Bieber") {
-            id = jogaDado > 8 ? "douchebag" : res.artists.items[0].id
+            id = jogaDado() > 8 ? "douchebag" : res.artists.items[0].id
         }
         else
             id = res.artists.items[0].id
