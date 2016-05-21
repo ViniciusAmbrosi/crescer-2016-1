@@ -1,40 +1,41 @@
-﻿@using CdZ.MVC.Services
+﻿
 @{
     Layout = null;
 }
 
 <!DOCTYPE html>
+<html lang="pt-br">
 
-<html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="~/Content/Custom/principal.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-2.2.3.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="spinner" style="display: none; position: fixed; width:100%; height:100%; background: rgba(0,0,0,.5) url(http://i.imgur.com/Q3obLBL.gif) center center no-repeat;"></div>
-    @if (ServicoDeSessao.EstaLogado)
-    {
-        <header>
-            <div class="container-fluid">
-                <div class="pull-right">
-                    Bem Vinda(o) <b>@ServicoDeSessao.UsuarioLogado.Nome</b> (<a href="/Login/Loggout">Sair</a>)
-                </div>
-            </div>
-        </header>
-    }
-    
 
-    <h1 class="site-title">Dakishimeta kokoro no kosumo</h1>
-    <div class="container"> 
-        @RenderBody()
-    </div>
-    @*<script>
+<body>
+    @Html.Action("Menu", "Menu")
+    @RenderBody()
+    @RenderSection("scripts", false)
+    @if (!string.IsNullOrEmpty(ViewBag.ErroIDPedido))
+    {
+        <script type="text/javascript">
+            alert("@ViewBag.ErroIDPedido");
+        </script>
+    }
+</body>
+
+</html>
+
+@*http://localhost:63267/Pedido/Cadastro#Camelao*@
+
+@*<script>
         $(document)
             .ajaxSend(function () {
                 $('#spinner').show();
@@ -51,6 +52,3 @@
         });
 
     </script>*@
-    @RenderSection("scripts", false)   
-</body>
-</html>
