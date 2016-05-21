@@ -2,6 +2,7 @@
 
 var idUltimoCavaleiro = 0;
 
+//TODO: remover repetição de código ao inserir cavaleiro / botao na tela
 function carregarDadosNaPagina() {
     $.ajax({ url: urlCavaleiroGet, type: 'GET' })
     .then(
@@ -9,10 +10,13 @@ function carregarDadosNaPagina() {
             console.log(res.data);
             var $cavaleiros = $('#cavaleiros');
             res.data.forEach(function (cava) {
-                $cavaleiros.append(
-                    $('<li>').append(cava.Nome)
-                );
+                var $liCavaleiro = $('<li>').append(cava.Nome);
+                $cavaleiros.append($liCavaleiro);
                 idUltimoCavaleiro = cava.Id;
+                var $btnExcluir = $("<button>").attr('data-id-btn', cava.Id).addClass('btn btn-danger');
+                $liCavaleiro.append($btnExcluir);
+                $btnExcluir.click(excluirCavaleiro);
+                $btnExcluir.text("Excluir");
             });
         },
         function onError(res) {
@@ -33,6 +37,7 @@ function carregarDadosNaPagina() {
         console.log('acabouuuuuuuu');
     });
 };
+
 carregarDadosNaPagina();
 
 function registrarEventoDoBotao() {
@@ -77,9 +82,11 @@ setInterval(function atualizarTela() {
         var $cavaleiros = $('#cavaleiros');
         res.data.forEach(function (cava) {
             if (cava.Id > idUltimoCavaleiro) {
-                $cavaleiros.append(
-                    $('<li>').append(cava.Nome)
-                );
+                $liCavaleiro = $('<li>').append(cava.Nome);
+                $cavaleiros.append($liCavaleiro);
+                var $btnExcluir = $('<button>').attr('data-id-btn', cava.Id).addClass('btn btn-small btn-danger');
+                $btnExcluir.insertAfter($liCavaleiro);
+                $btnExcluir.click(excluirCavaleiro);
                 idUltimoCavaleiro = cava.Id;
                 contagemCavaleiros++;
             }
@@ -94,21 +101,30 @@ function validaNotificacao() {
         alert("Essa tentativa de browser não suporta notificações!!!!");
     }
     else if (Notification.permission === "granted") {
-        notificarUsuario(contagemCavaleiros);
+        notificarUsuario(contagemCavaleiros + "novos cavaleiros foram adicionados!");
     }
     else if (Notification.permission !== 'denied') {
         Notification.requestPermission(function (permission) {
             if (permission === "granted") {
-                notificarUsuario(contagemCavaleiros);
+                notificarUsuario(contagemCavaleiros + "novos cavaleiros foram adicionados!");
             }
         });
     }
 }
 
-function notificarUsuario (qtd) {
-    var notification = new Notification(contagemCavaleiros + "novos cavaleiros foram adicionados!");
+function notificarUsuario (msg) {
+    var notification = new Notification(msg);
 }
 
+function excluirCavaleiro() {
+    var idCavaleiroASerRemovido = parseInt($(this).attr('data-id-btn'));
+    $.ajax({ url: "/Cavaleiro/Delete/" + idCavaleiroASerRemovido, type: "DELETE" })
+    .done
+    {
+        notificarUsuario("Cavaleiro de ID 'idCavaleiroASerRemovido' Excluído com sucesso");
+    }
+
+}
 //setInterval(atualizarTela, 5000); //executa funçao a cada 5 segundos
 
 /*.done(function (res) {
