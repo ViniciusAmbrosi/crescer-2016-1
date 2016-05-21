@@ -68,7 +68,10 @@ function registrarEventoDoBotao() {
 };
 
 registrarEventoDoBotao();
+
+var contagemCavaleiros = 0;
 setInterval(function atualizarTela() {
+    contagemCavaleiros = 0;
     $.ajax({ url: urlCavaleiroGet, type: 'GET' })
     .done(function (res) {
         var $cavaleiros = $('#cavaleiros');
@@ -78,10 +81,34 @@ setInterval(function atualizarTela() {
                     $('<li>').append(cava.Nome)
                 );
                 idUltimoCavaleiro = cava.Id;
+                contagemCavaleiros++;
             }
         });
+        if(contagemCavaleiros > 0)
+            validaNotificacao();
     });
 }, 5000)
+
+function validaNotificacao() {
+    if (!("Notification" in window)) {
+        alert("Essa tentativa de browser não suporta notificações!!!!");
+    }
+    else if (Notification.permission === "granted") {
+        notificarUsuario(contagemCavaleiros);
+    }
+    else if (Notification.permission !== 'denied') {
+        Notification.requestPermission(function (permission) {
+            if (permission === "granted") {
+                notificarUsuario(contagemCavaleiros);
+            }
+        });
+    }
+}
+
+function notificarUsuario (qtd) {
+    var notification = new Notification(contagemCavaleiros + " Cavaleiros foram inseridos!!");
+}
+
 //setInterval(atualizarTela, 5000); //executa funçao a cada 5 segundos
 
 /*.done(function (res) {
