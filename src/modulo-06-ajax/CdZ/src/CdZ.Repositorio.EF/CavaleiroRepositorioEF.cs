@@ -28,7 +28,12 @@ namespace CdZ.Repositorio.EF
         {
             using (var db = new ContextoDeDados())
             {
-                return db.Cavaleiro.Find(id);
+               return db.Cavaleiro
+                    .Include(_ => _.LocalNascimento)
+                    .Include(_ => _.LocalTreinamento)
+                    .Include(_ => _.Golpes)
+                    .Include(_ => _.Imagens)
+                    .SingleOrDefault(_ => _.Id == id);
             }
         }
 
@@ -45,12 +50,8 @@ namespace CdZ.Repositorio.EF
         {
             using (var db = new ContextoDeDados())
             {
-                /*
-                 * Para realizar um DELETE no banco de dados,
-                 * infelizmente precisamos buscar o objeto no banco para então
-                 * removê-lo.
-                 */
-                Cavaleiro cavaleiroASerExcluido = db.Cavaleiro.Find(id);
+                //TODO: arrumar, ta deixando restos no banco sem key, possivel soluçao como comentario no contextoDeDados.
+                Cavaleiro cavaleiroASerExcluido = Buscar(id);
                 db.Entry<Cavaleiro>(cavaleiroASerExcluido).State = EntityState.Deleted;
                 db.SaveChanges();
             }
