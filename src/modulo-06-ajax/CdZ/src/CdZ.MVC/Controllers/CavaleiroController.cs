@@ -11,7 +11,13 @@ namespace CdZ.MVC.Controllers
         private ICavaleiroRepositorio _cavaleiros = ServicoInjecaoDeDependecia.CriarCavaleiroRepositorio();
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult ListagemCavaleiros()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult CadastroCavaleiro()
         {
             return View();
         }
@@ -30,7 +36,6 @@ namespace CdZ.MVC.Controllers
         [HttpPost]
         public JsonResult Post(CavaleiroViewModel cavaleiro)
         {
-            //System.Threading.Thread.Sleep(3000);
             var novoId = _cavaleiros.Adicionar(cavaleiro.ToModel());
             Response.StatusCode = (int)HttpStatusCode.Created;
             return Json(new { id = novoId });
