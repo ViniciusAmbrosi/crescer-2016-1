@@ -1,7 +1,52 @@
-﻿.container {
-    padding: 25px;
+﻿body {
+    background-color: #E7E8DA;
 }
 
-.site-title {
-    margin: 20px 0 5px 30px;
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navheader {
+    z-index: 2;
+}
+
+#nav-container {
+    width: auto;
+}
+
+#icon-nav {
+    font-size: 16px;
+}
+
+.logout-drop {
+    text-align: center;
+}
+
+
+.container-corpo {
+    margin-top: 80px;
+    box-shadow: 2px 2px 10px #888888;
+    background-color: rgba(255, 255, 255, 0.79);
+    border: 1px transparent solid;
+}
+
+#form-procura-pedido {
+    color: #9D9D9D;
+    margin: 12px;
+}
+
+.container-listagem {
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.tabela-listagem {
+    height: 700px;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+}
+
+.container-cadastro {
+    border-radius: 10px;
+    padding-right: 50px;
 }
