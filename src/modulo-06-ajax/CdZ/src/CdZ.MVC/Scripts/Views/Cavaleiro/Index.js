@@ -46,7 +46,7 @@ function registrarEventoDoBotao() {
                 AlturaCm: 187,
                 Signo: 7,
                 TipoSanguineo: 1,
-                DataNascimento: new Date(),
+                DataNascimento: new Date(Date.UTC(2010, 9, 10)).toISOString(),
                 Golpes: ['Cólera do Dragão', 'Cólera dos 100 dragões'],
                 LocalNascimento: {
                     Texto: 'Beijing'
@@ -106,7 +106,7 @@ function validaNotificacao() {
 }
 
 function notificarUsuario (qtd) {
-    var notification = new Notification(contagemCavaleiros + " Cavaleiros foram inseridos!!");
+    var notification = new Notification(contagemCavaleiros + "novos cavaleiros foram adicionados!");
 }
 
 //setInterval(atualizarTela, 5000); //executa funçao a cada 5 segundos
