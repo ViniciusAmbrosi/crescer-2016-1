@@ -1,0 +1,92 @@
+﻿@model CdZ.MVC.Models.Cavaleiro.CavaleiroViewModel
+
+@{
+    ViewBag.Title = "CadastroCavaleiro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*public IList<string>Golpes { get; set; }
+    public IList<ImagemViewModel>Imagens { get; set; }*@
+
+<div class="container container-corpo container-cadastro">
+    <h2>Cadastre um cavaleiro!</h2>
+    <hr />
+    <form id="frmNovoCavaleiro" method="POST">
+        <div>
+            <label for="txtNomeCavaleiro">Nome</label>
+            <input id="txtNomeCavaleiro" type="text" name="nome" placeholder="Ex: Shiryu">
+        </div>
+        <div>
+            <label for="slTipoSanguineo">Tipo Sanguíneo</label>
+            <select id="slTipoSanguineo" name="tipoSanguineo">
+                @*TODO: adicionar option de selecione*@
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">AB</option>
+                <option value="4">O</option>
+            </select>
+        </div>
+        <label for="txtDataNascimento"> Data de Nascimento</label>
+        <div>
+            <label for="txtDiaNascimento"> Dia</label>
+            <input id="txtDiaNascimento" type="text" name="diaNascimento" placeholder="Ex: 12">
+            <label for="txtMesNascimento"> Mes</label>
+            <input id="txtMesNascimento" type="text" name="mesNascimento" placeholder="Ex: 5">
+            <label for="txtAnoNascimento"> Ano</label>
+            <input id="txtAnoNascimento" type="text" name="anoNascimento" placeholder="Ex: 1996">
+        </div>
+        <div>
+            <label for="nbAlturaMetros">Altura (metros)</label>
+            <input id="nbAlturaMetros" type="number" name="alturaMetros" placeholder="Ex: 1.76" min="0" step="0.01">
+        </div>
+        <div>
+            <label for="nbPesoKilos">Peso (kilos)</label>
+            <input id="nbPesoKilos" type="number" name="pesoKg" placeholder="Ex: 73.5" min="0" step="0.01">
+        </div>
+        <div>
+            <label for="slSigno">Signo</label>
+            <select id="slSigno" name="signo">
+                @*TODO: adicionar option de selecione*@
+                <option value="1">Áries</option>
+                <option value="2">Touro</option>
+                <option value="3">Gêmeos</option>
+                <option value="4">Câncer</option>
+                <option value="5">Leão</option>
+                <option value="6">Virgem</option>
+                <option value="7">Libra</option>
+                <option value="8">Escorpião</option>
+                <option value="9">Sagitário</option>
+                <option value="10">Capricórnio</option>
+                <option value="11">Aquário</option>
+                <option value="12">Peixes</option>
+            </select>
+        </div>
+        <div>
+            <label for="txtLocalNascimento">Local de nascimento</label>
+            <input id="txtLocalNascimento" type="text" name="localNascimento" placeholder="Ex: Porto Alegre">
+        </div>
+        <div>
+            <label for="txtLocalTreinamento">Local de treinamento</label>
+            <input id="txtLocalTreinamento" type="text" name="localTreinamento" placeholder="Ex: Alvorada">
+        </div>
+        <div>
+            <button id="btnAdicionarGolpe" type="button">Adicionar golpe...</button>
+            <ul id="novosGolpes"></ul>
+        </div>
+        <div>
+            <button id="btnAdicionarImg" type="button">Adicionar imagem...</button>
+            <ul id="novasImagens"></ul>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar!</button>
+    </form>
+</div>
+
+
+<script>
+        var urlCavaleiroPost = '@Url.Action("Post")';
+</script>
+
+@section scripts {
+<script src="~/Scripts/Views/Cavaleiro/cadastro.js"></script>
+}
+
