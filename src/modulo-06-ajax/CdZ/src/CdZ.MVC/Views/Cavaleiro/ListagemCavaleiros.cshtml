@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Listagem Cavaleiros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .erro {
+        color: red;
+    }
+</style>
+
+<div class="container container-corpo">
+    <h3>Listagem de cavaleiros</h3>
+
+    <ul id="cavaleiros"></ul>
+    <div id="feedback"></div>
+    <button id="btnCriar">Criar hard-coded!</button>
+
+    <script>
+        var urlCavaleiroGet = '@Url.Action("Get")';
+        var urlCavaleiroPost = '@Url.Action("Post")';
+    </script>
+
+    @section scripts {
+        <script src="~/Scripts/Views/Cavaleiro/Index.js"></script>
+    }
+</div>
