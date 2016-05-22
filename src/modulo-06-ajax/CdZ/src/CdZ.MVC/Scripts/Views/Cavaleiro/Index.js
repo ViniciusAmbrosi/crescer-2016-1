@@ -8,15 +8,8 @@ function carregarDadosNaPagina() {
     .then(
         function onSuccess(res) {
             console.log(res.data);
-            var $cavaleiros = $('#cavaleiros');
             res.data.forEach(function (cava) {
-                var $liCavaleiro = $('<li>').append(cava.Nome);
-                $cavaleiros.append($liCavaleiro);
-                idUltimoCavaleiro = cava.Id;
-                var $btnExcluir = $("<button>").attr('data-id-btn', cava.Id).addClass('btn btn-danger');
-                $liCavaleiro.append($btnExcluir);
-                $btnExcluir.click(excluirCavaleiro);
-                $btnExcluir.text("Excluir");
+                htmlHelper.adicionarCavaleiroComBotoes(cava);
             });
         },
         function onError(res) {
@@ -82,11 +75,7 @@ setInterval(function atualizarTela() {
         var $cavaleiros = $('#cavaleiros');
         res.data.forEach(function (cava) {
             if (cava.Id > idUltimoCavaleiro) {
-                $liCavaleiro = $('<li>').append(cava.Nome);
-                $cavaleiros.append($liCavaleiro);
-                var $btnExcluir = $('<button>').attr('data-id-btn', cava.Id).addClass('btn btn-small btn-danger');
-                $btnExcluir.insertAfter($liCavaleiro);
-                $btnExcluir.click(excluirCavaleiro);
+                htmlHelper.adicionarCavaleiroComBotoes(cava, $cavaleiros)
                 idUltimoCavaleiro = cava.Id;
                 contagemCavaleiros++;
             }
