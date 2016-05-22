@@ -38,13 +38,10 @@ namespace CdZ.Repositorio.EF
          */
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            /*
-             * Aqui estamos removendo a questão do entity framework de colocar
-             * por padrão as tabelas no plural.
-             */
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            //modelBuilder.Entity<Cavaleiro>().HasOptional(a => a.LocalNascimento).WithOptionalDependent().WillCascadeOnDelete(true);
-            //modelBuilder.Entity<Cavaleiro>().HasOptional(a => a.LocalTreinamento).WithOptionalDependent().WillCascadeOnDelete(true);
+            modelBuilder.Entity<Cavaleiro>().HasMany(_ => _.Golpes).WithRequired();
+            modelBuilder.Entity<Cavaleiro>().HasMany(_ => _.Imagens).WithRequired();
+            modelBuilder.Entity<Cavaleiro>().HasOptional(a => a.LocalNascimento).WithOptionalDependent().WillCascadeOnDelete(true);
             base.OnModelCreating(modelBuilder);
         }
     }
