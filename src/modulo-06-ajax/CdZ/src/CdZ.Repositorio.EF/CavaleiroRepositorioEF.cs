@@ -51,8 +51,12 @@ namespace CdZ.Repositorio.EF
             using (var db = new ContextoDeDados())
             {
                 //TODO: arrumar, ta deixando restos no banco sem key, possivel soluçao como comentario no contextoDeDados.
-                Cavaleiro cavaleiroASerExcluido = Buscar(id);
+                var cavaleiroASerExcluido = db.Cavaleiro.Find(id);
+                var localNascimento = db.Cavaleiro.Include(_ => _.LocalNascimento).Single(_ => _.Id == id).LocalNascimento;
+                var localTreinamento = db.Cavaleiro.Include(_ => _.LocalTreinamento).Single(_ => _.Id == id).LocalTreinamento;
                 db.Entry<Cavaleiro>(cavaleiroASerExcluido).State = EntityState.Deleted;
+                db.Entry<Local>(localNascimento).State = EntityState.Deleted;
+                db.Entry<Local>(localTreinamento).State = EntityState.Deleted;
                 db.SaveChanges();
             }
         }
