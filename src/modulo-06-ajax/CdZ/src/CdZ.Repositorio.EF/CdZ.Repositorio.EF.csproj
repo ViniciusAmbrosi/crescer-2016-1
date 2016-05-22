@@ -55,6 +55,14 @@
     <Compile Include="Migrations\201605190446463_Inicial.Designer.cs">
       <DependentUpon>201605190446463_Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605221404022_adicionarCascade.cs" />
+    <Compile Include="Migrations\201605221404022_adicionarCascade.Designer.cs">
+      <DependentUpon>201605221404022_adicionarCascade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605221418195_localCascade.cs" />
+    <Compile Include="Migrations\201605221418195_localCascade.Designer.cs">
+      <DependentUpon>201605221418195_localCascade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="CavaleiroRepositorioEF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +81,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605190446463_Inicial.resx">
       <DependentUpon>201605190446463_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605221404022_adicionarCascade.resx">
+      <DependentUpon>201605221404022_adicionarCascade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605221418195_localCascade.resx">
+      <DependentUpon>201605221418195_localCascade.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
