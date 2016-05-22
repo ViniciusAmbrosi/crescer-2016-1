@@ -125,6 +125,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Views\Cavaleiro\cadastro.js" />
+    <Content Include="Scripts\Views\Cavaleiro\html-helper.js" />
     <Content Include="Scripts\Views\Cavaleiro\Index.js" />
     <Content Include="Web.config" />
   </ItemGroup>
