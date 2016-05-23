@@ -1,0 +1,17 @@
+﻿@model IList<CdZ.MVC.Models.ImagemViewModel>
+
+@if (Model != null)
+{
+    foreach (var imagem in Model)
+    {
+
+        <li>
+            @Html.EditorFor(m => imagem.Url)
+        </li>
+        <li>
+            @Html.CheckBoxFor(m => imagem.IsThumb)
+            @Html.LabelFor(m => imagem.IsThumb)
+        </li>
+
+    }
+}
