@@ -1,0 +1,10 @@
+﻿@model IList<string>
+@if (Model != null)
+{
+    foreach (var golpe in Model)
+    {
+        <li>
+            @Html.EditorFor(m => golpe)
+        </li>
+    }
+}
