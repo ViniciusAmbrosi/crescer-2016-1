@@ -110,7 +110,6 @@ function excluirCavaleiro() {
         notificarUsuario("Cavaleiro de ID 'idCavaleiroASerRemovido' Excluído com sucesso");
     }
 }
-//TODO: botao nao redireciona
 function editarCavaleiro() {
     var idCavaleiroASerEditado = parseInt($(this).attr('data-id-btn'));
     $.get('/Cavaleiro/GetById', { id: idCavaleiroASerEditado })
@@ -120,33 +119,10 @@ function editarCavaleiro() {
             url: '/Cavaleiro/EditarCavaleiro',
             type: 'PUT',
             data: cavaleiro,
-            //success: function (response) {
-            //    $(document).html(response);
-            //}
+            success: function (response) {
+                $(".editar-cavaleiro").empty();
+                $(".editar-cavaleiro").append(response);
+            }
         });
     });
 }
-
-
-/*.done(function (res) {
-    console.log(res.data);
-        var $cavaleiros = $('#cavaleiros');
-        res.data.forEach(function (cava) {
-            $cavaleiros.append(
-                $('<li>').append(cava.Nome)
-            );
-        });
-})
-.fail(function (res) {
-    console.error(':(');
-    console.error(res);
-
-    var criarSpanComErro = function (msg) {
-        return $('<span>').text(msg).addClass('erro');
-    };
-
-    $('#feedback')
-    .append(criarSpanComErro(res.status))
-    .append($('<br>'))
-    .append(criarSpanComErro(res.statusText));
-});*/
