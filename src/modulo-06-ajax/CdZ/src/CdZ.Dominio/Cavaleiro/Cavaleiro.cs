@@ -43,5 +43,21 @@ namespace CdZ.Dominio
             Imagens = imagens;
             Golpes = golpes;
         }
+
+        public Cavaleiro(int id, string nome, double alturaCm, double pesoLb, DateTime dataNascimento, Signo signo, TipoSanguineo tipoSanguineo, Local localNascimento, Local localTreinamento, IList<Golpe> golpes, IList<Imagem> imagens)
+    : this()
+        {
+            Id = id;
+            Nome = nome;
+            AlturaCm = alturaCm;
+            PesoLb = pesoLb;
+            DataNascimento = dataNascimento;
+            Signo = signo;
+            TipoSanguineo = tipoSanguineo;
+            LocalNascimento = localNascimento;
+            LocalTreinamento = localTreinamento;
+            Imagens = imagens;
+            Golpes = golpes;
+        }
     }
 }
