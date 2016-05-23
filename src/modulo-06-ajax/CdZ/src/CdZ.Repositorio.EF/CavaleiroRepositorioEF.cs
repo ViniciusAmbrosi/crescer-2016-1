@@ -28,12 +28,12 @@ namespace CdZ.Repositorio.EF
         {
             using (var db = new ContextoDeDados())
             {
-               return db.Cavaleiro
-                    .Include(_ => _.LocalNascimento)
-                    .Include(_ => _.LocalTreinamento)
-                    .Include(_ => _.Golpes)
-                    .Include(_ => _.Imagens)
-                    .SingleOrDefault(_ => _.Id == id);
+                return db.Cavaleiro
+                     .Include(_ => _.LocalNascimento)
+                     .Include(_ => _.LocalTreinamento)
+                     .Include(_ => _.Golpes)
+                     .Include(_ => _.Imagens)
+                     .SingleOrDefault(_ => _.Id == id);
             }
         }
 
@@ -69,10 +69,20 @@ namespace CdZ.Repositorio.EF
                 db.Entry<Local>(cavaleiro.LocalTreinamento).State = cavaleiro.LocalTreinamento.Id == default(int) ? EntityState.Added : EntityState.Modified;
                 foreach (var golpe in cavaleiro.Golpes)
                 {
+                    if (string.IsNullOrWhiteSpace(golpe.Nome))
+                    {
+                        db.Entry<Golpe>(golpe).State = EntityState.Deleted;
+                        continue;
+                    }
                     db.Entry<Golpe>(golpe).State = golpe.Id == default(int) ? EntityState.Added : EntityState.Modified;
                 }
                 foreach (var imagem in cavaleiro.Imagens)
                 {
+                    if (string.IsNullOrWhiteSpace(imagem.Url))
+                    {
+                        db.Entry<Imagem>(imagem).State = EntityState.Deleted;
+                        continue;
+                    }
                     db.Entry<Imagem>(imagem).State = imagem.Id == default(int) ? EntityState.Added : EntityState.Modified;
                 }
                 db.Entry<Cavaleiro>(cavaleiro).State = EntityState.Modified;
