@@ -61,26 +61,21 @@ namespace CdZ.Repositorio.EF
             }
         }
 
-        public void Atualizar(Cavaleiro pedido)
+        public void Atualizar(Cavaleiro cavaleiro)
         {
-            /*
-             * Para fazermos uma conexão com o banco via EF, precisamos
-             * instanciar um objeto do mesmo tipo de nosso DbContext, que no nosso
-             * caso é o ContextoDeDados.
-             */
             using (var db = new ContextoDeDados())
             {
-                /*
-                 * Existem várias formas de fazer um Update de uma entidade.
-                 * Um deles é utilizando o método Entry, na qual você informa o tipo
-                 * de objeto que será feito o update (<Pedido>), passa o objeto
-                 * como parâmetro em seguida seta o stado deste objeto no banco de dados.
-                 * O EF irá saber que deve fazer um Update quando o estado for EntityState.Modified.
-                 * 
-                 * Em seguida chamaremos o método .SaveChanges(), que irá definitivamente
-                 * executar a query no banco de dados.
-                 */
-                db.Entry<Cavaleiro>(pedido).State = EntityState.Modified;
+                db.Entry<Local>(cavaleiro.LocalNascimento).State = cavaleiro.LocalNascimento.Id == default(int) ? EntityState.Added : EntityState.Modified;
+                db.Entry<Local>(cavaleiro.LocalTreinamento).State = cavaleiro.LocalTreinamento.Id == default(int) ? EntityState.Added : EntityState.Modified;
+                foreach (var golpe in cavaleiro.Golpes)
+                {
+                    db.Entry<Golpe>(golpe).State = golpe.Id == default(int) ? EntityState.Added : EntityState.Modified;
+                }
+                foreach (var imagem in cavaleiro.Imagens)
+                {
+                    db.Entry<Imagem>(imagem).State = imagem.Id == default(int) ? EntityState.Added : EntityState.Modified;
+                }
+                db.Entry<Cavaleiro>(cavaleiro).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }
