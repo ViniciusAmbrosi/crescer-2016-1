@@ -114,6 +114,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Custom\overrides-validacao.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -125,9 +128,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Views\Cavaleiro\cadastro.js" />
+    <Content Include="Scripts\Views\Cavaleiro\cadastro2.js" />
     <Content Include="Scripts\Views\Cavaleiro\html-helper.js" />
     <Content Include="Scripts\Views\Cavaleiro\Index.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -163,6 +169,9 @@
     <Content Include="Views\Cavaleiro\ListagemCavaleiros.cshtml" />
     <Content Include="Views\Menu\Menu.cshtml" />
     <Content Include="Views\Cavaleiro\CadastroCavaleiro.cshtml" />
+    <Content Include="Views\Cavaleiro\CadastroCavaleiro2.cshtml" />
+    <Content Include="Views\Cavaleiro\EditorTemplates\Imagens.cshtml" />
+    <Content Include="Views\Cavaleiro\EditorTemplates\Golpes.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CdZ.MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
