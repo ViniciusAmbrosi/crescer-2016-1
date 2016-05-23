@@ -1,0 +1,121 @@
+﻿@model CdZ.MVC.Models.Cavaleiro.CavaleiroViewModel
+
+@{
+    ViewBag.Title = "CadastroCavaleiro2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container container-corpo container-cadastro">
+
+    <form id="frmEditarCavaleiro" method="POST">
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>CavaleiroViewModel</h4>
+            <hr />
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.AlturaCm, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.AlturaCm, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.AlturaCm, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.PesoLb, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PesoLb, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PesoLb, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.DataNascimentoObj, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DataNascimentoObj, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DataNascimentoObj, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TipoSanguineo, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => model.TipoSanguineo, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TipoSanguineo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Signo, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => model.Signo, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Signo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.LocalNascimento, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LocalNascimento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.LocalNascimento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.LocalTreinamento, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LocalTreinamento, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.LocalTreinamento, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Golpes, htmlAttributes: new { @class = "control-label col-md-2" })
+                <button id="btnAdicionarGolpe" type="button">Adicionar golpe...</button>
+                <ul id ="golpes"class="col-md-10">
+                    @Html.EditorFor(model => model.Golpes, new { htmlAttributes = new { @class = "form-control" } })
+                </ul>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Imagens, htmlAttributes: new { @class = "control-label col-md-2" })
+                <button id="btnAdicionarImg" type="button">Adicionar imagem...</button>
+                <ul id="imagens" class="col-md-10">
+                    @Html.EditorFor(model => model.Imagens, new { htmlAttributes = new { @class = "form-control" } })
+                </ul>
+            </div>
+
+            @Html.HiddenFor(model => model.Id)
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script>
+        var urlCavaleiroPost = '@Url.Action("Post")';
+</script>
+
+@section scripts {
+    <script src="~/Scripts/Views/Cavaleiro/html-helper.js"></script>
+    <script src="~/Scripts/Views/Cavaleiro/cadastro2.js"></script>
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
