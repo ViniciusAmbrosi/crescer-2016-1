@@ -1,0 +1,7 @@
+﻿@model CdZ.MVC.Models.Cavaleiro.LocalViewModel
+
+@if (Model != null)
+{
+    @Html.EditorFor(m => m.Texto)
+    @Html.HiddenFor(m => m.Id)
+}
