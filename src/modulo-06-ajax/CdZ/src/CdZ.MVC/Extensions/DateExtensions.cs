@@ -8,6 +8,8 @@ namespace CdZ.MVC.Extensions
 
         public static string FromDateTimeToISOString(this DateTime date)
         {
+            if (date == null)
+                return "";
             return date.ToString("s", CultureInfo.InvariantCulture);
         }
     }
