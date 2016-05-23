@@ -49,16 +49,12 @@ function converterFormParaCavaleiro($form) {
         Nome: formData.get('nome'),
         TipoSanguineo: parseInt(formData.get('tipoSanguineo')),
         Imagens: novasImagens,
-        DataNascimento: (Date.UTC(txtAnoNascimento, txtMesNascimento, txtDiaNascimento) || new Date(Date.UTC(2010, 9, 10))).toISOString(),
+        DataNascimento: (Date.UTC(formData.get("txtAnoNascimento"), formData.get("txtMesNascimento"), formData.get("txtDiaNascimento")) || new Date(Date.UTC(2010, 9, 10))).toISOString(),
         AlturaCm: parseFloat(formData.get('alturaMetros')) * 100,
         PesoLb: parseFloat(formData.get('pesoKg')) * 2.20462262,
         Signo: parseInt(formData.get('signo')),
-        LocalNascimento: {
-            Texto: formData.get('localNascimento')
-        },
-        LocalTreinamento: {
-            Texto: formData.get('localTreinamento')
-        },
+        LocalNascimento: formData.get('localNascimento'),
+        LocalTreinamento: formData.get('localTreinamento'),
         Golpes: novosGolpes
     };
 }
