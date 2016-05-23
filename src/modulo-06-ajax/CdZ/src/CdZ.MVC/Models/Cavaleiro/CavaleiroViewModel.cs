@@ -29,24 +29,27 @@ namespace CdZ.MVC.Models.Cavaleiro
         }
         public Signo Signo { get; set; }
         public TipoSanguineo TipoSanguineo { get; set; }
-        public string LocalNascimento { get; set; }
-        public string LocalTreinamento { get; set; }
+        [UIHint("LocalNascimento")]
+        public LocalViewModel LocalNascimento { get; set; }
+        [UIHint("LocalTreinamento")]
+        public LocalViewModel LocalTreinamento { get; set; }
         [UIHint("Golpes")]
-        public IList<string> Golpes { get; set; }
+        public IList<GolpeViewModel> Golpes { get; set; }
         [UIHint("Imagens")]
         public IList<ImagemViewModel> Imagens { get; set; }
 
         public Dominio.Cavaleiro ToModel()
         {
+            var IdCavaleiro = Id;
             var golpesObj = new List<Golpe>();
             var imagensObj = new List<Imagem>();
             if (Golpes != null)
-                golpesObj = Golpes.Select(_ => new Golpe(_)).ToList();
+                golpesObj = Golpes.Select(_ => _.ToModel()).ToList();
             if (Imagens != null)
-                imagensObj = Imagens.Select(_ => new Imagem(_.Url, _.IsThumb)).ToList();
-            var localNascimento = new Local(LocalNascimento);
-            var localTreinamento = new Local(LocalTreinamento);
-            return new Dominio.Cavaleiro(Nome, AlturaCm, PesoLb, DataNascimentoObj, Signo, TipoSanguineo, localNascimento, localTreinamento, golpesObj, imagensObj);
+                imagensObj = Imagens.Select(_ => new Imagem(_.Id, _.Url, _.IsThumb)).ToList();
+            var localNascimento = LocalNascimento.ToModel();
+            var localTreinamento = LocalTreinamento.ToModel();
+            return new Dominio.Cavaleiro(Id, Nome, AlturaCm, PesoLb, DataNascimentoObj, Signo, TipoSanguineo, localNascimento, localTreinamento, golpesObj, imagensObj);
         }
 
         public CavaleiroViewModel toViewModel(Dominio.Cavaleiro cavaleiro)
@@ -59,12 +62,14 @@ namespace CdZ.MVC.Models.Cavaleiro
             cavaleiroViewModel.DataNascimentoObj = cavaleiro.DataNascimento;
             cavaleiroViewModel.Signo = cavaleiro.Signo;
             cavaleiroViewModel.TipoSanguineo = cavaleiro.TipoSanguineo;
-            cavaleiroViewModel.LocalNascimento = cavaleiro.LocalNascimento.Texto;
-            cavaleiroViewModel.LocalTreinamento = cavaleiro.LocalTreinamento.Texto;
+            var local = new LocalViewModel();
+            cavaleiroViewModel.LocalNascimento = local.ToViewModel(cavaleiro.LocalNascimento);
+            cavaleiroViewModel.LocalTreinamento = local.ToViewModel(cavaleiro.LocalTreinamento);
             var imagensViewModel = new List<ImagemViewModel>();
             imagensViewModel = cavaleiro.Imagens.Select(img => new ImagemViewModel().imagemToViewModel(img)).ToList();
             cavaleiroViewModel.Imagens = imagensViewModel;
-            cavaleiroViewModel.Golpes = cavaleiro.Golpes.Select(golpe => golpe.Nome).ToList();
+            var golpeVM = new GolpeViewModel();
+            cavaleiroViewModel.Golpes = cavaleiro.Golpes.Select(golpe => golpeVM.toViewModel(golpe)).ToList();
             return cavaleiroViewModel;
         }
     }
