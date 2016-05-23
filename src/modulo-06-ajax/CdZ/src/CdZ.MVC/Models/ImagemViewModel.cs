@@ -15,6 +15,11 @@ namespace CdZ.MVC.Models
             return new Imagem(Url, IsThumb);
         }
 
+        public Imagem ToModelWithId()
+        {
+            return new Imagem(Id, Url, IsThumb);
+        }
+
         public ImagemViewModel imagemToViewModel(Imagem img)
         {
             var imgViewModel = new ImagemViewModel();
