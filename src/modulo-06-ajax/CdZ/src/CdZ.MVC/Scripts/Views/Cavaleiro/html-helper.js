@@ -36,13 +36,13 @@ htmlHelper.gerarInputThumb = function () {
                                  .attr("data-val", "true")
                                  .attr("data-val-required", "The IsThumb field is required.")
                                  .attr("value", "true");
-    return $('<li>').append($novoInput);
+    return $('<li>').append($novoInput).append($("<label>").attr("for", "Imagens_imagem_IsThumb").text("IsThumb"));
 }
 
 htmlHelper.gerarInputTexto = function () {
-    var $novoInput = $('<input>').attr('name', 'Golpes.golpe')
+    var $novoInput = $('<input>').attr('name', 'Golpes.golpe.Nome')
                                  .attr('type', 'text')
-                                 .attr("id", "Golpes_golpe")
+                                 .attr("id", "Golpes.golpe.Nome")
                                  .attr('placeholder', 'Ex: Meteoro de pegasus')
                                  .addClass("form-control").addClass("text-box").addClass("single-line");
     return $('<li>').append($novoInput);
