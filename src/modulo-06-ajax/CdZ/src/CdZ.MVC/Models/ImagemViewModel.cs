@@ -14,5 +14,14 @@ namespace CdZ.MVC.Models
         {
             return new Imagem(Url, IsThumb);
         }
+
+        public ImagemViewModel imagemToViewModel(Imagem img)
+        {
+            var imgViewModel = new ImagemViewModel();
+            imgViewModel.Id = img.Id;
+            imgViewModel.Url = img.Url;
+            imgViewModel.IsThumb = img.IsThumb;
+            return imgViewModel;
+        }
     }
 }
