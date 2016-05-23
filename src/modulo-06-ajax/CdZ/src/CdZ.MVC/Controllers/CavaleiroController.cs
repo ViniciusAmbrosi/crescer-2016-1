@@ -23,6 +23,44 @@ namespace CdZ.MVC.Controllers
         }
 
         [HttpGet]
+        public ActionResult CadastroCavaleiro2()
+        {
+            return View();
+        }
+
+        //[HttpPut]
+        public ActionResult EditarCavaleiro(CavaleiroViewModel cavaleiro)
+        {
+            return View("CadastroCavaleiro2", cavaleiro);
+        }
+
+        public ActionResult EditarCavaleiroPorId(int cavaleiro)
+        {
+            Cavaleiro cavaleiroModel = _cavaleiros.Buscar(cavaleiro);
+            CavaleiroViewModel cavaleiroViewModel = new CavaleiroViewModel();
+            cavaleiroViewModel = cavaleiroViewModel.toViewModel(cavaleiroModel);
+            return View("CadastroCavaleiro2", cavaleiroViewModel);
+        }
+
+        [HttpGet]
+        [ActionName("GetById")]
+        public JsonResult Get(int? id)
+        {
+            var cavaleiro = _cavaleiros.Buscar((int)id);
+            var cavaleiroModel = new CavaleiroViewModel();
+            cavaleiroModel = cavaleiroModel.toViewModel(cavaleiro);
+            return Json(new { data = cavaleiroModel }, JsonRequestBehavior.AllowGet);
+        }
+
+        //[Http]
+        public ActionResult AlterarCavaleiro(CavaleiroViewModel cavaleiro)
+        {
+            _cavaleiros.Atualizar(cavaleiro.ToModel());
+            return View("ListagemCavaleiros");
+            //return View("CadastroCavaleiro2", cavaleiroModel);
+        }
+
+        [HttpGet]
         public JsonResult Get()
         {
             /* Para simular erro, descomente
@@ -36,9 +74,18 @@ namespace CdZ.MVC.Controllers
         [HttpPost]
         public JsonResult Post(CavaleiroViewModel cavaleiro)
         {
-            var novoId = _cavaleiros.Adicionar(cavaleiro.ToModel());
-            Response.StatusCode = (int)HttpStatusCode.Created;
-            return Json(new { id = novoId });
+            if (cavaleiro.Id == 0)
+            {
+                var novoId = _cavaleiros.Adicionar(cavaleiro.ToModel());
+                Response.StatusCode = (int)HttpStatusCode.Created;
+                return Json(new { id = novoId });
+            }
+            else
+            {
+                _cavaleiros.Atualizar(cavaleiro.ToModel());
+                Response.StatusCode = (int)HttpStatusCode.Accepted;
+                return Json(new { id = cavaleiro.Id });
+            }
         }
 
         [HttpDelete]
