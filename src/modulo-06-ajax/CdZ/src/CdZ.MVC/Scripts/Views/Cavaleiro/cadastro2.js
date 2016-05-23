@@ -2,6 +2,7 @@
 
     var $frmEditarCavaleiro = $('#frmEditarCavaleiro');
     $frmEditarCavaleiro.submit(function (e) {
+        debugger;
         var cavaleiro = converterFormParaCavaleiro($frmEditarCavaleiro);
         enviarCavaleiroParaServidor(cavaleiro);
         $frmEditarCavaleiro[0].reset();
@@ -27,10 +28,11 @@ function converterFormParaCavaleiro($form) {
     var novasImagens = [];
     var url = [];
     var isThumb = [];
+    var imgId = [];
 
     $('#imagens li').each(function () {
         var $url = $(this).find("input[name='Imagens.imagem.Url']").val();
-        if($url !== undefined)
+        if ($url !== undefined)
             url.push($url);
     });
 
@@ -40,14 +42,34 @@ function converterFormParaCavaleiro($form) {
             isThumb.push($isThumb);
     });
 
+    $('#imagens li').each(function () {
+        var $id = $(this).find("input[name='Imagens.imagem.Id']").val();
+        if ($id !== undefined)
+            imgId.push($id);
+    });
+
     for (var i = 0; i < url.length; i++) {
-        novasImagens.push({ url: url[i], isThumb: isThumb[i] });
+        novasImagens.push({ id: imgId[i], url: url[i], isThumb: isThumb[i] });
     }
 
     var novosGolpes = [];
+    var golpesId = [];
+    var golpesNome = []
     $('#golpes li').each(function () {
-        novosGolpes.push($(this).find("input[name='Golpes.golpe']").val());
+        var $Id = $(this).find("input[name='Golpes.golpe.Id']").val();
+        if ($Id !== undefined)
+            golpesId.push($Id);
     });
+
+    $('#golpes li').each(function () {
+        var $Nome = $(this).find("input[name='Golpes.golpe.Nome']").val();
+        if ($Nome !== undefined)
+            golpesNome.push($Nome);
+    });
+
+    for (var i = 0; i < url.length; i++) {
+        novosGolpes.push({ id: golpesId[i], Nome: golpesNome[i] });
+    }
 
     return {
         Id: formData.get("Id"),
@@ -58,8 +80,8 @@ function converterFormParaCavaleiro($form) {
         AlturaCm: parseFloat(formData.get('AlturaCm')) * 100,
         PesoLb: parseFloat(formData.get('PesoLb')) * 2.20462262,
         Signo: parseInt(formData.get('Signo')),
-        LocalNascimento: formData.get('LocalNascimento'),
-        LocalTreinamento:  formData.get('LocalTreinamento'),
+        LocalNascimento: { Id: parseInt($("#LocalNascimento_Id").val()), Texto: $("#LocalNascimento_Texto").val() },
+        LocalTreinamento: { Id: parseInt($("#LocalTreinamento_Id").val()), Texto: $("#LocalTreinamento_Texto").val() },
         Golpes: novosGolpes
     };
 }
