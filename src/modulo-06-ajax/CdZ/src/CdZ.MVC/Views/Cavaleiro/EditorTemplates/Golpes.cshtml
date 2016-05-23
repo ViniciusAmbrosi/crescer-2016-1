@@ -1,10 +1,12 @@
-﻿@model IList<string>
+﻿@model IList<CdZ.MVC.Models.Cavaleiro.GolpeViewModel>
+
 @if (Model != null)
 {
     foreach (var golpe in Model)
     {
         <li>
-            @Html.EditorFor(m => golpe)
+            @Html.EditorFor(m => golpe.Nome)
+            @Html.HiddenFor(m => golpe.Id)
         </li>
     }
 }
