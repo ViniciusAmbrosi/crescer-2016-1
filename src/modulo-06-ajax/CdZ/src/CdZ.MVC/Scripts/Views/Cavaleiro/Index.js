@@ -2,7 +2,6 @@
 
 var idUltimoCavaleiro = 0;
 
-//TODO: remover repetição de código ao inserir cavaleiro / botao na tela
 function carregarDadosNaPagina() {
     $.ajax({ url: urlCavaleiroGet, type: 'GET' })
     .then(
@@ -46,12 +45,8 @@ function registrarEventoDoBotao() {
                 TipoSanguineo: 1,
                 DataNascimento: new Date(Date.UTC(2010, 9, 10)).toISOString(),
                 Golpes: ['Cólera do Dragão', 'Cólera dos 100 dragões'],
-                LocalNascimento: {
-                    Texto: 'Beijing'
-                },
-                LocalTreinamento: {
-                    Texto: '5 picos de rosan'
-                },
+                LocalNascimento: 'Beijing',
+                LocalTreinamento: '5 picos de rosan',
                 Imagens: [{
                     Url: 'http://images.uncyc.org/pt/3/37/Shiryumestrepokemon.jpg',
                     IsThumb: true
@@ -75,33 +70,35 @@ setInterval(function atualizarTela() {
         var $cavaleiros = $('#cavaleiros');
         res.data.forEach(function (cava) {
             if (cava.Id > idUltimoCavaleiro) {
-                htmlHelper.adicionarCavaleiroComBotoes(cava, $cavaleiros)
+                htmlHelper.adicionarCavaleiroComBotoes(cava)
                 idUltimoCavaleiro = cava.Id;
                 contagemCavaleiros++;
             }
         });
-        if(contagemCavaleiros > 0)
+        if (contagemCavaleiros > 0)
             validaNotificacao();
     });
 }, 5000)
 
+
+//TODO: receber mensagem como parametro, senao ao excluir, mensagem pode dar jabu
 function validaNotificacao() {
     if (!("Notification" in window)) {
         alert("Essa tentativa de browser não suporta notificações!!!!");
     }
     else if (Notification.permission === "granted") {
-        notificarUsuario(contagemCavaleiros + "novos cavaleiros foram adicionados!");
+        notificarUsuario(contagemCavaleiros + " novos cavaleiros foram adicionados!");
     }
     else if (Notification.permission !== 'denied') {
         Notification.requestPermission(function (permission) {
             if (permission === "granted") {
-                notificarUsuario(contagemCavaleiros + "novos cavaleiros foram adicionados!");
+                notificarUsuario(contagemCavaleiros + " novos cavaleiros foram adicionados!");
             }
         });
     }
 }
 
-function notificarUsuario (msg) {
+function notificarUsuario(msg) {
     var notification = new Notification(msg);
 }
 
@@ -112,9 +109,24 @@ function excluirCavaleiro() {
     {
         notificarUsuario("Cavaleiro de ID 'idCavaleiroASerRemovido' Excluído com sucesso");
     }
-
 }
-//setInterval(atualizarTela, 5000); //executa funçao a cada 5 segundos
+//TODO: botao nao redireciona
+function editarCavaleiro() {
+    var idCavaleiroASerEditado = parseInt($(this).attr('data-id-btn'));
+    $.get('/Cavaleiro/GetById', { id: idCavaleiroASerEditado })
+    .done(function (res) {
+        var cavaleiro = res.data;
+        $.ajax({
+            url: '/Cavaleiro/EditarCavaleiro',
+            type: 'PUT',
+            data: cavaleiro,
+            //success: function (response) {
+            //    $(document).html(response);
+            //}
+        });
+    });
+}
+
 
 /*.done(function (res) {
     console.log(res.data);
