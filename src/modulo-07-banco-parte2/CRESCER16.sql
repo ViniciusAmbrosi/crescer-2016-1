@@ -1,3 +1,5 @@
+SELECT * FROM USER_TABLES;
+
 --1) Liste os clientes e suas respectivas cidades. 
   --a. IDCliente, Nome, Nome da Cidade e UF.
 
@@ -8,8 +10,8 @@ INNER JOIN Cidade cid ON cl.IDCIDADE = cid.IDCIDADE;
 --2) Liste o total de pedidos realizados no mês de maio de 2016.
   --(Dica: verifique o uso do TO_DATE para conversão de String em Date).
 
-SELECT COUNT(1) FROM PEDIDO WHERE DATAPEDIDO BETWEEN TO_DATE('01-05-2016') AND TO_DATE('01-06-2016');
-
+SELECT COUNT(1) FROM PEDIDO WHERE DATAPEDIDO BETWEEN TO_DATE('01-05-2016') AND TO_DATE('01-05-2016');
+--TO_DATE('31-05-2016')+.99999
 --3) Liste todos os clientes que tenham o LTDA no nome ou razao social.
 
 SELECT * FROM CLIENTE WHERE UPPER(RAZAOSOCIAL) LIKE '%LTDA%' OR UPPER(NOME) LIKE '%LTDA%';
@@ -19,10 +21,13 @@ SELECT * FROM CLIENTE WHERE UPPER(RAZAOSOCIAL) LIKE '%LTDA%' OR UPPER(NOME) LIKE
 Preço de custo: 35.67
 Preço de venda: 77.95
 Situação: A*/
+
 CREATE SEQUENCE SQPRODUTO START WITH 8001;
 
 INSERT INTO PRODUTO (IDPRODUTO, NOME, PRECOCUSTO, PRECOVENDA, SITUACAO)
 VALUES (SQPRODUTO.nextval, 'Galocha Maragato', 35.67, 77.95, 'A');
+
+commit;
 
 --5) Identifique e liste os produtos que não tiveram nenhum pedido,
 --considere os relacionamentos no modelo de dados, pois não há relacionamento direto entre Produto e Pedido (será preciso relacionar PedidoItem).
@@ -47,7 +52,7 @@ WHERE ped.IDCLIENTE = :produto;
 /*7) Faça uma consulta que receba um parâmetro sendo o IDProduto e liste a quantidade de itens na tabela PedidoItem com 
 este IDProduto foram vendidos no último ano (desde janeiro/2016)*/
 
-SELECT SUM(peditem.QUANTIDADE) as Quantidade_Vendas_2016
+SELECT SUM(peditem.QUANTIDADE) as Quantidade_Vendas_2016 -- cuidar valores numlos para nao dar jabu, usar sum(nvl(quantidade,0))
 FROM PEDIDOITEM peditem
 INNER JOIN PEDIDO ped ON peditem.IDPEDIDO = ped.IDPEDIDO
 WHERE peditem.IDPRODUTO = :idproduto AND ped.DATAPEDIDO BETWEEN TO_DATE('01-01-2016') AND TO_DATE('31-12-2016');
@@ -58,9 +63,14 @@ o maior valor de um pedido e valor médio de um pedido.
 (Dica: a função TO_CHAR permite converter Dates em String considerando formatos específicos).*/
 
 SELECT TO_CHAR(ped.DATAPEDIDO, 'MON-YYYY') as datas, 
-       SUM(peditem.Quantidade) AS Vendas_Quantidade_Total, SUM(DISTINCT peditem.Quantidade) AS Vendas_Quantidade_Produtos , 
-       SUM(VALORPEDIDO) AS Valor_Total, MIN(VALORPEDIDO) AS Valor_Menor, MAX(VALORPEDIDO) AS Valor_Maior, 
-       AVG(VALORPEDIDO) AS Valor_Medio
+       COUNT(DISTINCT peditem.IDPEDIDO) Total_Pedidos,
+       COUNT(DISTINCT peditem.IDPRODUTO) Produtos_Distintos,
+       /*SUM(peditem.Quantidade) AS Vendas_Quantidade_Total,
+       SUM(DISTINCT peditem.Quantidade) AS Vendas_Quantidade_Produtos ,*/ 
+       SUM(VALORPEDIDO) AS Valor_Total,
+       MIN(VALORPEDIDO) AS Valor_Menor,
+       MAX(VALORPEDIDO) AS Valor_Maior, 
+       ROUND(AVG(VALORPEDIDO),2) AS Valor_Medio
 FROM PEDIDOITEM peditem
 INNER JOIN PEDIDO ped ON ped.IDPEDIDO = peditem.IDPEDIDO
 GROUP BY TO_CHAR(ped.DATAPEDIDO, 'MON-YYYY')
