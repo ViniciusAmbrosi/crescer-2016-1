@@ -47,7 +47,23 @@ WHERE ped.IDCLIENTE = :produto;
 /*7) Faça uma consulta que receba um parâmetro sendo o IDProduto e liste a quantidade de itens na tabela PedidoItem com 
 este IDProduto foram vendidos no último ano (desde janeiro/2016)*/
 
+SELECT SUM(peditem.QUANTIDADE) as Quantidade_Vendas_2016
+FROM PEDIDOITEM peditem
+INNER JOIN PEDIDO ped ON peditem.IDPEDIDO = ped.IDPEDIDO
+WHERE peditem.IDPRODUTO = :idproduto AND ped.DATAPEDIDO BETWEEN TO_DATE('01-01-2016') AND TO_DATE('31-12-2016');
+
 /*8) Utilizando de funções de agrupamento (aggregation function), faça uma consulta que liste agrupando por ano e mês a quantidade 
 de pedidos comprados, a quantidade de produtos distintos comprados, o valor total dos pedidos, o menor valor de um pedido, 
 o maior valor de um pedido e valor médio de um pedido.
 (Dica: a função TO_CHAR permite converter Dates em String considerando formatos específicos).*/
+
+SELECT TO_CHAR(ped.DATAPEDIDO, 'MON-YYYY') as datas, 
+       SUM(peditem.Quantidade) AS Vendas_Quantidade_Total, SUM(DISTINCT peditem.Quantidade) AS Vendas_Quantidade_Produtos , 
+       SUM(VALORPEDIDO) AS Valor_Total, MIN(VALORPEDIDO) AS Valor_Menor, MAX(VALORPEDIDO) AS Valor_Maior, 
+       AVG(VALORPEDIDO) AS Valor_Medio
+FROM PEDIDOITEM peditem
+INNER JOIN PEDIDO ped ON ped.IDPEDIDO = peditem.IDPEDIDO
+GROUP BY TO_CHAR(ped.DATAPEDIDO, 'MON-YYYY')
+ORDER BY datas;
+
+
