@@ -5,7 +5,7 @@ BEGIN
   UPDATE PEDIDO ped
   SET ped.VALORPEDIDO =(SELECT SUM(PRECOUNITARIO * QUANTIDADE)
                         FROM PEDIDOITEM
-                        WHERE IDPEDIDO = 300)
+                        WHERE IDPEDIDO = pIDPedido)
   WHERE ped.IDPEDIDO = pIDPEDIDO;
 END;
 
