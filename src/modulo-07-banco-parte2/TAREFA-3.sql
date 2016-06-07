@@ -3,8 +3,8 @@ create or replace package PCK_CONCURSO is
   -- Author  : ANDRENUNES
   -- Created : 03/06/2016 10:40:29
   -- Purpose : Gerar informações reference a cada concurso
-  
   -- Public type declarations
+  
   procedure geraProximoConcurso;
   procedure atualizaAcertadores;
 
@@ -54,37 +54,39 @@ procedure geraProximoConcurso as
     end;
   ----------------------------------------------------------------------
 procedure atualizaAcertadores as
-   vUltimoConcurso integer;
-   vContadorAcertos integer;   
-   vAcumulou BOOLEAN := true;
-  CURSOR c_apostas (pIdConcurso in integer) IS
-      SELECT IDAPOSTA, Valor
-      FROM APOSTA 
-      WHERE IDCONCURSO = pIdConcurso; 
+
+   vContadorAcertos INTEGER;   
+   vAcumulou BOOLEAN := TRUE;
+   
+  CURSOR c_apostas IS
+      SELECT ap.IDCONCURSO, ap.IDAPOSTA,  ap.Valor
+      FROM APOSTA ap
+      LEFT JOIN APOSTA_PREMIADA ap_p ON ap.IDAPOSTA = ap_p.IDAPOSTA
+      WHERE ap_p.IDAPOSTA IS NULL; 
+      
   BEGIN
     vContadorAcertos := 0;
-    SELECT MAX(IDCONCURSO) 
-    INTO vUltimoConcurso
-    FROM CONCURSO;
-    FOR aposta IN c_apostas(vUltimoConcurso) LOOP
-       vContadorAcertos := NumerosAposta(aposta.IDAPOSTA, vUltimoConcurso);
+    
+    FOR aposta IN c_apostas LOOP
+       vContadorAcertos := NumerosAposta(aposta.IDAPOSTA, aposta.IDCONCURSO);
+       
        IF(vContadorAcertos > 3) THEN
          INSERT INTO APOSTA_PREMIADA (IDAPOSTA, ACERTOS, VALOR)
          VALUES(aposta.IDAPOSTA, vContadorAcertos, aposta.Valor);
        END IF;
-        --altera valor de acumulou do ultimo concurso
+       
        IF(vContadorAcertos = 6 AND vAcumulou) THEN
           vAcumulou := false;
           UPDATE CONCURSO
           SET ACUMULOU = 1
-          WHERE IDCONCURSO = vUltimoConcurso;
+          WHERE IDCONCURSO = aposta.IDCONCURSO;
        END IF;
     END LOOP;
+    
   END;
   ----------------------------------------------------------------------
   
 begin
-  -- Initialization
   null;
 end PCK_CONCURSO;
 /
