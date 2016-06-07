@@ -43,3 +43,6 @@ bld/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+/src/modulo-08-JAVA/Exercicio1/nbproject/private/
+/src/modulo-08-JAVA/Exercicio2/nbproject/private/
+/src/modulo-08-JAVA/Aula1/target/
