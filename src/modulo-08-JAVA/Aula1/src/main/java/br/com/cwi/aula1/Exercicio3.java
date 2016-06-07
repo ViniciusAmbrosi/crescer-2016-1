@@ -18,7 +18,7 @@ public class Exercicio3 {
         stringBuffer.append("Data de Hoje: ").append(dateFormat.format(date));
         System.out.println(stringBuffer);
         
-        System.out.println("Digite sua data de nascimento: ");
+        System.out.println("Digite sua data de nascimento: (dd/mm/yyyy)");
         try (final Scanner scanner = new Scanner(System.in)) {
             String inputDateFormat = "dd/MM/yyyy";
             Date dataRecebida = null;
