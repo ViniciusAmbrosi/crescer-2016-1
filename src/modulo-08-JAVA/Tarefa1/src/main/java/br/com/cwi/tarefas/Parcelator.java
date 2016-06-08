@@ -23,7 +23,7 @@ public class Parcelator {
         if(valor <= 0 || taxaJuros < 0 || qtdParcelas < 0 || primeiroVencimento == null)
             return null;
         double juros = valor * (taxaJuros / 100);
-        double valorPorParcela = (valor / qtdParcelas) + juros;
+        double valorPorParcela = (valor + juros) / qtdParcelas;
         StringBuilder stringBuilder = new StringBuilder();
         Locale locale = new Locale("pt", "BR");      
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
