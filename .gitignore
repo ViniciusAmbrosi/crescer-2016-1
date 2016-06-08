@@ -47,5 +47,8 @@ bld/
 /src/modulo-08-JAVA/Exercicio2/nbproject/private/
 /src/modulo-08-JAVA/Aula1/target/
 /src/modulo-08-JAVA/Tarefa1/nbproject/
-*/nbproject/*
-*/target/*
+
+.classpath
+.project
+.settings/
+target/
