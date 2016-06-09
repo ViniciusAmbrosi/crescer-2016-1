@@ -20,7 +20,7 @@ public class MeuReaderUtils {
     public static String lerArquivo(String nome) throws IOException
     {
         StringBuilder stringBuilder = new StringBuilder();
-        if(nome.endsWith(".txt")){
+        if(nome.endsWith(".txt") || nome.endsWith(".sql")){
                 Reader reader = null;
                 BufferedReader bufferReader = null;
             try {
@@ -29,7 +29,7 @@ public class MeuReaderUtils {
                 String line = null;
                 while ((line = bufferReader.readLine()) != null) {
                     stringBuilder.append(line);
-                    stringBuilder.append("/n");
+                    //stringBuilder.append("\n");
                 }
                 return stringBuilder.toString();
                 
