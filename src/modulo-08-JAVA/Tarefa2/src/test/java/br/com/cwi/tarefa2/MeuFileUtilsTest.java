@@ -28,7 +28,7 @@ public class MeuFileUtilsTest {
     @Test
     public void testaCriarArquivo() {
         System.out.println("main");
-        String[] args = new String[]{"mk", "${criar}"};
+        String[] args = new String[]{"mk", "${criar.txt}"};
         MeuFileUtils.main(args);
     }
     
