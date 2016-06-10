@@ -18,21 +18,29 @@ public class Run {
 
     public static void main(String[] args) {
 
+        //EX: 1
         /*try{
             MeuSqlUtils.lerSql();
             
             }catch(IOException e){
             System.out.println("DEU JABU!");
             }*/
-
+        //EX: 2
         /*List<String> linhas = MeuSqlUtils.lerColunasELinhas("SELECT * FROM PESSOA");
             for(String linha : linhas)
             {
             System.out.println(linha);
             }*/
-        
-        try {
+        //EX: 3
+        /*
+            try {
             MeuSqlUtils.importarCsv("Pessoas.csv", "Pessoa");
+            } catch (IOException ex) {
+            Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
+            }*/
+        //EX:4
+        try {
+            MeuSqlUtils.exportarCsv("C:\\Trabalho\\Crescer-meu\\src\\modulo-08-JAVA\\Tarefa3\\CSVMAROTO", "Pessoa");
         } catch (IOException ex) {
             Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
         }
