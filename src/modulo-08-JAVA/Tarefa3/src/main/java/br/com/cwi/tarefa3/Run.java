@@ -6,18 +6,35 @@
 package br.com.cwi.tarefa3;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author vinicius.ambrosi
  */
 public class Run {
-    
+
     public static void main(String[] args) {
-        try{
+
+        /*try{
             MeuSqlUtils.lerSql();
-        }catch(IOException e){
+            
+            }catch(IOException e){
             System.out.println("DEU JABU!");
+            }*/
+
+        /*List<String> linhas = MeuSqlUtils.lerColunasELinhas("SELECT * FROM PESSOA");
+            for(String linha : linhas)
+            {
+            System.out.println(linha);
+            }*/
+        
+        try {
+            MeuSqlUtils.importarCsv("Pessoas.csv", "Pessoa");
+        } catch (IOException ex) {
+            Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
