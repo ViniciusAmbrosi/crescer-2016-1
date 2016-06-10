@@ -18,7 +18,7 @@ public class RepositorioPessoaDAOTest {
      */
     RepositorioPessoaDAO instance = new RepositorioPessoaDAO();
 
-    @org.junit.Test
+    /*@org.junit.Test
     public void testInsert() {
         System.out.println("insert");
         Pessoa pessoa = new Pessoa("Jaburela");
@@ -26,12 +26,12 @@ public class RepositorioPessoaDAOTest {
         instance.insert(pessoa);
         List<Pessoa> pessoasDepois = instance.findNome("Jaburela");
         assertNotEquals(pessoasAntes, pessoasDepois);
-    }
+    }*/
 
     /**
      * Test of update method, of class RepositorioPessoaDAO.
      */
-    @org.junit.Test
+    /*@org.junit.Test
     public void testUpdate() {
         System.out.println("testUpdate");
         Pessoa pessoa = new Pessoa("Shazam", 5);
@@ -39,12 +39,12 @@ public class RepositorioPessoaDAOTest {
         instance.update(pessoa);
         List<Pessoa> pessoasDepois = instance.findNome("Shazam");
         assertNotEquals(pessoasAntes, pessoasDepois);
-    }
+    }*/
 
     /**
      * Test of delete method, of class RepositorioPessoaDAO.
      */
-    @org.junit.Test
+    /*@org.junit.Test
     public void testDelete() {
         System.out.println("testDelete");
         Pessoa pessoa = new Pessoa("Shazam", 1);
@@ -55,25 +55,25 @@ public class RepositorioPessoaDAOTest {
             assertEquals(pessoasAntes, pessoasDepois);
         else
             assertNotEquals(pessoasAntes, pessoasDepois);
-    }
+    }*/
 
     /**
      * Test of listAll method, of class RepositorioPessoaDAO.
      */
-    @org.junit.Test
+    /*@org.junit.Test
     public void testListAll() {
         System.out.println("testListAll");
         List<Pessoa> pessoas = instance.listAll();
         assertTrue(pessoas.size() > 0);
-    }
+    }*/
 
     /**
      * Test of findNome method, of class RepositorioPessoaDAO.
      */
-    @org.junit.Test
+    /*@org.junit.Test
     public void testFindNome() {
         System.out.println("testFindNome");
         List<Pessoa> pessoas = instance.findNome("NomeNaoExistente");
         assertTrue(pessoas.isEmpty());
-    }
+    }*/
 }

@@ -81,8 +81,6 @@ public class RepositorioPessoaDAO implements IPessoa {
             while (rs.next()) {
                 lista.add(new Pessoa(rs.getString("NM_PESSOA"),rs.getInt(1)));
             }
-            
-            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
         }
@@ -100,7 +98,6 @@ public class RepositorioPessoaDAO implements IPessoa {
             while (rs.next()) {
                 lista.add(new Pessoa(rs.getString("NM_PESSOA"),rs.getInt(1)));
             }
-            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
         }
