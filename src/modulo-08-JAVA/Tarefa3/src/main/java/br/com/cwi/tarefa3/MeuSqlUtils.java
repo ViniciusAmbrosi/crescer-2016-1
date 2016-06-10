@@ -4,10 +4,13 @@ import br.com.cwi.aula3.ConnectionUtils;
 import br.com.cwi.aula3.Run;
 import br.com.cwi.tarefa2.MeuReaderUtils;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -97,4 +100,25 @@ public class MeuSqlUtils {
             return null;
         }
     }
+    
+    public static void exportarCsv(String caminho, String tabela) throws IOException{
+        String query = String.format("SELECT * FROM %s", tabela);
+        List<String> linhas = lerColunasELinhas(query);
+        gerarCsv(linhas, caminho);
+    }
+    
+    private static List<String> gerarCsv(List<String> conteudo, String caminho) throws IOException{
+        try(Writer writer = new FileWriter(caminho);
+                BufferedWriter bufferWriter = new BufferedWriter(writer)){
+                for(String line : conteudo){
+                    bufferWriter.write(line.replace("  ", ";"));
+                    bufferWriter.newLine();
+                    bufferWriter.flush();
+                }           
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        return null;
+    }
+    
 }
