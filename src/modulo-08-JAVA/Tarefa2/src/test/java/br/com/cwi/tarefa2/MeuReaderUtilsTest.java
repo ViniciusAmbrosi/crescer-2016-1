@@ -25,7 +25,7 @@ public class MeuReaderUtilsTest {
     public void testLerArquivo() throws Exception {
         System.out.println("lerArquivo");
         String nome = "criar.txt";
-        String expResult = "Ta funcionando?/n";
+        String expResult = "Ta funcionando?";
         String result = MeuReaderUtils.lerArquivo(nome);
         assertEquals(expResult, result);
     }
