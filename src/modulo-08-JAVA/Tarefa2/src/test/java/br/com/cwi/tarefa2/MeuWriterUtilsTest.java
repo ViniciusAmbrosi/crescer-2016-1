@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * @author dream
  */
 public class MeuWriterUtilsTest {
-    
+    /*
     @Test
     public void testEscreverNoArquivo() throws Exception {
         System.out.println("escreverNoArquivo");
@@ -30,5 +30,5 @@ public class MeuWriterUtilsTest {
         String result =  MeuWriterUtils.escreverNoArquivo(nome, conteudo);
         assertEquals(expResult, result);
     }
-    
+    */
 }

@@ -23,9 +23,8 @@ public class ParcelatorTest {
     
     public ParcelatorTest() {
     }
-    /**
-     * Test of obterParcelas method, of class Parcelator.
-     */
+
+    /*
     @Test
     public void obter10ParcelasDe110() {
         System.out.println("obterParcelas");
@@ -53,4 +52,5 @@ public class ParcelatorTest {
         System.out.println(result);
         assertEquals(expResult, result);
     }
+*/
 }

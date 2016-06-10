@@ -39,9 +39,7 @@ public class MeuCalendarioUtilTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of diaDeNascimento method, of class MeuCalendarioUtil.
-     */
+    /*
     @org.junit.Test
     public void retornaQuartaFeira() {
         System.out.println("diaDeNascimento");
@@ -68,9 +66,6 @@ public class MeuCalendarioUtilTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of tempoDecorridoDesde method, of class MeuCalendarioUtil.
-     */
     @org.junit.Test
     public void tempoDecorridoDesdeHoje() {
         System.out.println("tempoDecorridoDesde");
@@ -148,4 +143,5 @@ public class MeuCalendarioUtilTest {
         String result = MeuCalendarioUtil.tempoDecorridoDesde(data);
         assertEquals(expResult, result);
     }
+    */
 }

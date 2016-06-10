@@ -36,10 +36,7 @@ public class MeuStringUtilTest {
     @After
     public void tearDown() {
     }
-
-    /**
-     * Test of isEmpty method, of class MeuStringUtil.
-     */
+    /*
     @Test
     public void testaIsEmptyComStringVazia() {
         System.out.println("isEmpty");
@@ -67,9 +64,7 @@ public class MeuStringUtilTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of contarVogais method, of class MeuStringUtil.
-     */
+
     @Test
     public void testaContarVogaisComTresA() {
         System.out.println("contarVogais");
@@ -88,9 +83,6 @@ public class MeuStringUtilTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of inverterString method, of class MeuStringUtil.
-     */
     @Test
     public void testaInverterStringComABC() {
         System.out.println("inverterString");
@@ -100,9 +92,6 @@ public class MeuStringUtilTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of isPalindromo method, of class MeuStringUtil.
-     */
     @Test
     public void testaPalindromoComPalavraNaoPalindromo() {
         System.out.println("isPalindromo");
@@ -120,4 +109,5 @@ public class MeuStringUtilTest {
         boolean result = MeuStringUtil.isPalindromo(palavra);
         assertEquals(expResult, result);
     }    
+    */
 }

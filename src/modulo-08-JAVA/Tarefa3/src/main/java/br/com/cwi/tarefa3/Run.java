@@ -39,8 +39,9 @@ public class Run {
             Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
             }*/
         //EX:4
+        
         try {
-            MeuSqlUtils.exportarCsv("C:\\Trabalho\\Crescer-meu\\src\\modulo-08-JAVA\\Tarefa3\\CSVMAROTO", "Pessoa");
+            MeuSqlUtils.exportarCsv("CSVMAROTO.csv", "Pessoa");
         } catch (IOException ex) {
             Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
         }

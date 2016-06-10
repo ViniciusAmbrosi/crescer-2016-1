@@ -25,6 +25,7 @@ public class MeuFileUtilsTest {
     /**
      * Test of main method, of class MeuFileUtils.
      */
+    /*
     @Test
     public void testaCriarArquivo() {
         System.out.println("main");
@@ -52,5 +53,5 @@ public class MeuFileUtilsTest {
         String[] args = new String[]{"rm", "${criar}"};
         MeuFileUtils.main(args);
     }
-
+*/
 }

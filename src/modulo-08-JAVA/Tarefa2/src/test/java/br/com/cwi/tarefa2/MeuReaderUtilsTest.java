@@ -21,6 +21,8 @@ public class MeuReaderUtilsTest {
     /**
      * Test of lerArquivo method, of class MeuReaderUtils.
      */
+    
+    /*
     @Test
     public void testLerArquivo() throws Exception {
         System.out.println("lerArquivo");
@@ -29,5 +31,5 @@ public class MeuReaderUtilsTest {
         String result = MeuReaderUtils.lerArquivo(nome);
         assertEquals(expResult, result);
     }
-    
+    */
 }
