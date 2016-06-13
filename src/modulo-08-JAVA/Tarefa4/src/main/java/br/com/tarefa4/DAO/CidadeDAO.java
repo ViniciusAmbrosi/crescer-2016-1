@@ -1,7 +1,9 @@
 package br.com.tarefa4.DAO;
 
 import br.com.cwi.tarefa4.interfaces.ICidade;
+import br.com.cwi.tarefa4.utils.CSVUtils;
 import br.com.tarefa4.entity.Cidade;
+import java.io.IOException;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -67,5 +69,11 @@ public class CidadeDAO implements ICidade {
         List<Cidade> cidades = criteria.list();
         session.close();
         return cidades;
+    }
+    
+    @Override
+    public void exportarCsv(String caminho) throws IOException{
+        List<Cidade> cidades = listAll();
+        CSVUtils.gerarCsvCidade(cidades, caminho);
     }
 }
