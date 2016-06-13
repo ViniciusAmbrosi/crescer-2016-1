@@ -1,0 +1,4670 @@
+IDCIDADE;NOME;UF
+1183;Irineopolis;SC
+1184;Quilombo;SC
+1185;Salto do Lontra;PR
+1;Itarare;SP
+2;Aimores;MG
+3;Ponte Serrada;SC
+4;Santa Branca;SP
+5;Alecrim;RS
+6;Ipuacu;SC
+7;Bom Jesus do Tocantins;PA
+8;Lagoa;RS
+9;Coronel Murta;MG
+10;Bacurituba;MA
+11;Entre Rios do Sul;RS
+12;Santa Teresinha;BA
+13;Garuva;SC
+14;Lagoa de Velhos;RN
+15;Caico;RN
+16;Campo Bom;RS
+17;Penha;SC
+18;Rafael Fernandes;RN
+19;Matinhos;PR
+20;Amparo;MG
+21;Lassance;MG
+22;Lidianopolis;PR
+23;Jacaraci;BA
+24;Erval Grande;RS
+25;Alvorada do Gurgueia;PI
+26;Sao Ludgero;SC
+27;Alto Alegre;RS
+28;Riachinho;MG
+29;Capistrano;CE
+30;Paial;SC
+31;Coaraci;BA
+32;Flora Rica;SP
+33;Sao Miguel do Guama;PA
+34;Florinia;SP
+35;Cafarnaum;BA
+36;Sigefredo Pacheco;PI
+37;Quintana;SP
+38;Jucas;CE
+39;Wenceslau Guimaraes;BA
+40;Dionisio Cerqueira;SC
+41;Morrinhos do Sul;RS
+42;Tunapolis;SC
+43;Santo Antonio do Jardim;SP
+44;Cara¿;RS
+45;S¿o Francisco de Assis;RS
+46;Vitoria da Conquista;BA
+47;Utinga;BA
+48;Itapagipe;MG
+49;Brejinho;PE
+50;Joao Costa;PI
+51;Massaranduba;PB
+52;Afua;PA
+53;Catende;PE
+54;Aguiarnopolis;TO
+55;Itapetininga;SP
+56;Jesupolis;GO
+57;Brejo Santo;CE
+58;Campo Alegre;AL
+59;Muniz Freire;ES
+60;Jacobina;BA
+61;Indiaroba;SE
+62;Manoel Viana;RS
+63;Deodapolis;MS
+64;Sao Jose dos Cordeiros;PB
+65;Ibicarai;BA
+66;Entre Rios;RS
+67;Harmonia;RS
+68;Rafard;SP
+69;Marechal Candido Rondon;PR
+70;Derrubadas;RS
+71;Tr¿s de Maio;RS
+72;Esperanca Nova;PR
+73;Matureia;PB
+74;Mirim Doce;SC
+75;Campo Belo do Sul;SC
+76;Cruzeiro do Oeste;PR
+77;Moreilandia;PE
+78;Dario Meira;BA
+79;Uchoa;SP
+80;Santo Antonio do Itambe;MG
+81;Porto Rico;MA
+82;Desterro de Entre Rios;MG
+83;Laguna;MS
+84;Santo Antonio do Monte;MG
+85;Buritinopolis;GO
+86;Juranda;PR
+87;Chaval;CE
+88;Montadas;PB
+89;Lajeado;RS
+90;Caraguatatuba;SP
+91;Anapu;MA
+92;Anguera;BA
+93;Alvorada;RS
+94;Inhacor¿;RS
+95;Timbe do Sul;SC
+96;Aratiba;RS
+97;Riacho dos Machados;MG
+98;Fatima do Sul;MS
+99;Cajamar;SP
+100;Pedro de Toledo;SP
+101;Lafaiete Coutinho;BA
+102;Ipora;GO
+103;Ibicare;SC
+104;Rancho Alegre;PR
+105;Nova Aurora;GO
+106;Zacarias;SP
+107;Taquarivai;SP
+108;Alvares Machado;SP
+109;Mucuri;BA
+110;Sao Joao da Parauna;GO
+111;Arapoti;PR
+112;Porto Xavier;RS
+113;Vidal Ramos;SC
+114;Teresopolis;RJ
+115;Aveiro;PA
+116;Cabedelo;PB
+117;Pentecoste;CE
+118;Cajuru;SP
+119;Sao Roberto;MA
+120;Igarape-Miri;PA
+121;Santa Cruz do Rio Pardo;SP
+122;Oratorios;MG
+123;Sao Bento do Sapucai;SP
+124;Governador Dix-Sept Rosado;RN
+125;Sao Joao Batista do Gloria;MG
+126;Taquaritinga;PE
+127;Nova Santa Barbara;PR
+128;Igarape-Miri;PA
+129;Caseara;TO
+130;Benedito Novo;SC
+131;Manaus;AM
+132;Presidente Vargas;MA
+133;Sanclerlandia;GO
+134;Imigrante;RS
+135;Timbiras;MA
+136;Alfenas;MG
+137;Cantagalo;MG
+138;Nova Ibia;BA
+139;Cananeia;SP
+140;Apicum-Acu;MA
+141;Camutanga;PE
+142;Jaraguari;MS
+143;Carmo do Paranaiba;MG
+144;Cajazeiras do Piaui;PI
+145;Mozarlandia;GO
+146;Oratorios;MG
+147;Santo Antonio da Barra;GO
+148;Porteiras;CE
+149;Tapirai;MG
+150;Santa Tereza de Goias;GO
+151;Tenente Laurentino Cruz;RN
+152;Jaguariaiva;PR
+153;Gramado Xavier;RS
+154;Alta Floresta;MT
+155;Colmeia;TO
+156;Campo Alegre do Fidalgo;PI
+157;Sao Joao do Soter;MA
+158;Paim Filho;RS
+159;Central;BA
+160;Jatoba;MA
+161;Turilandia;MA
+162;Frei Gaspar;MG
+163;Caraguatatuba;SP
+164;Arapua;MG
+165;Joao Dourado;BA
+166;Luziania;GO
+167;Serra de Sao Bento;RN
+168;Doutor Pedrinho;SC
+169;Fervedouro;MG
+170;Ibirapua;BA
+171;Timburi;SP
+172;Nova P¿dua;RS
+173;Talisma;TO
+174;Giru¿;RS
+175;Campo Limpo Paulista;SP
+176;Salgadinho;PB
+177;S¿o Borja;RS
+178;Montanha;ES
+179;Ribeirao das Neves;MG
+180;Herval;RS
+181;Carnaiba;PE
+182;Conquista;MG
+183;Chiapeta;RS
+184;Aroazes;PI
+185;Constantina;RS
+186;Sao Jose do Jacuri;MG
+187;Sao Joao d'Alianca;GO
+188;Taguai;SP
+189;Passo Fundo;RS
+190;Mato Rico;PR
+191;Miragua¿;RS
+192;Ulianopolis;PA
+193;Gramado dos Loureiros;RS
+194;Santo Antonio de Jesus;BA
+195;Estancia;SE
+196;Santa Teresa;ES
+197;Santo Antonio do Monte;MG
+198;Coqueiro Baixo;RS
+199;Muana;PA
+200;Arambar¿;RS
+201;Serrita;PE
+202;Pote;CE
+203;Erval Velho;SC
+204;Coxim;MS
+205;Urbano Santos;MA
+206;Sao Joao da Canabrava;PI
+207;Jardim Olinda;PR
+208;Alecrim;RS
+209;Palmopolis;MG
+210;Conselheiro Lafaiete;MG
+211;Ouro Verde do Oeste;PR
+212;Tr¿s Arroios;RS
+213;Monte Horebe;PB
+214;Quebrangulo;AL
+215;Boa Vista do Sul;RS
+216;Poa;SP
+217;Conceicao do Mato Dentro;MG
+218;Marcionilio Souza;BA
+219;Anaurilandia;MS
+220;Angelim;PE
+221;Guarai;GO
+222;Ouro Verde;GO
+223;Apodi;RN
+224;Agronomica;SC
+225;Porto Real do Colegio;AL
+226;Cristalia;MG
+227;Centen¿rio;RS
+228;Guaraciaba;CE
+229;Santo Ant¿nio das Miss¿es;RS
+230;Janiopolis;PR
+231;Tr¿s de Maio;RS
+232;Muitos Cap¿es;RS
+233;Eliseu Martins;PI
+234;Pratinha;MG
+235;Paranaita;MT
+236;Santo Antonio de Jesus;BA
+237;California;PR
+238;Xambre;PR
+239;Rochedo;MS
+240;Alto Alegre do Maranhao;MA
+241;Guaratingueta;SP
+242;Santo Antonio de Goias;GO
+243;Rio Piracicaba;MG
+244;Sao Joao;CE
+245;Rio Sono;TO
+246;Cristinapolis;SE
+247;Araguatins;TO
+248;Piratininga;SP
+249;Pintadas;BA
+250;Ivoti;RS
+251;Urussanga;SC
+252;Sao Francisco do Brejao;MA
+253;Cabo de Santo Agostinho;PE
+254;Dolcinopolis;SP
+255;Cerro Grande;RS
+256;Cananeia;SP
+257;Sao Joao da Fronteira;PI
+258;Canudos do Vale;RS
+259;Anhanguera;GO
+260;Peruibe;SP
+261;Guaribas;PI
+262;Guabiruba;SC
+263;Ribeirao do Sul;SP
+264;Alvinlandia;SP
+265;Santa Rita;BA
+266;Serra da Raiz;PB
+267;Araguari;MG
+268;Acrelandia;AC
+269;Lajes Pintadas;RN
+270;Major Gercino;SC
+271;Sucupira do Riachao;MA
+272;Paracambi;RJ
+273;Corupa;SC
+274;Restinga Seca;RS
+275;Venha-Ver;RN
+276;Brasileira;PI
+277;Guaranta do Norte;MT
+278;Jundia;AL
+279;Barra Velha;SC
+280;Conceicao da Feira;BA
+281;Indianopolis;MG
+282;Santa Rosa do Purus;AC
+283;Nova Aurora;GO
+284;Estrela;RS
+285;Serrinha;BA
+286;Guamare;RN
+287;Bom Jardim de Minas;MG
+288;Santa Terezinha;GO
+289;Nova Modica;MG
+290;Presidente Juscelino;MA
+291;Nova Belem;MG
+292;Sao Jose dos Cordeiros;PB
+293;Cruzeiro da Fortaleza;MG
+294;Ladainha;MG
+1477;Tucano;BA
+591;Luz;GO
+592;Vitoria de Santo Antao;PE
+593;Sitio do Quinto;BA
+594;Afonso Bezerra;RN
+595;Tarrafas;CE
+596;Ibicuitinga;CE
+597;Bertioga;SP
+598;Lagoa do Barro do Piaui;PI
+599;Arraial do Cabo;RJ
+600;Capanema;PA
+601;Pianco;PB
+602;Vera Cruz;RS
+603;Canoinhas;SC
+604;Livramento;BA
+605;Maracana;CE
+606;Igarape-Acu;PA
+607;Feira de Santana;BA
+608;Fronteiras;PI
+609;Monteiro Lobato;SP
+610;Alvinlandia;SP
+611;Tamandare;PE
+612;Pedra Mole;SE
+613;Sao Joao do Soter;MA
+614;Ascurra;SC
+615;Realeza;PR
+616;Niquelandia;GO
+617;Ibipeba;BA
+618;Quatipuru;PA
+619;Rio Pardo;RS
+620;Buritis;MG
+621;Santana do Mundau;AL
+622;Ponte Alta do Tocantins;TO
+623;Teixeira;BA
+624;Sao Jose do Vale do Rio Preto;RJ
+625;Santa Tereza;RS
+626;Chupinguaia;RO
+627;Barcarena;PA
+628;Colinas;RS
+629;Bom Jesus da Lapa;BA
+630;Esperantina;PI
+631;Miraselva;PR
+632;Cachoeira da Prata;MG
+633;Serra Alta;SC
+634;Campanario;MG
+635;Euclides da Cunha Paulista;SP
+636;Boca do Acre;AM
+637;Inacio Martins;PR
+638;Conceicao do Coite;BA
+639;Fartura do Piaui;PI
+640;Vargem Bonita;MG
+641;Mundo Novo;BA
+642;Amargosa;BA
+643;Balbinos;SP
+644;Dom Macedo Costa;BA
+645;Palotina;PR
+646;Porteirinha;MG
+647;Acaiaca;MG
+648;Catas Altas da Noruega;MG
+649;Quebrangulo;AL
+650;Torrinha;SP
+651;Redentora;RS
+652;Pindare Mirim;MA
+653;Sao Mateus do Sul;PR
+654;Taquarituba;SP
+655;Santa Rita de Caldas;MG
+656;Sao Bento;MA
+657;Sao Joao da Ponte;MG
+658;Paverama;RS
+659;Sao Joao del Rei;MG
+660;Areia Branca;RN
+661;Barra do Quara¿;RS
+662;Antonio Cardoso;BA
+663;Poco de Jose de Moura;PB
+664;Poloni;SP
+665;Madalena;CE
+666;Cururupu;MA
+667;Aurelino Leal;BA
+668;Sagres;SP
+669;Pauliceia;SP
+670;Baiao;PA
+671;Aguas Belas;PE
+672;Bom Princ¿pio;RS
+673;Salete;SC
+674;Juazeiro do Norte;CE
+675;Estrela do Indaia;MG
+676;Chapada da Natividade;TO
+677;Campo Alegre de Lourdes;BA
+678;Jacutinga;RS
+679;Oiapoque;AP
+680;Vieiropolis;PB
+681;Dom Joaquim;MG
+682;Alagoinhas;BA
+683;Nova Campina;SP
+684;Paulo Afonso;BA
+685;Pinhalzinho;SC
+686;Lagoa dos Rodrigues;MA
+687;Belford Roxo;RJ
+688;Ibira;RS
+689;Jundiai;PR
+690;Bela Vista do Maranhao;MA
+691;Itaperucu;PR
+692;Cubati;PB
+693;Rio Branco do Ivai;PR
+694;Trabiju;SP
+695;Sao Jose do Cerrito;SC
+696;Uruoca;CE
+697;Bernardino Batista;PB
+698;Presidente Epitacio;SP
+699;Pradopolis;SP
+700;Urbano Santos;MA
+701;Porto Esperidiao;MT
+702;Irai de Minas;MG
+703;Pote;CE
+704;Sao Sebastiao de Lagoa de Roca;PB
+705;Apicum-Acu;MA
+706;Novo Tiradentes;RS
+707;Rio do Prado;MG
+708;Itabirinha de Mantena;MG
+709;Nova Esperanca do Piria;PA
+710;Serra da Saudade;MG
+711;Jequitiba;MG
+712;Redentora;RS
+713;Santo Andre;PB
+714;Nova Granada;SP
+715;Feliz Natal;MT
+716;Franco da Rocha;SP
+717;Jaguaretama;CE
+718;Carmo do Paranaiba;MG
+719;Ant¿nio Prado;RS
+720;Monte Azul Paulista;SP
+721;Massaranduba;PB
+722;Sao Gabriel da Palha;ES
+723;Ip¿;RS
+724;Lidianopolis;PR
+725;Mombuca;SP
+726;Limoeiro de Anadia;AL
+727;Ribas do Rio Pardo;MS
+728;Estiva Gerbi;SP
+729;Bocaiuva;MG
+730;Riachao do Jacuipe;BA
+731;Ibiai;MG
+732;Coreau;CE
+733;Silveirania;MG
+734;Guajara-Mirim;RO
+735;Itaguacu;BA
+736;Caseara;TO
+737;Santana do Itarare;PR
+738;Timbiras;MA
+739;Holambra;SP
+740;Coronel Macedo;SP
+741;Papanduva;SC
+742;Centro Novo do Maranhao;MA
+743;Salto do Ceu;MT
+744;Cambui;MG
+745;Barra do Turvo;SP
+746;Caicara;PB
+747;Ivaipora;PR
+748;Sussuapara;PI
+749;Ivaipora;PR
+750;Ubirajara;SP
+751;Carazinho;RS
+752;Iraquara;BA
+753;Pongai;SP
+754;Chu¿;RS
+755;Jose da Penha;RN
+756;Lagoa da Canoa;AL
+757;Carmo da Mata;MG
+758;Bastos;SP
+759;Itapetim;PE
+760;Sento Se;BA
+761;Sao Caitano;PE
+762;Floresta;BA
+763;Nova Roma do Sul;RS
+764;Sapezal;MT
+765;Tiradentes do Sul;RS
+766;Solonopole;CE
+767;Araruna;PB
+768;Itaete;BA
+769;Garanhuns;PE
+770;Caarapo;MS
+771;Senador Pompeu;CE
+772;Ipeuna;SP
+773;Sobralia;MG
+774;Barra do Rocha;BA
+775;Tunas;RS
+776;Heitorai;GO
+777;Jambeiro;SP
+778;Santo Antonio da Platina;PR
+779;Olho-d'Agua do Borges;RN
+780;Sinop;MT
+781;Rio Espera;MG
+782;Paraiso do Norte;PR
+783;Catalao;GO
+784;Goncalves;MA
+785;Livramento do Brumado;BA
+786;Joviania;GO
+787;Santa Barbara de Goias;GO
+788;Santa Rita do Sapucai;MG
+789;Cristal;RS
+790;Campo Alegre de Lourdes;BA
+791;Sossego;PB
+792;Uiramuta;RR
+793;Sapopema;PR
+794;Trindade;RS
+795;Quixabeira;BA
+796;Iraucuba;CE
+797;Americano do Brasil;GO
+798;Sitio Novo do Tocantins;TO
+799;Igarape Grande;MA
+800;Manoel Ribas;PR
+801;Bar¿o de Cotegipe;RS
+802;Muriae;MG
+803;Porto Xavier;RS
+804;Corumbaiba;GO
+805;Sao Goncalo do Piaui;PI
+806;Alagoinhas;BA
+807;Sabaudia;PR
+808;Alto Bela Vista;SC
+809;Sabino;MG
+810;Santo Antonio do Monte;MG
+811;Barreira;BA
+812;Sao Joao de Meriti;RJ
+813;Cruzeiro do Sul;RS
+814;Sao Felix de Balsas;MA
+815;Francisco Ayres;PI
+816;Panambi;RS
+817;Sao Felix do Araguaia;MT
+818;Matelandia;PR
+819;Remanso;BA
+820;Grao Para;SC
+821;Sao Sebastiao da Grama;SP
+822;Port¿o;RS
+823;Buerarema;BA
+824;Limoeiro do Ajuru;PA
+825;Santa Cruz;RS
+826;Jacutinga;RS
+827;Aracruz;ES
+828;Maracaja;SC
+829;Serrana;SP
+830;Castilho;SP
+831;Cara¿;RS
+832;Jumirim;SP
+833;Juruena;MT
+834;Caravelas;BA
+835;Paranatinga;MT
+836;Dom Feliciano;RS
+837;Pitimbu;PB
+838;Sitio Novo do Tocantins;TO
+839;Barreiras do Piaui;PI
+840;J¿ia;RS
+841;Mariopolis;PR
+842;Santa Margarida;RS
+843;Cajazeiras;PB
+844;Breves;PA
+845;Rifaina;SP
+846;Serra Alta;SC
+847;Campo Alegre do Fidalgo;PI
+848;Turiacu;MA
+849;Dianopolis;TO
+850;Antonio Goncalves;BA
+851;Candido Rodrigues;SP
+852;Mallet;PR
+853;Itajai;SC
+854;Sao Goncalo do Para;MG
+855;Jupi;PE
+856;Sao Sebastiao da Grama;SP
+857;Sao Domingos do Maranhao;MA
+858;Bom Jesus do Tocantins;PA
+859;Santa Efigenia de Minas;MG
+860;Serranopolis;GO
+861;Itapeva;MG
+862;Palmitos;SC
+863;Xaxim;SC
+864;Santo Ant¿nio do Planalto;RS
+865;Pouso Alegre;MG
+866;Guimaraes;MA
+867;Corinto;MG
+868;Serrana;SP
+869;Augustinopolis;TO
+870;Riacho das Almas;PE
+871;Prados;MG
+872;Tapurah;MT
+873;Queiroz;SP
+874;Central;BA
+875;Rafael Jambeiro;BA
+876;Monte Azul;MG
+877;Sao Jose da Varginha;MG
+878;Florai;PR
+879;Capanema;PA
+2956;Venturosa;PE
+880;Ribeirao Grande;SP
+881;Duas Barras;RJ
+882;Mirandopolis;SP
+883;Sao Jose;AL
+884;Mafra;SC
+885;Alto Alegre;RS
+886;Capetinga;MG
+887;Tucunduva;RS
+888;Urussanga;SC
+889;Olimpio Noronha;MG
+890;Catuji;MG
+891;Caldeirao Grande do Piaui;PI
+892;N¿o-Me-Toque;RS
+893;Sericita;MG
+894;Cristina;MG
+895;Feira da Mata;BA
+896;Camboriu;SC
+897;Salto do Itarare;PR
+898;Santa Barbara do Monte Verde;MG
+899;Muliterno;RS
+900;Mariopolis;PR
+901;Itabira;MG
+902;Ares;RN
+903;Sapezal;MT
+904;Brejo;BA
+905;Sao Joao do Triunfo;PR
+906;Teixeiras;MG
+907;Acaua;PI
+908;Gameleira;MG
+909;Nova Iorque;MA
+910;Maracanau;CE
+911;Lagoa dos Patos;MG
+912;Landri Sales;PI
+913;Pongai;SP
+914;Caldas Brandao;PB
+915;Areia;PB
+916;Goiatins;TO
+917;Mateiros;TO
+918;Doutor Maur¿cio Cardoso;RS
+919;Santa Tereza;RS
+920;Vera Cruz;RS
+921;Oros;CE
+922;Igaracy;PB
+923;Rio Preto;AM
+924;Sao Bento de Pombal;PB
+925;Dois Irmaos do Tocantins;TO
+926;Indianopolis;MG
+927;Vidal Ramos;SC
+928;Virginia;MG
+929;Ponte Alta do Tocantins;TO
+930;Bom Jardim de Minas;MG
+931;Imarui;SC
+932;Canela;RS
+933;Desterro;MG
+934;Sao Francisco;BA
+935;Sao Joao da Lagoa;MG
+936;Ipueiras;CE
+937;Cabaceiras;BA
+938;Parauapebas;PA
+939;Maetinga;BA
+940;Santa Barbara do Tugurio;MG
+941;Bom Jesus;RS
+942;Dionisio;MG
+943;Canaa dos Carajas;PA
+944;Piuma;ES
+945;Tapirai;MG
+946;Itapiratins;TO
+947;Maues;AM
+948;Tambau;SP
+949;Biritiba-Mirim;SP
+950;Jequie;BA
+951;Ipora do Oeste;SC
+952;Joaquim Tavora;PR
+953;Frei Gaspar;MG
+954;Amparo de Sao Francisco;SE
+955;Conceicao de Ipanema;MG
+956;Conchas;SP
+957;Hidrolandia;CE
+958;Santana do Matos;RN
+959;Paco do Lumiar;MA
+960;Limoeiro do Norte;CE
+961;Cumaru;PA
+962;Mirante;BA
+963;Lajedo;BA
+964;Ribeirao Grande;SP
+965;Couto de Magalhaes de Minas;MG
+966;Inhauma;MG
+967;Ibirapua;BA
+968;Tambau;SP
+969;Pinheirinho do Vale;RS
+970;Joao Pessoa;PB
+971;Ilicinea;MG
+972;Manhuacu;MG
+973;Barra do Chapeu;SP
+974;Santa Ines;BA
+975;Caiana;MG
+976;Imbituba;SC
+977;Humait¿;RS
+978;Iuna;ES
+979;Marumbi;PR
+980;Sao Miguel do Tocantins;TO
+981;Itinga do Maranhao;MA
+982;Itapecerica da Serra;SP
+983;Barra de Guabiraba;PE
+984;Presidente Castelo Branco;PR
+985;Matureia;PB
+986;Sapeacu;BA
+987;Araucaria;PR
+988;Candido de Abreu;PR
+989;Nova Palmeira;PB
+990;Nova America da Colina;PR
+991;Oeiras;PA
+992;Cujubim;RO
+993;Mucambo;CE
+994;Silveiras;SP
+995;Lebon Regis;SC
+996;Brasil Novo;PA
+997;Vila Nova do Piaui;PI
+998;Bocaiuva do Sul;PR
+999;Sao Joaquim;MG
+1000;Virginopolis;MG
+1001;Salete;SC
+1002;Malhada de Pedras;BA
+1003;Jacarei;SP
+1004;Alto Alegre do Pindare;MA
+1005;Araruama;RJ
+1006;Mundo Novo;BA
+1007;Montanhas;RN
+1008;Videira;SC
+1009;Piloes;PB
+1010;Andira;PR
+1011;Sao Bernardino;SC
+1012;Entre-Iju¿s;RS
+1013;Contendas do Sincora;BA
+1014;Pio XII;MA
+1015;Narandiba;SP
+1016;Upanema;RN
+1017;Serra do Salitre;MG
+1018;Angatuba;SP
+1019;Nioaque;MS
+1020;Itaitinga;CE
+1021;Sul Brasil;SC
+1022;Brejo dos Santos;PB
+1023;Biquinhas;MG
+1024;Guiricema;MG
+1025;Aguas de Sao Pedro;SP
+1026;Santa Izabel do Oeste;PR
+1027;Potengi;CE
+1028;Mira Estrela;SP
+1029;Jandaira;BA
+1030;Buri;BA
+1031;Taba¿;RS
+1032;Januaria;MG
+1033;Conquista;MG
+1034;Palmeira dos Indios;AL
+1035;Joao Dourado;BA
+1036;Campo Formoso;BA
+1037;Santa Fe do Araguaia;TO
+1038;Aguas Formosas;MG
+1039;Boca da Mata;AL
+1040;Beberibe;CE
+1041;Guaxupe;MG
+1042;Tangua;RJ
+1043;Encantado;RS
+1044;Carmolandia;TO
+1045;Araquari;SC
+1046;Vertente do Lerio;PE
+1047;Ponta Grossa;PR
+1048;Martinopolis;SP
+1049;Ivoti;RS
+1050;Jaboticaba;RS
+1051;Caseiros;RS
+1052;Guzolandia;SP
+1053;Taua;CE
+1054;Jardim Olinda;PR
+1055;Paudalho;PE
+1056;Novo Planalto;GO
+1057;Teixeiropolis;RO
+1058;Paraisopolis;MG
+1059;Liberdade;MG
+1060;Vera Cruz;RS
+1061;Brotas de Macaubas;BA
+1062;Bocaina;MG
+1063;Tupanci do Sul;RS
+1064;Joaquim Pires;PI
+1065;Sobralia;MG
+1066;Carlos Chagas;MG
+1067;Laranjeiras do Sul;PR
+1068;Jaboticaba;RS
+1069;Ibipitanga;BA
+1070;Santa Maria;RS
+1071;Cujubim;RO
+1072;Candido Sales;BA
+1073;Caico;RN
+1074;Itabela;BA
+1075;Boa Vista;RS
+1076;Epitaciolandia;AC
+1077;Colares;PA
+1078;Claudio;MG
+1079;Ortigueira;PR
+1080;Ibipitanga;BA
+1081;Bom Retiro do Sul;RS
+1082;Sao Benedito do Rio Preto;MA
+1083;Caraguatatuba;SP
+1084;Parnagua;PI
+1085;Xavantina;SC
+1086;Tanhacu;BA
+1087;Caririacu;CE
+1088;Machadinho d'Oeste;RO
+1089;Glaucilandia;MG
+1090;Iguape;SP
+1091;Sao Jose do Povo;MT
+1092;Cachoeira do Piria;PA
+1093;Piacatu;SP
+1094;Boa Vista do Sul;RS
+1095;S¿o Jorge;RS
+1096;Mari;RS
+1097;Bonito;BA
+1098;Mirador;MA
+1099;Passabem;MG
+1100;Chiador;MG
+1101;S¿o Jos¿ do Norte;RS
+1102;Campo Largo;PR
+1103;Angicos;RN
+1104;Inhumas;GO
+1105;Cacu;BA
+1106;Estrela do Norte;GO
+1107;Aracas;BA
+1108;S¿o Valentim;RS
+1109;Rio Fortuna;SC
+1110;Apucarana;PR
+1111;Tres Rios;RJ
+1112;Caetanopolis;MG
+1113;Sao Joao do Itaperiu;SC
+1114;Anapurus;MA
+1115;Sert¿o;RS
+1116;Ipora do Oeste;SC
+1117;Pau d'Arco;PA
+1118;Nioaque;MS
+1119;Catigua;SP
+1120;Pedreiras;MA
+1121;Santa Cruz da Vitoria;BA
+1122;Sao Ludgero;SC
+1123;Irati;PR
+1124;Guaraita;GO
+1125;Fortuna de Minas;MG
+1126;Buriti Alegre;GO
+1127;Jardim;CE
+1128;Rio das Ostras;RJ
+1129;Viadutos;RS
+1130;Mombaca;CE
+1131;Guaranesia;MG
+1132;Ipu;BA
+1133;Ribeirao Bonito;SP
+1134;Tejucuoca;CE
+1135;Tr¿s Coroas;RS
+1136;Delta;MG
+1137;Ouro Velho;PB
+1138;Campo Mourao;PR
+1139;Olhos-d'Agua;MG
+1140;Macambira;SE
+1141;Sananduva;RS
+1142;Belmonte;BA
+1143;Taruma;SP
+1144;Salete;SC
+1145;Caldeirao Grande;BA
+1146;Caninde de Sao Francisco;SE
+1147;Triunfo;RS
+1148;Maua da Serra;PR
+1149;Regente Feijo;SP
+1150;Campestre de Goias;GO
+1151;Remigio;PB
+1152;Carutapera;MA
+1153;Lagoa da Prata;MG
+1154;Iacu;BA
+1155;Guaiuba;CE
+1156;Uruoca;CE
+1157;Crixas do Tocantins;TO
+1158;Rio Pomba;MG
+1159;Altinopolis;SP
+1160;Alegria;RS
+1161;Uniflor;PR
+1162;Brasilia de Minas;MG
+1163;Lajeado;RS
+1164;Figueira;PR
+1165;Jucurucu;BA
+1166;Limoeiro do Ajuru;PA
+1167;Mirabela;MG
+1168;Coronel Vivida;PR
+1169;General Sampaio;CE
+1170;Calumbi;PE
+1171;Joao Neiva;ES
+1172;Capitao Eneas;MG
+1173;Leme;MG
+1174;Lins;SP
+1175;Aracu;GO
+1176;Pantano Grande;RS
+1177;Guariba;PI
+1178;Jamari;RO
+1179;America Dourada;BA
+1180;Monte Belo;RS
+1181;Imaculada;PB
+1182;Andira;PR
+298;Pinhao;PR
+299;Tasso Fragoso;MA
+300;Delfinopolis;MG
+301;Alto Parana;PR
+302;Indaiatuba;SP
+303;Itiuba;BA
+304;Guia Lopes da Laguna;MS
+305;Itainopolis;PI
+306;Japaratinga;AL
+307;Vargem Grande do Rio Pardo;MG
+308;Cruz Machado;PR
+309;Atalaia;AL
+310;Pocao de Pedras;MA
+311;Bom Jesus do Tocantins;PA
+312;Maringa;PR
+313;Itapiuna;CE
+314;Piranhas;AL
+315;Santa Maria do Suacui;MG
+316;Itaperucu;PR
+317;Pintadas;BA
+318;Martinopolis;SP
+319;S¿o Leopoldo;RS
+320;Inga;MG
+321;Alto Santo;CE
+322;Salinopolis;PA
+323;Mato Rico;PR
+324;Professor Jamil;GO
+325;Corguinho;MS
+326;Santo Antonio de Padua;RJ
+327;Araguainha;MT
+328;Itaquirai;MS
+329;Ponto Chique;MG
+330;Demerval Lobao;PI
+331;Pontal do Araguaia;MT
+332;Capitao Gervasio Oliveira;PI
+333;Sao Francisco do Oeste;RN
+334;Cachoeira de Minas;MG
+335;Brejo do Cruz;PB
+336;Sao Domingos do Capim;PA
+337;Rafard;SP
+338;Itapirapua;GO
+339;Peritoro;MA
+340;Itaquitinga;PE
+341;Iconha;ES
+342;Tibau;RN
+343;Japeri;RJ
+344;Cocos;BA
+345;Taubate;SP
+346;Sao Domingos;BA
+347;Rio Verde de Mato Grosso;MS
+348;Centro Novo do Maranhao;MA
+349;Taquarituba;SP
+350;Itabaiana;PB
+351;Itaquaquecetuba;SP
+352;Luislandia;MG
+353;Juarez Tavora;PB
+354;Monte Alegre;RS
+355;Carnaubal;CE
+356;Nonoai;RS
+357;Colinas do Sul;GO
+358;Gastao Vidigal;SP
+359;Amaral Ferrador;RS
+360;Gararu;SE
+361;Passa e Fica;RN
+362;Itaberaba;BA
+363;Abaira;BA
+364;Cajuri;MG
+365;Riachuelo;RN
+366;Ouro Verde;GO
+367;Assis;AC
+368;Princesa;PB
+369;Bernardino Batista;PB
+370;Sao Pedro;MA
+371;Santa Maria do Cambuca;PE
+372;Natividade da Serra;SP
+373;Triunfo;RS
+374;Carmo do Paranaiba;MG
+375;Sao Domingos do Maranhao;MA
+376;Gouvea;MG
+377;Calmon;SC
+378;Rio Doce;MG
+379;Sitio Novo;MA
+380;Afua;PA
+381;Berilo;MG
+382;Garibaldi;RS
+383;Corrego Novo;MG
+384;Tabuleiro;CE
+385;Ipumirim;SC
+386;Junqueiropolis;SP
+387;Caem;BA
+388;Boa Vista das Miss¿es;RS
+389;Pe de Serra;BA
+390;Sao Sebastiao do Rio Preto;MG
+391;Rio Verde;GO
+392;Nova Prata;RS
+393;Hidrolina;GO
+394;Tapurah;MT
+395;Monte Alto;SP
+396;Tr¿s de Maio;RS
+397;Sao Mateus do Sul;PR
+398;Sapezal;MT
+399;Milagres;BA
+400;Aramari;BA
+401;Combinado;TO
+402;Nova Esperanca do Piria;PA
+403;Trajano de Morais;RJ
+404;Barra do Quara¿;RS
+405;Panama;GO
+406;Conceicao do Tocantins;TO
+407;Buri;BA
+408;Maetinga;BA
+409;Jequitinhonha;MG
+410;Jamari;RO
+411;Vila Valerio;ES
+412;Serrinha;BA
+413;Barra de Santa Rosa;PB
+414;Prados;MG
+415;Sobrado;PB
+416;Campos dos Goytacazes;RJ
+417;Acari;RN
+418;Icaraima;PR
+419;Poco de Jose de Moura;PB
+420;S¿o Paulo das Miss¿es;RS
+421;Santa Maria do Cambuca;PE
+422;Aguai;SP
+423;Sao Jorge do Ivai;PR
+424;Morro Reuter;RS
+425;Bezerros;PE
+426;Perola;GO
+427;Rio Bom;PR
+428;Agua Doce do Norte;ES
+429;Salinas;BA
+430;Jeronimo Monteiro;ES
+431;Sao Bento do Trairi;RN
+432;Malacacheta;MG
+433;Maracacume;MA
+434;Ubaitaba;BA
+435;Ruropolis;PA
+436;Xaxim;SC
+437;Professor Jamil;GO
+438;Coimbra;MG
+439;Trairi;CE
+440;Rio das Antas;SC
+441;Independ¿ncia;RS
+442;Maruim;SE
+443;Livramento;BA
+444;Carmo da Cachoeira;MG
+445;Campos Belos;GO
+446;Sardoa;MG
+447;Sao Joao Batista do Gloria;MG
+448;Sao Francisco do Guapore;RO
+449;Passagem;MA
+450;Mirante;BA
+451;Alto Paraguai;MT
+452;Ira¿;RS
+453;Taboleiro Grande;RN
+454;Feira Grande;AL
+455;Juvenilia;MG
+456;Cachoeira;RS
+457;Iacri;SP
+458;Campo Largo do Piaui;PI
+459;Nortelandia;MT
+460;Rio Bonito do Iguacu;PR
+461;General Carneiro;MT
+462;Marquinho;PR
+463;Parnamirim;PE
+464;Vereda;BA
+465;Cachoeirinha;RS
+466;Benedito Novo;SC
+467;Onca de Pitangui;MG
+468;Amambai;MS
+469;Santa Cruz das Palmeiras;SP
+470;Mage;RJ
+471;Matipo;MG
+472;Ribeiraozinho;MT
+473;Biquinhas;MG
+474;Porto Real;AL
+475;Igrejinha;RS
+476;Novo Oriente do Piaui;PI
+477;Palestina de Goias;GO
+478;Buritinopolis;GO
+479;Amajari;RR
+480;Irara;BA
+481;Cabaceiras do Paraguacu;BA
+482;Barra do Turvo;SP
+483;Palmopolis;MG
+484;Olho d'Agua das Cunhas;MA
+485;Monte Aprazivel;SP
+486;Barra do Pirai;RJ
+487;Granito;PE
+488;Guaraciaba do Norte;CE
+489;Brejinho;PE
+490;Congonhas do Norte;MG
+491;Vargem;ES
+492;Sao Joao do Tigre;PB
+493;Porto Alegre;RS
+494;Almirante Tamandare;PR
+495;Santana de Cataguases;MG
+496;Delfinopolis;MG
+497;Sao Francisco de Goias;GO
+498;Sete Quedas;MS
+499;Botelhos;MG
+500;Mutum;MG
+501;Liberato Salzano;RS
+502;Conde;BA
+503;Amparo;MG
+504;Erval Grande;RS
+505;Novo Santo Antonio;PI
+506;Duere;TO
+507;Tijucas do Sul;PR
+508;Gramado Xavier;RS
+509;Rodeio Bonito;RS
+510;Santo Antonio de Lisboa;PI
+511;Bilac;SP
+512;Munhoz de Melo;PR
+513;Nova Canaa Paulista;SP
+514;Rio do Antonio;BA
+515;Sarzedo;MG
+516;Riachinho;MG
+517;Itamari;BA
+518;Sidrolandia;MS
+519;Vianopolis;GO
+520;Nova Aurora;GO
+521;Uarini;AM
+522;Anicuns;GO
+523;Centenario do Sul;PR
+524;Melgaco;PA
+525;Ariquemes;RO
+526;Dirce Reis;SP
+527;Uirapuru;GO
+528;Agronomica;SC
+529;Anicuns;GO
+530;Marilena;PR
+531;Ipanema;MG
+532;Nova Castilho;SP
+533;Cruzalia;SP
+534;Turilandia;MA
+535;Vitoria do Jari;AP
+536;Pedro Afonso;TO
+537;Barrac¿o;RS
+538;Japonvar;MG
+539;Braganey;PR
+540;Planalto;RS
+541;Sinimbu;RS
+542;Pranchita;PR
+543;Gentio do Ouro;BA
+544;Espumoso;RS
+545;Terra Santa;PA
+546;Vila Nova dos Martirios;MA
+547;Cedro;CE
+548;Dobrada;SP
+549;Travesseiro;RS
+550;Bossoroca;RS
+551;Anapolis;GO
+552;Paulo de Faria;SP
+553;S¿o Vicente do Sul;RS
+554;Poco das Trincheiras;AL
+555;Barra do Garcas;MT
+556;Normandia;RR
+557;Sao Domingos do Capim;PA
+558;Moncao;MA
+559;Sao Mateus;ES
+560;Aguas de Sao Pedro;SP
+561;Vitoria de Santo Antao;PE
+562;Cajobi;SP
+563;Candeias do Jamari;RO
+564;Itau de Minas;MG
+565;Alto Alegre do Pindare;MA
+566;Sao Jose dos Campos;SP
+567;Florania;RN
+568;Sao Jose do Brejo do Cruz;PB
+569;S¿o Jos¿ do Hort¿ncio;RS
+570;Tres Coracoes;MG
+571;Piranga;MG
+572;Padre Marcos;PI
+573;Riacho da Cruz;RN
+574;Sao Gabriel do Oeste;MS
+575;Urandi;BA
+576;Rodeiro;MG
+577;Jaramataia;AL
+578;Picui;PB
+579;Monte do Carmo;TO
+580;Manhumirim;MG
+581;Araripe;CE
+582;Espinosa;MG
+583;Isaias Coelho;PI
+584;Linhares;ES
+585;Arantina;MG
+586;Taparuba;MG
+587;Sao Jose do Cerrito;SC
+588;Marcelino Vieira;RN
+589;Sandolandia;TO
+590;Sao Felix de Balsas;MA
+1186;Tabatinga;AM
+1187;Riacho da Cruz;RN
+1188;Alta Floresta d'Oeste;RO
+1189;Chiapeta;RS
+1190;Americo de Campos;SP
+1191;Ibertioga;MG
+1192;Ven¿ncio Aires;RS
+1193;Augusto Severo;RN
+1194;Nova Resende;MG
+1195;Jenipapo dos Vieiras;MA
+1196;Nazare da Mata;PE
+1197;Cotegipe;BA
+1198;Paranaita;MT
+1199;Camocim de Sao Felix;PE
+1200;Cruzeiro do Sul;RS
+1201;Senador Firmino;MG
+1202;Vila L¿ngaro;RS
+1203;Eloi Mendes;MG
+1204;Goianapolis;GO
+1205;Capivari do Sul;RS
+1206;Quijingue;BA
+1207;Comercinho;MG
+1208;Sapucaia;RS
+1209;Limeira;MG
+1210;Itamaraju;BA
+1211;Santo Antonio do Leverger;MT
+1212;Varzea Nova;BA
+1213;Brasilandia;MS
+1214;Campanha;MG
+1215;Itumirim;MG
+1216;Santo Ant¿nio do Planalto;RS
+1217;Nova Floresta;PB
+1218;Itabela;BA
+1219;Brejo Grande;PA
+1220;Jaquirana;RS
+1221;Lucrecia;RN
+1222;Itapissuma;PE
+1223;Serraria;PB
+1224;Nioaque;MS
+1225;Fundao;ES
+1226;Igrapiuna;BA
+1227;Quedas do Iguacu;PR
+1228;Itaverava;MG
+1229;Apucarana;PR
+1230;Patos;MG
+1231;Mombuca;SP
+1232;Palestina do Para;PA
+1233;Beruri;AM
+1234;Almeirim;PA
+1235;Silveiras;SP
+1236;Pirajuba;MG
+1237;Nilo Pecanha;BA
+1238;Aparecida;GO
+1239;Irineopolis;SC
+1240;Nova Serrana;MG
+1241;Queimada Nova;PI
+1242;Parambu;CE
+1243;Gastao Vidigal;SP
+1244;Boraceia;SP
+1245;Sao Goncalo do Para;MG
+1246;Russas;CE
+1247;Sao Miguel da Baixa Grande;PI
+1248;Miranda;MA
+1249;Dona Francisca;RS
+1250;Jaguare;CE
+1251;Sao Jose da Laje;AL
+1252;Miracema do Tocantins;TO
+1253;Bom Jesus do Galho;MG
+1254;Marmeleiro;PR
+1255;Trombudo Central;SC
+1256;Romelandia;SC
+1257;Sao Lourenco;MG
+1258;Novo Machado;RS
+1259;Encantado;RS
+1260;Brejo Alegre;SP
+1261;Santa Maria do Para;PA
+1262;Divina Pastora;SE
+1263;Taquarivai;SP
+1264;Sucupira do Norte;MA
+1265;Aparecida de Goiania;GO
+1266;Iomere;SC
+1267;Tr¿s Coroas;RS
+1268;Santa Rosa do Sul;SC
+1269;Jaiba;MG
+1270;Barra dos Coqueiros;SE
+1271;Itarare;SP
+1272;Coqueiros do Sul;RS
+1273;Nova Canaa do Norte;MT
+1274;Sao Joao da Ponte;MG
+1275;Penalva;MA
+1276;Palestina do Para;PA
+1277;Arvoredo;SC
+1278;Santa Luz;AL
+1279;Canas;SP
+1280;Bozano;RS
+1281;Guaraciaba;CE
+1282;Orizona;GO
+1283;Divino;ES
+1284;Santo Afonso;MT
+1285;Nova Resende;MG
+1286;Pauliceia;SP
+1287;Igapora;BA
+1288;Santa Maria de Itabira;MG
+1289;Passira;PE
+1290;Carauari;AM
+1291;Rosario do Catete;SE
+1292;Novo Airao;AM
+1293;Augusto Correa;PA
+1294;Taquaritinga;PE
+1295;Pedreira;MA
+1296;Ielmo Marinho;RN
+1297;Jussara;BA
+1298;Barra de Santa Rosa;PB
+1299;Fenix;PR
+1300;Sanharo;PE
+1301;Cristopolis;BA
+1302;Jaguariuna;SP
+1303;Piracicaba;SP
+1304;Roca Sales;RS
+1305;Poxoreo;MT
+1306;Vista Alegre;RS
+1307;Sabaudia;PR
+1308;Guaratingueta;SP
+1309;Joao Lisboa;MA
+1310;Dom Pedro;RS
+1311;Iju¿;RS
+1312;Timbauba dos Batistas;RN
+1313;Santa Cruz Cabralia;BA
+1314;Capivari do Sul;RS
+1315;Itamonte;MG
+1316;Formosa;BA
+1317;Barra de Sao Miguel;AL
+1318;Coronel Domingos Soares;PR
+1319;Candido Mota;SP
+1320;Alto Garcas;MT
+1321;Turvo;MG
+1322;Araucaria;PR
+1323;Guaratinga;BA
+1324;Santa Luzia do Parua;MA
+1325;Novo Acordo;TO
+1326;Riacho da Cruz;RN
+1327;Sao Francisco de Paula;MG
+1328;Campo Belo;MG
+1329;Santo Andre;PB
+1330;Condado;PB
+1331;Guaraita;GO
+1332;Pedro Canario;ES
+1333;Boa Vista do Ramos;AM
+1334;Pindai;BA
+1335;Caieiras;SP
+1336;Curralinho;PA
+1337;Amambai;MS
+1338;Santa Terezinha;GO
+1339;Amaral Ferrador;RS
+1340;Antonio Prado de Minas;MG
+1341;Montes Claros de Goias;GO
+1342;Mairipotaba;GO
+1343;Planaltino;BA
+1344;Bambui;MG
+1345;Torres;RS
+1346;Sitio do Mato;BA
+1347;Sagres;SP
+1348;Senhora de Oliveira;MG
+1349;Urucuia;MG
+1350;Tijucas do Sul;PR
+1351;Brejo Santo;CE
+1352;Carnaubeira da Penha;PE
+1353;Santa Maria da Boa Vista;PE
+1354;Neropolis;GO
+1355;Espumoso;RS
+1356;Brejo do Cruz;PB
+1357;Quatis;RJ
+1358;Cidade Gaucha;PR
+1359;S¿o Luiz Gonzaga;RS
+1360;Salgado de Sao Felix;PB
+1361;Araruna;PB
+1362;Buriti Alegre;GO
+1363;Cururupu;MA
+1364;Almino Afonso;RN
+1365;Ipiranga do Sul;RS
+1366;Agrolandia;SC
+1367;Aguas Belas;PE
+1368;Barrac¿o;RS
+1369;Ibicarai;BA
+1370;Miguelopolis;SP
+1371;Morro Agudo;GO
+1372;Altaneira;CE
+1373;Ceu Azul;PR
+1374;Santa Rita do Itueto;MG
+1375;Ponte Preta;RS
+1376;Buenopolis;MG
+1377;Diamantina;MG
+1378;Sao Miguel de Touros;RN
+1379;Irupi;ES
+1380;Aurora;CE
+1381;Sao Bento do Sul;SC
+1382;Maurilandia do Tocantins;TO
+1383;Cubatao;SP
+1384;Pinhalzinho;SC
+1385;Sorriso;MT
+1386;Campina da Lagoa;PR
+1387;Casserengue;PB
+1388;Treviso;SC
+1389;Heliopolis;BA
+1390;Itinga do Maranhao;MA
+1391;Ouro Preto do Oeste;RO
+1392;Baia Formosa;RN
+1393;Novo Planalto;GO
+1394;Governador Valadares;MG
+1395;Castanheiras;RO
+1396;Charqueadas;RS
+1397;Muribeca;SE
+1398;Iguatama;MG
+1399;Jangada;MT
+1400;Taquaral de Goias;GO
+1401;Itupiranga;PA
+1402;Presidente Bernardes;MG
+1403;Bandeirantes;MS
+1404;Guaraniacu;PR
+1405;Sao Jose de Uba;RJ
+1406;Arroio do Tigre;RS
+1407;Santa Vit¿ria do Palmar;RS
+1408;Tanhacu;BA
+1409;Jaguaretama;CE
+1410;Rancho Alegre;PR
+1411;Cicero Dantas;BA
+1412;Pedra Mole;SE
+1413;Jatei;MS
+1414;Nazario;GO
+1415;Paty do Alferes;RJ
+1416;Coronel Domingos Soares;PR
+1417;Bonfim;MG
+1418;Bertopolis;MG
+1419;Central de Minas;MG
+1420;Janauba;MG
+1421;Alegre;RS
+1422;Maravilha;AL
+1423;Barao de Antonina;SP
+1424;Videira;SC
+1425;Iranduba;AM
+1426;Itabela;BA
+1427;Pirapozinho;SP
+1428;Novo Triunfo;BA
+1429;Gilbues;PI
+1430;Jaboticaba;RS
+1431;Espinosa;MG
+1432;Chapada da Natividade;TO
+1433;Itacarambi;MG
+1434;Tabapua;SP
+1435;Fazenda Nova;GO
+1436;Mineiros do Tiete;SP
+1437;Ourizona;PR
+1438;Cezarina;GO
+1439;Nova Redencao;BA
+1440;Porto Estrela;MT
+1441;Igarape-Acu;PA
+1442;Miranda;MA
+1443;Mallet;PR
+1444;Serrania;MG
+1445;Jussari;BA
+1446;Jacinto Machado;SC
+1447;Campo do Meio;MG
+1448;Alvorada;RS
+1449;Parnamirim;PE
+1450;Paripiranga;BA
+1451;Perobal;PR
+1452;Vista Serrana;PB
+1453;Fortaleza dos Valos;RS
+1454;Lorena;SP
+1455;Para¿so do Sul;RS
+1456;Joca Marques;PI
+1457;S¿o Pedro das Miss¿es;RS
+1458;Taiobeiras;MG
+1459;Santana do Deserto;MG
+1460;Alto Piquiri;PR
+1461;Taquaru¿u do Sul;RS
+1462;Irapua;SP
+1463;Rio Preto;AM
+1464;Paramirim;BA
+1465;Paracuru;CE
+1466;Itirucu;BA
+1467;Novo Progresso;PA
+1468;Descoberto;MG
+1469;Camargo;RS
+1470;Sao Lourenco d'Oeste;SC
+1471;Porto da Folha;SE
+1472;Santa Isabel do Rio Negro;AM
+1473;Baixio;CE
+1474;Nova Santa Rita;RS
+1475;Moncoes;SP
+1476;Cubatao;SP
+2957;Jacaraci;BA
+2958;Aguas Formosas;MG
+2959;Mato Rico;PR
+2960;Acarau;CE
+2961;Guaxupe;MG
+2962;Timbauba dos Batistas;RN
+2963;Porto Feliz;SP
+2964;Cruzmaltina;PR
+2965;Faxinal;RS
+2966;Sao Jose dos Quatro Marcos;MT
+2967;Capela de Santana;RS
+2968;Ibarama;RS
+2969;Cabo de Santo Agostinho;PE
+2970;Ibia¿¿;RS
+2971;Itanhandu;MG
+2972;Agua Limpa;GO
+2973;Urussanga;SC
+2974;Vereda;BA
+2975;Sao Vicente de Minas;MG
+2976;Montes Claros;GO
+2977;Pedrinhas Paulista;SP
+2978;Paranhos;MS
+2979;Branquinha;AL
+2980;Terra de Areia;RS
+2981;Jacunda;PA
+2982;Ferreira Gomes;AP
+2983;Mairipora;SP
+2984;Agua Branca;AL
+2985;Goianesia;GO
+2986;Casa Grande;MG
+2987;Rio Doce;MG
+2988;Manga;MG
+2989;Sao Geraldo da Piedade;MG
+2990;Senhora de Oliveira;MG
+2991;Descalvado;SP
+2992;Catalao;GO
+2993;Dom Silverio;MG
+2994;Leme do Prado;MG
+2995;Quebrangulo;AL
+2996;Santo Inacio do Piaui;PI
+2997;Tabuleiro;CE
+2998;Flexeiras;AL
+2999;Jardim do Mulato;PI
+3000;Amapora;PR
+3001;Caicara do Rio do Vento;RN
+3002;Planalto;RS
+3003;Cajazeiras;PB
+3004;Pureza;RN
+3005;Palmeirante;TO
+3006;Sapeacu;BA
+3007;Macatuba;SP
+3008;Boa Esperanca;ES
+3009;Agua Doce do Norte;ES
+3010;Pitanga;PR
+3011;Santa Maria;RS
+3012;Bocaina do Sul;SC
+3013;Montes Claros de Goias;GO
+3014;Ulianopolis;PA
+3015;Casinhas;PE
+3016;Morros;MA
+3017;Embauba;SP
+3018;Umirim;CE
+3019;Jangada;MT
+3020;Deputado Irapuan Pinheiro;CE
+3021;Cassia dos Coqueiros;SP
+3022;Juru;AM
+3023;Paragominas;PA
+3024;Itabela;BA
+3025;Jaborandi;BA
+3026;Novo Triunfo;BA
+3027;Sao Cristovao do Sul;SC
+3028;Carmo de Minas;MG
+3029;Placido de Castro;AC
+3030;Ariquemes;RO
+3031;Sao Luis do Paraitinga;SP
+3032;Monte Carlo;SC
+3033;Sao Sebastiao da Amoreira;PR
+3034;Sao Sebastiao do Paraiso;MG
+3035;Sao Raimundo do Doca Bezerra;MA
+3036;Fazenda Rio Grande;PR
+3037;Cajazeirinhas;PB
+3038;Barro Preto;BA
+3039;Caracol;MS
+3040;S¿o Pedro da Serra;RS
+3041;Santo Antonio do Monte;MG
+3042;Ipeuna;SP
+3043;Ipaporanga;CE
+3044;Borebi;SP
+3045;Carmo;GO
+3046;S¿o Pedro das Miss¿es;RS
+3047;Fortaleza do Tabocao;TO
+3048;Carapicuiba;SP
+3049;Triunfo Potiguar;RN
+3050;Anita Garibaldi;SC
+3051;Aracoiaba da Serra;SP
+3052;Palestina de Goias;GO
+3053;Ielmo Marinho;RN
+3054;Sao Joao do Oriente;MG
+3055;Piripiri;PI
+3056;Santaluz;BA
+3057;Cachoeira de Pajeu;MG
+3058;Caxambu;MG
+3059;Engenheiro Beltrao;PR
+3060;Itaiopolis;SC
+3061;Bataipora;MS
+3062;Sao Vicente de Minas;MG
+3063;Sao Jose do Mantimento;MG
+3064;Matozinhos;MG
+3065;Terra Nova;BA
+3066;Silveiras;SP
+3067;Cotegipe;BA
+3068;Pedro Velho;RN
+3069;Massape;CE
+3070;Quatro Irm¿os;RS
+3071;Frutuoso Gomes;RN
+3072;Niteroi;RJ
+3073;Eldorado dos Carajas;PA
+3074;Heitorai;GO
+3075;Marcos Parente;PI
+3076;Babaculandia;TO
+3077;Sao Felix do Araguaia;MT
+3078;Lagoa do Carro;PE
+3079;Formoso;GO
+3080;Westf¿lia;RS
+3081;Seabra;BA
+3082;Monte Alegre de Sergipe;SE
+3083;Itaperucu;PR
+3084;Bernardo do Mearim;MA
+3085;Quata;SP
+3086;Capoeiras;PE
+3087;Rolador;RS
+3088;Guaratinga;BA
+3089;Cujubim;RO
+3090;Camacari;BA
+3091;Mauriti;CE
+3092;Itabuna;BA
+3093;Braganca;PA
+3094;Inubia Paulista;SP
+3095;Morro Cabeca no Tempo;PI
+3096;Miracema do Tocantins;TO
+3097;Bugre;MG
+3098;Joao Dias;RN
+3099;Maiquinique;BA
+3100;Rio Crespo;RO
+3101;Potirendaba;SP
+3102;Iraucuba;CE
+3103;Santa Fe;GO
+3104;Nossa Senhora de Nazare;PI
+3105;Il¿polis;RS
+3106;Santa Luzia do Norte;AL
+3107;Silva Jardim;RJ
+3108;Santa Vitoria;MG
+3109;Nova Uniao;MG
+3110;Quatis;RJ
+3111;Sao Miguel d'Oeste;SC
+3112;Gilbues;PI
+3113;Aurora do Tocantins;TO
+3114;Uniao de Minas;MG
+3115;Lindoeste;PR
+3116;Caete;MG
+3117;Ipua;SC
+3118;Barreira;BA
+3119;Anapu;MA
+3120;Derrubadas;RS
+3121;Iguape;SP
+3122;Presidente Kennedy;ES
+3123;Ipueiras;CE
+3124;Tr¿s Arroios;RS
+3125;Tigrinhos;SC
+3126;Capitao Leonidas Marques;PR
+3127;Ipu;BA
+3128;Reboucas;PR
+3129;Amparo;MG
+3130;Sao Joao da Canabrava;PI
+3131;Assis Chateaubriand;PR
+3132;Altamira do Parana;PR
+3133;Senhora de Oliveira;MG
+3134;Paraiso do Norte;PR
+3135;Itarantim;BA
+3136;Ananas;TO
+3137;Santa Rita;BA
+3138;Laranjal Paulista;SP
+3139;Crixas;GO
+3140;Meleiro;SC
+3141;Paulinia;SP
+3142;Nova Floresta;PB
+3143;Sete Quedas;MS
+3144;Itatiba do Sul;RS
+3145;Capinzal do Norte;MA
+3146;Silvianopolis;MG
+3147;Pilao Arcado;BA
+3148;Bom Jesus;RS
+3149;Guapo;RS
+3150;Turiacu;MA
+3151;Flexeiras;AL
+3152;Piripa;BA
+3153;Castelo;ES
+3154;Cotegipe;BA
+3155;Lencois Paulista;SP
+3156;Rifaina;SP
+3157;Sao Luis do Curu;CE
+3158;Jacarau;PB
+3159;Flora Rica;SP
+3160;Itatiaiucu;MG
+3161;Itariri;SP
+3162;Pariconha;AL
+3163;Santo Antonio do Pinhal;SP
+3164;Pont¿o;RS
+3165;Guajeru;BA
+3166;Acreuna;GO
+3167;Acarape;CE
+3168;Nova Olimpia;MT
+3169;Bandeirantes;MS
+3170;Santa Cruz de Monte Castelo;PR
+3171;Santa Margarida do Sul;RS
+3172;Nova Rosalandia;TO
+3173;Sao Francisco;BA
+3174;Caridade do Piaui;PI
+3175;Minador do Negr¿o;AL
+3176;Pastos Bons;MA
+3177;Maua da Serra;PR
+3178;Sao Paulo;AM
+3179;Cacaulandia;RO
+3180;Timon;MA
+3181;Formiga;MG
+3182;Campos Sales;CE
+3183;Areado;MG
+3184;Marco;CE
+3185;Mercedes;PR
+3186;Divino das Laranjeiras;MG
+3187;Sinop;MT
+3188;Juti;MS
+3189;Araruama;RJ
+3190;Quixeramobim;CE
+3191;Rio de Janeiro;RJ
+3192;Francisco Dantas;RN
+3193;Coronel Bicaco;RS
+3194;Palma Sola;SC
+3195;Potirendaba;SP
+3196;Iraceminha;SC
+3197;Mercedes;PR
+3198;Itaipava do Grajau;MA
+3199;Ilha Solteira;SP
+3200;Novo Machado;RS
+3201;Lago Verde;MA
+3202;Sao Cristovao do Sul;SC
+3203;Sao Sebastiao da Amoreira;PR
+3204;Japura;AM
+3205;Firminopolis;GO
+3206;Santana do Ipanema;AL
+3207;Boa Esperanca;ES
+3208;Marapanim;PA
+3209;Liberato Salzano;RS
+3210;Sao Sebastiao do Umbuzeiro;PB
+3211;Goncalves Dias;MA
+3212;Santa Barbara de Goias;GO
+3213;Espigao d'Oeste;RO
+3214;Algodao de Jandaira;PB
+3215;Carazinho;RS
+3216;Santa Maria do Cambuca;PE
+3217;Sao Miguel do Fidalgo;PI
+3218;Porto Alegre do Piaui;PI
+3219;Ijaci;MG
+3220;Itaperuna;RJ
+3221;Jau;GO
+3222;Sideropolis;SC
+3223;General Carneiro;MT
+3224;Amargosa;BA
+3225;Louveira;SP
+3226;Imperatriz;MA
+3227;Neopolis;SE
+3228;Humaita;AM
+3229;Senador Georgino Avelino;RN
+3230;Uirapuru;GO
+3231;Sao Lourenco da Mata;PE
+3232;Presidente Medici;MA
+3233;Porto Xavier;RS
+3234;Sao Luis do Piaui;PI
+3235;Charrua;RS
+3236;Solanea;PB
+3237;Boqueirao;PB
+3238;Espirito Santo;MG
+3239;Tres Fronteiras;SP
+3240;Varzea da Palma;MG
+3241;Nova Ibia;BA
+3242;Laguna;MS
+3243;Primeira Cruz;MA
+3244;Gandu;BA
+3245;Pindamonhangaba;SP
+3246;Nova Era;MG
+3247;Tobias Barreto;SE
+3248;Pedrinopolis;MG
+3249;Galvao;SC
+3250;Jeronimo Monteiro;ES
+3251;Tupanci do Sul;RS
+3252;Mesopolis;SP
+3253;Florida Paulista;SP
+3254;Encruzilhada;RS
+3255;Iguai;BA
+3256;Pedra Bonita;MG
+3257;Palhano;CE
+3258;Baiao;PA
+3259;Novo Santo Antonio;PI
+3260;Torrinha;SP
+3261;Candiba;BA
+3262;Boa Vista do Ramos;AM
+3263;Ielmo Marinho;RN
+3264;Augusto Severo;RN
+3265;Jaboticabal;SP
+3266;Itapora do Tocantins;TO
+3267;Pacuja;CE
+3268;Para¿so do Sul;RS
+3269;Curuca;PA
+3270;Indaiabira;MG
+3271;Barra do Rocha;BA
+3272;Santo Amaro das Brotas;SE
+3273;Parana;GO
+3274;Nazare Paulista;SP
+3275;Itabaiana;PB
+3276;Tapes;RS
+3277;Varzea da Palma;MG
+3278;Nacip Raydan;MG
+3279;Barro;RS
+3280;Jaiba;MG
+3281;Barao de Melgaco;MT
+3282;Sao Francisco de Sales;MG
+3283;Lajeado Novo;MA
+3284;Marapanim;PA
+3285;Boa Viagem;CE
+3286;Cujubim;RO
+3287;Jequitiba;MG
+3288;Nipoa;SP
+3289;Pirpirituba;PB
+3290;Agua Branca;AL
+3291;Inocencia;MS
+3292;Farroupilha;RS
+3293;Itaara;RS
+3294;Ajuricaba;RS
+3295;Barroso;MG
+3296;Porto Alegre;RS
+3297;Porto Alegre;RS
+3298;Marcacao;PB
+3299;Buriti Alegre;GO
+3300;Sales Oliveira;SP
+3301;Castelo;ES
+3302;Pedranopolis;SP
+3303;Santo Andre;PB
+3304;Baldim;MG
+3305;Roteiro;AL
+3306;Tanque d'Arca;AL
+3307;Campo Formoso;BA
+3308;Laranjeiras;PR
+3309;Serra Redonda;PB
+3310;Sarandi;RS
+3311;Taciba;SP
+3312;Maxaranguape;RN
+3313;Presidente Sarney;MA
+3314;Panama;GO
+3315;Leopolis;PR
+3316;Ribeirao Claro;PR
+3317;Descanso;SC
+3318;Palhano;CE
+3319;Terra Alta;PA
+3320;Amap¿;AP
+3321;Senador Jose Porfirio;PA
+3322;Milagres do Maranhao;MA
+3323;Presidente Bernardes;MG
+3324;Conceicao do Tocantins;TO
+3325;S¿o Jorge;RS
+3326;Matriz de Camaragibe;AL
+3327;Rosana;SP
+3328;Nova Cruz;RN
+3329;Igarape-Miri;PA
+3330;Sao Sebastiao do Oeste;MG
+3331;Coqueiros do Sul;RS
+3332;Tabapua;SP
+3333;Banabuiu;CE
+3334;Itapirapua;GO
+3335;Alcantaras;CE
+3336;Dom Cavati;MG
+3337;Cabedelo;PB
+3338;Ribeirao do Sul;SP
+3339;Guaraciaba;CE
+3340;Boca da Mata;AL
+3341;Rio Branco do Sul;PR
+3342;Piau;MG
+3343;Sao Vicente Ferrer;MA
+3344;Sao Goncalo do Para;MG
+3345;Braganey;PR
+3346;Braganey;PR
+3347;Guadalupe;PI
+3348;Guamare;RN
+3349;Barbacena;MG
+3350;Campos dos Goytacazes;RJ
+3351;Aragoiania;GO
+3352;Santa Terezinha;GO
+3353;Cristal;RS
+3354;Cicero Dantas;BA
+3355;Campos Gerais;MG
+3356;Pirapora do Bom Jesus;SP
+3357;Japonvar;MG
+3358;Vargem;ES
+3359;Icatu;MA
+3360;Bag¿;RS
+3361;Nova Soure;BA
+3362;Andradas;MG
+3363;Itanhomi;MG
+3364;Tapera;RS
+3365;Passo do Sobrado;RS
+3366;Ajuricaba;RS
+3367;Cubati;PB
+3368;Nova Hartz;RS
+3369;Sert¿o Santana;RS
+3370;Catarina;CE
+3371;Vila L¿ngaro;RS
+3372;Dobrada;SP
+3373;Bom Jesus do Oeste;SC
+3374;Mar de Espanha;MG
+3375;Paraisopolis;MG
+3376;S¿o Jos¿ do Sul;RS
+3377;Itaguatins;TO
+3378;Colmeia;TO
+3379;Bugre;MG
+3380;Piau;MG
+3381;Carai;BA
+3382;Nova Vicosa;BA
+3383;Cachoeira de Minas;MG
+3384;Arroio Trinta;SC
+3385;Arenopolis;GO
+3386;Santa Cruz da Vitoria;BA
+3387;Presidente Epitacio;SP
+3388;Rio dos ¿ndios;RS
+3389;Florinia;SP
+3390;Novo Gama;GO
+3391;Sao Cristovao;SC
+3392;Bocaiuva do Sul;PR
+3393;Marilandia do Sul;PR
+3394;Florestal;MG
+3395;Pauliceia;SP
+3396;Jaupaci;GO
+3397;Itaara;RS
+3398;Vila Velha;ES
+3399;Juatuba;MG
+3400;Bom Sucesso do Sul;PR
+3401;Imb¿;RS
+3402;Vila Alta;PR
+3403;Palmeirina;PE
+3404;Mansidao;BA
+3405;Santa Monica;PR
+3406;Bela Vista de Minas;MG
+3407;Horizontina;RS
+3408;Parari;PB
+3409;Itamaraca;PE
+3410;Presidente Medici;MA
+3411;Santa Clara d'Oeste;SP
+3412;Montes Claros;GO
+3413;Piloes;PB
+3414;Santa Terezinha do Progresso;SC
+3415;Guamiranga;PR
+3416;Wanderlandia;TO
+3417;Itaguatins;TO
+3418;Prudentopolis;PR
+3419;Penha;SC
+3420;Catigua;SP
+3421;S¿o Jos¿ dos Ausentes;RS
+3422;Sao Geraldo;MG
+3423;Matina;BA
+3424;Braco do Norte;SC
+3425;Alto Rio Novo;ES
+3426;Santana de Pirapama;MG
+3427;Vila Valerio;ES
+3428;Barra Longa;MG
+3429;Gurupa;PA
+3430;Ubaira;BA
+3431;Guabiju;RS
+3432;Engenheiro Paulo de Frontin;RJ
+3433;Peixe-Boi;PA
+3434;Caracarai;RR
+3435;Itaverava;MG
+3436;Areal;RJ
+3437;Santo Antonio do Rio Abaixo;MG
+3438;Itapipoca;CE
+3439;Dom Macedo Costa;BA
+3440;Dolcinopolis;SP
+3441;Iacu;BA
+3442;Camapua;MS
+3443;Cachoeira Dourada;GO
+3444;Coxixola;PB
+3445;Guiratinga;MT
+3446;Toledo;MG
+3447;Cotipor¿;RS
+3448;Sao Luiz;GO
+3449;Frei Rogerio;SC
+3450;Paulinia;SP
+3451;Santa Rosa de Goias;GO
+3452;Catas Altas da Noruega;MG
+3453;Franciscopolis;MG
+3454;Princesa Isabel;PB
+3455;Anapu;MA
+3456;Placas;PA
+3457;Santa Barbara do Monte Verde;MG
+3458;Guapiacu;SP
+3459;Roseira;SP
+3460;Iguai;BA
+3461;Banzae;BA
+3462;Terra Boa;PR
+3463;Jaguari;RS
+3464;Pompeu;MG
+3465;Santo Antonio de Goias;GO
+3466;Wagner;BA
+3467;Pederneiras;SP
+3468;Guajara-Mirim;RO
+3469;Carneirinho;MG
+3470;Fernao;SP
+3471;Sao Sebastiao da Bela Vista;MG
+3472;Poco Branco;RN
+3473;Santana de Cataguases;MG
+3474;Tapiratiba;SP
+3475;Massape do Piaui;PI
+3476;Lagoa do Sitio;PI
+3477;Tanque d'Arca;AL
+3478;Guaporema;PR
+3479;Natalandia;MG
+3480;Passagem Franca do Piaui;PI
+3481;Pedra Dourada;MG
+3482;Mirai;CE
+3483;Nova Floresta;PB
+3484;Guapirama;PR
+3485;Nova Castilho;SP
+3486;Perobal;PR
+3487;Paulino Neves;MA
+3488;Canhoba;SE
+3489;Guaraita;GO
+3490;Jundiai;PR
+3491;Sao Jose do Calcado;ES
+3492;Iguaracu;PR
+3493;Porteirao;GO
+3494;Peixe;PA
+3495;Niteroi;RJ
+3496;Sao Domingos do Prata;MG
+3497;Penalva;MA
+3498;Monte Azul Paulista;SP
+3499;Minacu;GO
+3500;Campo Alegre de Lourdes;BA
+3501;Boa Esperanca do Iguacu;PR
+3502;Divino de Sao Lourenco;ES
+3503;Carmesia;MG
+3504;Redencao da Serra;SP
+3505;Dores do Turvo;MG
+3506;Turmalina;MG
+3507;Miguelopolis;SP
+3508;Passa Tempo;MG
+3509;Bora;SP
+3510;Guabiruba;SC
+3511;Ibertioga;MG
+3512;Engenheiro Coelho;SP
+3513;Formoso;GO
+3514;Ibicuitinga;CE
+3515;Riacho das Almas;PE
+3516;Itaquitinga;PE
+3517;Unistalda;RS
+3518;Ibia;RS
+3519;Juru;AM
+3520;Sao Joao;CE
+3521;Guzolandia;SP
+3522;Turiuba;SP
+3523;Uniao de Minas;MG
+3524;Sao Goncalo do Para;MG
+3525;Nova Santa Barbara;PR
+3526;Itai;CE
+3527;Sacramento;MG
+3528;Sao Joao da Ponte;MG
+3529;Farias Brito;CE
+3530;Madalena;CE
+3531;Carvalhos;MG
+3532;Altaneira;CE
+3533;Gloria d'Oeste;MT
+3534;Santa Luzia;AL
+3535;Urucurituba;AM
+3536;Umari;CE
+3537;Quevedos;RS
+3538;Primeiro de Maio;PR
+3539;Ubaira;BA
+3540;Carmopolis de Minas;MG
+3541;Sao Miguel do Tapuio;PI
+2660;Barra de Santana;PB
+2661;Ibipitanga;BA
+2662;Pedro do Rosario;MA
+2663;Pinhao;PR
+2664;Bom Jardim;GO
+3548;Santo Ant¿nio da Patrulha;RS
+3549;Imperatriz;MA
+3550;Santa Maria do Herval;RS
+3551;Desterro do Melo;MG
+3552;Ipigua;SP
+3553;Nova Canaa do Norte;MT
+3554;Londrina;PR
+3555;Brazabrantes;GO
+3556;Planalto;RS
+3557;Parnaiba;PI
+3558;Jau;GO
+3559;Buriticupu;MA
+3560;Aveiro;PA
+3561;Estrela Velha;RS
+3562;Cordislandia;MG
+3563;Campinacu;GO
+3564;Quarto Centenario;PR
+3565;Divisa Nova;MG
+3566;Pedra Branca;AP
+3567;Oriximina;PA
+3568;Feira Grande;AL
+3569;Vila Nova do Sul;RS
+3570;Marilac;MG
+3571;Inaja;PR
+3572;Lagoa dos Patos;MG
+3573;Sobral;CE
+3574;Maiquinique;BA
+3575;Pedrinhas Paulista;SP
+3576;Ibirub¿;RS
+3577;Atibaia;SP
+3578;Relvado;RS
+3579;Esta¿¿o;RS
+3580;Crixas;GO
+3581;Barra d'Alcantara;PI
+3582;Ferros;MG
+3583;Saude;BA
+3584;Cordeiros;BA
+3585;Fraiburgo;SC
+3586;Senador Jose Bento;MG
+3587;Bofete;SP
+3588;Matias Olimpio;PI
+3589;Santana da Boa Vista;RS
+3590;Santa Barbara do Monte Verde;MG
+3591;Taparuba;MG
+3592;Jaguaripe;BA
+3593;Jauru;MT
+3594;Granito;PE
+3595;Tres Lagoas;MS
+3596;Sao Francisco do Brejao;MA
+3597;Andira;PR
+3598;Novo Oriente de Minas;MG
+3599;Mampituba;RS
+3600;Presidente Kennedy;ES
+3601;Santa Rosa de Lima;SC
+3602;Belem;AL
+3603;Bernardo Sayao;TO
+3604;Batatais;SP
+3605;Mariana;RS
+3606;Ilha das Flores;SE
+3607;Ubirata;PR
+3608;Mundo Novo;BA
+3609;Canto do Buriti;PI
+3610;Jucas;CE
+3611;Ministro Andreazza;RO
+3612;Vere;BA
+3613;Chavantes;SP
+3614;Itacurubi;RS
+3615;Pomerode;SC
+3616;Flor da Serra do Sul;PR
+3617;Ibaretama;CE
+3618;Amap¿;AP
+3619;Rodeio;RS
+3620;Mendonca;SP
+3621;Sonora;MS
+3622;Meleiro;SC
+3623;General C¿mara;RS
+3624;Carambei;PR
+3625;Santa Cruz das Palmeiras;SP
+3626;Mariana;RS
+3627;Olivenca;AL
+3628;Conceicao;BA
+3629;Campo Belo do Sul;SC
+3630;Cafelandia;PR
+3631;Lagoas;MG
+3632;Campo Belo;MG
+3633;Cerro Grande do Sul;RS
+3634;Espigao d'Oeste;RO
+3635;Iapu;MG
+3636;Cianorte;PR
+3637;Jequeri;MG
+3638;Campo Novo do Parecis;MT
+3639;Alagoinha do Piaui;PI
+3640;Urupema;SC
+3641;Aparecida d'Oeste;SP
+3642;Salgadinho;PB
+3643;Candiota;RS
+3644;Alvaro de Carvalho;SP
+3645;Cocal dos Alves;PI
+3646;Aspasia;SP
+3647;Araioses;MA
+3648;Centro do Guilherme;MA
+3649;Zortea;SC
+3650;Ipanguacu;RN
+3651;Sao Miguel dos Campos;AL
+3652;Ponto dos Volantes;MG
+3653;Nova Santa Barbara;PR
+3654;Camacan;BA
+3655;Ferraz de Vasconcelos;SP
+3656;Campestre da Serra;RS
+3657;Rolante;RS
+3658;Barbacena;MG
+3659;Paranapua;SP
+3660;Xambioa;TO
+3661;Brauna;MG
+3662;Igaci;AL
+3663;Alto Rio Doce;MG
+3664;Palestina;AL
+3665;Sao Joao do Sabugi;RN
+3666;Carbonita;MG
+3667;Quinta do Sol;PR
+3668;Vale Real;RS
+3669;Francisco Beltrao;PR
+3670;Penaforte;CE
+3671;Livramento do Brumado;BA
+3672;Franco da Rocha;SP
+3673;Estrela do Indaia;MG
+3674;Mosquito;TO
+3675;Paulo Bento;RS
+3676;Passira;PE
+3677;Erval Velho;SC
+3678;Riachao das Neves;BA
+3679;Jardinopolis;SC
+3680;Vale do Sol;RS
+3681;Ipupiara;BA
+3682;Catanduvas;PR
+3683;Lagoa de Sao Francisco;PI
+3684;Linha Nova;RS
+3685;Rubelita;MG
+3686;Lagarto;SE
+3687;Grossos;RN
+3688;Gaviao Peixoto;SP
+3689;Meridiano;SP
+3690;Durande;MG
+3691;Ponta de Pedras;PA
+3692;Rio Grande;RS
+3693;Espera Feliz;MG
+3694;Alegrete do Piaui;PI
+3695;Combinado;TO
+3696;Acu;MG
+3697;Matoes do Norte;MA
+3698;Monte Alegre do Sul;SP
+3699;S¿o Valentim do Sul;RS
+3700;Joao Lisboa;MA
+3701;Frecheirinha;CE
+3702;Caucaia;CE
+3703;Trindade;RS
+3704;Jaguariaiva;PR
+3705;Antonina;CE
+3706;Sobral;CE
+3707;Quara¿;RS
+3708;Realeza;PR
+3709;Tr¿s Passos;RS
+3710;Teodoro Sampaio;BA
+3711;Barreira;BA
+3712;Francisco Morato;SP
+3713;Resplendor;MG
+3714;Saltinho;SC
+3715;Videira;SC
+3716;Planalto;RS
+3717;Buritis;MG
+3718;Turiacu;MA
+3719;Jaguariaiva;PR
+3720;Descanso;SC
+3721;Pien;PR
+3722;Joao Dias;RN
+3723;Piritiba;BA
+3724;Tanque Novo;BA
+3725;Sao Benedito do Sul;PE
+3726;Passo de Camaragibe;AL
+3727;Nova Modica;MG
+3728;Regeneracao;PI
+3729;Barros Cassal;RS
+3730;Formosa da Serra Negra;MA
+3731;Agua Comprida;MG
+3732;Juquitiba;SP
+3733;Sao Bras;AL
+3734;Uirauna;PB
+3735;Dourado;MS
+3736;Sao Roque;ES
+3737;Teotonio Vilela;AL
+3738;Belem;AL
+3739;Marmelopolis;MG
+3740;Buritinopolis;GO
+3741;Mirassol;MT
+3742;Barreirinha;AM
+3743;Balneario Camboriu;SC
+3744;Geminiano;PI
+3745;Croata;CE
+3746;Wenceslau Braz;MG
+3747;Santo Andre;PB
+3748;Serra Redonda;PB
+3749;Aracatuba;SP
+3750;Pirapozinho;SP
+3751;Paranaiba;MS
+3752;Divinopolis do Tocantins;TO
+3753;Trindade;RS
+3754;Itaberai;GO
+3755;Ibirajuba;PE
+3756;Maravilhas;MG
+3757;Esteio;RS
+3758;Sao Francisco de Paula;MG
+3759;Ribeira;BA
+3760;Rio Paranaiba;MG
+3761;Piloes;PB
+3762;Comodoro;MT
+3763;Paula Freitas;PR
+3764;Tibau;RN
+3765;Picarras;SC
+3766;Governador Luiz Rocha;MA
+3767;Presidente Juscelino;MA
+3768;Jaboticabal;SP
+3769;Valentim Gentil;SP
+3770;Jandira;SP
+3771;Sao Luis do Paraitinga;SP
+3772;Varjao;GO
+3773;Fernandopolis;SP
+3774;Mundo Novo;BA
+3775;Lavinia;SP
+3776;Vazante;MG
+3777;Cumbe;SE
+3778;Pedra do Anta;MG
+3779;Fortaleza do Tabocao;TO
+3780;Ernestina;RS
+3781;Breu Branco;PA
+3782;Ferraz de Vasconcelos;SP
+3783;Divinolandia;MG
+3784;Tr¿s Passos;RS
+3785;Santa Rosa de Viterbo;SP
+3786;Bugre;MG
+3787;Floresta;BA
+3788;Tres Barras;PR
+3789;Ocaucu;SP
+3790;Frutal;MG
+3791;Patrocinio Paulista;SP
+3792;Imbituva;PR
+3793;Jaborandi;BA
+3794;Macambira;SE
+3795;Rubelita;MG
+3796;Monteiro;AL
+3797;Raul Soares;MG
+3798;Chiapeta;RS
+3799;Guararapes;SP
+3800;Marapoama;SP
+3801;Itajobi;SP
+3802;Ribeirao;BA
+3803;Marilena;PR
+3804;Tatui;SP
+3805;Aurora do Tocantins;TO
+3806;S¿o Nicolau;RS
+3807;Pariconha;AL
+3808;Pontalinda;SP
+3809;Aguanil;MG
+3810;Ibirapua;BA
+3811;Rosario da Limeira;MG
+3812;Capim;BA
+3813;Soledade de Minas;MG
+3814;Maua;PR
+3815;Ubirajara;SP
+3816;Itapecerica da Serra;SP
+3817;Olimpio Noronha;MG
+3818;Barra de Santa Rosa;PB
+3819;Sao Lourenco d'Oeste;SC
+3820;Jequitai;MG
+3821;Barro Duro;PI
+3822;Presidente Bernardes;MG
+3823;Centenario;PR
+3824;Nova Ipixuna;PA
+3825;Araguatins;TO
+3826;Alta Floresta;MT
+3827;America Dourada;BA
+3828;Motuca;SP
+3829;Estrela d'Oeste;SP
+3830;Turiacu;MA
+3831;Itaara;RS
+3832;Sao Jose do Barreiro;SP
+3833;Almirante Tamandare;PR
+3834;Tiradentes do Sul;RS
+3835;Caatiba;BA
+3836;Urupema;SC
+3837;Aragarcas;GO
+3838;Pariquera-Acu;SP
+3839;Olho d'Agua do Casado;AL
+3840;Catanduva;PR
+3841;Perolandia;GO
+1770;Sete Quedas;MS
+1771;Artur Nogueira;SP
+1772;Rio Preto;AM
+1773;Ibertioga;MG
+1774;Urai;PR
+1775;Piritiba;BA
+1776;Tocantinopolis;TO
+1777;Marica;RJ
+1778;Bar¿o de Cotegipe;RS
+1779;Uruguaiana;RS
+1780;Santo Ant¿nio das Miss¿es;RS
+1781;Calmon;SC
+1782;Taiobeiras;MG
+1783;Major Gercino;SC
+1784;Guaramirim;SC
+1785;Tanquinho;BA
+1786;Gararu;SE
+1787;Paraibano;MA
+1788;Barra do Bugres;MT
+1789;Frei Martinho;PB
+1790;Sert¿o;RS
+1791;Aratuba;CE
+1792;Wagner;BA
+1793;Bom Jesus do Sul;PR
+1794;Socorro do Piaui;PI
+1795;Ubata;BA
+1796;Pindobacu;BA
+1797;Tapiratiba;SP
+1798;Pariquera-Acu;SP
+1799;Registro;SP
+1800;Itapura;GO
+1801;Sao Francisco do Gloria;MG
+1802;Humait¿;RS
+1803;Bento Gon¿alves;RS
+1804;Massaranduba;PB
+1805;Sao Jose do Bonfim;PB
+1806;Toledo;MG
+1807;Aparecida do Taboado;MS
+1808;Simplicio Mendes;PI
+1809;Sao Felipe;BA
+1810;Elisio Medrado;BA
+1811;Esperantina;PI
+1812;Campo do Brito;SE
+1813;Alvorada de Minas;MG
+1814;Sao Salvador do Tocantins;TO
+1815;Luis Antonio;SP
+1816;Capivari de Baixo;SC
+1817;Vitoria de Santo Antao;PE
+1818;Buri;BA
+1819;Manari;PE
+1820;Porto Firme;MG
+1821;Santo Antonio do Sudoeste;PR
+1822;Brotas;BA
+1823;Abadiania;GO
+1824;S¿o Pedro do Sul;RS
+1825;Ituacu;BA
+1826;Sao Pedro do Ivai;PR
+1827;Iracemapolis;SP
+1828;Barra d'Alcantara;PI
+1829;Ninheira;MG
+1830;Alecrim;RS
+1831;Montauri;RS
+1832;Morro da Fumaca;SC
+1833;S¿o Valentim;RS
+1834;Senhor do Bonfim;BA
+1835;Nazarezinho;PB
+1836;Nova Cruz;RN
+1837;Sao Sebastiao da Bela Vista;MG
+1838;Tocantinopolis;TO
+1839;Quixeramobim;CE
+1840;Orobo;PE
+1841;Foz do Iguacu;PR
+1842;Serraria;PB
+1843;Conceicao do Jacuipe;BA
+1844;Dona Euzebia;MG
+1845;Agua Branca;AL
+1846;Jaguare;CE
+1847;Planalto Alegre;SC
+1848;Campina do Simao;PR
+1849;Princesa;PB
+1850;Carbonita;MG
+1851;Rubim;MG
+1852;Marechal Thaumaturgo;AC
+1853;Ibiracu;ES
+1854;Materlandia;MG
+1855;Nova Venecia;ES
+1856;Pien;PR
+1857;Primavera de Rondonia;RO
+1858;Rinopolis;SP
+1859;Ubirata;PR
+1860;Quadra;SP
+1861;Maria Helena;PR
+1862;Uniflor;PR
+1863;Itaruma;GO
+1864;Santo Antonio de Jesus;BA
+1865;Lagoa da Canoa;AL
+1866;Itarantim;BA
+1867;Ipaucu;SP
+1868;Pintadas;BA
+1869;Guidoval;MG
+1870;Brejolandia;BA
+1871;Bom Jesus das Selvas;MA
+1872;Agua Branca;AL
+1873;Palmeira;RS
+1874;Taipas do Tocantins;TO
+1875;Charqueada;RS
+1876;Salvador das Miss¿es;RS
+1877;Monsenhor Gil;PI
+1878;Santiago do Sul;SC
+1879;Campos Lindos;TO
+1880;Pereira Barreto;SP
+1881;Palma Sola;SC
+1882;Varjao;GO
+1883;Cardoso;RJ
+1884;Santana da Boa Vista;RS
+1885;Tiradentes;RS
+1886;Tejupa;SP
+1887;Sao Jose dos Ramos;PB
+1888;Laranjeiras do Sul;PR
+1889;Serra Azul;MG
+1890;Rio das Pedras;SP
+1891;Bernardo Sayao;TO
+1892;Nova Olinda;AM
+1893;Juscimeira;MT
+1894;Brejo de Areia;MA
+1895;Paulo Bento;RS
+1896;Tabapua;SP
+1897;Olho d'Agua das Cunhas;MA
+1898;Torrinha;SP
+1899;Matinha;MA
+1900;Ribeirao Bonito;SP
+1901;Terra Nova do Norte;MT
+1902;Santa Maria do Oeste;PR
+1903;Matina;BA
+1904;Alagoinha do Piaui;PI
+1905;Campo Grande;AL
+1906;Agua Doce;ES
+1907;Montes Claros;GO
+1908;Iuna;ES
+1909;Serido;PB
+1910;Pedro Alexandre;BA
+1911;Paulinia;SP
+1912;Tanabi;SP
+1913;Taquarituba;SP
+1914;Carmo;GO
+1915;Olho d'Agua do Casado;AL
+1916;Barra do Bugres;MT
+1917;Sao Luiz;GO
+1918;Apuiares;CE
+1919;Itaiba;PE
+1920;Dario Meira;BA
+1921;Santana de Mangueira;PB
+1922;Heitorai;GO
+1923;Solonopole;CE
+1924;Santana de Cataguases;MG
+1925;Irajuba;BA
+1926;Sao Joao da Fronteira;PI
+1927;Torixoreu;MT
+1928;Brasnorte;MT
+1929;Sao Bento do Sapucai;SP
+1930;Paraiso;MG
+1931;Varre-Sai;RJ
+1932;Jardim do Serido;RN
+1933;Visconde do Rio Branco;MG
+1934;N¿o-Me-Toque;RS
+1935;Matinhas;PB
+1936;Ouricangas;BA
+1937;Iranduba;AM
+1938;Morro do Chapeu;BA
+1939;Pinhao;PR
+1940;Pavussu;PI
+1941;Sao Bras do Suacui;MG
+1942;Marcelandia;MT
+1943;Ira¿;RS
+1944;Presidente Juscelino;MA
+1945;Cap¿o do Cip¿;RS
+1946;Erebango;RS
+1947;Itauna do Sul;PR
+1948;Cruzeiro do Iguacu;PR
+1949;Simoes Filho;BA
+1950;Pavussu;PI
+1951;Itamari;BA
+1952;Amap¿;AP
+1953;Pirenopolis;GO
+1954;Jucurucu;BA
+1955;Torixoreu;MT
+1956;Vale Real;RS
+1957;Entre Folhas;MG
+1958;Machados;PE
+1959;Pacaja;PA
+1960;Agua Boa;MT
+1961;Januaria;MG
+1962;Santo Antonio do Ica;AM
+1963;Benedito Leite;MA
+1964;Cachoeirinha;RS
+1965;Igaratinga;MG
+1966;Itagi;BA
+1967;Indianopolis;MG
+1968;Mendonca;SP
+1969;Licinio de Almeida;BA
+1970;Potirendaba;SP
+1971;Ibicuitinga;CE
+1972;Jaguapita;PR
+1973;Trairi;CE
+1974;Taquarivai;SP
+1975;Sao Jose da Boa Vista;PR
+1976;Cachoeiro de Itapemirim;ES
+1977;Reriutaba;CE
+1978;Nova Belem;MG
+1979;Pocos de Caldas;MG
+1980;Aracas;BA
+1981;Sao Luis do Quitunde;AL
+1982;Tangua;RJ
+1983;Capela do Alto Alegre;BA
+1984;Morada Nova;CE
+1985;Goianinha;RN
+1986;Pitangueiras;PR
+1987;Presidente Bernardes;MG
+1988;Bataipora;MS
+1989;Angical do Piaui;PI
+1990;Riacho dos Machados;MG
+1991;Jardim do Serido;RN
+1992;Jequeri;MG
+1993;Peabiru;PR
+1994;Chopinzinho;PR
+1995;Planaltina;GO
+1996;Alto Jequitiba;MG
+1997;Mariana Pimentel;RS
+1998;Alto Caparao;MG
+1999;Jaciara;MT
+2000;Batatais;SP
+2001;Bocaiuva do Sul;PR
+2002;Joaquim Pires;PI
+2003;Itapeva;MG
+2004;Guaraita;GO
+2005;Sarzedo;MG
+2006;Salinopolis;PA
+2007;Garca;SP
+2008;Senador Alexandre Costa;MA
+2009;Tocantins;MG
+2010;Autazes;AM
+2011;Bauru;SP
+2012;Tejupa;SP
+2013;Acopiara;CE
+2014;Corrego Fundo;MG
+2015;Caturai;GO
+2016;Tracunhaem;PE
+2017;Divinopolis do Tocantins;TO
+2018;Sapiranga;RS
+2019;Mongagua;SP
+2020;Agrolandia;SC
+2021;Lagoa do Ouro;PE
+2022;S¿o Val¿rio do Sul;RS
+2023;Crateus;CE
+2024;Salgueiro;PE
+2025;Lajedinho;BA
+2026;Sao Jose de Mipibu;RN
+2027;Dois Irmaos do Tocantins;TO
+2028;Nova Laranjeiras;PR
+2029;Gloria do Goita;PE
+2030;Palmelo;GO
+2031;Sento Se;BA
+2032;Bauru;SP
+2033;Manaus;AM
+2034;Joaquim Tavora;PR
+2035;Melgaco;PA
+2036;Cassia;MG
+2037;Maraja do Sena;MA
+2038;Eldorado;RS
+2039;Madeiro;PI
+2040;Itatira;CE
+2041;Frutuoso Gomes;RN
+2042;Ibicui;BA
+2043;Tunapolis;SC
+2044;Santarem;PA
+2045;Marilena;PR
+2046;Dionisio Cerqueira;SC
+2047;Guacui;ES
+2048;Quixada;CE
+2049;Nossa Senhora do Livramento;MT
+2050;Amapora;PR
+2051;Camanducaia;MG
+2052;Nossa Senhora Aparecida;SE
+2053;Olaria;MG
+2054;Viseu;PA
+2055;Paulo Afonso;BA
+2056;Vespasiano;RS
+2057;Sao Jose do Alegre;MG
+2058;Antonio Martins;RN
+2059;Ibateguara;AL
+2060;Angra dos Reis;RJ
+2061;Carrapateira;PB
+2062;Adelandia;GO
+2063;Tamboara;PR
+3842;Petrolandia;PE
+3843;Pedralva;MG
+3844;Januario Cicco;RN
+3845;Salesopolis;SP
+3846;Jatei;MS
+2665;Florestal;MG
+2666;Itaipava do Grajau;MA
+2667;Assis Brasil;AC
+2668;Conceicao da Barra;ES
+2669;Urucurituba;AM
+2670;Mendonca;SP
+2671;Ibaiti;PR
+2672;Chacara;MG
+2673;Campo Novo de Rondonia;RO
+2674;Bonito;BA
+2675;Barra do Rocha;BA
+2676;Dona Emma;SC
+2677;Guaramirim;SC
+2678;Travesseiro;RS
+2679;Galinhos;RN
+2680;Vera Cruz;RS
+2681;Prata;MG
+2682;Schroeder;SC
+2683;Nova Palmeira;PB
+2684;Claraval;MG
+2685;Guaraciaba;CE
+2686;Bom Jesus;RS
+2687;Angulo;PR
+2688;Uirapuru;GO
+2689;Hortolandia;SP
+2690;Araioses;MA
+2691;Sao Joaquim;MG
+2692;Altamira do Maranhao;MA
+2693;Terenos;MS
+2694;Joao Dias;RN
+2695;Primavera de Rondonia;RO
+2696;Parari;PB
+2697;Salmourao;SP
+2698;Montenegro;RS
+2699;Santa Branca;SP
+2700;Turilandia;MA
+2701;Campos de Julio;MT
+2702;Divino de Sao Lourenco;ES
+2703;Congo;MG
+2704;Sao Roque de Minas;MG
+2705;Alto Rio Novo;ES
+2706;Jumirim;SP
+2707;Vargem Alta;ES
+2708;Frei Gaspar;MG
+2709;Sao Bras do Suacui;MG
+2710;Capit¿o;RS
+2711;Irupi;ES
+2712;Sousa;PB
+2713;Santa Cruz do Rio Pardo;SP
+2714;Paulo Ramos;MA
+2715;S¿o Marcos;RS
+2716;Nova Iorque;MA
+2717;Sao Fidelis;RJ
+2718;Baixo Guandu;ES
+2719;Joselandia;MA
+2720;Caraguatatuba;SP
+2721;Murici dos Portelas;PI
+2722;Bom Retiro;RS
+2723;Varzea Grande;MT
+2724;Rio das Antas;SC
+2725;S¿o Borja;RS
+2726;Ribamar Fiquene;MA
+2727;Gentil;RS
+2728;Colorado;RS
+2729;Itatiaia;RJ
+2730;Desterro;MG
+2731;Conchas;SP
+2732;Macau;BA
+2733;Cocos;BA
+2734;Ibia;RS
+2735;Ladainha;MG
+2736;Laranja da Terra;ES
+2737;Paranaiguara;GO
+2738;Santana da Boa Vista;RS
+2739;Juazeiro;BA
+2740;Cachoeira do Piria;PA
+2741;Governador Newton Bello;MA
+2742;Madre de Deus;BA
+2743;Anitapolis;SC
+2744;Chavantes;SP
+2745;Passo do Sobrado;RS
+2746;Americano do Brasil;GO
+2747;Vila Rica;MT
+2748;Nova Petr¿polis;RS
+2749;Sertania;PE
+2750;Pedro Leopoldo;MG
+2751;Passo de Torres;SC
+2752;Cajazeiras do Piaui;PI
+2753;Comendador Levy Gasparian;RJ
+2754;S¿o Jos¿ do Sul;RS
+2755;Guaporema;PR
+2756;Nova Esperanca do Piria;PA
+2757;Iacri;SP
+2758;Sao Joao da Varjota;PI
+2759;Itanhandu;MG
+2760;Orindiuva;SP
+2761;Capao Bonito;SP
+2762;Pires Ferreira;CE
+2763;Pedra;RS
+2764;Rubiacea;SP
+2765;Correntina;BA
+2766;Pirapora;MG
+2767;Joao Monlevade;MG
+2768;Setubinha;MG
+2769;Descalvado;SP
+2770;Rio Rufino;SC
+2771;Humait¿;RS
+2772;Maraial;PE
+2773;S¿o Jos¿ do Inhacor¿;RS
+2774;Castanheiras;RO
+2775;Cuitegi;PB
+2776;Alagoinha;BA
+2777;¿urea;RS
+2778;Rio Paranaiba;MG
+2779;Serrinha;BA
+2780;Lebon Regis;SC
+2781;Itabi;MG
+2782;Chapada da Natividade;TO
+2783;Ze Doca;MA
+2784;Iaciara;GO
+2785;Bom Jardim;GO
+2786;Mairi;BA
+2787;Erebango;RS
+2788;S¿o Marcos;RS
+2789;Jaragua do Sul;SC
+2790;Monte Alto;SP
+2791;Bonito;BA
+2792;Barra de Santa Rosa;PB
+2793;Nova Olimpia;MT
+2794;Amaralina;GO
+2795;Alianca;PE
+2796;Taquaru¿u do Sul;RS
+2797;Rubelita;MG
+2798;Boituva;SP
+2799;Queimada Nova;PI
+2800;Santa Luzia;AL
+2801;Frei Rogerio;SC
+2802;Vargeao;SC
+2803;Paripiranga;BA
+2804;Biritiba-Mirim;SP
+2805;Itauna;MG
+2806;Crisopolis;BA
+2807;Nova Alianca do Ivai;PR
+2808;Timburi;SP
+2809;Simao Pereira;MG
+2810;Rondinha;RS
+2811;Faro;PA
+2812;Claraval;MG
+2813;Tabatinga;AM
+2814;Itauna do Sul;PR
+2815;Sarutaia;SP
+2816;Iacri;SP
+2817;Jacupiranga;SP
+2818;Doresopolis;MG
+2819;Vereda;BA
+2820;Aragominas;TO
+2821;Manga;MG
+2822;Aimores;MG
+2823;Alvorada do Gurgueia;PI
+2824;Cedro de Sao Joao;SE
+2825;Piedade de Caratinga;MG
+2826;Ribeirao das Neves;MG
+2827;Muliterno;RS
+2828;Massaranduba;PB
+2829;Itapiranga;AM
+2830;Presidente Juscelino;MA
+2831;Riozinho;RS
+2832;Cotegipe;BA
+2833;Joao Camara;RN
+2834;Una;BA
+2835;Bossoroca;RS
+2836;Presidente Figueiredo;AM
+2837;Capivari de Baixo;SC
+2838;Pequi;MG
+2839;Rio Fortuna;SC
+2840;Almirante Tamandare;PR
+2841;Quatipuru;PA
+2842;S¿o Jos¿ do Ouro;RS
+2843;Diamante;PB
+2844;Barcelona;RN
+2845;Baldim;MG
+2846;Tres Fronteiras;SP
+2847;Carlopolis;PR
+2848;Candiota;RS
+2849;Centro do Guilherme;MA
+2850;Taboleiro Grande;RN
+2851;Riachao do Jacuipe;BA
+2852;S¿o Jos¿ do Sul;RS
+2853;Vera Cruz do Oeste;PR
+2854;Sao Jose de Uba;RJ
+2855;Andarai;BA
+2856;Jacinto;MG
+2857;Entre Rios;RS
+2858;Ibicuitinga;CE
+2859;Botumirim;MG
+2860;Tarabai;SP
+2861;Delmiro Gouveia;AL
+2862;Garuva;SC
+2863;Sao Carlos;PR
+2864;Frederico Westphalen;RS
+2865;Alegria;RS
+2866;Brasilandia de Minas;MG
+2867;Prado Ferreira;PR
+2868;Brejinho;PE
+2869;Farol;PR
+2870;Palmeira;RS
+2871;Tr¿s Arroios;RS
+2872;Frutal;MG
+2873;Sertaozinho;PB
+2874;Grandes Rios;PR
+2875;Itapeva;MG
+2876;Barao de Cocais;MG
+2877;Galvao;SC
+2878;Santo Antonio de Posse;SP
+2879;Tacima;PB
+2880;Uruana de Minas;MG
+2881;Guararema;SP
+2882;Herval;RS
+2883;Vargem Bonita;MG
+2884;Nova Lacerda;MT
+2885;Bacurituba;MA
+2886;Novo Jardim;TO
+2887;Sabara;MG
+2888;Canoas;RS
+2889;S¿o Gabriel;RS
+2890;Olho d'Agua;AL
+2891;Aguiarnopolis;TO
+2892;Adrianopolis;PR
+2893;Vila Nova do Sul;RS
+2894;Estiva Gerbi;SP
+2895;Santa Maria do Suacui;MG
+2896;Simplicio Mendes;PI
+2897;Barra de Sao Francisco;ES
+2898;Curua;PA
+2899;Antonio Martins;RN
+2900;Ponte Alta do Bom Jesus;TO
+2901;Pedro do Rosario;MA
+2902;Alto Alegre;RS
+2903;Coroaci;MG
+2904;Planura;MG
+2905;Alvorada do Gurgueia;PI
+2906;Joao Camara;RN
+2907;Rubelita;MG
+2908;Mu¿um;RS
+2909;Lagoa Grande do Maranhao;MA
+2910;Acari;RN
+2911;Nova Aurora;GO
+2912;Beberibe;CE
+2913;Mirador;MA
+2914;Capivari;RS
+2915;S¿o Jos¿ do Norte;RS
+2916;Sagrada Fam¿lia;RS
+2917;Uruacu;GO
+2918;Santa Rita de Minas;MG
+2919;Belford Roxo;RJ
+2920;Ca¿apava do Sul;RS
+2921;Jose Bonifacio;SP
+2922;Manoel Ribas;PR
+2923;Quixaba;PB
+2924;Il¿polis;RS
+2925;Anhumas;SP
+2926;Santana do Manhuacu;MG
+2927;Caceres;MT
+2928;Francinopolis;PI
+2929;Japura;AM
+2930;Cristino Castro;PI
+2931;Catolandia;BA
+2932;Palestina de Goias;GO
+2933;Sao Jose da Vitoria;BA
+2934;Atalaia;AL
+2935;Wenceslau Guimaraes;BA
+2936;Ibiraiaras;RS
+2937;Mirador;MA
+2938;Lagoa dos Tr¿s Cantos;RS
+2939;Santo Antonio da Platina;PR
+2940;Melgaco;PA
+2941;Sao Pedro dos Ferros;MG
+2942;Jaguaracu;MG
+2943;Coivaras;PI
+2944;Presidente Sarney;MA
+2945;Santana da Ponte Pensa;SP
+2946;Portalegre;RN
+2947;Viradouro;SP
+2948;Monsenhor Tabosa;CE
+2949;Criciuma;SC
+2950;Guaxupe;MG
+2951;Jenipapo de Minas;MG
+2952;Rio Claro;RJ
+2953;Arabuta;SC
+2954;Mendes;MG
+2955;Cacimbinhas;AL
+3542;Alvaro de Carvalho;SP
+3543;Messias;AL
+3544;Miravania;MG
+3545;Pavao;MG
+3546;Albertina;MG
+3547;Serrolandia;BA
+1478;Novo Mundo;MT
+1479;Lagoa do Ouro;PE
+1480;Duque Bacelar;MA
+1481;Parelhas;RN
+1482;Pilar do Sul;SP
+1483;Santo Antonio do Retiro;MG
+1484;Goianesia do Para;PA
+1485;Congonhas;MG
+1486;Praia Grande;SC
+1487;Sud Mennucci;SP
+1488;Jacunda;PA
+1489;Jeriquara;SP
+1490;Assuncao;PB
+1491;Romelandia;SC
+1492;Itamarati;AM
+1493;Parazinho;RN
+1494;Taperoa;BA
+1495;Inhumas;GO
+1496;Rancho Alegre d'Oeste;PR
+1497;Fernao;SP
+1498;Lagoa dos Patos;MG
+1499;Santa Rosa de Goias;GO
+1500;Arroio do Padre;RS
+1501;Palminopolis;GO
+1502;Brejinho de Nazare;TO
+1503;Nova Rosalandia;TO
+1504;Xavantina;SC
+1505;Capistrano;CE
+1506;Sobralia;MG
+1507;Bonfim;MG
+1508;Brasilandia do Tocantins;TO
+1509;Pequizeiro;TO
+1510;Prado;BA
+1511;Tupaciguara;MG
+1512;Sao Jose do Peixe;PI
+1513;Santo Amaro da Imperatriz;SC
+1514;Santo Amaro;BA
+1515;Nova Itaberaba;SC
+1516;Itaberaba;BA
+1517;Careacu;MG
+1518;Taruma;SP
+1519;Sao Miguel de Touros;RN
+1520;Carmo do Cajuru;MG
+1521;Forquilha;CE
+1522;Araric¿;RS
+1523;Timoteo;MG
+1524;Natercia;MG
+1525;Augusto Pestana;RS
+1526;Arandu;SP
+1527;Brasilandia;MS
+1528;Jaboti;RS
+1529;Jamari;RO
+1530;Guarani de Goias;GO
+1531;Pugmil;TO
+1532;Antonio Martins;RN
+1533;Prot¿sio Alves;RS
+1534;Ingazeira;PE
+1535;Dona Francisca;RS
+1536;Rolim de Moura;RO
+1537;Ribeirao Branco;SP
+1538;Sao Jorge d'Oeste;PR
+1539;Sao Francisco do Brejao;MA
+1540;Itapolis;SP
+1541;Lajinha;MG
+1542;Poco Redondo;SE
+1543;Rondon do Para;PA
+1544;Luzilandia;PI
+1545;Ibia¿¿;RS
+1546;Minador do Negr¿o;AL
+1547;Santo Antonio do Descoberto;GO
+1548;Santa Ines;BA
+1549;Macau;BA
+1550;Sao Miguel dos Campos;AL
+1551;Vargem Alta;ES
+1552;Piraju;MG
+1553;Flores;RS
+1554;Ipua;SC
+1555;Agrolandia;SC
+1556;Niquelandia;GO
+1557;Padre Paraiso;MG
+1558;Concordia do Para;PA
+1559;Sul Brasil;SC
+1560;Bataipora;MS
+1561;Igapora;BA
+1562;Monte das Gameleiras;RN
+1563;Teixeira de Freitas;BA
+1564;Sao Felix do Piaui;PI
+1565;Santa Teresinha;BA
+1566;Maxaranguape;RN
+1567;Casinhas;PE
+1568;Itanhem;BA
+1569;Jaguaripe;BA
+1570;Ibia¿¿;RS
+1571;Parambu;CE
+1572;Quatis;RJ
+1573;Nova Cantu;PR
+1574;Guaracai;SP
+1575;Silveiras;SP
+1576;Itarana;ES
+1577;Nova Serrana;MG
+1578;Bocaina do Sul;SC
+1579;Guape;MG
+1580;Lucianopolis;SP
+1581;Juazeirinho;PB
+1582;Umarizal;RN
+1583;Balsamo;SP
+1584;Igarassu;PE
+1585;Chu¿;RS
+1586;S¿o Jos¿ do Herval;RS
+1587;Taquaru¿u do Sul;RS
+1588;Maragogipe;BA
+1589;Guaracai;SP
+1590;Teresopolis;RJ
+1591;Santa Helena;GO
+1592;Conceicao do Rio Verde;MG
+1593;Ibirama;SC
+1594;Malhada dos Bois;SE
+1595;Conceicao de Macabu;RJ
+1596;Ouricuri;PE
+1597;Sao Vicente;MA
+1598;Ita;RS
+1599;Breves;PA
+1600;Jaupaci;GO
+1601;Itamogi;MG
+1602;Urucara;AM
+1603;Dores de Campos;MG
+1604;Sao Joao do Piaui;PI
+1605;Iacanga;SP
+1606;Sao Jose do Mantimento;MG
+1607;Alto Parnaiba;MA
+1608;Amajari;RR
+1609;Santa Fe do Sul;SP
+1610;Barauna;PB
+1611;Ipumirim;SC
+1612;Camutanga;PE
+1613;Minador do Negr¿o;AL
+1614;Santa Branca;SP
+1615;Pacaraima;RR
+1616;Arcos;MG
+1617;Nantes;SP
+1618;Abaetetuba;PA
+1619;Domingos Mourao;PI
+1620;Borba;AM
+1621;Ribeirao;BA
+1622;Sao Geraldo;MG
+1623;Ouro Verde de Goias;GO
+1624;Doresopolis;MG
+1625;Lagoa do Sitio;PI
+1626;Navegantes;SC
+1627;Ribeirao Pires;SP
+1628;Aracoiaba;CE
+1629;Conceicao do Jacuipe;BA
+1630;Itapaci;GO
+1631;Ouro Preto;MG
+1632;Santana do Itarare;PR
+1633;Leopoldo de Bulhoes;GO
+1634;Ibotirama;BA
+1635;Padre Paraiso;MG
+1636;Jaiba;MG
+1637;Paranhos;MS
+1638;Acajutiba;BA
+1639;Vale do Anari;RO
+1640;Uba;BA
+1641;Taboleiro Grande;RN
+1642;Uruacu;GO
+1643;Solonopole;CE
+1644;Urbano Santos;MA
+1645;Rubineia;SP
+1646;Serranopolis do Iguacu;PR
+1647;Buriticupu;MA
+1648;Dobrada;SP
+1649;Novo Triunfo;BA
+1650;Itaquirai;MS
+1651;Riacho da Cruz;RN
+1652;Aruana;GO
+1653;Piranhas;AL
+1654;Curral de Dentro;MG
+1655;Tavares;RS
+1656;Sandovalina;SP
+1657;Alvares Machado;SP
+1658;Tocantinopolis;TO
+1659;Candiota;RS
+1660;Roca Sales;RS
+1661;Nazarezinho;PB
+1662;Nova Prata do Iguacu;PR
+1663;Sabaudia;PR
+1664;Cupira;PE
+1665;Vanini;RS
+1666;Jitauna;BA
+1667;Carmo de Minas;MG
+1668;Serrana;SP
+1669;Pedrinopolis;MG
+1670;Sinop;MT
+1671;Camaqu¿;RS
+1672;Jaru;RO
+1673;Wall Ferraz;PI
+1674;Sao Jose do Jacuipe;BA
+1675;Juara;MT
+1676;Carandai;MG
+1677;Heitorai;GO
+1678;Sarapui;SP
+1679;Pratapolis;MG
+1680;Quara¿;RS
+1681;Agua Azul do Norte;PA
+1682;Pouso Novo;RS
+1683;Rio do Prado;MG
+1684;Espigao d'Oeste;RO
+1685;Sao Gotardo;MG
+1686;Granjeiro;CE
+1687;Santa Barbara do Para;PA
+1688;Cabralia Paulista;SP
+1689;Marcacao;PB
+1690;Chaves;PA
+1691;Arapua;MG
+1692;Ribas do Rio Pardo;MS
+1693;Ferreira Gomes;AP
+1694;Sao Francisco de Assis do Piau;PI
+1695;Sao Jose do Rio Preto;SP
+1696;Coribe;BA
+1697;Salgado Filho;PR
+1698;Diamante;PB
+1699;Pedro Canario;ES
+1700;Riachuelo;RN
+1701;Carmo do Rio Verde;GO
+1702;Santo Afonso;MT
+1703;Coluna;MG
+1704;Palmeira;RS
+1705;Rosario Oeste;MT
+1706;Itapora do Tocantins;TO
+1707;Verdelandia;MG
+1708;Palmares Paulista;SP
+1709;S¿o Francisco de Paula;RS
+1710;Sento Se;BA
+1711;Escada;PE
+1712;Lavrinhas;SP
+1713;Vazante;MG
+1714;Taquarituba;SP
+1715;Porto de Moz;PA
+1716;Silveirania;MG
+1717;Coronel Joao Sa;BA
+1718;Cabralia Paulista;SP
+1719;Mata de Sao Joao;BA
+1720;Dourado;MS
+1721;Mambore;PR
+1722;Mae do Rio;PA
+1723;Biquinhas;MG
+1724;Santos;MG
+1725;Janduis;RN
+1726;Santa Helena;GO
+1727;Flores;RS
+1728;Barra do Rio Azul;RS
+1729;Rio Novo do Sul;ES
+1730;Tanque Novo;BA
+1731;Teresopolis;RJ
+1732;Currais;PI
+1733;Colonia do Gurgueia;PI
+1734;Fronteiras;PI
+1735;Canelinha;SC
+1736;Morro do Chapeu;BA
+1737;Umuarama;PR
+1738;Afogados da Ingazeira;PE
+1739;Itaguara;MG
+1740;Taparuba;MG
+1741;Vertentes;PE
+1742;Mangueirinha;PR
+1743;Agua Doce;ES
+1744;Arapua;MG
+1745;Bilac;SP
+1746;Venturosa;PE
+1747;Aguas de Lindoia;SP
+1748;Itaju do Colonia;BA
+1749;Santa Cruz da Vitoria;BA
+1750;Itambacuri;MG
+1751;Wanderlandia;TO
+1752;Governador Jorge Teixeira;RO
+1753;Campo Azul;MG
+1754;Albertina;MG
+1755;Curaca;BA
+1756;Santa Cruz dos Milagres;PI
+1757;Neopolis;SE
+1758;Monte Formoso;MG
+1759;Santa B¿rbara do Sul;RS
+1760;Caracol;MS
+1761;Olho d'Agua das Cunhas;MA
+1762;Tapirai;MG
+1763;Floresta;BA
+1764;Dumont;SP
+1765;Juvenilia;MG
+1766;Frei Paulo;SE
+1767;Tanquinho;BA
+1768;Guaruja do Sul;SC
+1769;Guajeru;BA
+295;Sao Sebastiao do Umbuzeiro;PB
+296;S¿o Nicolau;RS
+297;Tesouro;MT
+2071;Bela Vista de Minas;MG
+2072;Santa Luzia do Norte;AL
+2073;Gloria de Dourados;MS
+2074;Terra Nova;BA
+2075;Herveiras;RS
+2076;Bannach;PA
+2077;Ubajara;CE
+2078;Nova Laranjeiras;PR
+2079;Porto Xavier;RS
+2080;Guia Lopes da Laguna;MS
+2081;Marapanim;PA
+2082;Coronel Joao Pessoa;RN
+2083;Serranopolis;GO
+2084;Tr¿s de Maio;RS
+2085;Itaju;BA
+2086;Ocara;CE
+2087;Caputira;MG
+2088;Pirpirituba;PB
+2089;Joanesia;MG
+2090;Canoas;RS
+2091;Jaboticabal;SP
+2092;Curral de Cima;PB
+2093;Senador Eloi de Souza;RN
+2094;Colinas do Tocantins;TO
+2095;Vitorino;MA
+2096;Seritinga;MG
+2097;Sao Goncalo do Abaete;MG
+2098;Engenheiro Beltrao;PR
+2099;Terra Boa;PR
+2100;Marilena;PR
+2101;Sao Domingos;BA
+2102;Ubirata;PR
+2103;Aparecida do Taboado;MS
+2104;Raposos;MG
+2105;Cruz;RS
+2106;Parauna;GO
+2107;Florai;PR
+2108;Sao Fernando;RN
+2109;Taquaracu de Minas;MG
+2110;Saudade do Iguacu;PR
+2111;Sao Patricio;GO
+2112;Cruzalia;SP
+2113;Tuparetama;PE
+2114;Italva;RJ
+2115;Varzea Nova;BA
+2116;Campos Novos;SC
+2117;Vitoria Brasil;SP
+2118;Pedra Lavrada;PB
+2119;Nova Olimpia;MT
+2120;Brejo do Piaui;PI
+2121;Doutor Ulysses;PR
+2122;Caturai;GO
+2123;Canarana;BA
+2124;Biritiba-Mirim;SP
+2125;Itabaiana;PB
+2126;Luiz Alves;SC
+2127;Arenapolis;MT
+2128;Barao de Monte Alto;MG
+2129;Fortaleza dos Valos;RS
+2130;Belem;AL
+2131;Erval Seco;RS
+2132;Maringa;PR
+2133;Umbauba;SE
+2134;Itacarambi;MG
+2135;Cachoeira de Minas;MG
+2136;Estiva Gerbi;SP
+2137;Chiador;MG
+2138;Doutor Pedrinho;SC
+2139;Cruzeiro;RS
+2140;Godoy Moreira;PR
+2141;Imbituva;PR
+2142;Jundiai do Sul;PR
+2143;Redentora;RS
+2144;Teixeiropolis;RO
+2145;Sao Francisco do Piaui;PI
+2146;Dezesseis de Novembro;RS
+2147;Cerquilho;SP
+2148;Igrejinha;RS
+2149;Colorado do Oeste;RO
+2150;Bilac;SP
+2151;Alagoa Grande;PB
+2152;Platina;SP
+2153;Diorama;GO
+2154;Tremembe;SP
+2155;Chiapeta;RS
+2156;Lagoinha do Piaui;PI
+2157;Varginha;MG
+2158;Sao Francisco do Gloria;MG
+2159;Tres Pontas;MG
+2160;Cantagalo;MG
+2161;Sao Luis do Paraitinga;SP
+2162;Sao Joao do Jaguaribe;CE
+2163;Niteroi;RJ
+2164;Lavandeira;TO
+2165;Maripa;MG
+2166;Alagoinha;BA
+2167;Jau;GO
+2168;Castelandia;GO
+2169;Sorriso;MT
+2170;Sao Benedito do Rio Preto;MA
+2171;Conceicao da Aparecida;MG
+2172;Ibirataia;BA
+2173;Cajueiro da Praia;PI
+2174;Aperibe;RJ
+2175;Unistalda;RS
+2176;Itaguatins;TO
+2177;Umburanas;BA
+2178;Sao Jose do Xingu;MT
+2179;Baixa Grande;BA
+2180;Santo Antonio do Pinhal;SP
+2181;Sud Mennucci;SP
+2182;Benedito Leite;MA
+2183;Borrazopolis;PR
+2184;Mortugaba;BA
+2185;Araguana;MA
+2186;Limoeiro de Anadia;AL
+2187;Nova Alvorada do Sul;MS
+2188;Charrua;RS
+2189;Dores de Guanhaes;MG
+2190;Granito;PE
+2191;Caracol;MS
+2192;Mairipora;SP
+2193;Varjao;GO
+2194;Presidente Bernardes;MG
+2195;Bom Jardim;GO
+2196;Botumirim;MG
+2197;Francisco Morato;SP
+2198;S¿o Pedro das Miss¿es;RS
+2199;Itirucu;BA
+2200;Santa Clara do Sul;RS
+2201;Acajutiba;BA
+2202;Foz do Jordao;PR
+2203;Ribeirao;BA
+2204;Mutum;MG
+2205;Moeda;MG
+2206;Carbonita;MG
+2207;Palmacia;CE
+2208;Chaves;PA
+2209;Cosmopolis;SP
+2210;Gramado Xavier;RS
+2211;Ubaporanga;MG
+2212;Lencois;BA
+2213;Rio Verde de Mato Grosso;MS
+2214;Pedras de Fogo;PB
+2215;Jequitiba;MG
+2216;Santo Antonio do Paraiso;PR
+2217;Paranapoema;PR
+2218;Matinhas;PB
+2219;Buti¿;RS
+2220;Aveiro;PA
+2221;Boa Vista do Gurupi;MA
+2222;Flora Rica;SP
+2223;Vitor Meireles;SC
+2224;Maraial;PE
+2225;Gararu;SE
+2226;Sao Goncalo do Sapucai;MG
+2227;Cafelandia;PR
+2228;Massape;CE
+2229;S¿o Francisco de Paula;RS
+2230;Caldeirao Grande do Piaui;PI
+2231;Pilar;AL
+2232;Sao Gabriel da Cachoeira;AM
+2233;Sao Desiderio;BA
+2234;Santa Tereza;RS
+2235;Jaragua do Sul;SC
+2236;Juara;MT
+2237;Guaratuba;PR
+2238;Caatiba;BA
+2239;Monsenhor Hipolito;PI
+2240;Sao Jose dos Ramos;PB
+2241;Fartura;PI
+2242;Sao Carlos;PR
+2243;Encruzilhada;RS
+2244;Boa Esperanca;ES
+2245;Ipira;RS
+2246;Sao Francisco do Conde;BA
+2247;Pacaja;PA
+2248;Nova Santa Rita;RS
+2249;Ivor¿;RS
+2250;Capela de Santana;RS
+2251;Acu;MG
+2252;Lago do Junco;MA
+2253;Ronda Alta;RS
+2254;Pitanga;PR
+2255;Passa e Fica;RN
+2256;Abadiania;GO
+2257;Ouro Branco;AL
+2258;Augusto Pestana;RS
+2259;Santo Antonio do Itambe;MG
+2260;Ubatuba;SP
+2261;Igarape-Acu;PA
+2262;Arroio do Tigre;RS
+2263;Munhoz;MG
+2264;Malhada;BA
+2265;Pongai;SP
+2266;Capetinga;MG
+2267;Babaculandia;TO
+2268;Buriticupu;MA
+2269;Extremoz;RN
+2270;Jaramataia;AL
+2271;Ibirub¿;RS
+2272;Sao Geraldo do Baixio;MG
+2273;Arealva;SP
+2274;Iapu;MG
+2275;Santa Maria do Oeste;PR
+2276;Nova Serrana;MG
+2277;Sao Raimundo Nonato;PI
+2278;Nova Ponte;MG
+2279;Almeirim;PA
+2280;Sao Vicente;MA
+2281;Votuporanga;SP
+2282;Conceicao do Jacuipe;BA
+2283;Pojuca;BA
+2284;Pantano Grande;RS
+2285;Suzanapolis;SP
+2286;Balneario Camboriu;SC
+2287;Redentora;RS
+2288;Barra de Santana;PB
+2289;Buriti Bravo;MA
+2290;Mamanguape;PB
+2291;Pocinhos;PB
+2292;Fazenda Rio Grande;PR
+2293;Rancho Alegre;PR
+2294;Itaja;GO
+2295;Nova Ramada;RS
+2296;Divinolandia;MG
+2297;Araujos;MG
+2298;Aurora do Tocantins;TO
+2299;Minduri;MG
+2300;Macau;BA
+2301;Fortaleza;RS
+2302;Domingos Martins;ES
+2303;Aquidaba;SE
+2304;Santa Clara d'Oeste;SP
+2305;Brasilandia do Tocantins;TO
+2306;Aragoiania;GO
+2307;Monte Santo de Minas;MG
+2308;Perobal;PR
+2309;Natividade;RJ
+2310;Feira Nova do Maranhao;MA
+2311;Vargem Bonita;MG
+2312;Dom Pedro;RS
+2313;Recreio;MG
+2314;Paes Landim;PI
+2315;Santa Tereza do Tocantins;TO
+2316;Cachoeira de Pajeu;MG
+2317;Nova Itaberaba;SC
+2318;Cordislandia;MG
+2319;Lavras da Mangabeira;CE
+2320;Antas;BA
+2321;Acorizal;MT
+2322;Guarara;MG
+2323;¿gua Santa;RS
+2324;Sao Domingos;BA
+2325;Braganca;PA
+2326;Ibertioga;MG
+2327;Barra do Chapeu;SP
+2328;Santa Rosa do Purus;AC
+2329;Arinos;MG
+2330;Sao Rafael;RN
+2331;Viadutos;RS
+2332;Ares;RN
+2333;Barra do Rio Azul;RS
+2334;Itau;AP
+2335;Inga;MG
+2336;Porto;RS
+2337;Queimadas;BA
+2338;Muniz Freire;ES
+2339;S¿o Sebasti¿o do Ca¿;RS
+2340;Boa Hora;PI
+2341;General Carneiro;MT
+2342;Guaraciaba;CE
+2343;Gado Bravo;PB
+2344;Pugmil;TO
+2345;Nova Ara¿¿;RS
+2346;Jandaia;GO
+2347;Abaira;BA
+2348;Pindorama;SP
+2349;Lajes;RN
+2350;Belo Jardim;PE
+2351;Nova Hartz;RS
+2352;Pacatuba;CE
+2353;Ipanguacu;RN
+2354;Sao Pedro dos Crentes;MA
+2355;Ipatinga;MG
+2356;Nova Mamore;RO
+2357;Conceicao do Castelo;ES
+2358;Sao Bento do Norte;RN
+2359;Divino das Laranjeiras;MG
+2360;Bananeiras;PB
+2361;Carrancas;MG
+2362;Rio Negro;MS
+2363;Catalao;GO
+2364;Independencia;CE
+2365;Jaguaretama;CE
+2366;Parana;GO
+2367;Bela Vista do Maranhao;MA
+2368;Piracuruca;PI
+2369;Ipecaeta;BA
+2370;Mineiros;GO
+2371;Aurora;CE
+2372;Sao Bento de Pombal;PB
+2373;Agua Boa;MT
+2374;Vieiras;MG
+2375;Caroebe;RR
+2376;Miguelopolis;SP
+2377;Cajobi;SP
+2378;Bar¿o do Triunfo;RS
+2379;Candido Sales;BA
+2380;Cabeceiras;GO
+2381;Centro Novo do Maranhao;MA
+2382;Ribeirao do Sul;SP
+2383;Turilandia;MA
+2384;Julio Borges;PI
+2385;Santa Cruz do Piaui;PI
+2386;Boca do Acre;AM
+2387;Pium;ES
+2388;Orobo;PE
+2389;Satubinha;MA
+2390;Touros;RN
+2391;Rio Pomba;MG
+2392;Delta;MG
+2393;Rio das Antas;SC
+2394;Acara;CE
+2395;Centro Novo do Maranhao;MA
+2396;Sao Cristovao;SC
+2397;Lajedo do Tabocal;BA
+2398;Porto Esperidiao;MT
+2399;Taboleiro Grande;RN
+2400;Rialma;GO
+2401;Sao Francisco;BA
+2402;Congonhas do Norte;MG
+2403;Parazinho;RN
+2404;Santa Helena de Minas;MG
+2405;Morro do Pilar;MG
+2406;Pecanha;MG
+2407;Porecatu;PR
+2408;Domingos Martins;ES
+2409;Nova Ipixuna;PA
+2410;Brejo Grande do Araguaia;PA
+2411;Pereira Barreto;SP
+2412;Taua;CE
+2413;Novo Itacolomi;PR
+2414;Ipupiara;BA
+2415;Aloandia;GO
+2416;Novorizonte;MG
+2417;Ibirapuit¿;RS
+2418;Tailandia;PA
+2419;Santa Maria do Salto;MG
+2420;Jacuipe;AL
+2421;Sao Jose de Mipibu;RN
+2422;Itaipulandia;PR
+2423;Carmesia;MG
+2424;Baependi;MG
+2425;Theobroma;RO
+2426;Angelina;SC
+2427;Tangua;RJ
+2428;Garopaba;SC
+2429;Jucas;CE
+2430;Lacerdopolis;SC
+2431;Itaguai;RJ
+2432;Ubaporanga;MG
+2433;Saboeiro;CE
+2434;Bernardino de Campos;SP
+2435;Professor Jamil;GO
+2436;Jumirim;SP
+2437;Lagoa Real;BA
+2438;Timbe do Sul;SC
+2439;Bela Vista de Goias;GO
+2440;Bom Jardim de Goias;GO
+2441;Pote;CE
+2442;Carnaubais;RN
+2443;Conde;BA
+2444;Brusque;SC
+2445;Bauru;SP
+2446;Aurilandia;GO
+2447;Triunfo Potiguar;RN
+2448;Itaiba;PE
+2449;Maurilandia;GO
+2450;Saudades;SC
+2451;Sandovalina;SP
+2452;Laranjal;AP
+2453;Batatais;SP
+2454;Joao Alfredo;PE
+2455;Serra da Saudade;MG
+2456;Brasilandia;MS
+2457;Bom Jesus;RS
+2458;Campanha;MG
+2459;Campinas do Piaui;PI
+2460;Brejo da Madre de Deus;PE
+2461;Pio IX;PI
+2462;Presidente Nereu;SC
+2463;Chuvisca;RS
+2464;Novo Santo Antonio;PI
+2465;Seringueiras;RO
+2466;Conselheiro Pena;MG
+2467;Anta Gorda;RS
+2468;Sao Pedro;MA
+2469;Duartina;SP
+2470;Sinop;MT
+2471;Belagua;MA
+2472;Tapiramuta;BA
+2473;Vicentinopolis;GO
+2474;Boa Esperanca;ES
+2475;Laranjal;AP
+2476;Chapada;RS
+2477;Pedrinopolis;MG
+2478;Bituruna;PR
+2479;Vicosa;AL
+2480;Moju;PA
+2481;Capela de Santana;RS
+2482;S¿o Pedro das Miss¿es;RS
+2483;Nova Ipixuna;PA
+2484;Bertopolis;MG
+2485;Gastao Vidigal;SP
+2486;Boca do Acre;AM
+2487;Vitorino;MA
+2488;Belem do Brejo do Cruz;PB
+2489;Querencia;MT
+2490;Platina;SP
+2491;Iporanga;SP
+2492;Taipu;RN
+2493;Canarana;BA
+2494;Agudos do Sul;PR
+2495;Inhangapi;PA
+2496;Santo Antonio do Sudoeste;PR
+2497;Cabo Frio;RJ
+2498;Guaranesia;MG
+2499;Campina das Miss¿es;RS
+2500;Mata Verde;MG
+2501;Amaralina;GO
+2502;Arroio do Padre;RS
+2503;Caibi;SC
+2504;Pereira Barreto;SP
+2505;Salvaterra;PA
+2506;Nova Friburgo;RJ
+2507;Tutoia;MA
+2508;Joaquim Tavora;PR
+2509;Paulo Bento;RS
+2510;Santa Rita de Caldas;MG
+2511;Iacri;SP
+2512;Dona Euzebia;MG
+2513;Charqueada;RS
+2514;Jussari;BA
+2515;Sao Jeronimo da Serra;PR
+2516;Santana do Itarare;PR
+2517;Amapa do Maranhao;MA
+2518;Porto Barreiro;PR
+2519;Sideropolis;SC
+2520;Exu;PE
+2521;Rio Bonito;PR
+2522;Mantena;MG
+2523;Guarara;MG
+2524;Sebastianopolis do Sul;SP
+2525;Nova Resende;MG
+2526;Verissimo;MG
+2527;Pelotas;RS
+2528;Caridade do Piaui;PI
+2529;Colonia do Piaui;PI
+2530;Salgado;PB
+2531;Rio Quente;GO
+2532;Montauri;RS
+2533;Sao Jose do Bonfim;PB
+2534;Santo Augusto;RS
+2535;Santa Rita do Novo Destino;GO
+2536;Caibat¿;RS
+2537;Marzagao;GO
+2538;Imbau;PR
+2539;Taio;MG
+2540;Cafarnaum;BA
+2541;Santa Luzia d'Oeste;RO
+2542;Jaboticaba;RS
+2543;Sao Francisco;BA
+2544;Bento de Abreu;SP
+2545;Jaquirana;RS
+2546;Pingo d'Agua;MG
+2547;Monte Alegre do Sul;SP
+2548;Sao Francisco;BA
+2549;Santa Cruz das Palmeiras;SP
+2550;Guaruja;SC
+2551;Aquidauana;MS
+2552;Capela;RS
+2553;Triunfo;RS
+2554;Marcelandia;MT
+2555;Fartura do Piaui;PI
+2556;Braco do Norte;SC
+2557;Santa Cecilia;PB
+2558;Areiopolis;SP
+2559;Morada Nova de Minas;MG
+2560;Coqueiros do Sul;RS
+2561;Santa Cruz do Capibaribe;PE
+2562;Marumbi;PR
+2563;Ouro Verde;GO
+2564;Tr¿s Passos;RS
+2565;Carire;CE
+2566;Serra Alta;SC
+2567;Salete;SC
+2568;Brusque;SC
+2569;Guaimbe;SP
+2570;Porecatu;PR
+2571;Arceburgo;MG
+2572;Manari;PE
+2573;Bom Jesus do Oeste;SC
+2574;Campo Alegre do Fidalgo;PI
+2575;Guaruja;SC
+2576;Cristino Castro;PI
+2577;Tapiratiba;SP
+2578;Matinhas;PB
+2579;Mongagua;SP
+2580;Lizarda;TO
+2581;Guamiranga;PR
+2582;Tr¿s Forquilhas;RS
+2583;Marcelino Vieira;RN
+2584;Meleiro;SC
+2585;Itambaraca;PR
+2586;Salvador;RS
+2587;Morro do Pilar;MG
+2588;Irupi;ES
+2589;Iguatemi;MS
+2590;Rio Pomba;MG
+2591;Itaguara;MG
+2592;Florestal;MG
+2593;Ipecaeta;BA
+2594;Lindoia do Sul;SC
+2595;Marmelopolis;MG
+2596;Itaparica;BA
+2597;Presidente Figueiredo;AM
+2598;Dores de Campos;MG
+2599;Sao Joao do Caiua;PR
+2600;Acopiara;CE
+2601;Renascenca;PR
+2602;Porto Calvo;AL
+2603;Santa Rosa do Purus;AC
+2604;Cantanhede;MA
+2605;Senador Cortes;MG
+2606;Jatoba;MA
+2607;Bequimao;MA
+2608;Ibiuna;SP
+2609;Monte Siao;MG
+2610;Amaral Ferrador;RS
+2611;Altinopolis;SP
+2612;Bom Jesus;RS
+2613;Sao Joao da Boa Vista;SP
+2614;Pedra Dourada;MG
+2615;Cruzeiro da Fortaleza;MG
+2616;Corbelia;PR
+2617;Cafelandia;PR
+2618;Belem;AL
+2619;Paineiras;MG
+2620;Coronel Bicaco;RS
+2621;Belo Horizonte;MG
+2622;Araucaria;PR
+2623;Japaraiba;MG
+2624;Carmo do Cajuru;MG
+2625;Aurora;CE
+2626;Torrinha;SP
+2627;Almeirim;PA
+2628;Carmolandia;TO
+2629;Agua Limpa;GO
+2630;Prata do Piaui;PI
+2631;Sao Jose do Bonfim;PB
+2632;Picarra;PA
+2633;Patrocinio Paulista;SP
+2634;Dirceu Arcoverde;PI
+2635;Novo Mundo;MT
+2636;Sao Pedro dos Ferros;MG
+2637;Nazare;BA
+2638;Novorizonte;MG
+2639;Miranda do Norte;MA
+2640;Santa Maria da Serra;SP
+2641;Ipeuna;SP
+2642;Picui;PB
+2643;Castanheiras;RO
+2644;Corguinho;MS
+2645;Ponta Grossa;PR
+2646;Grupiara;MG
+2647;Piranguinho;MG
+2648;Saire;PE
+2649;Cuparaque;MG
+2650;Amparo;MG
+2651;Benedito Leite;MA
+2652;Estrela;RS
+2653;Sao Vicente;MA
+2654;Missal;PR
+2655;Morro Grande;SC
+2656;Nova P¿dua;RS
+2657;Capoeiras;PE
+2658;Barras;PI
+2659;Campo Alegre;AL
+2064;Alfredo Chaves;ES
+2065;Piracaia;SP
+2066;Acegu¿;RS
+2067;Santa Cecilia;PB
+2068;Sao Jose da Lagoa Tapada;PB
+2069;Diadema;SP
+2070;Brotas;BA
+3847;Maravilha;AL
+3848;Campos Belos;GO
+3849;Bozano;RS
+3850;Bom Jesus do Sul;PR
+3851;Pariconha;AL
+3852;Quadra;SP
+3853;Porto Seguro;BA
+3854;Jesuania;MG
+3855;Brejo Santo;CE
+3856;Aracaju;SE
+3857;Castelo do Piaui;PI
+3858;Acrelandia;AC
+3859;Araguacu;TO
+3860;Santa Fe;GO
+3861;Sao Joao do Pau d'Alho;SP
+3862;Teodoro Sampaio;BA
+3863;Nova Esperan¿a do Sul;RS
+3864;Jacuizinho;RS
+3865;Apui;AM
+3866;Santa Barbara do Para;PA
+3867;Moita Bonita;SE
+3868;Indianopolis;MG
+3869;Pedro Velho;RN
+3870;Amatura;AM
+3871;Porto Vitoria;PR
+3872;Soure;PA
+3873;Leandro Ferreira;MG
+3874;Nossa Senhora das Dores;SE
+3875;Itapicuru;BA
+3876;Canudos do Vale;RS
+3877;Montalvania;MG
+3878;Milagres;BA
+3879;Candoi;PR
+3880;Ipiranga;RS
+3881;Russas;CE
+3882;Coroados;SP
+3883;Limeira;MG
+3884;Pires do Rio;GO
+3885;Oros;CE
+3886;Rio Largo;AL
+3887;Macaiba;RN
+3888;Dias d'Avila;BA
+3889;Echapora;SP
+3890;Mutuipe;BA
+3891;Canarana;BA
+3892;Ituacu;BA
+3893;Santo Andre;PB
+3894;Montes Claros;GO
+3895;Pinhalzinho;SC
+3896;Tupanciret¿;RS
+3897;Palmas;BA
+3898;Ipanema;MG
+3899;Rolandia;PR
+3900;Carmo da Cachoeira;MG
+3901;Caranaiba;MG
+3902;Frei Miguelinho;PE
+3903;Santa Fe de Minas;MG
+3904;Ituverava;SP
+3905;Tupa;RS
+3906;Curral de Cima;PB
+3907;Riachinho;MG
+3908;Graca;CE
+3909;Pilar de Goias;GO
+3910;Seabra;BA
+3911;Sao Sebastiao da Vargem Alegre;MG
+3912;Resplendor;MG
+3913;Santa Maria de Itabira;MG
+3914;Japora;MS
+3915;Estiva;MG
+3916;S¿o Valentim do Sul;RS
+3917;Bacabeira;MA
+3918;Piloes;PB
+3919;Jaragua do Sul;SC
+3920;Barros Cassal;RS
+3921;Tibau do Sul;RN
+3922;Meleiro;SC
+3923;Caldas Brandao;PB
+3924;Barracao;PR
+3925;Alvorada;RS
+3926;Pirauba;MG
+3927;Cornelio Procopio;PR
+3928;Maurilandia do Tocantins;TO
+3929;Montenegro;RS
+3930;Serafina Corr¿a;RS
+3931;Bocaina de Minas;MG
+3932;Doutor Maur¿cio Cardoso;RS
+3933;Riachao;BA
+3934;Arneiroz;CE
+3935;Mombaca;CE
+3936;Capim;BA
+3937;Betim;MG
+3938;¿urea;RS
+3939;Sao Joao do Paraiso;MA
+3940;Barreiros;PE
+3941;Marilena;PR
+3942;Assuncao;PB
+3943;Carapicuiba;SP
+3944;Paulista;MG
+3945;Cortes;PE
+3946;Tres Barras do Parana;PR
+3947;Garanhuns;PE
+3948;Sao Francisco;BA
+3949;Lagoa Bonita do Sul;RS
+3950;Americana;SP
+3951;Teixeiropolis;RO
+3952;Cajobi;SP
+3953;Irati;PR
+3954;Pitanga;PR
+3955;Ivai;PR
+3956;Pedras de Fogo;PB
+3957;Amatura;AM
+3958;Jaci;MT
+3959;Pauliceia;SP
+3960;Pratinha;MG
+3961;Turmalina;MG
+3962;Santo Antonio do Aventureiro;MG
+3963;Jussari;BA
+3964;Aracoiaba;CE
+3965;Guaruja do Sul;SC
+3966;Pratapolis;MG
+3967;Miguelopolis;SP
+3968;Santo Antonio do Descoberto;GO
+3969;Candeias;BA
+3970;Botucatu;SP
+3971;Agricolandia;PI
+3972;Uruacu;GO
+3973;Lagamar;MG
+3974;Ibipeba;BA
+3975;Boa Esperanca;ES
+3976;Piquet Carneiro;CE
+3977;Taruma;SP
+3978;Echapora;SP
+3979;Pirangi;SP
+3980;Porto Franco;MA
+3981;Cordilheira Alta;SC
+3982;Derrubadas;RS
+3983;Sao Roque;ES
+3984;Urucuca;BA
+3985;Sitio d'Abadia;GO
+3986;Uruana de Minas;MG
+3987;Crucilandia;MG
+3988;Santa Ernestina;SP
+3989;Teixeira;BA
+3990;Santo Antonio do Caiua;PR
+3991;Joao Monlevade;MG
+3992;Rio Vermelho;MG
+3993;Vale Verde;RS
+3994;Xaxim;SC
+3995;Curralinhos;PI
+3996;Baianopolis;BA
+3997;Bueno Brandao;MG
+3998;Belem de Sao Francisco;PE
+3999;Cruzeiro;RS
+4000;Sao Francisco do Conde;BA
+4001;Antonio Martins;RN
+4002;Buritizeiro;MG
+4003;Jenipapo de Minas;MG
+4004;Piritiba;BA
+4005;Ibitita;BA
+4006;Sao Geraldo;MG
+4007;Fernandes Tourinho;MG
+4008;Nova Uniao;MG
+4009;Buritinopolis;GO
+4010;Cana Verde;MG
+4011;Jaguapita;PR
+4012;Iuna;ES
+4013;Propria;SE
+4014;Cascavel;CE
+4015;Itapissuma;PE
+4016;Rinopolis;SP
+4017;Ulianopolis;PA
+4018;Lagarto;SE
+4019;Orindiuva;SP
+4020;Aldeias Altas;MA
+4021;S¿o Jos¿ do Hort¿ncio;RS
+4022;Itabi;MG
+4023;Boqueirao do Piaui;PI
+4024;Santa Rita de Ibitipoca;MG
+4025;Ewbank da Camara;MG
+4026;Catarina;CE
+4027;Aurora;CE
+4028;Cantagalo;MG
+4029;Leandro Ferreira;MG
+4030;Alto Paraiso de Goias;GO
+4031;Treze Tilias;SC
+4032;Uruana;GO
+4033;Andr¿ da Rocha;RS
+4034;Areal;RJ
+4035;Mae d'Agua;PB
+4036;Eugenopolis;MG
+4037;Sao Jose dos Ramos;PB
+4038;Parazinho;RN
+4039;Marcelino Ramos;RS
+4040;Normandia;RR
+4041;Craibas;AL
+4042;Sao Lourenco da Serra;SP
+4043;Quipapa;PE
+4044;Teixeira de Freitas;BA
+4045;Floriano Peixoto;RS
+4046;Abaiara;CE
+4047;Tiros;MG
+4048;Rio do Prado;MG
+4049;Maetinga;BA
+4050;Santo Antonio;AM
+4051;Serra da Raiz;PB
+4052;Eugenopolis;MG
+4053;Tangua;RJ
+4054;Santana de Mangueira;PB
+4055;Guajara;AM
+4056;Nova Brasilandia d'Oeste;RO
+4057;Santa Terezinha;GO
+4058;Sete Barras;SP
+4059;Lagoa d'Anta;RN
+4060;Sao Jose dos Campos;SP
+4061;Alto Alegre do Maranhao;MA
+4062;Maracaja;SC
+4063;Cara¿;RS
+4064;Balne¿rio Pinhal;RS
+4065;Aracagi;PB
+4066;Sitio Novo;MA
+4067;Domingos Martins;ES
+4068;Castelo;ES
+4069;Gravata¿;RS
+4070;Campestre de Goias;GO
+4071;Sao Jose dos Quatro Marcos;MT
+4072;Alto Alegre do Parecis;RO
+4073;Piquete;SP
+4074;Santo Antonio do Ica;AM
+4075;Tanhacu;BA
+4076;Silves;AM
+4077;Rialma;GO
+4078;Sao Pedro da Uniao;MG
+4079;Natalandia;MG
+4080;Itarema;CE
+4081;Alto Longa;PI
+4082;Oeiras;PA
+4083;Imbe de Minas;MG
+4084;Itaiba;PE
+4085;Buenos Aires;PE
+4086;Funilandia;MG
+4087;Santana do Araguaia;PA
+4088;Glaucilandia;MG
+4089;Imbituva;PR
+4090;Chupinguaia;RO
+4091;Tamboril do Piaui;PI
+4092;Palmeira;RS
+4093;Arroio dos Ratos;RS
+4094;Delmiro Gouveia;AL
+4095;Sao Geraldo do Baixio;MG
+4096;Novo Planalto;GO
+4097;Queiroz;SP
+4098;Lagoa do Ouro;PE
+4099;Santa Amelia;PR
+4100;Capitao Gervasio Oliveira;PI
+4101;Campo do Brito;SE
+4102;Nova Crixas;GO
+4103;Martins Soares;MG
+4104;Nova Canaa Paulista;SP
+4105;Francisco Badaro;MG
+4106;Cordilheira Alta;SC
+4107;Santo Antonio do Monte;MG
+4108;Mangueirinha;PR
+4109;Botelhos;MG
+4110;Recursolandia;TO
+4111;Sao Jose da Varginha;MG
+4112;Quijingue;BA
+4113;Santa Cruz do Escalvado;MG
+4114;Senador Jose Porfirio;PA
+4115;Aparecida de Goiania;GO
+4116;Pocinhos;PB
+4117;Campestre;RS
+4118;Lambari d'Oeste;MT
+4119;Jangada;MT
+4120;Agua Fria;BA
+4121;Ouro Preto do Oeste;RO
+4122;Itapema;SC
+4123;Lobato;PR
+4124;Anhanguera;GO
+4125;Benevides;PA
+4126;Nossa Senhora de Nazare;PI
+4127;Serra de Sao Bento;RN
+4128;Palmitos;SC
+4129;Mariopolis;PR
+4130;Palmital;PR
+4131;Tanhacu;BA
+4132;Cruzeiro do Sul;RS
+4133;Bertioga;SP
+4134;Grossos;RN
+4135;Bonfinopolis;GO
+4136;Estrela do Indaia;MG
+4137;Heitorai;GO
+4138;Vargem Grande do Rio Pardo;MG
+4139;Bela Vista de Goias;GO
+4140;Brodosqui;SP
+4141;Pradopolis;SP
+4142;Paraiso;MG
+4143;Jaboticaba;RS
+4144;Jesuitas;PR
+4145;Perolandia;GO
+4146;Alagoa Grande;PB
+4147;Conceicao do Coite;BA
+4148;Munhoz;MG
+4149;Alfredo Marcondes;SP
+4150;Piracaia;SP
+4151;Inubia Paulista;SP
+4152;Agudos do Sul;PR
+4153;Dom Aquino;MT
+4154;Varjao de MInas;MG
+4155;Palmares Paulista;SP
+4156;Entre Rios;RS
+4157;Sertaneja;PR
+4158;Abaiara;CE
+4159;Buritizeiro;MG
+4160;Caridade do Piaui;PI
+4161;Eug¿nio de Castro;RS
+4162;Cumaru;PA
+4163;Sucupira;MA
+4164;Palmopolis;MG
+4165;Botuvera;SC
+4166;Joao Ramalho;SP
+4167;Sao Jose dos Basilios;MA
+4168;Sebastiao Leal;PI
+4169;Urutai;GO
+4170;Santa Terezinha do Progresso;SC
+4171;Icatu;MA
+4172;Cosmorama;SP
+4173;Vicente Dutra;RS
+4174;Pouso Alegre;MG
+4175;Valente;BA
+4176;Cedral;MA
+4177;Senador Georgino Avelino;RN
+4178;Ametista do Sul;RS
+4179;Poco Verde;SE
+4180;Araguatins;TO
+4181;Piloezinhos;PB
+4182;Pastos Bons;MA
+4183;Babaculandia;TO
+4184;Caridade do Piaui;PI
+4185;Estrela Velha;RS
+4186;Dois Vizinhos;PR
+4187;Hidrolandia;CE
+4188;General Carneiro;MT
+4189;Tunapolis;SC
+4190;Paripueira;AL
+4191;Macau;BA
+4192;Santa Cruz do Sul;RS
+4193;Barra do Mendes;BA
+4194;Areial;PB
+4195;Salete;SC
+4196;Campos Belos;GO
+4197;Paulinia;SP
+4198;Paulista;MG
+4199;Marema;SC
+4200;Bom Jesus do Amparo;MG
+4201;Nova Russas;CE
+4202;Dom Joaquim;MG
+4203;Macaubas;BA
+4204;Campinas do Sul;RS
+4205;Iracema do Oeste;PR
+4206;Caxias do Sul;RS
+4207;Sao Joao do Paraiso;MA
+4208;Bofete;SP
+4209;Raposa;MA
+4210;Nicolau Vergueiro;RS
+4211;Amparo do Serra;MG
+4212;Sao Manoel do Parana;PR
+4213;Sao Goncalo do Amarante;CE
+4214;Cristina;MG
+4215;Anguera;BA
+4216;Joaquim Pires;PI
+4217;Trindade;RS
+4218;Arari;RS
+4219;Jacinto;MG
+4220;Sitio do Mato;BA
+4221;Nova Fatima;BA
+4222;Jau do Tocantins;TO
+4223;Ipero;SP
+4224;Ribeira do Pombal;BA
+4225;S¿o Jorge;RS
+4226;Marataizes;ES
+4227;Itaborai;RJ
+4228;Obidos;PA
+4229;Santa Ines;BA
+4230;Santa Salete;SP
+4231;Sebastianopolis do Sul;SP
+4232;Aquiraz;CE
+4233;Potiragua;BA
+4234;Abatia;PR
+4235;Canguaretama;RN
+4236;Itanhem;BA
+4237;Elisio Medrado;BA
+4238;Gracho Cardoso;SE
+4239;Viam¿o;RS
+4240;Cacique Doble;RS
+4241;Olho d'Agua das Flores;AL
+4242;Couto de Magalhaes de Minas;MG
+4243;Charqueadas;RS
+4244;Aguas de Chapeco;SC
+4245;Wall Ferraz;PI
+4246;Amap¿;AP
+4247;Sao Domingos;BA
+4248;Regeneracao;PI
+4249;Frei Gaspar;MG
+4250;Iranduba;AM
+4251;Lagoa;RS
+4252;Mandaguari;PR
+4253;Biritinga;BA
+4254;Marmeleiro;PR
+4255;Ares;RN
+4256;Boa Esperanca;ES
+4257;Bannach;PA
+4258;Esperantina;PI
+4259;Santo Antonio do Pinhal;SP
+4260;Antonio Carlos;MG
+4261;Palestina de Goias;GO
+4262;Estancia;SE
+4263;General Sampaio;CE
+4264;Barroso;MG
+4265;Inhapi;AL
+4266;Malhada de Pedras;BA
+4267;Patrocinio do Muriae;MG
+4268;Rancho Alegre d'Oeste;PR
+4269;Sulina;PR
+4270;Nossa Senhora Aparecida;SE
+4271;Jacarau;PB
+4272;Santo Inacio do Piaui;PI
+4273;Carius;CE
+4274;Guiricema;MG
+4275;Vit¿ria das Miss¿es;RS
+4276;Mulungu;BA
+4277;Malhador;SE
+4278;Boca da Mata;AL
+4279;Mario Campos;MG
+4280;Uniao Paulista;SP
+4281;Coronel Pacheco;MG
+4282;Cap¿o do Cip¿;RS
+4283;Alvaraes;AM
+4284;Breu Branco;PA
+4285;Araguari;MG
+4286;Sao Joao do Caru;MA
+4287;S¿o Gabriel;RS
+4288;Cachoeira dos ?ndios;PB
+4289;Sao Joao do Sul;SC
+4290;Uruana de Minas;MG
+4291;Paula Freitas;PR
+4292;Jandaira;BA
+4293;Cruzeiro do Sul;RS
+4294;Lagoa de Sao Francisco;PI
+4295;Varzea Branca;PI
+4296;Candiba;BA
+4297;Teixeira de Freitas;BA
+4298;Pranchita;PR
+4299;Xexeu;PE
+4300;Inga;MG
+4301;Reboucas;PR
+4302;Serrolandia;BA
+4303;S¿o Francisco de Assis;RS
+4304;Materlandia;MG
+4305;Cacimba de Areia;PB
+4306;Timbo Grande;SC
+4307;Entre Folhas;MG
+4308;Dirceu Arcoverde;PI
+4309;Pacaja;PA
+4310;Conceicao do Araguaia;PA
+4311;Itaguari;GO
+4312;Igaratinga;MG
+4313;Itaituba;PA
+4314;Fortaleza do Tabocao;TO
+4315;Japaratuba;SE
+4316;Fazenda Nova;GO
+4317;Aparecida d'Oeste;SP
+4318;Saloa;PE
+4319;Arroio Grande;RS
+4320;Senador Georgino Avelino;RN
+4321;Jacuipe;AL
+4322;Olimpia;SP
+4323;Criciuma;SC
+4324;Cachoeira;RS
+4325;Barra do Bugres;MT
+4326;Claraval;MG
+4327;Caridade do Piaui;PI
+4328;Santo Antonio do Aventureiro;MG
+4329;Altos;PI
+4330;Serrana;SP
+4331;Erval Seco;RS
+4332;Tasso Fragoso;MA
+4333;Conceicao da Barra de Minas;MG
+4334;Indaiatuba;SP
+4335;Paraibano;MA
+4336;Guaramiranga;CE
+4337;Sao Lourenco da Serra;SP
+4338;Angelim;PE
+4339;Propria;SE
+4340;Maracana;CE
+4341;Monte Alegre do Sul;SP
+4342;Miranda;MA
+4343;Cerro Branco;RS
+4344;Grajau;MA
+4345;Agua Fria de Goias;GO
+4346;Barreira;BA
+4347;Nova Santa Barbara;PR
+4348;Itacurubi;RS
+4349;Sao Jose de Uba;RJ
+4350;Passabem;MG
+4351;Turvelandia;GO
+4352;Serranos;MG
+4353;Paula Freitas;PR
+4354;Paranapanema;SP
+4355;Novo Cruzeiro;MG
+4356;Sao Joao do Arraial;PI
+4357;Cajuri;MG
+4358;Ribeirao Branco;SP
+4359;Eirunepe;AM
+4360;Igapora;BA
+4361;Caetanos;BA
+4362;Piacatu;SP
+4363;Camaqu¿;RS
+4364;Abatia;PR
+4365;Sao Jose da Safira;MG
+4366;Santa Mercedes;SP
+4367;Esta¿¿o;RS
+4368;Roncador;PR
+4369;Cedro;CE
+4370;Brejinho;PE
+4371;Peritoro;MA
+4372;Santa Maria da Vitoria;BA
+4373;Lagoa do Barro do Piaui;PI
+4374;Pavao;MG
+4375;Cardoso;RJ
+4376;Cordeiro;BA
+4377;Jardinopolis;SC
+4378;Sao Goncalo do Rio Abaixo;MG
+4379;Indaiatuba;SP
+4380;Angical;BA
+4381;Piloes;PB
+4382;Brejao;PE
+4383;Sao Pedro da Aldeia;RJ
+4384;Pedra Branca;AP
+4385;Ventania;PR
+4386;Uberaba;MG
+4387;Acaua;PI
+4388;Rio Espera;MG
+4389;Gouvea;MG
+4390;Vista Serrana;PB
+4391;Papanduva;SC
+4392;Candiota;RS
+4393;Sao Domingos do Capim;PA
+4394;Joinville;SC
+4395;Carvalhopolis;MG
+4396;Jau do Tocantins;TO
+4397;Sao Jose do Xingu;MT
+4398;Icarai de Minas;MG
+4399;Corupa;SC
+4400;Itinga do Maranhao;MA
+4401;Ouricangas;BA
+4402;Juarina;TO
+4403;Aguas Formosas;MG
+4404;Ponte Alta do Tocantins;TO
+4405;Guajeru;BA
+4406;Maravilha;AL
+4407;Aurora;CE
+4408;Jeremoabo;BA
+4409;Nova Prata;RS
+4410;Santo Antonio dos Milagres;PI
+4411;Rio do Sul;SC
+4412;Irapua;SP
+4413;Mariana Pimentel;RS
+4414;Nova Olinda;AM
+4415;Buritis;MG
+4416;Pequeri;MG
+4417;Mutuipe;BA
+4418;Pimenteiras do Oeste;RO
+4419;Promissao;SP
+4420;Guarai;GO
+4421;Sooretama;ES
+4422;Sao Geraldo do Araguaia;PA
+4423;Martinopole;CE
+4424;Tiradentes do Sul;RS
+4425;Praia Grande;SC
+4426;Davinopolis;GO
+4427;Rio Negro;MS
+4428;Joanopolis;SP
+4429;S¿o Pedro das Miss¿es;RS
+4430;Glicerio;SP
+4431;Cabeceira Grande;MG
+4432;Palmopolis;MG
+4433;Vicencia;PE
+4434;Santana de Mangueira;PB
+4435;Taboao da Serra;SP
+4436;Cerejeiras;RO
+4437;Bacabal;MA
+4438;Caicara do Rio do Vento;RN
+4439;S¿o Sebasti¿o do Ca¿;RS
+4440;Cajazeirinhas;PB
+4441;Parnagua;PI
+4442;Conceicao do Araguaia;PA
+4443;Itabira;MG
+4444;Bom Jesus;RS
+4445;Espirito Santo;MG
+4446;Sabino;MG
+4447;Nossa Senhora das Dores;SE
+4448;Boa Vista;RS
+4449;Inconfidentes;MG
+4450;Pirapozinho;SP
+4451;Imarui;SC
+4452;Joao Pessoa;PB
+4453;Sao Joao da Ponte;MG
+4454;Major Vieira;SC
+4455;Rio Pardo;RS
+4456;Palmital;PR
+4457;Parau;GO
+4458;Simolandia;GO
+4459;Santa Clara do Sul;RS
+4460;Alvaro de Carvalho;SP
+4461;Monte Siao;MG
+4462;Laranjal Paulista;SP
+4463;Feijo;AC
+4464;Maracas;BA
+4465;Guiratinga;MT
+4466;Paranaiba;MS
+4467;Tremedal;BA
+4468;Ouro Preto;MG
+4469;Itaqui;RS
+4470;Coronel Vivida;PR
+4471;Oliveira dos Brejinhos;BA
+4472;Fortaleza de Minas;MG
+4473;Jerumenha;PI
+4474;Andrelandia;MG
+4475;Goiania;GO
+4476;Nazare do Piaui;PI
+4477;Tanque d'Arca;AL
+4478;Virginopolis;MG
+4479;Sao Joao Batista;MA
+4480;Pequizeiro;TO
+4481;Barra do Garcas;MT
+4482;Feijo;AC
+4483;Paiva;MG
+4484;Fatima;BA
+4485;S¿o Borja;RS
+4486;Mondai;SC
+4487;Lagarto;SE
+4488;Dois Corregos;SP
+4489;Uberlandia;MG
+4490;Pio XII;MA
+4491;Capela de Santana;RS
+4492;Barra Funda;RS
+4493;Sao Lourenco da Mata;PE
+4494;Pindoretama;CE
+4495;Craibas;AL
+4496;Modelo;SC
+4497;Iturama;MG
+4498;Doverlandia;GO
+4499;Douradina;MS
+4500;Capetinga;MG
+4501;Itaocara;RJ
+4502;Sao Pedro dos Ferros;MG
+4503;Tombos;MG
+4504;Petrolandia;PE
+4505;Sao Sebastiao do Alto;RJ
+4506;Canaa;MG
+4507;Aruja;SP
+4508;Adustina;BA
+4509;Cabaceiras;BA
+4510;Nova Mutum;MT
+4511;Abel Figueiredo;PA
+4512;Santa Maria de Jetiba;ES
+4513;Cristinapolis;SE
+4514;S¿o Miguel das Miss¿es;RS
+4515;Teofilo Otoni;MG
+4516;Taquarussu;MS
+4517;Ipatinga;MG
+4518;Santo Andre;PB
+4519;Lagoa da Canoa;AL
+4520;Uruana de Minas;MG
+4521;Carvalhos;MG
+4522;Sao Bernardo;MA
+4523;Sarutaia;SP
+4524;Parnagua;PI
+4525;Abatia;PR
+4526;Manoel Vitorino;BA
+4527;Urucui;MG
+4528;Rio do Prado;MG
+4529;Mozarlandia;GO
+4530;Juruaia;MG
+4531;Paranaiguara;GO
+4532;Americana;SP
+4533;Itirucu;BA
+4534;Ribeirao Bonito;SP
+4535;Baliza;GO
+4536;Rancho Queimado;SC
+4537;Riachao do Bacamarte;PB
+4538;Prudentopolis;PR
+4539;Conceicao da Aparecida;MG
+4540;Lagoa Grande;MA
+4541;Muribeca;SE
+4542;Timbo Grande;SC
+4543;Pocao de Pedras;MA
+4544;Monte Santo;BA
+4545;Arroio Trinta;SC
+4546;Rafael Godeiro;RN
+4547;Ma¿ambar¿;RS
+4548;Ipora;GO
+4549;Juazeiro do Piaui;PI
+4550;Simoes;BA
+4551;Cambuquira;MG
+4552;Sao Domingos das Dores;MG
+4553;Itapicuru;BA
+4554;Tubarao;SC
+4555;Rio dos Bois;TO
+4556;Engenheiro Caldas;MG
+4557;Cacimba de Dentro;PB
+4558;Antonio Carlos;MG
+4559;Dores do Rio Preto;ES
+4560;Salgado de Sao Felix;PB
+4561;Urai;PR
+4562;Taquarussu;MS
+4563;Araraquara;SP
+4564;Taquarana;AL
+4565;Sananduva;RS
+4566;Ipojuca;PE
+4567;Triunfo;RS
+4568;Gentil;RS
+4569;Mafra;SC
+4570;Pombos;PE
+4571;Pacaraima;RR
+4572;Abelardo Luz;SC
+4573;Redencao;CE
+4574;Goncalves;MA
+4575;Algodao de Jandaira;PB
+4576;Camalau;PB
+4577;Arvorezinha;RS
+4578;Serra de Sao Bento;RN
+4579;Pirassununga;SP
+4580;Lauro Muller;SC
+4581;Aiquara;BA
+4582;Beruri;AM
+4583;Sao Fernando;RN
+4584;Sao Joao do Araguaia;PA
+4585;Passo do Sobrado;RS
+4586;Governador Jorge Teixeira;RO
+4587;Sao Bento do Una;PE
+4588;Riachao;BA
+4589;Salto Grande;SP
+4590;Sao Martinho;SC
+4591;Morrinhos;RS
+4592;Candeias do Jamari;RO
+4593;Comercinho;MG
+4594;Painel;SC
+4595;Charrua;RS
+4596;Cerro Azul;PR
+4597;Monte Santo do Tocantins;TO
+4598;Capistrano;CE
+4599;Porto Real do Colegio;AL
+4600;Manaquiri;AM
+4601;Sao Benedito do Sul;PE
+4602;Cacequi;RS
+4603;Ascurra;SC
+4604;Faxinalzinho;RS
+4605;Santa Isabel;AM
+4606;Cafelandia;PR
+4607;Tres Fronteiras;SP
+4608;Casimiro de Abreu;RJ
+4609;Agua Doce do Maranhao;MA
+4610;Jacinto;MG
+4611;Desterro de Entre Rios;MG
+4612;Vila Flor;RS
+4613;Conchas;SP
+4614;Formiga;MG
+4615;Mantena;MG
+4616;Santa Maria do Para;PA
+4617;Boa Esperanca do Iguacu;PR
+4618;Grajau;MA
+4619;Picada Caf¿;RS
+4620;Planaltina;GO
+4621;Lagoa do Tocantins;TO
+4622;Lajes;RN
+4623;Boca da Mata;AL
+4624;Colmeia;TO
+4625;Cristina;MG
+4626;Bom Retiro do Sul;RS
+4627;Campos Altos;MG
+4628;Marcos Parente;PI
+4629;Coqueiral;MG
+4630;Sao Sebastiao;AL
+4631;Manaira;PB
+4632;Barra Velha;SC
+4633;Carnaiba;PE
+4634;Catanduvas;PR
+4635;Aurelino Leal;BA
+4636;Barreirinha;AM
+4637;Rosario;MA
+4638;Pinheiral;RJ
+4639;Cruzeiro do Sul;RS
+4640;Monte Santo de Minas;MG
+4641;Pinhalzinho;SC
+4642;Sorocaba;SP
+4643;Espumoso;RS
+4644;Sao Goncalo do Para;MG
+4645;Guaxupe;MG
+4646;Santo Antonio do Monte;MG
+4647;Nova Campina;SP
+4648;Chapada da Natividade;TO
+4649;Aracai;MG
+4650;Piui;MG
+4651;Barra do Rio Azul;RS
+4652;Passira;PE
+4653;Gongogi;BA
+4654;Petrolandia;PE
+4655;Bom Jesus da Serra;BA
+4656;Pirajui;SP
+4657;Osvaldo Cruz;SP
+4658;Ita;RS
+4659;Jundiai do Sul;PR
+4660;Quintana;SP
+4661;Bela Cruz;CE
+4662;Itapemirim;ES
+4663;Alta Floresta;MT
+4664;Nova Xavantina;MT
+4665;Cosmorama;SP
+4666;Ibaiti;PR
+4667;Vicosa;AL
+4668;Santana da Boa Vista;RS
+4669;Itarare;RS
