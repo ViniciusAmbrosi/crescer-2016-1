@@ -1,6 +1,7 @@
 package br.com.cwi.tarefa4.interfaces;
 
 import br.com.tarefa4.entity.Produto;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -17,4 +18,6 @@ public interface IProduto {
     List<Produto> listAll();
 
     List<Produto> findNome(String nome);
+    
+    void exportarCsv(String caminho) throws IOException;
 }
