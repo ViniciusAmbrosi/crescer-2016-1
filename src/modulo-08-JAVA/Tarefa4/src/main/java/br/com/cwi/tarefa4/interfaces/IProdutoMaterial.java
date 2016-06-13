@@ -1,6 +1,7 @@
 package br.com.cwi.tarefa4.interfaces;
 
 import br.com.tarefa4.entity.ProdutoMaterial;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -17,4 +18,6 @@ public interface IProdutoMaterial {
     List<ProdutoMaterial> listAll();
 
     List<ProdutoMaterial> findByQuantidade(double quantidade, boolean maior, boolean menor);
+
+    void exportarCsv(String caminho) throws IOException;
 }
