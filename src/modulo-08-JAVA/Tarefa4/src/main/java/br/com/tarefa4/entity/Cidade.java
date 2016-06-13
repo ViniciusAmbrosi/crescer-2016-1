@@ -15,19 +15,19 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "CIDADE")
-public class Cidade implements Serializable{
-    
+public class Cidade implements Serializable {
+
     @Id
     @Basic(optional = false)
     @Column(name = "IDCIDADE")
     @GeneratedValue(strategy = SEQUENCE, generator = "SQCIDADE")
     @SequenceGenerator(name = "SQCIDADE", sequenceName = "SQCIDADE", allocationSize = 1)
     private Long idCidade;
-    
+
     @Basic(optional = false)
     @Column(name = "NOME", length = 30)
     private String nome;
-    
+
     @Basic(optional = false)
     @Column(name = "UF", length = 2)
     private String UF;
