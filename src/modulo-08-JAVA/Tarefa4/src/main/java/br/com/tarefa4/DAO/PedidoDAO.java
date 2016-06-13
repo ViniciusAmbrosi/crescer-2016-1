@@ -79,6 +79,7 @@ public class PedidoDAO implements IPedido {
         return pedidos;
     }
 
+    @Override
     public void exportarCsv(String caminho) throws IOException {
         List<Pedido> pedidos = listAll();
         CSVUtils.gerarCsvPedido(pedidos, caminho);

@@ -82,6 +82,7 @@ public class ProdutoDAO implements IProduto {
         return produtos;
     }
 
+    @Override
     public void exportarCsv(String caminho) throws IOException {
         List<Produto> produtos = listAll();
         CSVUtils.gerarCsvProduto(produtos, caminho);

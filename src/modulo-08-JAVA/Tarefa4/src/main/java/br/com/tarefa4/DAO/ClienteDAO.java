@@ -78,6 +78,7 @@ public class ClienteDAO implements ICliente {
         return clientes;
     }
 
+    @Override
     public void exportarCsv(String caminho) throws IOException{
         List<Cliente> clientes = listAll();
         CSVUtils.gerarCsvCliente(clientes, caminho);

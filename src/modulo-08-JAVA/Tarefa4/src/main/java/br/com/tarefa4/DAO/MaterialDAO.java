@@ -81,7 +81,8 @@ public class MaterialDAO implements IMaterial {
         session.close();
         return material;
     }
-
+    
+    @Override
     public void exportarCsv(String caminho) throws IOException {
         List<Material> materiais = listAll();
         CSVUtils.gerarCsvMaterial(materiais, caminho);
