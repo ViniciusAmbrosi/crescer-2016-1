@@ -1,8 +1,11 @@
 package br.com.tarefa4.DAO;
 
 import br.com.cwi.tarefa4.interfaces.IPedido;
+import br.com.cwi.tarefa4.utils.CSVUtils;
 import br.com.tarefa4.entity.Cidade;
+import br.com.tarefa4.entity.Cliente;
 import br.com.tarefa4.entity.Pedido;
+import java.io.IOException;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -76,4 +79,8 @@ public class PedidoDAO implements IPedido {
         return pedidos;
     }
 
+    public void exportarCsv(String caminho) throws IOException {
+        List<Pedido> pedidos = listAll();
+        CSVUtils.gerarCsvPedido(pedidos, caminho);
+    }
 }
