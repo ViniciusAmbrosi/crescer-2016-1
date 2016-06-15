@@ -21,13 +21,33 @@ public class PessoaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("application/json");
+        resp.setContentType("text/html");
         try (final PrintWriter out = resp.getWriter();) {
+            out.append("<!DOCTYPE html>");
+            out.append("<html>");
+            out.append("<head>");
+            out.append("<title>Java - aula5</title>");
+            out.append("<meta charset=\"UTF-8\">");
+            out.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+            out.append("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\" integrity=\"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7\" crossorigin=\"anonymous\">");
+            out.append("</head>");
+            out.append("<body>");
+            out.append("<div class=\"table-responsive\">").append(" <table class=\"table table-bordered\">");
+            out.append("<tr>");
+            out.append("<th>").append("Nome").append("</th>");
+            out.append("<th>").append("Idade").append("</th>");
+            out.append("<th>").append("Sexo").append("</th>");
+            out.append("</tr>");
             for (Pessoa pessoa : pessoas) {
-                out.append(pessoa.getNome()).append("</br>");
-                out.append(String.valueOf(pessoa.getIdade())).append("</br>");
-                out.append(pessoa.getSexo()).append("</br>");
+                out.append("<tr>");
+                out.append("<td>").append(pessoa.getNome()).append("</td>");
+                out.append("<td>").append(String.valueOf(pessoa.getIdade())).append("</td>");
+                out.append("<td>").append(pessoa.getSexo()).append("</td>");
+                out.append("</tr>");
             }
+            out.append("</table>").append("</div>");
+            out.append("</body>");
+            out.append("</html>");
         }
     }
 
