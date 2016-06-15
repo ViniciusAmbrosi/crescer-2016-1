@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+
+        <ui:param name="p" value="#{pessoa.pessoa}"/>
+
+        <h:form>
+            <h:commandLink value="hello" action="hello"/>
+            <h:panelGrid columns="2">
+
+                <h:outputLabel value="#{bundle.nome}"/>
+                <h:inputText value="#{p.nome}"/>
+                <h:outputLabel value="#{bundle.idade}"/>
+                <h:inputText value="#{p.idade}"/>
+
+                <h:commandButton value="enviar">
+                    <f:ajax execute="@form" render="@form"/>
+                </h:commandButton>
+            </h:panelGrid>
+            <h:outputText value="#{p}" rendered="#{not empty p.nome}"/>
+        </h:form>
+    </h:body>
+</html>
