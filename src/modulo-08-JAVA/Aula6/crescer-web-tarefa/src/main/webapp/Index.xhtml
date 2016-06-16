@@ -10,27 +10,26 @@
     </h:head>
     <h:body>
         <h:form>
-            
             <ui:param name="p" value="#{pessoa.pessoa}"/>
+            <ui:param name="c" value="#{pessoa.pessoa.cidade}"/>
+
             <h:panelGrid columns="2">
 
                 <h:outputLabel value="Nome: "/>
-                <h:inputText value="#{p.nome}"/>
+                <h:inputText value="#{p.nome}" styleClass="form-control form-group"/>
                 <h:outputLabel value="Idade: "/>
-                <h:inputText value="#{p.idade}"/>
+                <h:inputText value="#{p.idade}" styleClass="form-control form-group"/>
+                <h:outputLabel value="Cidade: "/>
+                <h:inputText value="#{c.nome}" styleClass="form-control form-group"/>
+                <h:outputLabel value="UF: "/>
+                <h:inputText value="#{c.UF}" styleClass="form-control form-group"/>
 
-                <h:commandButton value="enviar" action="#{pessoa.processa}">
+                <h:commandButton value="enviar" action="#{pessoa.processa}" styleClass="btn btn-info form-group">
                     <f:ajax execute="@form" render="@form"/>
                 </h:commandButton>
 
             </h:panelGrid>
-
-            <h:dataTable value="#{pessoa.list}" var="pessoa">
-                <h:column>
-                    <h:outputText value="#{pessoa}"/>
-                </h:column>
-            </h:dataTable>   
-            
         </h:form>
+        
     </h:body>
 </html>

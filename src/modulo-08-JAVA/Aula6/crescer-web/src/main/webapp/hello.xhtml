@@ -8,15 +8,19 @@
     </h:head>
     <h:body>
         <h:form id="form" prependId="false">
+            
             <h:commandButton value ="Processa" action="#{hello.processa}">
                 <j:ajax execute="@form" render="@form"/>
             </h:commandButton>
+            
             <h:inputText value="#{hello.mensagem}"/>
+            
             <h:dataTable value="#{hello.list}" var="mensagem">
                 <h:column>
                     <h:outputText value="#{mensagem}"/>
                 </h:column>
-            </h:dataTable>       
+            </h:dataTable>   
+            
         </h:form>
     </h:body>
 </html>
