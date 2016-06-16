@@ -28,8 +28,26 @@
                     <f:ajax execute="@form" render="@form"/>
                 </h:commandButton>
 
+
+                <h:dataTable value="#{pessoa.list}" var="pessoa" styleClass="table table-striped">
+                    <h:column>
+                        <f:facet name="header">Nome </f:facet>
+                        #{pessoa.nome}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Idade </f:facet>
+                        #{pessoa.idade}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Cidade </f:facet>
+                        #{pessoa.cidade.nome}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">UF </f:facet>
+                        #{pessoa.cidade.UF}
+                    </h:column>
+                </h:dataTable>   
             </h:panelGrid>
         </h:form>
-        
     </h:body>
 </html>
