@@ -6,9 +6,22 @@ package br.com.crescer;
 public class Pessoa{
     private String nome;
     private Integer idade;
+    private Cidade cidade;
+
+    public Pessoa() {
+        this.cidade = new Cidade();
+    }
 
     public String getNome() {
         return nome;
+    }
+
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
 
     public void setNome(String nome) {
@@ -25,7 +38,10 @@ public class Pessoa{
 
     @Override
     public String toString() {
-        return nome + " " + idade;
+        return "Cliente " + nome + " " + 
+               idade + " anos " + 
+               "Residente em " + cidade.getNome() + " " + 
+               cidade.getUF();
     }    
 }
 
