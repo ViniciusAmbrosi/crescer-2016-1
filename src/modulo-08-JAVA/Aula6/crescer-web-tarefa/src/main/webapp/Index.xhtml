@@ -3,31 +3,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:j="http://java.sun.com/jsf/core">
+      xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
         <title>Index</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </h:head>
     <h:body>
-        <h:form id="form">
+        <h:form>
+            
             <ui:param name="p" value="#{pessoa.pessoa}"/>
-            
-            <h:outputLabel value="Nome: "/>
-            <h:inputText value="#{p.nome}"/>
-            <h:outputLabel value ="Idade: "/>
-            <h:inputText value="#{p.idade}"/>
-            
-            <h:commandButton value="processa" action="#{pessoa.processa(p)}">
-                <j:ajax execute="#form" render="#form"/>
-            </h:commandButton>
-            
-            <h:outputText value="#{p}"/>
-            
+            <h:panelGrid columns="2">
+
+                <h:outputLabel value="Nome: "/>
+                <h:inputText value="#{p.nome}"/>
+                <h:outputLabel value="Idade: "/>
+                <h:inputText value="#{p.idade}"/>
+
+                <h:commandButton value="enviar" action="#{pessoa.processa}">
+                    <f:ajax execute="@form" render="@form"/>
+                </h:commandButton>
+
+            </h:panelGrid>
+
             <h:dataTable value="#{pessoa.list}" var="pessoa">
                 <h:column>
                     <h:outputText value="#{pessoa}"/>
                 </h:column>
-            </h:dataTable>       
+            </h:dataTable>   
+            
         </h:form>
     </h:body>
 </html>

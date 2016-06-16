@@ -27,9 +27,15 @@ public class PessoaMB implements Serializable {
     public void setPessoa(Pessoa pessoa) {
         this.pessoa = pessoa;
     }
+    
+    public void setPessoa(String nome, int idade) {
+        this.pessoa.setNome(nome);
+        this.pessoa.setIdade(idade);
+    }
 
-    public void processa(Pessoa pessoa) {
+    public void processa() {
         Singleton.getINSTANCE().getList().add(pessoa);
+        pessoa = new Pessoa();
     }
 
     public List<Pessoa> getList() {
