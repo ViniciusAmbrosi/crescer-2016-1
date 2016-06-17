@@ -1,5 +1,6 @@
 package br.com.crescer.controllers.abstracts;
 
+import br.com.crescer.entity.SerializableID;
 import br.com.crescer.service.abstracts.AbstractService;
 import java.io.Serializable;
 
@@ -8,7 +9,7 @@ import java.io.Serializable;
  * @param <Entity>
  * @param <Service>
  */
-public interface IAbstractController<Entity, Service extends AbstractService<Entity>> extends Serializable {
+public interface IAbstractController<Entity extends SerializableID, Service extends AbstractService<Entity>> extends Serializable {
 
     Entity getEntity();
     

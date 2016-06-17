@@ -21,7 +21,7 @@ import javax.persistence.Table;
     @NamedQuery(name = "Pessoa.findAll", query = "SELECT p FROM Pessoa p"),
     @NamedQuery(name = "Pessoa.findById", query = "SELECT p FROM Pessoa p WHERE p.id = :id"),
     @NamedQuery(name = "Pessoa.findByNome", query = "SELECT p FROM Pessoa p WHERE p.nome = :nome")})
-public class Pessoa implements Serializable {
+public class Pessoa extends SerializableID<Long> {
 
     @Id
     @GeneratedValue(strategy = SEQUENCE, generator = "SEQ_PESSOA")
@@ -34,6 +34,7 @@ public class Pessoa implements Serializable {
     @Column(name = "NM_PESSOA")
     private String nome;
 
+    @Override
     public Long getId() {
         return id;
     }

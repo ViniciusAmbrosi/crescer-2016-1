@@ -1,6 +1,5 @@
 package br.com.crescer.entity;
 
-import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,11 +16,11 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(name = "Cidade.findAll", query = "SELECT c FROM Cidade c")})
 
-public class Cidade implements Serializable {
+public class Cidade extends SerializableID<Long> {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_CIDADE")
-    @SequenceGenerator(name = "SQ_CIDADE", sequenceName = "SQ_CIDADE", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQCIDADE")
+    @SequenceGenerator(name = "SQCIDADE", sequenceName = "SQCIDADE", allocationSize = 1)
     @Basic(optional = false)
     @Column(name = "IDCIDADE")
     private Long id;
@@ -34,12 +33,8 @@ public class Cidade implements Serializable {
     @Column(name = "UF")
     private String uf;
 
-    public Long getIdCidade() {
-        return id;
-    }
-
-    public void setIdCidade(Long idCidade) {
-        this.id= idCidade;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -56,5 +51,10 @@ public class Cidade implements Serializable {
 
     public void setUf(String uf) {
         this.uf = uf;
+    }
+
+    @Override
+    public Long getId() {
+        return id;
     }
 }
