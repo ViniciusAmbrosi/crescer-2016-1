@@ -51,8 +51,8 @@
                         <h:outputText value="#{c.uf}"/>
                     </h:column>
                     <h:column>
-                        <h:commandButton action="#{cidadeController.delete(c.id)}" value="Excluir" styleClass="btn btn-default">
-                            <f:setPropertyActionListener target="pessoaController.entity" value="#{c}"/>
+                        <h:commandButton action="#{cidadeController.remove}" value="Excluir" styleClass="btn btn-default">
+                            <f:setPropertyActionListener target="#{cidadeController.entity}" value="#{c}"/>
                         </h:commandButton>
                     </h:column>
                 </h:dataTable>

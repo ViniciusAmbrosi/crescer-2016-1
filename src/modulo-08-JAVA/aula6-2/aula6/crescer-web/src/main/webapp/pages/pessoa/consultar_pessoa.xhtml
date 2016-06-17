@@ -46,8 +46,8 @@
                         <h:outputText value="#{p.nome}"/>
                     </h:column>
                     <h:column>
-                        <h:commandButton action="#{pessoaController.delete}" value="Excluir" styleClass="btn btn-default">
-                            <f:setPropertyActionListener target="pessoaController.entity" value="#{p}"/>
+                        <h:commandButton action="#{pessoaController.remove}" value="Excluir" styleClass="btn btn-default">
+                            <f:setPropertyActionListener target="#{pessoaController.entity}" value="#{p}"/>
                         </h:commandButton>
                     </h:column>
                 </h:dataTable>
