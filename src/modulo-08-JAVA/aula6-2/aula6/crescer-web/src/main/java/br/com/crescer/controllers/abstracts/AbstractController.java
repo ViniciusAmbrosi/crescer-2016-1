@@ -2,6 +2,7 @@ package br.com.crescer.controllers.abstracts;
 
 import br.com.crescer.entity.SerializableID;
 import br.com.crescer.service.abstracts.AbstractService;
+import br.com.crescer.utils.FacesUtils;
 import java.util.List;
 
 /**
@@ -22,6 +23,8 @@ public abstract class AbstractController<Entity extends SerializableID, Service 
     @Override
     public void remove() {
         this.getService().remove(entity);
+        this.listAll();
+        FacesUtils.addSuccessMessage("Registro excluido com sucesso!");
     }
 
     @Override

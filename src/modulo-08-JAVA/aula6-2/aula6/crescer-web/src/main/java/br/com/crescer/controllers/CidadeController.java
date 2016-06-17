@@ -36,10 +36,4 @@ public class CidadeController extends AbstractController<Cidade, CidadeService> 
         FacesUtils.addMessage(new FacesMessage(FacesMessage.SEVERITY_INFO, "Registro incluido com sucesso!", ""));
         return "consultar_cidade";
     }
-
-    public String delete(Long id) {
-        super.remove();
-        FacesUtils.addMessage(new FacesMessage(FacesMessage.SEVERITY_INFO, "Registro removido com sucesso!", ""));
-        return "consultar_cidade";
-    }
 }
