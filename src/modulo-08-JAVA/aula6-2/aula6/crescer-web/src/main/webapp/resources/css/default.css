@@ -33,3 +33,7 @@ body {
 }
 
 .glyphicon{ margin: 0px 3px;}
+
+#javax_faces_developmentstage_messages{
+    display: none;
+}
