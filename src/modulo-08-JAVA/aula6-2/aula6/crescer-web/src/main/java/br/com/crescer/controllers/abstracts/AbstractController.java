@@ -4,6 +4,7 @@ import br.com.crescer.entity.SerializableID;
 import br.com.crescer.service.abstracts.AbstractService;
 import br.com.crescer.utils.FacesUtils;
 import java.util.List;
+import javax.faces.application.FacesMessage;
 
 /**
  * @author Carlos H. Nonnemacher
@@ -22,9 +23,13 @@ public abstract class AbstractController<Entity extends SerializableID, Service 
 
     @Override
     public void remove() {
-        this.getService().remove(entity);
-        this.listAll();
-        FacesUtils.addSuccessMessage("Registro excluido com sucesso!");
+        try {
+            this.getService().remove(entity);
+            this.listAll();
+            FacesUtils.addSuccessMessage("Registro excluido com sucesso!");
+        } catch (javax.ejb.EJBException e) {
+            FacesUtils.addFailureMessage("Registro não pode ser removido!");
+        }
     }
 
     @Override
@@ -55,5 +60,5 @@ public abstract class AbstractController<Entity extends SerializableID, Service 
     public void setEntity(Entity entity) {
         this.entity = entity;
     }
-    
+
 }

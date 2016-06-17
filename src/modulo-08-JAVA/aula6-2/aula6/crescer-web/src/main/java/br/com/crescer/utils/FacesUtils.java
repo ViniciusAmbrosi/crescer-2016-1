@@ -29,4 +29,8 @@ public class FacesUtils {
     public static void addSuccessMessage(String message) {
         addMessage(new FacesMessage(FacesMessage.SEVERITY_INFO, message, ""));
     }
+
+    public static void addFailureMessage(String message) {
+        addMessage(new FacesMessage(FacesMessage.SEVERITY_ERROR, message, ""));
+    }
 }
