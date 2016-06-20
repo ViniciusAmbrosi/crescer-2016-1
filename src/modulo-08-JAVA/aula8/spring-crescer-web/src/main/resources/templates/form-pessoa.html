@@ -1,0 +1,22 @@
+<form action="#" th:action="@{/Pessoa}" th:object="${pessoa}" method="post">
+
+    <div class="form-group">
+        <label for="nome" th:text="#{pessoa.nome}"></label>
+        <input class="form-control" type="text" th:field="*{nome}" />
+    </div>
+
+    <div class="form-group">
+        <label for="data" th:text="#{pessoa.data}"></label>
+        <input class="form-control" type="text" th:field="*{data}" />
+    </div>
+
+    <div class="form-group" hidden="true">
+        <label for="id" th:text="#{pessoa.id}"></label>
+        <input class="form-control" type="text" th:field="*{id}" />
+    </div>
+
+    <div class="form-group">
+        <input class="btn btn-success" type="submit" th:value="#{form.submit}" /> 
+        <input class="btn btn-primary" type="reset" th:value="#{form.reset}" />
+    </div>
+</form>
