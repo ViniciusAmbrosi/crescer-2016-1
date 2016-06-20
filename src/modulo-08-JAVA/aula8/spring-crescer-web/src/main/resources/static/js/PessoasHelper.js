@@ -7,7 +7,7 @@ PessoasHelper.deletarPessoa = function (id) {
         url: "/Pessoa?id=" + id,
         type: 'DELETE'
     }).done(function(res) {
-//        $('#tabela-pessoa').empty();
+        $('#tabela-pessoa').empty();
         $('#tabela-pessoa').append(res);
     });;
 };
