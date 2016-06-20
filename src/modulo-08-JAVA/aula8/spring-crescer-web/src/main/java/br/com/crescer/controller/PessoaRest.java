@@ -1,5 +1,7 @@
 package br.com.crescer.controller;
 
+import br.com.crescer.services.PessoaService;
+import br.com.crescer.entity.Pessoa;
 import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,7 @@ public class PessoaRest {
 
     @ResponseBody
     @RequestMapping("/pessoa")
-    public List<Pessoa> list() {
-        return service.list();
+    public Iterable<Pessoa> list() {
+        return service.findAll();
     }
 }
