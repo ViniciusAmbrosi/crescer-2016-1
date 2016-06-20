@@ -25,4 +25,8 @@ public class PessoaService {
     public void delete(Long id) {
         repository.delete(id);
     }
+    
+    public Pessoa findById(Long id) {
+        return repository.findOne(id);
+    }
 }
