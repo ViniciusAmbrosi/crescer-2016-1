@@ -7,41 +7,18 @@
     </head>
     <body> 
         <!-- /* Content of this page will be decorated by the elements of layout.html (task/layout) */ -->
+        
         <div layout:fragment="content">
             <h1 th:text="#{pessoa.form}" class="page-header"></h1>
 
-            <form action="#" th:action="@{/Pessoa}" th:object="${pessoa}" method="post">
+            <div id="form-pessoa">
+                <div th:include="form-pessoa"></div>
+            </div>
 
-                <div class="form-group">
-                    <label for="nome" th:text="#{pessoa.nome}"></label>
-                    <input class="form-control" type="text" th:field="*{nome}" />
-                </div>
-
-                <div class="form-group">
-                    <input class="btn btn-success" type="submit" th:value="#{form.submit}" /> 
-                    <input class="btn btn-primary" type="reset" th:value="#{form.reset}" />
-                </div>
-            </form>
-
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th th:text="#{pessoa.id}"/>
-                        <th th:text="#{pessoa.nome}"/>
-                        <th th.text="#{form.botoes}"/>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr th:each="p : ${pessoas}">
-                        <td class="id" th:text="${p.id}">ID</td>
-                        <td class="nome" th:text="${p.nome}">NOME</td>
-                        <td>
-                            <button class="pull-right btn btn-danger botao-remover" th:attr="data-id=${p.id}" th:text="#{form.remover}"/>
-                            <button class="pull-right btn btn-info botao-alterar"   th:text="#{form.alterar}"/>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="tabela-pessoa">
+                <div th:include="tabela-pessoa"></div>
+            </div>    
         </div>
+        
     </body>
 </html>
